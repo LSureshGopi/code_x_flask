@@ -1,0 +1,9 @@
+DATA_BLOCK "dbPlcHmiDIN"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ STRUCT
+   DIN : Array[5000..5120] of "UDT_CM_DIN_N";
+ END_STRUCT;
+
+BEGIN
+END_DATA_BLOCK

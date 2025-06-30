@@ -1,0 +1,49 @@
+FUNCTION_BLOCK "All CM VLV"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ VAR RETAIN
+   VLV : Array[0..2] of UDT_CM_VLV;
+ END_VAR
+ VAR
+   "LCP20_F251_QM1101" : "CM VLV";
+   "LCP20_F252_QM1102" : "CM VLV";
+ END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = 5 - LCP20_F251_QM1101 - Inlet Roll 2 - Forming Head 2
+
+       CALL #"LCP20_F251_QM1101"
+       (
+         CM_No := 5 ,
+         Tab := 26 ,
+         SubTab := 3 ,
+         CfgType := 1 ,
+         P_FB := Valve_1_Open_Fbk ,
+         N_FB := Valve_1_Close_Fbk ,
+         Out_P := Valve_1_Open_cmd ,
+         Out_N :=  ,
+         SC_Local := "P01".SC ,
+         CM_VLV := #VLV[1] ,
+       );
+
+NETWORK
+TITLE = 6 - LCP20_F252_QM1102 - Outlet Roll 2 - Forming Head 2
+
+       CALL #"LCP20_F252_QM1102"
+       (
+         CM_No := 6 ,
+         Tab := 26 ,
+         SubTab := 3 ,
+         CfgType := 1 ,
+         P_FB := Valve_2_Open_Fbk ,
+         N_FB := Valve_2_Close_Fbk ,
+         Out_P := Valve_2_Open_cmd ,
+         Out_N :=  ,
+         SC_Local := "P01".SC ,
+         CM_VLV := #VLV[2] ,
+       );
+
+END_FUNCTION_BLOCK

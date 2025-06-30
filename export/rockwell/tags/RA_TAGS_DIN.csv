@@ -1,0 +1,12 @@
+0.3,,,,,,
+TYPE,SCOPE,NAME,DESCRIPTION,DATATYPE,SPECIFIER,ATTRIBUTES
+TAG,,MCC_H111_SF1001_DIN_UDT,UDT_IO_DIN : Infeed Jog  Forward - Push button,UDT_IO_DIN,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,,MCC_H111_SF1002_DIN_UDT,UDT_IO_DIN : Infeed Jog Reverse - Push button,UDT_IO_DIN,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,,MCC_H111_SF1003_DIN_UDT,UDT_IO_DIN : Infeed Aut/Man - Push button,UDT_IO_DIN,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,,MCC_H111_SF1004_DIN_UDT,UDT_IO_DIN : Infeed Open/Close - Push button,UDT_IO_DIN,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,,MCC_AUX01_BT3010_DIN_UDT,UDT_IO_DIN : MCC Ventilation termostat - Termostat,UDT_IO_DIN,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,IO,MCC_H111_SF1001_DIN_CM,CM_DIN : Infeed Jog  Forward - Push button,CM_DIN,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,IO,MCC_H111_SF1002_DIN_CM,CM_DIN : Infeed Jog Reverse - Push button,CM_DIN,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,IO,MCC_H111_SF1003_DIN_CM,CM_DIN : Infeed Aut/Man - Push button,CM_DIN,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,IO,MCC_H111_SF1004_DIN_CM,CM_DIN : Infeed Open/Close - Push button,CM_DIN,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,IO,MCC_AUX01_BT3010_DIN_CM,CM_DIN : MCC Ventilation termostat - Termostat,CM_DIN,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"

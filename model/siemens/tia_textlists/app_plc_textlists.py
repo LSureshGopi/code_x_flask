@@ -1,5 +1,6 @@
 import pandas as pd
-
+import tempfile
+import os
 # Create Text lists for PLC
 def GeneratePlcTextlists(df, nr, Name, NamePrefix):
 
@@ -20,8 +21,8 @@ def GeneratePlcTextlists(df, nr, Name, NamePrefix):
                      }
 
     df_TextList = pd.DataFrame(TextList_dict)
-
-    filename = "export/siemens/PLC_Textlist/%s_Plc_alarm_Textlists.xlsx" % Name
+    temp_dir = tempfile.gettempdir()
+    filename = os.path.join(temp_dir, f"{Name}_Plc_alarm_Textlists.xlsx")
     # with pd.ExcelWriter(filename, engine='xlsxwriter') as writer:
     with pd.ExcelWriter(filename, engine='xlsxwriter') as writer:
         df_TextList.to_excel(writer, sheet_name='TextList', index=False)
@@ -29,3 +30,5 @@ def GeneratePlcTextlists(df, nr, Name, NamePrefix):
         # TIA Portal requires custom properties to be set in the .xlsx file
         writer.book.set_custom_property('FileVersion', '1')
         writer.book.set_custom_property('FileContent', 'Alarm text lists')
+
+    return filename

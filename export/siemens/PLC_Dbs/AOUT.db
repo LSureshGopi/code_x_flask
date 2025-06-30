@@ -1,0 +1,9 @@
+DATA_BLOCK "dbPlcHmiAOUT"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+ STRUCT
+   AOUT : Array[4000..4012] of "UDT_CM_AOUT_N";
+ END_STRUCT;
+
+BEGIN
+END_DATA_BLOCK

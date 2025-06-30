@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AlarmCollection>
+  <Alarm Name="DIN_MCC_H111_SF1001_ALM_DINT_0" ConditionType="TRIP" Input="MCC_H111_SF1001_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Jog  Forward - Push button - Alarm (+MCC=H111-SF1001)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1001_ALM_DINT_1" ConditionType="TRIP" Input="MCC_H111_SF1001_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Jog  Forward - Push button - Warning (+MCC=H111-SF1001)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1001_ALM_DINT_2" ConditionType="TRIP" Input="MCC_H111_SF1001_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Jog  Forward - Push button - Manual Mode Warning (+MCC=H111-SF1001)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1001_ALM_DINT_3" ConditionType="TRIP" Input="MCC_H111_SF1001_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Jog  Forward - Push button - Ignore Active Warning (+MCC=H111-SF1001)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1002_ALM_DINT_0" ConditionType="TRIP" Input="MCC_H111_SF1002_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Jog Reverse - Push button - Alarm (+MCC=H111-SF1002)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1002_ALM_DINT_1" ConditionType="TRIP" Input="MCC_H111_SF1002_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Jog Reverse - Push button - Warning (+MCC=H111-SF1002)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1002_ALM_DINT_2" ConditionType="TRIP" Input="MCC_H111_SF1002_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Jog Reverse - Push button - Manual Mode Warning (+MCC=H111-SF1002)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1002_ALM_DINT_3" ConditionType="TRIP" Input="MCC_H111_SF1002_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Jog Reverse - Push button - Ignore Active Warning (+MCC=H111-SF1002)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1003_ALM_DINT_0" ConditionType="TRIP" Input="MCC_H111_SF1003_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Aut/Man - Push button - Alarm (+MCC=H111-SF1003)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1003_ALM_DINT_1" ConditionType="TRIP" Input="MCC_H111_SF1003_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Aut/Man - Push button - Warning (+MCC=H111-SF1003)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1003_ALM_DINT_2" ConditionType="TRIP" Input="MCC_H111_SF1003_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Aut/Man - Push button - Manual Mode Warning (+MCC=H111-SF1003)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1003_ALM_DINT_3" ConditionType="TRIP" Input="MCC_H111_SF1003_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Aut/Man - Push button - Ignore Active Warning (+MCC=H111-SF1003)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1004_ALM_DINT_0" ConditionType="TRIP" Input="MCC_H111_SF1004_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Open/Close - Push button - Alarm (+MCC=H111-SF1004)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1004_ALM_DINT_1" ConditionType="TRIP" Input="MCC_H111_SF1004_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Open/Close - Push button - Warning (+MCC=H111-SF1004)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1004_ALM_DINT_2" ConditionType="TRIP" Input="MCC_H111_SF1004_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Open/Close - Push button - Manual Mode Warning (+MCC=H111-SF1004)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_H111_SF1004_ALM_DINT_3" ConditionType="TRIP" Input="MCC_H111_SF1004_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Infeed Open/Close - Push button - Ignore Active Warning (+MCC=H111-SF1004)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_AUX01_BT3010_ALM_DINT_0" ConditionType="TRIP" Input="MCC_AUX01_BT3010_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Ventilation termostat - Termostat - Alarm (+MCC=AUX01-BT3010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_AUX01_BT3010_ALM_DINT_1" ConditionType="TRIP" Input="MCC_AUX01_BT3010_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Ventilation termostat - Termostat - Warning (+MCC=AUX01-BT3010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_AUX01_BT3010_ALM_DINT_2" ConditionType="TRIP" Input="MCC_AUX01_BT3010_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Ventilation termostat - Termostat - Manual Mode Warning (+MCC=AUX01-BT3010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="DIN_MCC_AUX01_BT3010_ALM_DINT_3" ConditionType="TRIP" Input="MCC_AUX01_BT3010_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Ventilation termostat - Termostat - Ignore Active Warning (+MCC=AUX01-BT3010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+</AlarmCollection>

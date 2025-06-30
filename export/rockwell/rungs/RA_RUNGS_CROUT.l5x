@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="33.00" TargetType="Rung" TargetCount="1" CurrentLanguage="en-US" ContainsContext="true" ExportDate="Fri Aug 20 11:38:35 2021" ExportOptions="References NoRawData L5KData DecoratedData Context RoutineLabels AliasExtras IOTags NoStringData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="PLC1">
+<Programs Use="Context">
+<Program Use="Context" Name="Safety_Z1">
+<Tags Use="Context"/>
+<Routines Use="Context">
+<Routine Use="Context" Name="R011_Output">
+<RLLContent Use="Context">
+<Rung Use="Target" Number="1" Type="N">
+<Comment><![CDATA[MCC - MCC Fan  - Panel Fan
+-------------------------------------o------------------------------------
+MCC_AUX01_QE1010_Enable
+nan_SP
+nan]]></Comment>
+<Text><![CDATA[[CROUT(MCC_AUX01_MA1010_CROUT_AOI,NEGATIVE,500,MCC_AUX01_QE1010_Enable,nan_SP,nan_SP,ON_SP,MCC_IO:5:O.7OutputStatus,L_ResetOutputCircuit) ,XIC(MCC_AUX01_MA1010_CROUT_AOI.O1) OTE(nan) OTE(MCC_AUX01_MA1010_SF_OK) ];]]></Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>

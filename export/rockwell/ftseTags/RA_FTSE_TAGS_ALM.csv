@@ -1,0 +1,496 @@
+;Tag Type, Tag Name, Tag Description, Read Only, Data Source, Security Code, Alarmed, Native Type, Value Type, Min Analog, Max Analog, Initial Analog, Scale, Offset, DeadBand, Units, Off Label Digital, On Label Digital, Initial Digital, Length String, Initial String, Retentive, Address, System Source Name, System Source Index, RIO Address, Element Size Block, Number Elements Block, Initial Block
+;###002 - THIS LINE CONTAINS VERSION INFORMATION. DO NOT REMOVE!!!
+
+;Folders Section (Must define folders before tags)
+"F","MCC18_U108_QA2G_ALM",,"F"
+"F","MCC18_U109_QA2C_ALM",,"F"
+"F","MCC18_U101_QA4E_ALM",,"F"
+"F","LCP182_U101_BG130_ALM",,"F"
+"F","LCP182_U101_BG133_ALM",,"F"
+"F","LCP182_U100_BS100_ALM",,"F"
+"F","LCP182_ES02_SF611_ALM",,"F"
+"F","LCP182_ES02_SF612_ALM",,"F"
+"F","MCC18_U103_QA4C_ALM",,"F"
+"F","MCC18_U105_QA5C_ALM",,"F"
+"F","LCP182_U105_SF611_ALM",,"F"
+"F","LCP182_U105_BT312_ALM",,"F"
+"F","LCP182_U105_SF613_ALM",,"F"
+"F","LCP182_U105_FM215_ALM",,"F"
+"F","LCP182_U105_BL216_ALM",,"F"
+"F","MCC18_U106_QA5A_ALM",,"F"
+"F","LCP182_U106_SF621_ALM",,"F"
+"F","LCP182_U106_BT322_ALM",,"F"
+"F","LCP182_U106_SF623_ALM",,"F"
+"F","LCP182_U106_FM225_ALM",,"F"
+"F","LCP182_U106_BL226_ALM",,"F"
+"F","MCC18_U112_QA4L_ALM",,"F"
+"F","MCC18_U107_QA5J_ALM",,"F"
+"F","MCC18_U104_QA2E_ALM",,"F"
+"F","LCP182_U107_SF631_ALM",,"F"
+"F","LCP182_U107_BT332_ALM",,"F"
+"F","LCP182_U107_SF633_ALM",,"F"
+"F","LCP182_U107_FM235_ALM",,"F"
+"F","LCP182_U107_BL236_ALM",,"F"
+"F","MCC18_U151_QA1C_ALM",,"F"
+"F","MCC18_U153_QA1E_ALM",,"F"
+"F","MCC18_U154_QA1G_ALM",,"F"
+"F","MCC18_U152_QA1J_ALM",,"F"
+"F","MCC18_U155_QA1L_ALM",,"F"
+"F","MCC18_U156_QA2A_ALM",,"F"
+"F","MCC18_U131_QA2L_ALM",,"F"
+"F","MCC18_U133_QA2J_ALM",,"F"
+"F","MCC18_U134_QA3H_ALM",,"F"
+"F","MCC18_U132_QA3F_ALM",,"F"
+"F","MCC18_U135_QA4A_ALM",,"F"
+"F","MCC18_U136_QA3K_ALM",,"F"
+"F","LCP181_U172_BT101s_ALM",,"F"
+"F","LCP181_U181_FT111_ALM",,"F"
+"F","LCP181_U182_FT112_ALM",,"F"
+"F","LCP181_RIO1_KF1000_ALM",,"F"
+"F","LCP182_RIO1_KF1000_ALM",,"F"
+"F","LCP183_RIO1_KF1000_ALM",,"F"
+"F","LCP184_RIO1_KF1000_ALM",,"F"
+"F","LCP184_RIO2_KF1000_ALM",,"F"
+"F","LCP184_RIO3_KF1000_ALM",,"F"
+"F","Mes_P00_ID000_ALM",,"F"
+"F","Mes_P05_ID001_ALM",,"F"
+"F","Mes_P05_ID002_ALM",,"F"
+"F","Mes_P05_ID003_ALM",,"F"
+"F","Mes_P05_ID004_ALM",,"F"
+"F","Mes_P05_ID005_ALM",,"F"
+"F","Mes_P05_ID006_ALM",,"F"
+"F","Mes_P05_ID007_ALM",,"F"
+"F","LCP182_P05_ID009_ALM",,"F"
+"F","LCP182_P05_ID010_ALM",,"F"
+"F","LCP182_P05_ID011_ALM",,"F"
+"F","LCP182_P05_ID012_ALM",,"F"
+"F","LCP183_P05_ID014_ALM",,"F"
+"F","LCP183_P05_ID015_ALM",,"F"
+"F","LCP184_P05_ID017_ALM",,"F"
+"F","LCP184_P05_ID018_ALM",,"F"
+"F","LCP185_P05_ID020_ALM",,"F"
+"F","LCP185_P05_ID021_ALM",,"F"
+"F","LCP186_P05_ID023_ALM",,"F"
+"F","LCP186_P05_ID024_ALM",,"F"
+
+;Tag Section
+"S","MCC18_U108_QA2G_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U108_QA2G_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U108_QA2G_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U108_QA2G_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Acelli Trim Cutter North - Contactor Bucket 2G",0,
+"S","MCC18_U108_QA2G_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Acelli Area",0,
+"S","MCC18_U108_QA2G_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U108-QA2G",0,0
+"S","MCC18_U109_QA2C_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U109_QA2C_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U109_QA2C_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U109_QA2C_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Acelli Trim Cutter South - Contactor Bucket 2C",0,
+"S","MCC18_U109_QA2C_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Acelli Area",0,
+"S","MCC18_U109_QA2C_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U109-QA2C",0,0
+"S","MCC18_U101_QA4E_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U101_QA4E_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U101_QA4E_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U101_QA4E_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Luwa Trim Seperator - Contactor Bucket 4E",0,
+"S","MCC18_U101_QA4E_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U101_QA4E_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U101-QA4E",0,0
+"S","LCP182_U101_BG130_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U101_BG130_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U101_BG130_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:3:I.0",0,
+"S","LCP182_U101_BG130_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Luwa Trim Seperator  - Cell Roller Security Switches ",0,
+"S","LCP182_U101_BG130_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U101_BG130_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U101-BG130",0,0
+"S","LCP182_U101_BG133_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U101_BG133_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U101_BG133_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:3:I.3",0,
+"S","LCP182_U101_BG133_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Luwa Trim Seperator  - Zero Speed Switch",0,
+"S","LCP182_U101_BG133_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U101_BG133_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U101-BG133",0,0
+"S","LCP182_U100_BS100_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U100_BS100_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U100_BS100_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:3:I.7",0,
+"S","LCP182_U100_BS100_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Balemaster - High level switch",0,
+"S","LCP182_U100_BS100_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U100_BS100_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U100-BS100",0,0
+"S","LCP182_ES02_SF611_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_ES02_SF611_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_ES02_SF611_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:3:I.4",0,
+"S","LCP182_ES02_SF611_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"System Stop PB - On LCP182 Enclosure ",0,
+"S","LCP182_ES02_SF611_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_ES02_SF611_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=ES02-SF611",0,0
+"S","LCP182_ES02_SF612_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_ES02_SF612_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_ES02_SF612_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:3:I.6",0,
+"S","LCP182_ES02_SF612_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"System Stop PB - By Roll Up Door To B2",0,
+"S","LCP182_ES02_SF612_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_ES02_SF612_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=ES02-SF612",0,0
+"S","MCC18_U103_QA4C_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U103_QA4C_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U103_QA4C_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U103_QA4C_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone Screw Conveyor - Contactor Bucket 4C",0,
+"S","MCC18_U103_QA4C_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U103_QA4C_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U103-QA4C",0,0
+"S","MCC18_U105_QA5C_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U105_QA5C_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U105_QA5C_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U105_QA5C_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone Rotary Valve East - Contactor Bucket 5C",0,
+"S","MCC18_U105_QA5C_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U105_QA5C_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U105-QA5C",0,0
+"S","LCP182_U105_SF611_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U105_SF611_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U105_SF611_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:1:I.0",0,
+"S","LCP182_U105_SF611_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone 1 East - Top Explosion Vent",0,
+"S","LCP182_U105_SF611_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U105_SF611_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U105-SF611",0,0
+"S","LCP182_U105_BT312_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U105_BT312_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U105_BT312_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:1:I.1",0,
+"S","LCP182_U105_BT312_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone 1 East - Thermocouple",0,
+"S","LCP182_U105_BT312_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U105_BT312_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U105-BT312",0,0
+"S","LCP182_U105_SF613_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U105_SF613_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U105_SF613_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:1:I.2",0,
+"S","LCP182_U105_SF613_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone 1 East - Bottom Explosion Vent",0,
+"S","LCP182_U105_SF613_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U105_SF613_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U105-SF613",0,0
+"S","LCP182_U105_FM215_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U105_FM215_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U105_FM215_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:1:I.3",0,
+"S","LCP182_U105_FM215_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone 1 East - Flame Arrestor ",0,
+"S","LCP182_U105_FM215_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U105_FM215_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U105-FM215",0,0
+"S","LCP182_U105_BL216_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U105_BL216_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U105_BL216_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:1:I.4",0,
+"S","LCP182_U105_BL216_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone 1 East - Bindicator Rotary Paddle Switch",0,
+"S","LCP182_U105_BL216_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U105_BL216_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U105-BL216",0,0
+"S","MCC18_U106_QA5A_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U106_QA5A_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U106_QA5A_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U106_QA5A_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone Rotary Valve West - Contactor Bucket 5A",0,
+"S","MCC18_U106_QA5A_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U106_QA5A_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U106-QA5A",0,0
+"S","LCP182_U106_SF621_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U106_SF621_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U106_SF621_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:1:I.5",0,
+"S","LCP182_U106_SF621_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone 2 West - Top Explosion Vent",0,
+"S","LCP182_U106_SF621_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U106_SF621_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U106-SF621",0,0
+"S","LCP182_U106_BT322_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U106_BT322_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U106_BT322_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:1:I.6",0,
+"S","LCP182_U106_BT322_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone 2 West - Thermocouple",0,
+"S","LCP182_U106_BT322_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U106_BT322_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U106-BT322",0,0
+"S","LCP182_U106_SF623_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U106_SF623_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U106_SF623_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:1:I.7",0,
+"S","LCP182_U106_SF623_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone 2 West - Bottom Explosion Vent",0,
+"S","LCP182_U106_SF623_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U106_SF623_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U106-SF623",0,0
+"S","LCP182_U106_FM225_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U106_FM225_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U106_FM225_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:2:I.0",0,
+"S","LCP182_U106_FM225_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone 2 West - Flame Arrestor ",0,
+"S","LCP182_U106_FM225_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U106_FM225_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U106-FM225",0,0
+"S","LCP182_U106_BL226_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U106_BL226_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U106_BL226_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:2:I.1",0,
+"S","LCP182_U106_BL226_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone 2 West - Bindicator Rotary Paddle Switch",0,
+"S","LCP182_U106_BL226_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U106_BL226_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U106-BL226",0,0
+"S","MCC18_U112_QA4L_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U112_QA4L_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U112_QA4L_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U112_QA4L_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"DW2 Cyclone Booster Fan - Contactor Bucket 4L",0,
+"S","MCC18_U112_QA4L_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U112_QA4L_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U112-QA4L",0,0
+"S","MCC18_U107_QA5J_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U107_QA5J_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U107_QA5J_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U107_QA5J_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"DW2 Cyclone Rotary Valve - Contactor Bucket 5J",0,
+"S","MCC18_U107_QA5J_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U107_QA5J_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U107-QA5J",0,0
+"S","MCC18_U104_QA2E_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U104_QA2E_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U104_QA2E_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U104_QA2E_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"DW2 Cyclone Screw Conveyor - Contactor Bucket 2E",0,
+"S","MCC18_U104_QA2E_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U104_QA2E_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U104-QA2E",0,0
+"S","LCP182_U107_SF631_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U107_SF631_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U107_SF631_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:2:I.2",0,
+"S","LCP182_U107_SF631_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"DW2 Cyclone 3 - Top Explosion Vent",0,
+"S","LCP182_U107_SF631_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U107_SF631_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U107-SF631",0,0
+"S","LCP182_U107_BT332_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U107_BT332_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U107_BT332_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:2:I.3",0,
+"S","LCP182_U107_BT332_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"DW2 Cyclone 3 - Thermocouple",0,
+"S","LCP182_U107_BT332_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U107_BT332_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U107-BT332",0,0
+"S","LCP182_U107_SF633_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U107_SF633_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U107_SF633_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:2:I.4",0,
+"S","LCP182_U107_SF633_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"DW2 Cyclone 3 - Bottom Explosion Vent",0,
+"S","LCP182_U107_SF633_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U107_SF633_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U107-SF633",0,0
+"S","LCP182_U107_FM235_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U107_FM235_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U107_FM235_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:2:I.5",0,
+"S","LCP182_U107_FM235_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"DW2 Cyclone 3 - Flame Arrestor ",0,
+"S","LCP182_U107_FM235_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U107_FM235_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U107-FM235",0,0
+"S","LCP182_U107_BL236_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_U107_BL236_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U107_BL236_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:2:I.6",0,
+"S","LCP182_U107_BL236_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"DW2 Cyclone 3 - Bindicator Rotary Paddle Switch",0,
+"S","LCP182_U107_BL236_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U107_BL236_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U107-BL236",0,0
+"S","MCC18_U151_QA1C_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U151_QA1C_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U151_QA1C_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U151_QA1C_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Spare - Contactor Bucket 1C",0,
+"S","MCC18_U151_QA1C_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Winder Area",0,
+"S","MCC18_U151_QA1C_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U151-QA1C",0,0
+"S","MCC18_U153_QA1E_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U153_QA1E_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U153_QA1E_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U153_QA1E_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Winder Trim Fan North - Contactor Bucket 1E",0,
+"S","MCC18_U153_QA1E_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Winder Area",0,
+"S","MCC18_U153_QA1E_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U153-QA1E",0,0
+"S","MCC18_U154_QA1G_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U154_QA1G_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U154_QA1G_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U154_QA1G_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Winder Trim Booster Fan North - Contactor Bucket 1G",0,
+"S","MCC18_U154_QA1G_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Winder Area",0,
+"S","MCC18_U154_QA1G_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U154-QA1G",0,0
+"S","MCC18_U152_QA1J_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U152_QA1J_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U152_QA1J_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U152_QA1J_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Spare - Contactor Bucket 1J",0,
+"S","MCC18_U152_QA1J_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Winder Area",0,
+"S","MCC18_U152_QA1J_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U152-QA1J",0,0
+"S","MCC18_U155_QA1L_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U155_QA1L_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U155_QA1L_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U155_QA1L_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Winder Trim Fan South - Contactor Bucket 1L",0,
+"S","MCC18_U155_QA1L_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Winder Area",0,
+"S","MCC18_U155_QA1L_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U155-QA1L",0,0
+"S","MCC18_U156_QA2A_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U156_QA2A_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U156_QA2A_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U156_QA2A_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Winder Trim Booster Fan South - Contactor Bucket 2A",0,
+"S","MCC18_U156_QA2A_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Winder Area",0,
+"S","MCC18_U156_QA2A_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U156-QA2A",0,0
+"S","MCC18_U131_QA2L_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U131_QA2L_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U131_QA2L_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U131_QA2L_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner #5 Trim Cutter - Contactor Bucket 2L",0,
+"S","MCC18_U131_QA2L_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Festooner Area",0,
+"S","MCC18_U131_QA2L_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U131-QA2L",0,0
+"S","MCC18_U133_QA2J_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U133_QA2J_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U133_QA2J_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U133_QA2J_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner #5 Trim Fan - Contactor Bucket 2J",0,
+"S","MCC18_U133_QA2J_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Festooner Area",0,
+"S","MCC18_U133_QA2J_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U133-QA2J",0,0
+"S","MCC18_U134_QA3H_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U134_QA3H_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U134_QA3H_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U134_QA3H_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner #6 Trim Cutter - Contactor Bucket 3H",0,
+"S","MCC18_U134_QA3H_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Festooner Area",0,
+"S","MCC18_U134_QA3H_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U134-QA3H",0,0
+"S","MCC18_U132_QA3F_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U132_QA3F_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U132_QA3F_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U132_QA3F_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner #6 Trim Fan - Contactor Bucket 3F",0,
+"S","MCC18_U132_QA3F_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Festooner Area",0,
+"S","MCC18_U132_QA3F_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U132-QA3F",0,0
+"S","MCC18_U135_QA4A_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U135_QA4A_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U135_QA4A_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U135_QA4A_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner #7 Trim Cutter - Contactor Bucket 4A",0,
+"S","MCC18_U135_QA4A_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Festooner Area",0,
+"S","MCC18_U135_QA4A_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U135-QA4A",0,0
+"S","MCC18_U136_QA3K_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U136_QA3K_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U136_QA3K_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","MCC18_U136_QA3K_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner #7 Trim Fan - Contactor Bucket 3K",0,
+"S","MCC18_U136_QA3K_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Festooner Area",0,
+"S","MCC18_U136_QA3K_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U136-QA3K",0,0
+"S","LCP181_U172_BT101s_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP181_U172_BT101s_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP181_U172_BT101s_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:1:I.2",0,
+"S","LCP181_U172_BT101s_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Latex Transfer Pump - Temperature Switch",0,
+"S","LCP181_U172_BT101s_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Latex Main Storage Area",0,
+"S","LCP181_U172_BT101s_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP181=U172-BT101s",0,0
+"S","LCP181_U181_FT111_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP181_U181_FT111_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP181_U181_FT111_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:1:I.3",0,
+"S","LCP181_U181_FT111_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Sump Pump 1 - Overtemp Switch from Motor",0,
+"S","LCP181_U181_FT111_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Dryer Area - Process Effluent",0,
+"S","LCP181_U181_FT111_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP181=U181-FT111",0,0
+"S","LCP181_U182_FT112_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP181_U182_FT112_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP181_U182_FT112_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:1:I.6",0,
+"S","LCP181_U182_FT112_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Sump Pump 2 - Overtemp Switch from Motor",0,
+"S","LCP181_U182_FT112_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Dryer Area - Process Effluent",0,
+"S","LCP181_U182_FT112_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP181=U182-FT112",0,0
+"S","LCP181_RIO1_KF1000_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP181_RIO1_KF1000_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP181_RIO1_KF1000_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP181_RIO1_KF1000_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Point IO - EtherNet/IP Adapter",0,
+"S","LCP181_RIO1_KF1000_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - LCP181 in ER2",0,
+"S","LCP181_RIO1_KF1000_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP181=RIO1-KF1000",0,0
+"S","LCP182_RIO1_KF1000_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_RIO1_KF1000_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_RIO1_KF1000_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP182_RIO1_KF1000_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Point IO - EtherNet/IP Adapter",0,
+"S","LCP182_RIO1_KF1000_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - LCP182 in LUWA Dust Collector Area",0,
+"S","LCP182_RIO1_KF1000_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=RIO1-KF1000",0,0
+"S","LCP183_RIO1_KF1000_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP183_RIO1_KF1000_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP183_RIO1_KF1000_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP183_RIO1_KF1000_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Point IO - EtherNet/IP Adapter",0,
+"S","LCP183_RIO1_KF1000_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - LCP183 in Acelli Winder",0,
+"S","LCP183_RIO1_KF1000_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP183=RIO1-KF1000",0,0
+"S","LCP184_RIO1_KF1000_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP184_RIO1_KF1000_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP184_RIO1_KF1000_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP184_RIO1_KF1000_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Point IO - EtherNet/IP Adapter",0,
+"S","LCP184_RIO1_KF1000_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - LCP184 in Festooner 5",0,
+"S","LCP184_RIO1_KF1000_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP184=RIO1-KF1000",0,0
+"S","LCP184_RIO2_KF1000_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP184_RIO2_KF1000_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP184_RIO2_KF1000_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP184_RIO2_KF1000_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Point IO - EtherNet/IP Adapter",0,
+"S","LCP184_RIO2_KF1000_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - LCP184 in Festooner 6",0,
+"S","LCP184_RIO2_KF1000_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP184=RIO2-KF1000",0,0
+"S","LCP184_RIO3_KF1000_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP184_RIO3_KF1000_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP184_RIO3_KF1000_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP184_RIO3_KF1000_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Point IO - EtherNet/IP Adapter",0,
+"S","LCP184_RIO3_KF1000_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - LCP184 in Festooner 7",0,
+"S","LCP184_RIO3_KF1000_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP184=RIO3-KF1000",0,0
+"S","Mes_P00_ID000_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","Mes_P00_ID000_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","Mes_P00_ID000_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","Mes_P00_ID000_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Motion Group Not Syncronized  - Alarm",0,
+"S","Mes_P00_ID000_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - House PLC",0,
+"S","Mes_P00_ID000_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+Mes=P00-ID000",0,0
+"S","Mes_P05_ID001_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","Mes_P05_ID001_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","Mes_P05_ID001_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","Mes_P05_ID001_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Shutdown caused by - Quick Stop Fault",0,
+"S","Mes_P05_ID001_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - House PLC - Utilities",0,
+"S","Mes_P05_ID001_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+Mes=P05-ID001",0,0
+"S","Mes_P05_ID002_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","Mes_P05_ID002_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","Mes_P05_ID002_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","Mes_P05_ID002_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Stopped by fault - Restart Required",0,
+"S","Mes_P05_ID002_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - House PLC - Utilities",0,
+"S","Mes_P05_ID002_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+Mes=P05-ID002",0,0
+"S","Mes_P05_ID003_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","Mes_P05_ID003_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","Mes_P05_ID003_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","Mes_P05_ID003_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Sump Pump Stopped  - Restart to Avoid Flodding",0,
+"S","Mes_P05_ID003_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - House PLC - Utilities",0,
+"S","Mes_P05_ID003_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+Mes=P05-ID003",0,0
+"S","Mes_P05_ID004_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","Mes_P05_ID004_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","Mes_P05_ID004_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","Mes_P05_ID004_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Briquetter 1 - Stopped - Restart to Avoid filling Cyclones",0,
+"S","Mes_P05_ID004_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Briquetter 1 - Utilities",0,
+"S","Mes_P05_ID004_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+Mes=P05-ID004",0,0
+"S","Mes_P05_ID005_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","Mes_P05_ID005_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","Mes_P05_ID005_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","Mes_P05_ID005_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Briquetter 1 - E-Stopped - Reset E-Stop and Restart To Avoid Filling Cyclones",0,
+"S","Mes_P05_ID005_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Briquetter 1 - Utilities",0,
+"S","Mes_P05_ID005_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+Mes=P05-ID005",0,0
+"S","Mes_P05_ID006_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","Mes_P05_ID006_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","Mes_P05_ID006_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","Mes_P05_ID006_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Briquetter 2 - Stopped - Restart to Avoid filling Cyclones",0,
+"S","Mes_P05_ID006_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Briquetter 2 - Utilities",0,
+"S","Mes_P05_ID006_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+Mes=P05-ID006",0,0
+"S","Mes_P05_ID007_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","Mes_P05_ID007_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","Mes_P05_ID007_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","Mes_P05_ID007_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Briquetter 2 - E-Stopped - Reset E-Stop and Restart To Avoid Filling Cyclones",0,
+"S","Mes_P05_ID007_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Briquetter 2 - Utilities",0,
+"S","Mes_P05_ID007_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+Mes=P05-ID007",0,0
+"S","LCP182_P05_ID009_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_P05_ID009_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_P05_ID009_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP182_P05_ID009_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Balemaster - Stopped - Restart to Avoid filling Seperator",0,
+"S","LCP182_P05_ID009_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Balemaster - Utilities",0,
+"S","LCP182_P05_ID009_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=P05-ID009",0,0
+"S","LCP182_P05_ID010_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_P05_ID010_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_P05_ID010_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP182_P05_ID010_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Balemaster - E-Stopped - Reset E-Stop and Restart Balemaster",0,
+"S","LCP182_P05_ID010_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Balemaster - Utilities",0,
+"S","LCP182_P05_ID010_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=P05-ID010",0,0
+"S","LCP182_P05_ID011_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_P05_ID011_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_P05_ID011_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP182_P05_ID011_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Balemaster - Alarm - Check HMI Screen",0,
+"S","LCP182_P05_ID011_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Balemaster - Utilities",0,
+"S","LCP182_P05_ID011_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=P05-ID011",0,0
+"S","LCP182_P05_ID012_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP182_P05_ID012_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_P05_ID012_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP182_P05_ID012_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Balemaster - Level High",0,
+"S","LCP182_P05_ID012_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Balemaster - Utilities",0,
+"S","LCP182_P05_ID012_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=P05-ID012",0,0
+"S","LCP183_P05_ID014_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP183_P05_ID014_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP183_P05_ID014_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP183_P05_ID014_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Acelli Slitter Re-Winder - Running - Utilities Stopped - Start-up Utilities to avoid Dust Build-Up",0,
+"S","LCP183_P05_ID014_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Acelli Slitter Re-Winder - Utilities",0,
+"S","LCP183_P05_ID014_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP183=P05-ID014",0,0
+"S","LCP183_P05_ID015_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP183_P05_ID015_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP183_P05_ID015_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP183_P05_ID015_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Acelli Slitter Re-Winder - E-Stop - Reset E-Stop and Restart Utilities",0,
+"S","LCP183_P05_ID015_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Acelli Slitter Re-Winder - Utilities",0,
+"S","LCP183_P05_ID015_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP183=P05-ID015",0,0
+"S","LCP184_P05_ID017_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP184_P05_ID017_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP184_P05_ID017_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP184_P05_ID017_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner 5 - Running - Utilities Stopped - Start-up Utilities to avoid Dust Build-Up",0,
+"S","LCP184_P05_ID017_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Festooner 5 - Utilities",0,
+"S","LCP184_P05_ID017_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP184=P05-ID017",0,0
+"S","LCP184_P05_ID018_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP184_P05_ID018_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP184_P05_ID018_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP184_P05_ID018_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner 5 - E-Stop - Reset E-Stop and Restart Utilities",0,
+"S","LCP184_P05_ID018_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Festooner 5 - Utilities",0,
+"S","LCP184_P05_ID018_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP184=P05-ID018",0,0
+"S","LCP185_P05_ID020_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP185_P05_ID020_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP185_P05_ID020_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP185_P05_ID020_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner 6 - Running - Utilities Stopped - Start-up Utilities to avoid Dust Build-Up",0,
+"S","LCP185_P05_ID020_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Festooner 6 - Utilities",0,
+"S","LCP185_P05_ID020_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP185=P05-ID020",0,0
+"S","LCP185_P05_ID021_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP185_P05_ID021_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP185_P05_ID021_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP185_P05_ID021_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner 6 - E-Stop - Reset E-Stop and Restart Utilities",0,
+"S","LCP185_P05_ID021_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Festooner 6 - Utilities",0,
+"S","LCP185_P05_ID021_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP185=P05-ID021",0,0
+"S","LCP186_P05_ID023_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP186_P05_ID023_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP186_P05_ID023_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP186_P05_ID023_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner 7 - Running - Utilities Stopped - Start-up Utilities to avoid Dust Build-Up",0,
+"S","LCP186_P05_ID023_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Festooner 7 - Utilities",0,
+"S","LCP186_P05_ID023_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP186=P05-ID023",0,0
+"S","LCP186_P05_ID024_ALM\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP186_P05_ID024_ALM\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP186_P05_ID024_ALM\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"Program Tag - No Hardware Address",0,
+"S","LCP186_P05_ID024_ALM\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner 7 - E-Stop - Reset E-Stop and Restart Utilities",0,
+"S","LCP186_P05_ID024_ALM\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Program Alarm - Festooner 7 - Utilities",0,
+"S","LCP186_P05_ID024_ALM\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP186=P05-ID024",0,0

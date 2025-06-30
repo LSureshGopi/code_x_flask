@@ -29,7 +29,7 @@
             <div class="upload-box" id="dropArea-plc">
                 <p>upload PLC excel file</p>
                 <small>up to 50MB only</small>
-                <button class="upload-btn" id="selectFiles-plc">Upload File</button>
+                <button class="upload-btn" id="selectFiles-plc" {% if not user_logged_in %} disabled title="Login to upload"{% endif %}>Upload File</button>
                 <input type="file" id="fileInput-plc" multiple accept=".xls,.xlsx" hidden>
             </div>
             <div id="uploadedFiles-plc" class="uploaded-files"></div>
@@ -39,7 +39,7 @@
             <div class="upload-box" id="dropArea-hmi">
                 <p>upload HMI excel file</p>
                 <small>up to 50MB only</small>
-                <button class="upload-btn" id="selectFiles-hmi">Upload File</button>
+                <button class="upload-btn" id="selectFiles-hmi" {% if not user_logged_in %} disabled title="Login to upload"{% endif %}>Upload File</button>
                 <input type="file" id="fileInput-hmi" multiple accept=".xls,.xlsx" hidden>
             </div>
             <div id="uploadedFiles-hmi" class="uploaded-files"></div>
@@ -49,7 +49,7 @@
             <div class="upload-box" id="dropArea-scada">
                 <p>upload SCADA pdf file</p>
                 <small>up to 50MB only</small>
-                <button class="upload-btn" id="selectFiles-scada">Upload File</button>
+                <button class="upload-btn" id="selectFiles-scada" {% if not user_logged_in %} disabled title="Login to upload"{% endif %}>Upload File</button>
                 <input type="file" id="fileInput-scada" multiple accept=".pdf" hidden>
             </div>
             <div id="uploadedFiles-scada" class="uploaded-files"></div>
@@ -69,16 +69,12 @@
             <div class="generate-block-row">
                 <label>Generate PLC Function blocks</label>
                 <div class="generate-input-group" style="margin-left: 8rem;">
-                    <select class="generate-select-small">
-                        {% if Data %}
-                            {% for item in Data %}
-                                <option value="{{ item }}">{{ item }}</option>
-                            {% endfor %}
-                        {% else %}
-                            <option value="">None</option>
-                        {% endif %}
+                    <select class="generate-select-multi" multiple="multiple" {% if not user_logged_in %} disabled title="Login to select"{% endif %}>
+                        {% for func in function_list %} 
+                        <option value="{{ func['FunctionName'] }}">{{ func['FunctionName'] }}</option> 
+                        {% endfor %} 
                     </select>
-                    <button class="generate-icon-btn"><i class='bx bx-share'></i></button>
+                    <button class="generate-icon-btn generate-fb" {% if not user_logged_in %} disabled title="Login to export"{% endif %}><i class='bx bx-share'></i></button>
                 </div>
             </div>
             <div class="generate-block-row">
@@ -87,32 +83,24 @@
                     <input type="checkbox" id="optDB">
                     <label for="optDB" style="font-size: 0.9rem; font-weight: 600;">Optimized DB</label>
                 </div>
-                <div class="generate-input-group" style="margin-left: 1.9rem;">                    
-                    <select class="generate-select-small">
-                        {% if Data %}
-                            {% for item in Data %}
-                                <option value="{{ item }}">{{ item }}</option>
-                            {% endfor %}
-                        {% else %}
-                            <option value="">None</option>
-                        {% endif %}
+                <div class="generate-input-group" style="margin-left: 1.9rem;">
+                    <select class="generate-select-multi" multiple="multiple" {% if not user_logged_in %} disabled title="Login to select"{% endif %}>
+                        {% for func in function_list %} 
+                        <option value="{{ func['FunctionName'] }}">{{ func['FunctionName'] }}</option> 
+                        {% endfor %} 
                     </select>
-                    <button class="generate-icon-btn"><i class='bx bx-share'></i></button>
+                    <button class="generate-icon-btn generate-db" {% if not user_logged_in %} disabled title="Login to export"{% endif %}><i class='bx bx-share'></i></button>
                 </div>
             </div>
             <div class="generate-block-row">
                 <label>Generate PLC Textlists</label>
-                <div class="generate-input-group" style="margin-left: 11.4rem;">                    
-                    <select class="generate-select-small">
-                        {% if Data %}
-                            {% for item in Data %}
-                                <option value="{{ item }}">{{ item }}</option>
-                            {% endfor %}
-                        {% else %}
-                            <option value="">None</option>
-                        {% endif %}
+                <div class="generate-input-group" style="margin-left: 11.4rem;">
+                    <select class="generate-select-multi" multiple="multiple" {% if not user_logged_in %} disabled title="Login to select"{% endif %}>
+                        {% for func in function_list %} 
+                        <option value="{{ func['FunctionName'] }}">{{ func['FunctionName'] }}</option> 
+                        {% endfor %} 
                     </select>
-                    <button class="generate-icon-btn"><i class='bx bx-share'></i></button>
+                    <button class="generate-icon-btn generate-textlist" {% if not user_logged_in %} disabled title="Login to export"{% endif %}><i class='bx bx-share'></i></button>
                 </div>
             </div>
         </div>
@@ -128,31 +116,23 @@
             <div class="generate-block-row">
                 <label>Generate HMI Tag</label>
                 <div class="generate-input-group" style="margin-left: 13.5rem;">
-                    <select class="generate-select-small">
-                        {% if Data %}
-                            {% for item in Data %}
-                                <option value="{{ item }}">{{ item }}</option>
-                            {% endfor %}
-                        {% else %}
-                            <option value="">None</option>
-                        {% endif %}
+                    <select class="generate-select-multi" multiple="multiple" {% if not user_logged_in %} disabled title="Login to select"{% endif %}>
+                        {% for func in function_list %} 
+                        <option value="{{ func['FunctionName'] }}">{{ func['FunctionName'] }}</option> 
+                        {% endfor %} 
                     </select>
-                    <button class="generate-icon-btn"><i class='bx bx-share'></i></button>
+                    <button class="generate-icon-btn" {% if not user_logged_in %} disabled title="Login to export"{% endif %}><i class='bx bx-share'></i></button>
                 </div>
             </div>
             <div class="generate-block-row">
                 <label>Generate HMI Textlists</label>
                 <div class="generate-input-group" style="margin-left: 11.5rem;">
-                    <select class="generate-select-small">
-                        {% if Data %}
-                            {% for item in Data %}
-                                <option value="{{ item }}">{{ item }}</option>
-                            {% endfor %}
-                        {% else %}
-                            <option value="">None</option>
-                        {% endif %}
+                    <select class="generate-select-multi" multiple="multiple" {% if not user_logged_in %} disabled title="Login to select"{% endif %}>
+                        {% for func in function_list %} 
+                        <option value="{{ func['FunctionName'] }}">{{ func['FunctionName'] }}</option> 
+                        {% endfor %} 
                     </select>
-                    <button class="generate-icon-btn"><i class='bx bx-share'></i></button>
+                    <button class="generate-icon-btn" {% if not user_logged_in %} disabled title="Login to export"{% endif %}><i class='bx bx-share'></i></button>
                 </div>
             </div>
         </div>
@@ -168,25 +148,25 @@
             <div class="generate-block-row">
                 <label>Export SQL Database File</label>
                 <div class="generate-input-group" style="margin-left: 10rem;">
-                    <select class="generate-select-small">
-                        {% if Data %}
-                            {% for item in Data %}
-                                <option value="{{ item }}">{{ item }}</option>
-                            {% endfor %}
-                        {% else %}
-                            <option value="">None</option>
-                        {% endif %}
+                    <select class="generate-select-multi" multiple="multiple" {% if not user_logged_in %} disabled title="Login to select"{% endif %}>
+                        {% for func in function_list %} 
+                        <option value="{{ func['FunctionName'] }}">{{ func['FunctionName'] }}</option> 
+                        {% endfor %} 
                     </select>
-                    <button class="generate-icon-btn"><i class='bx bx-share'></i></button>
+                    <button class="generate-icon-btn" {% if not user_logged_in %} disabled title="Login to export"{% endif %}><i class='bx bx-share'></i></button>
                 </div>
             </div>
         </div>
         <div class="generate-footer-buttons">
-            <button class="generate-action-btn">Reset</button>
-            <button class="generate-action-btn">Export</button>
+            <button class="generate-action-btn" {% if not user_logged_in %} disabled title="Login to export"{% endif %}>Reset</button>
+            <button class="generate-action-btn" {% if not user_logged_in %} disabled title="Login to export"{% endif %}>Export</button>
         </div>
     </div>
 </div>
+
+<script>
+    const userLoggedIn = {{ user_logged_in | tojson | safe }};
+</script>
 
 <script>
     function switchTab(evt, tabId) {
@@ -223,6 +203,22 @@
             const dropArea = document.getElementById(`dropArea-${type}`);
             const uploadedFiles = document.getElementById(`uploadedFiles-${type}`);
 
+            if (!userLoggedIn) {
+                fileInput.style.opacity = '0.5';
+                fileInput.style.cursor = 'not-allowed';
+                fileInput.title = 'Login to proceed';
+
+                selectFiles.style.opacity = '0.5';
+                selectFiles.style.cursor = 'not-allowed';
+                selectFiles.title = 'Login to proceed';
+
+                dropArea.style.opacity = '0.5';
+                dropArea.style.cursor = 'not-allowed';
+                dropArea.title = 'Login to proceed';
+
+                return;
+            }
+
             // Upload via button
             selectFiles.addEventListener("click", (event) => {
                 event.stopPropagation();
@@ -242,10 +238,9 @@
             dropArea.addEventListener("drop", (event) => {
                 event.preventDefault();
                 dropArea.classList.remove("dragover");
-                handleFileUpload(event.dataTransfer.files, uploadedFiles);
+                handleFileUpload(event.dataTransfer.files, uploadedFiles); // type = plc / hmi / scada
             });
 
-            // File input change
             fileInput.addEventListener("change", () => {
                 handleFileUpload(fileInput.files, uploadedFiles);
             });
@@ -297,4 +292,121 @@
         }
     });
 </script>
+
+<!-- SheetJS to parse Excel --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+ 
+<script> 
+    let dfJson = null; 
+    document.getElementById("fileInput-plc").addEventListener("change", (event) => { 
+        const file = event.target.files[0]; 
+        if (!file) return; 
+        const reader = new FileReader(); 
+        reader.onload = function (e) { 
+            const data = new Uint8Array(e.target.result); 
+            const workbook = XLSX.read(data, { type: 'array' }); 
+            dfJson = {}; 
+            workbook.SheetNames.forEach(name => { 
+                const sheet = workbook.Sheets[name]; 
+                dfJson[name] = XLSX.utils.sheet_to_json(sheet); 
+            });
+            // ✅ Log file upload as separate log per file
+            fetch("/log_action", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    message: `Uploaded the file ${file.name}`
+                })
+            });
+        }; 
+        reader.readAsArrayBuffer(file); 
+    }); 
+    function logExportAction(module, fileName) {
+        // ✅ Separate export log
+        fetch("/log_action", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                message: `Exported Function '${module}' as '${fileName}'`
+            })
+        });
+    }
+    function downloadBlob(blob, filename) { 
+        const url = window.URL.createObjectURL(blob); 
+        const a = document.createElement("a"); 
+        a.href = url; 
+        a.download = filename; 
+        document.body.appendChild(a); 
+        a.click(); 
+        a.remove(); 
+        window.URL.revokeObjectURL(url); 
+    } 
+    function handleGenerate(endpoint, selectElem, extra = {}) { 
+        const plcNr = document.getElementById("plcNumber").value.trim(); 
+        if (!plcNr) return alert("Please enter PLC Number."); 
+        if (!dfJson) return alert("Please upload and parse a PLC Excel file first."); 
+        const selectedOptions = $(selectElem).val(); 
+        // Select2 returns array 
+        if (!selectedOptions || selectedOptions.length === 0) { 
+            return alert("Select at least one function."); 
+        } 
+        selectedOptions.forEach(module => { 
+            if (!(module in dfJson)) { 
+                alert(`Excel sheet for module "${module}" not found.`); 
+                return; 
+            } 
+            const payload = { 
+                plc_nr: plcNr, 
+                selection_module: module, 
+                df_data: dfJson, 
+                ...extra 
+            }; 
+            fetch(endpoint, { 
+                method: "POST", 
+                headers: { "Content-Type": "application/json" }, 
+                body: JSON.stringify(payload) 
+            }) 
+            .then(response => { 
+                if (!response.ok) { 
+                    return response.json().then(err => { 
+                        throw new Error(err.message || "Server error"); 
+                    }); 
+                } 
+                const disposition = response.headers.get("Content-Disposition"); 
+                const filenameMatch = /filename[^;=\n]*=((['"]).*?\2|[^;\n]*)/.exec(disposition); 
+                const filename = filenameMatch ? filenameMatch[1].replace(/['"]/g, '') : `${module}.awl`; 
+
+                logExportAction(module, filename); // ✅ Log export separately
+
+                return response.blob().then(blob => downloadBlob(blob, filename)); 
+            }) 
+            .catch(err => { 
+                console.error(err); 
+                alert("Error: " + err.message); 
+            }); 
+        }); 
+    } 
+    document.addEventListener("DOMContentLoaded", function () { 
+        $('.generate-select-multi').select2({ 
+            placeholder: "-- Select --", 
+            allowClear: true, width: 'resolve' 
+        }); 
+        document.querySelector('.generate-fb').addEventListener("click", () => { 
+            const select = document.querySelectorAll('.generate-block-row')[0].querySelector("select"); 
+            handleGenerate("/generate/fb", select); 
+        }); 
+        document.querySelector('.generate-db').addEventListener("click", () => { 
+            const select = document.querySelectorAll('.generate-block-row')[1].querySelector("select"); 
+            const optimized = document.getElementById("optDB").checked; 
+            handleGenerate("/generate/db", select, { 
+                cmd_optimized_db: optimized 
+            }); 
+        }); 
+        document.querySelector('.generate-textlist').addEventListener("click", () => { 
+            const select = document.querySelectorAll('.generate-block-row')[2].querySelector("select"); 
+            handleGenerate("/generate/textlist", select); 
+        }); 
+    }); 
+</script>
+
 {% endblock %}

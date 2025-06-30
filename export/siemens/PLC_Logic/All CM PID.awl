@@ -1,0 +1,10 @@
+FUNCTION_BLOCK "All CM PID"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ VAR
+ END_VAR
+
+
+BEGIN
+END_FUNCTION_BLOCK

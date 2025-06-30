@@ -1,0 +1,332 @@
+FUNCTION_BLOCK "All CM FRQ"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ VAR
+   "LCP1_S20_MA321" : "CM FRQ";
+   "LCP1_S20_MA322" : "CM FRQ";
+   "LCP1_S20_MA323" : "CM FRQ";
+   "MCC_S10_MA310" : "CM FRQ";
+   "MCC_S10_MA311" : "CM FRQ";
+   "MCC_S11_MA312" : "CM FRQ";
+   "MCC_S15_MA313" : "CM FRQ";
+   "MCC_S15_MA314" : "CM FRQ";
+   "MCC_S40_MA340" : "CM FRQ";
+   "MCC_S40_MA341" : "CM FRQ";
+   "MCC_S50_MA351" : "CM FRQ";
+   "MCC_S50_MA352" : "CM FRQ";
+ END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = 1001 - LCP1_S20_MA321 - Wrapper Hoist - Motor
+
+       CALL #"LCP1_S20_MA321"
+       (
+         CM_No       := 1001 ,
+         Area_No       := 32 ,
+         Unit       := 0 ,
+         Tab       := 3 ,
+         SubTab       := 2 ,
+         Safety       := True ,
+         Disconnect       := True ,
+         Protect       := True ,
+         RotationFB       := False ,
+         P2000_Speed       := 38 ,
+         SpeedMax       := 400 ,
+         SpeedMin       := 0.0 ,
+         P2001_RefVolt       := 1000.0 ,
+         Gear_Ratio       := 1.0 ,
+         DeAct_Standstill       := T#10s ,
+         AmpRated       := 1.02 ,
+         kWRated       := 0.37 ,
+         SC_Local       := SL_03_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1001] ,
+       );
+
+NETWORK
+TITLE = 1002 - LCP1_S20_MA322 - Primary Stretch - Motor
+
+       CALL #"LCP1_S20_MA322"
+       (
+         CM_No       := 1002 ,
+         Area_No       := 32 ,
+         Unit       := 0 ,
+         Tab       := 3 ,
+         SubTab       := 2 ,
+         Safety       := True ,
+         Disconnect       := True ,
+         Protect       := True ,
+         RotationFB       := False ,
+         SpeedMax       := 300 ,
+         SpeedMin       := 0.0 ,
+         P2001_RefVolt       := 1000.0 ,
+         Gear_Ratio       := 1.0 ,
+         DeAct_Standstill       := T#10s ,
+         AmpRated       := 1.0 ,
+         kWRated       := 0.37 ,
+         SC_Local       := SL_03_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1002] ,
+       );
+
+NETWORK
+TITLE = 1003 - LCP1_S20_MA323 - Secondary Stretch - Motor
+
+       CALL #"LCP1_S20_MA323"
+       (
+         CM_No       := 1003 ,
+         Area_No       := 32 ,
+         Unit       := 0 ,
+         Tab       := 3 ,
+         SubTab       := 2 ,
+         Safety       := True ,
+         Disconnect       := True ,
+         Protect       := True ,
+         RotationFB       := False ,
+         SpeedMax       := 300 ,
+         SpeedMin       := 0.0 ,
+         P2001_RefVolt       := 1000.0 ,
+         Gear_Ratio       := 1.0 ,
+         DeAct_Standstill       := T#10s ,
+         AmpRated       := 1.0 ,
+         kWRated       := 0.37 ,
+         SC_Local       := SL_03_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1003] ,
+       );
+
+NETWORK
+TITLE = 1004 - MCC_S10_MA310 - Wrapper Conveyor - Motor
+
+       CALL #"MCC_S10_MA310"
+       (
+         CM_No       := 1004 ,
+         Area_No       := 23 ,
+         Unit       := 0 ,
+         Tab       := 2 ,
+         SubTab       := 3 ,
+         Safety       := True ,
+         Disconnect       := True ,
+         Protect       := MCC_S10_FN310_DI_Flt ,
+         RotationFB       := False ,
+         P2000_Speed       := 51.0 ,
+         SpeedMax       := 100.0 ,
+         SpeedMin       := 0.0 ,
+         P2001_RefVolt       := 1000.0 ,
+         Gear_Ratio       := 1.0 ,
+         DeAct_Standstill       := T#10s ,
+         AmpRated       := 1.29 ,
+         kWRated       := 0.55 ,
+         SC_Local       := SL_02_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1004] ,
+       );
+
+NETWORK
+TITLE = 1005 - MCC_S10_MA311 - Wrapper Arm - Motor
+
+       CALL #"MCC_S10_MA311"
+       (
+         CM_No       := 1005 ,
+         Area_No       := 33 ,
+         Unit       := 0 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         Safety       := True ,
+         Disconnect       := True ,
+         Protect       := MCC_S10_FN311_DI_Flt ,
+         RotationFB       := False ,
+         P2000_Speed       := 1450 ,
+         SpeedMax       := 123 ,
+         SpeedMin       := 0.0 ,
+         P2001_RefVolt       := 1000.0 ,
+         Gear_Ratio       := 1.0 ,
+         DeAct_Standstill       := T#10s ,
+         AmpRated       := 4.75 ,
+         kWRated       := 2.2 ,
+         SC_Local       := SL_03_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1005] ,
+       );
+
+NETWORK
+TITLE = 1006 - MCC_S11_MA312 - Top Plate Lift - Motor
+
+       CALL #"MCC_S11_MA312"
+       (
+         CM_No       := 1006 ,
+         Area_No       := 35 ,
+         Unit       := 0 ,
+         Tab       := 3 ,
+         SubTab       := 5 ,
+         Safety       := True ,
+         Disconnect       := True ,
+         Protect       := MCC_S11_FN312_DI_Flt ,
+         RotationFB       := False ,
+         P2000_Speed       := 50 ,
+         SpeedMax       := 200 ,
+         SpeedMin       := 0.0 ,
+         P2001_RefVolt       := 1000.0 ,
+         Gear_Ratio       := 1.0 ,
+         DeAct_Standstill       := T#10s ,
+         AmpRated       := 1.02 ,
+         kWRated       := 0.37 ,
+         SC_Local       := SL_03_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1006] ,
+       );
+
+NETWORK
+TITLE = 1007 - MCC_S15_MA313 - Top Foil Lift - Motor
+
+       CALL #"MCC_S15_MA313"
+       (
+         CM_No       := 1007 ,
+         Area_No       := 36 ,
+         Unit       := 0 ,
+         Tab       := 3 ,
+         SubTab       := 6 ,
+         Safety       := True ,
+         Disconnect       := True ,
+         Protect       := MCC_S15_FN313_DI_Flt ,
+         RotationFB       := False ,
+         P2000_Speed       := 63 ,
+         SpeedMax       := 100.0 ,
+         SpeedMin       := 0.0 ,
+         P2001_RefVolt       := 1000.0 ,
+         Gear_Ratio       := 1.0 ,
+         DeAct_Standstill       := T#10s ,
+         AmpRated       := 1.75 ,
+         kWRated       := 0.75 ,
+         SC_Local       := SL_03_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1007] ,
+       );
+
+NETWORK
+TITLE = 1008 - MCC_S15_MA314 - Top Foil Dispensor - Motor
+
+       CALL #"MCC_S15_MA314"
+       (
+         CM_No       := 1008 ,
+         Area_No       := 36 ,
+         Unit       := 0 ,
+         Tab       := 3 ,
+         SubTab       := 6 ,
+         Safety       := True ,
+         Disconnect       := True ,
+         Protect       := MCC_S15_FN314_DI_Flt ,
+         RotationFB       := False ,
+         P2000_Speed       := 71 ,
+         SpeedMax       := 100.0 ,
+         SpeedMin       := 0.0 ,
+         P2001_RefVolt       := 1000.0 ,
+         Gear_Ratio       := 1.0 ,
+         DeAct_Standstill       := T#10s ,
+         AmpRated       := 0.72 ,
+         kWRated       := 0.25 ,
+         SC_Local       := SL_03_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1008] ,
+       );
+
+NETWORK
+TITLE = 1009 - MCC_S40_MA340 - Drop Off Conveyor - Motor
+
+       CALL #"MCC_S40_MA340"
+       (
+         CM_No       := 1009 ,
+         Area_No       := 22 ,
+         Unit       := 0 ,
+         Tab       := 2 ,
+         SubTab       := 2 ,
+         Safety       := True ,
+         Disconnect       := True ,
+         Protect       := MCC_S40_FN340_DI_Flt ,
+         RotationFB       := False ,
+         P2000_Speed       := 51.0 ,
+         SpeedMax       := 100.0 ,
+         SpeedMin       := 0.0 ,
+         P2001_RefVolt       := 1000.0 ,
+         Gear_Ratio       := 1.0 ,
+         DeAct_Standstill       := T#10s ,
+         AmpRated       := 1.29 ,
+         kWRated       := 0.55 ,
+         SC_Local       := SL_02_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1009] ,
+       );
+
+NETWORK
+TITLE = 1010 - MCC_S40_MA341 - Inlet Conveyor - Motor
+
+       CALL #"MCC_S40_MA341"
+       (
+         CM_No       := 1010 ,
+         Area_No       := 22 ,
+         Unit       := 0 ,
+         Tab       := 2 ,
+         SubTab       := 2 ,
+         Safety       := True ,
+         Disconnect       := True ,
+         Protect       := MCC_S40_FN341_DI_Flt ,
+         RotationFB       := False ,
+         P2000_Speed       := 51.0 ,
+         SpeedMax       := 100.0 ,
+         SpeedMin       := 0.0 ,
+         P2001_RefVolt       := 1000.0 ,
+         Gear_Ratio       := 1.0 ,
+         DeAct_Standstill       := T#10s ,
+         AmpRated       := 1.29 ,
+         kWRated       := 0.55 ,
+         SC_Local       := SL_02_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1010] ,
+       );
+
+NETWORK
+TITLE = 1011 - MCC_S50_MA351 - Outlet Conveyor - Motor
+
+       CALL #"MCC_S50_MA351"
+       (
+         CM_No       := 1011 ,
+         Area_No       := 24 ,
+         Unit       := 0 ,
+         Tab       := 2 ,
+         SubTab       := 4 ,
+         Safety       := True ,
+         Disconnect       := True ,
+         Protect       := MCC_S50_FN351_DI_Flt ,
+         RotationFB       := False ,
+         P2000_Speed       := 51.0 ,
+         SpeedMax       := 100.0 ,
+         SpeedMin       := 0.0 ,
+         P2001_RefVolt       := 1000.0 ,
+         Gear_Ratio       := 1.0 ,
+         DeAct_Standstill       := T#10s ,
+         AmpRated       := 1.29 ,
+         kWRated       := 0.55 ,
+         SC_Local       := SL_02_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1011] ,
+       );
+
+NETWORK
+TITLE = 1012 - MCC_S50_MA352 - Pick-up Conveyor - Motor
+
+       CALL #"MCC_S50_MA352"
+       (
+         CM_No       := 1012 ,
+         Area_No       := 24 ,
+         Unit       := 0 ,
+         Tab       := 2 ,
+         SubTab       := 4 ,
+         Safety       := True ,
+         Disconnect       := True ,
+         Protect       := MCC_S50_FN352_DI_Flt ,
+         RotationFB       := False ,
+         P2000_Speed       := 51.0 ,
+         SpeedMax       := 100.0 ,
+         SpeedMin       := 0.0 ,
+         P2001_RefVolt       := 1000.0 ,
+         Gear_Ratio       := 1.0 ,
+         DeAct_Standstill       := T#10s ,
+         AmpRated       := 1.29 ,
+         kWRated       := 0.55 ,
+         SC_Local       := SL_02_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1012] ,
+       );
+
+END_FUNCTION_BLOCK

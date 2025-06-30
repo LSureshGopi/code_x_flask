@@ -1,0 +1,94 @@
+FUNCTION_BLOCK "All CM MTR"
+TITLE = MTR - Motor Direct online (DOL)
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ VAR RETAIN
+   MTR : Array[0..4] of "UDT_CM_MTR";
+ END_VAR
+ VAR
+   "MCC2.1_AUX01_MA1011": "CM MTR";
+   "MCC3.1_AUX01_MA1011": "CM MTR";
+   "MCC4.1_AUX01_MA1011": "CM MTR";
+   "MCC5.1_AUX01_MA1011": "CM MTR";
+ END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = 2 - MCC2.1_AUX01_MA1011-MCC Fan 1 - Panel Fan 
+
+CALL #"MCC2.1_AUX01_MA1011"
+( CM_No := 2 ,
+  Tab := 13 ,
+  SubTab := 3 ,
+  "Type" := 1 ,
+  RunFB := "MCC1_AC01_QA1010_DI_Fb" ,
+  Disconnect := True,
+  Thermal := "MCC1_AC01_FC1010_DI_Flt" ,
+  Safe := True ,
+  DeAct_Standstill := T#5s ,
+  OutFwd := "MCC1_AC01_QA1010_DO_Cs" ,
+  SC_Local := "P01".SC ,
+  CM_MTR  := #MTR[1]
+); 
+
+
+NETWORK
+TITLE = 3 - MCC3.1_AUX01_MA1011-MCC Fan 1 - Panel Fan 
+
+CALL #"MCC3.1_AUX01_MA1011"
+( CM_No := 3 ,
+  Tab := 13 ,
+  SubTab := 3 ,
+  "Type" := 1 ,
+  RunFB := "MCC1_AC01_QA1010_DI_Fb" ,
+  Disconnect := True,
+  Thermal := "MCC1_AC01_FC1010_DI_Flt" ,
+  Safe := True ,
+  DeAct_Standstill := T#5s ,
+  OutFwd := "MCC1_AC01_QA1010_DO_Cs" ,
+  SC_Local := "P01".SC ,
+  CM_MTR  := #MTR[2]
+); 
+
+
+NETWORK
+TITLE = 4 - MCC4.1_AUX01_MA1011-MCC Fan 1 - Panel Fan 
+
+CALL #"MCC4.1_AUX01_MA1011"
+( CM_No := 4 ,
+  Tab := 13 ,
+  SubTab := 3 ,
+  "Type" := 1 ,
+  RunFB := "MCC1_AC01_QA1010_DI_Fb" ,
+  Disconnect := False,
+  Thermal := "MCC1_AC01_FC1010_DI_Flt" ,
+  Safe := True ,
+  DeAct_Standstill := T#5s ,
+  OutFwd := "MCC1_AC01_QA1010_DO_Cs" ,
+  SC_Local := "P01".SC ,
+  CM_MTR  := #MTR[3]
+); 
+
+
+NETWORK
+TITLE = 5 - MCC5.1_AUX01_MA1011-MCC Fan 1 - Panel Fan 
+
+CALL #"MCC5.1_AUX01_MA1011"
+( CM_No := 5 ,
+  Tab := 13 ,
+  SubTab := 4 ,
+  "Type" := 1 ,
+  RunFB := "MCC1_AC01_QA1010_DI_Fb" ,
+  Disconnect := False,
+  Thermal := "MCC1_AC01_FC1010_DI_Flt" ,
+  Safe := True ,
+  DeAct_Standstill := T#5s ,
+  OutFwd := "MCC1_AC01_QA1010_DO_Cs" ,
+  OutRev := "MCC1_AC01_QA1010_DO_Cs" ,
+  SC_Local := "P01".SC ,
+  CM_MTR  := #MTR[4]
+); 
+
+
+END_FUNCTION_BLOCK

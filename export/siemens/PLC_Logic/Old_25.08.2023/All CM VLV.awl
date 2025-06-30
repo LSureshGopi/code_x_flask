@@ -1,0 +1,394 @@
+FUNCTION_BLOCK "All CM VLV"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ VAR
+   "LCP01_H711_PH2741" : "CM VLV";
+   "LCP01_H711_PH2742" : "CM VLV";
+   "LCP01_H712_PH2743" : "CM VLV";
+   "LCP01_H712_PH2744" : "CM VLV";
+   "LCP01_A070_QM1600" : "CM VLV";
+   "LCP01_H711_QM1071" : "CM VLV";
+   "LCP01_H712_QM1072" : "CM VLV";
+   "LCP02_H811_PH2741" : "CM VLV";
+   "LCP02_H811_PH2742" : "CM VLV";
+   "LCP02_H812_PH2743" : "CM VLV";
+   "LCP02_H812_PH2744" : "CM VLV";
+   "LCP02_H811_QM1073" : "CM VLV";
+   "LCP02_H812_QM1074" : "CM VLV";
+   "LCP03_A040_AQ1611" : "CM VLV";
+   "LCP03_A040_AQ1612" : "CM VLV";
+   "LCP03_A040_AQ1613" : "CM VLV";
+   "LCP03_A040_AQ1614" : "CM VLV";
+   "LCP03_A040_AQ1615" : "CM VLV";
+   "LCP03_A040_AQ1616" : "CM VLV";
+   "LCP03_A040_AQ1617" : "CM VLV";
+   "LCP03_A040_AQ1618" : "CM VLV";
+   "LCP03_A040_AQ1619" : "CM VLV";
+   "LCP03_A040_AQ1620" : "CM VLV";
+   "LCP04_F051_QM1420" : "CM VLV";
+   "LCP04_F052_QM1421" : "CM VLV";
+   "LCP04_D031_QM1351" : "CM VLV";
+   "LCP04_D032_QM1352" : "CM VLV";
+   "LCP04_D031_QM1354" : "CM VLV";
+   "LCP04_D032_QM1355" : "CM VLV";
+   "LCP04_F081_QM1730" : "CM VLV";
+   "LCP04_D021_QM1731" : "CM VLV";
+   "LCP04_D414_QM1732" : "CM VLV";
+ END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = 7001 - LCP01_H711_PH2741 - Upper Pulp 0A U1 Brake - Brake On
+
+       CALL #"LCP01_H711_PH2741"
+       (
+         CM_No       := 7001 ,
+         CfgType       := 2 ,
+         SC_Local       := "P02".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7001] ,
+       );
+
+NETWORK
+TITLE = 7002 - LCP01_H711_PH2742 - Upper Pulp 0A U2 Brake - Brake On
+
+       CALL #"LCP01_H711_PH2742"
+       (
+         CM_No       := 7002 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7002] ,
+       );
+
+NETWORK
+TITLE = 7003 - LCP01_H712_PH2743 - Lower Pulp 0A L1 Brake - Brake On
+
+       CALL #"LCP01_H712_PH2743"
+       (
+         CM_No       := 7003 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7003] ,
+       );
+
+NETWORK
+TITLE = 7004 - LCP01_H712_PH2744 - Lower Pulp 0A L2 Brake - Brake On
+
+       CALL #"LCP01_H712_PH2744"
+       (
+         CM_No       := 7004 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7004] ,
+       );
+
+NETWORK
+TITLE = 7005 - LCP01_A070_QM1600 - Humidifier Pump Forming Area - Water Supply Valve
+
+       CALL #"LCP01_A070_QM1600"
+       (
+         CM_No       := 7005 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7005] ,
+       );
+
+NETWORK
+TITLE = 7006 - LCP01_H711_QM1071 - Upper pulp 0A Up/Down - Open/ Close Nip
+
+       CALL #"LCP01_H711_QM1071"
+       (
+         CM_No       := 7006 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7006] ,
+       );
+
+NETWORK
+TITLE = 7007 - LCP01_H712_QM1072 - Lower pulp 0A Up/Down - Open/ Close Nip
+
+       CALL #"LCP01_H712_QM1072"
+       (
+         CM_No       := 7007 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7007] ,
+       );
+
+NETWORK
+TITLE = 7008 - LCP02_H811_PH2741 - Upper Pulp 0B U1 Brake - Brake On
+
+       CALL #"LCP02_H811_PH2741"
+       (
+         CM_No       := 7008 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7008] ,
+       );
+
+NETWORK
+TITLE = 7009 - LCP02_H811_PH2742 - Upper Pulp 0B U2 Brake - Brake On
+
+       CALL #"LCP02_H811_PH2742"
+       (
+         CM_No       := 7009 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7009] ,
+       );
+
+NETWORK
+TITLE = 7010 - LCP02_H812_PH2743 - Lower Pulp 0B L1 Brake - Brake On
+
+       CALL #"LCP02_H812_PH2743"
+       (
+         CM_No       := 7010 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7010] ,
+       );
+
+NETWORK
+TITLE = 7011 - LCP02_H812_PH2744 - Lower Pulp 0B L2 Brake - Brake On
+
+       CALL #"LCP02_H812_PH2744"
+       (
+         CM_No       := 7011 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7011] ,
+       );
+
+NETWORK
+TITLE = 7012 - LCP02_H811_QM1073 - Upper pulp 0B Up/Down - Open/ Close Nip
+
+       CALL #"LCP02_H811_QM1073"
+       (
+         CM_No       := 7012 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7012] ,
+       );
+
+NETWORK
+TITLE = 7013 - LCP02_H812_QM1074 - Lower pulp 0B Up/Down - Open/ Close Nip
+
+       CALL #"LCP02_H812_QM1074"
+       (
+         CM_No       := 7013 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7013] ,
+       );
+
+NETWORK
+TITLE = 7014 - LCP03_A040_AQ1611 - Humidifier Filter 0 - Nozzle 1
+
+       CALL #"LCP03_A040_AQ1611"
+       (
+         CM_No       := 7014 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7014] ,
+       );
+
+NETWORK
+TITLE = 7015 - LCP03_A040_AQ1612 - Humidifier Filter 0 - Nozzle 2
+
+       CALL #"LCP03_A040_AQ1612"
+       (
+         CM_No       := 7015 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7015] ,
+       );
+
+NETWORK
+TITLE = 7016 - LCP03_A040_AQ1613 - Humidifier Filter 0 - Nozzle 3
+
+       CALL #"LCP03_A040_AQ1613"
+       (
+         CM_No       := 7016 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7016] ,
+       );
+
+NETWORK
+TITLE = 7017 - LCP03_A040_AQ1614 - Humidifier Filter 0 - Nozzle 4
+
+       CALL #"LCP03_A040_AQ1614"
+       (
+         CM_No       := 7017 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7017] ,
+       );
+
+NETWORK
+TITLE = 7018 - LCP03_A040_AQ1615 - Humidifier Filter 0 - Nozzle 5
+
+       CALL #"LCP03_A040_AQ1615"
+       (
+         CM_No       := 7018 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7018] ,
+       );
+
+NETWORK
+TITLE = 7019 - LCP03_A040_AQ1616 - Humidifier Filter 0 - Nozzle 6
+
+       CALL #"LCP03_A040_AQ1616"
+       (
+         CM_No       := 7019 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7019] ,
+       );
+
+NETWORK
+TITLE = 7020 - LCP03_A040_AQ1617 - Humidifier Filter 0 - Nozzle 7
+
+       CALL #"LCP03_A040_AQ1617"
+       (
+         CM_No       := 7020 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7020] ,
+       );
+
+NETWORK
+TITLE = 7021 - LCP03_A040_AQ1618 - Humidifier Filter 0 - Nozzle 8
+
+       CALL #"LCP03_A040_AQ1618"
+       (
+         CM_No       := 7021 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7021] ,
+       );
+
+NETWORK
+TITLE = 7022 - LCP03_A040_AQ1619 - Humidifier Filter 0 - Nozzle 9
+
+       CALL #"LCP03_A040_AQ1619"
+       (
+         CM_No       := 7022 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7022] ,
+       );
+
+NETWORK
+TITLE = 7023 - LCP03_A040_AQ1620 - Humidifier Filter 0 - Nozzle 10
+
+       CALL #"LCP03_A040_AQ1620"
+       (
+         CM_No       := 7023 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7023] ,
+       );
+
+NETWORK
+TITLE = 7024 - LCP04_F051_QM1420 - Inlet Roll up/down - Solonoid Valve
+
+       CALL #"LCP04_F051_QM1420"
+       (
+         CM_No       := 7024 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7024] ,
+       );
+
+NETWORK
+TITLE = 7025 - LCP04_F052_QM1421 - Outlet Roll  up/down - Solonoid Valve
+
+       CALL #"LCP04_F052_QM1421"
+       (
+         CM_No       := 7025 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7025] ,
+       );
+
+NETWORK
+TITLE = 7026 - LCP04_D031_QM1351 - Forming Head 0A Edge Trim On/Off  - Solonoid Valve
+
+       CALL #"LCP04_D031_QM1351"
+       (
+         CM_No       := 7026 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7026] ,
+       );
+
+NETWORK
+TITLE = 7027 - LCP04_D032_QM1352 - Forming Head 0B Edge Trim On/Off  - Solonoid Valve
+
+       CALL #"LCP04_D032_QM1352"
+       (
+         CM_No       := 7027 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7027] ,
+       );
+
+NETWORK
+TITLE = 7028 - LCP04_D031_QM1354 - Forming Head 0A Edge Trim Damper - Solonoid Valve
+
+       CALL #"LCP04_D031_QM1354"
+       (
+         CM_No       := 7028 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7028] ,
+       );
+
+NETWORK
+TITLE = 7029 - LCP04_D032_QM1355 - Forming Head 0B Edge Trim Damper - Solonoid Valve
+
+       CALL #"LCP04_D032_QM1355"
+       (
+         CM_No       := 7029 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7029] ,
+       );
+
+NETWORK
+TITLE = 7030 - LCP04_F081_QM1730 - Forminghead Suction Bank #0 - Damper
+
+       CALL #"LCP04_F081_QM1730"
+       (
+         CM_No       := 7030 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7030] ,
+       );
+
+NETWORK
+TITLE = 7031 - LCP04_D021_QM1731 - Secondary Suction Bank #0 - Damper
+
+       CALL #"LCP04_D021_QM1731"
+       (
+         CM_No       := 7031 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7031] ,
+       );
+
+NETWORK
+TITLE = 7032 - LCP04_D414_QM1732 - Forming Wire Cleaning Fan 2 - Damper
+
+       CALL #"LCP04_D414_QM1732"
+       (
+         CM_No       := 7032 ,
+         CfgType       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7032] ,
+       );
+
+END_FUNCTION_BLOCK

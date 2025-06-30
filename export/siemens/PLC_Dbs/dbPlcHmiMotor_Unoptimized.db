@@ -1,0 +1,12 @@
+﻿DATA_BLOCK "dbPlcHmiMotor_Unoptimized"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+   STRUCT 
+      Motor : Array[2000..2020] of "UDT_CM_MTR_N";
+   END_STRUCT;
+
+
+BEGIN
+
+END_DATA_BLOCK
+

@@ -1,0 +1,76 @@
+;Tag Type, Tag Name, Tag Description, Read Only, Data Source, Security Code, Alarmed, Native Type, Value Type, Min Analog, Max Analog, Initial Analog, Scale, Offset, DeadBand, Units, Off Label Digital, On Label Digital, Initial Digital, Length String, Initial String, Retentive, Address, System Source Name, System Source Index, RIO Address, Element Size Block, Number Elements Block, Initial Block
+;###002 - THIS LINE CONTAINS VERSION INFORMATION. DO NOT REMOVE!!!
+
+;Folders Section (Must define folders before tags)
+"F","LCP182_U101_BP253_AIN",,"F"
+"F","LCP182_U105_BP214_AIN",,"F"
+"F","LCP182_U106_BP224_AIN",,"F"
+"F","LCP182_U107_BP234_AIN",,"F"
+"F","LCP181_U172_BT101_AIN",,"F"
+"F","LCP181_U171_BE01_AIN",,"F"
+"F","LCP181_U180_BE02_AIN",,"F"
+"F","LCP181_U180_BF03_AIN",,"F"
+"F","LCP181_U161_BP21_AIN",,"F"
+"F","LCP181_U100_BP31_AIN",,"F"
+
+;Tag Section
+"S","LCP182_U101_BP253_AIN\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,"in wc",0,
+"S","LCP182_U101_BP253_AIN\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U101_BP253_AIN\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:6:I.Ch3Data",0,
+"S","LCP182_U101_BP253_AIN\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Luwa Trim Seperator  - Differantial Pressure",0,
+"S","LCP182_U101_BP253_AIN\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U101_BP253_AIN\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U101-BP253",0,0
+"S","LCP182_U105_BP214_AIN\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,"in wc",0,
+"S","LCP182_U105_BP214_AIN\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U105_BP214_AIN\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:6:I.Ch0Data",0,
+"S","LCP182_U105_BP214_AIN\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone 1 East - Filter Diff Pressure",0,
+"S","LCP182_U105_BP214_AIN\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U105_BP214_AIN\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U105-BP214",0,0
+"S","LCP182_U106_BP224_AIN\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,"in wc",0,
+"S","LCP182_U106_BP224_AIN\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U106_BP224_AIN\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:6:I.Ch1Data",0,
+"S","LCP182_U106_BP224_AIN\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone 2 West - Filter Diff Pressure",0,
+"S","LCP182_U106_BP224_AIN\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U106_BP224_AIN\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U106-BP224",0,0
+"S","LCP182_U107_BP234_AIN\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,"in wc",0,
+"S","LCP182_U107_BP234_AIN\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP182_U107_BP234_AIN\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP182_IO:6:I.Ch2Data",0,
+"S","LCP182_U107_BP234_AIN\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"DW2 Cyclone 3 - Filter Diff Pressure",0,
+"S","LCP182_U107_BP234_AIN\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","LCP182_U107_BP234_AIN\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP182=U107-BP234",0,0
+"S","LCP181_U172_BT101_AIN\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,"°C",0,
+"S","LCP181_U172_BT101_AIN\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP181_U172_BT101_AIN\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:5:I.Ch1Data",0,
+"S","LCP181_U172_BT101_AIN\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Latex Transfer Pump - Temperature",0,
+"S","LCP181_U172_BT101_AIN\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Latex Main Storage Area",0,
+"S","LCP181_U172_BT101_AIN\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP181=U172-BT101",0,0
+"S","LCP181_U171_BE01_AIN\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,"%",0,
+"S","LCP181_U171_BE01_AIN\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP181_U171_BE01_AIN\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:4:I.Ch2Data",0,
+"S","LCP181_U171_BE01_AIN\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Latex Storage Tank  - Level Transmitter",0,
+"S","LCP181_U171_BE01_AIN\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Latex Main Storage Area",0,
+"S","LCP181_U171_BE01_AIN\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP181=U171-BE01",0,0
+"S","LCP181_U180_BE02_AIN\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,"%",0,
+"S","LCP181_U180_BE02_AIN\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP181_U180_BE02_AIN\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:4:I.Ch0Data",0,
+"S","LCP181_U180_BE02_AIN\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Sump  - Level Transmitter",0,
+"S","LCP181_U180_BE02_AIN\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Dryer Area - Process Effluent",0,
+"S","LCP181_U180_BE02_AIN\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP181=U180-BE02",0,0
+"S","LCP181_U180_BF03_AIN\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,"l/h",0,
+"S","LCP181_U180_BF03_AIN\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP181_U180_BF03_AIN\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:4:I.Ch1Data",0,
+"S","LCP181_U180_BF03_AIN\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Sump Pump Water - Flow Transmitter",0,
+"S","LCP181_U180_BF03_AIN\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Dryer Area - Process Effluent",0,
+"S","LCP181_U180_BF03_AIN\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP181=U180-BF03",0,0
+"S","LCP181_U161_BP21_AIN\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,"psi",0,
+"S","LCP181_U161_BP21_AIN\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP181_U161_BP21_AIN\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:4:I.Ch3Data",0,
+"S","LCP181_U161_BP21_AIN\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"City Water Booster Pump - Pressure Transmitter",0,
+"S","LCP181_U161_BP21_AIN\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - City Water - Fan Area",0,
+"S","LCP181_U161_BP21_AIN\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP181=U161-BP21",0,0
+"S","LCP181_U100_BP31_AIN\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,"psi",0,
+"S","LCP181_U100_BP31_AIN\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP181_U100_BP31_AIN\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:5:I.Ch0Data",0,
+"S","LCP181_U100_BP31_AIN\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Atlas Main Air Supply - Pressure Transmitter",0,
+"S","LCP181_U100_BP31_AIN\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Air - by Compressor",0,
+"S","LCP181_U100_BP31_AIN\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP181=U100-BP31",0,0

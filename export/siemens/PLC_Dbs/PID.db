@@ -1,0 +1,9 @@
+DATA_BLOCK "dbPlcHmiPID"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ STRUCT
+   PID : Array[6000..6008] of "UDT_CM_PID_N";
+ END_STRUCT;
+
+BEGIN
+END_DATA_BLOCK

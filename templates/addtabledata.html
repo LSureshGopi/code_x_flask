@@ -1,0 +1,268 @@
+{% extends "configuration.html" %}
+
+{% block config_addtabledata %}
+<div style="display: flex; justify-content: right; margin-top: 1rem;">
+    <select class="table-select" id="function-select">
+        {% for func in function_list %}
+        <option value="{{ func['Id'] }}">{{ func['FunctionName'] }}</option>
+        {% endfor %}
+    </select>
+    <button id="add-button" class="table-button" style="margin-left: 0.5rem; margin-right: 0.5rem" {% if not user_logged_in %} disabled title="Login to add"{% endif %}>Insert</button>
+</div>
+<div class="inventory-table-wrapper" style="margin-top: 1rem;">
+    {{ table2 | safe }}
+</div>
+
+<script>
+    const userLoggedIn = {{ user_logged_in | tojson | safe }};
+</script>
+
+<script>
+function addEditIcon(row, cell) {
+    cell.innerHTML = `<i class='bx bx-edit' style='cursor:pointer; font-size:1.2rem;'></i>`;
+    const editIcon = cell.querySelector('i');
+
+    if (!userLoggedIn) {
+        editIcon.style.opacity = '0.5';
+        editIcon.style.cursor = 'not-allowed';
+        editIcon.title = 'Login required to edit';
+        return;
+    }
+
+    editIcon.addEventListener('click', () => {
+        enterEditMode(row);
+    });
+}
+
+function enterEditMode(row) {
+    const idCell = row.children[0];
+    const objectCell = row.children[1];
+    const defValueCell = row.children[2];
+    const worksheetNameCell = row.children[3];
+    const actionCell = row.children[4];
+
+    const origObject = objectCell.textContent.trim();
+    const origDefValue = defValueCell.textContent.trim();
+    const origWorksheetName = worksheetNameCell.textContent.trim();
+
+    objectCell.innerHTML = `<input type="text" value="${origObject}" class="edit-input">`;
+    defValueCell.innerHTML = `<input type="text" value="${origDefValue}" class="edit-input">`;
+    worksheetNameCell.innerHTML = `<input type="text" value="${origWorksheetName}" class="edit-input">`;
+
+    actionCell.innerHTML = `
+        <i class='bx bx-check save-icon' style='cursor:pointer; font-size:1.2rem; margin-right: 0.2rem; color:green'></i>
+        <i class='bx bx-x cancel-icon' style='cursor:pointer; font-size:1.2rem; margin-right: 0.2rem; color:orange'></i>
+        <i class='bx bx-trash delete-icon' style='cursor:pointer; font-size:1.2rem; color:red'></i>
+    `;
+
+    const saveIcon = actionCell.querySelector('.save-icon');
+    const cancelIcon = actionCell.querySelector('.cancel-icon');
+    const deleteIcon = actionCell.querySelector('.delete-icon');
+
+    if (!userLoggedIn) {
+        [saveIcon, cancelIcon, deleteIcon].forEach(icon => {
+            icon.style.opacity = '0.5';
+            icon.style.cursor = 'not-allowed';
+            icon.title = 'Login required';
+        });
+        return;
+    }
+
+    saveIcon.addEventListener('click', () => {
+        const newObject = objectCell.querySelector('input').value.trim();
+        const newDefValue = defValueCell.querySelector('input').value.trim();
+        const newWorksheetName = worksheetNameCell.querySelector('input').value.trim();
+        const rowId = idCell.textContent.trim();
+
+        fetch('/update_function_adddata_row', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                id: rowId,
+                function_id: document.getElementById("function-select").value,
+                function_object: newObject,
+                function_default_value: newDefValue,
+                function_worksheet_name: newWorksheetName
+            })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                objectCell.textContent = newObject;
+                defValueCell.textContent = newDefValue;
+                worksheetNameCell.textContent = newWorksheetName;
+                addEditIcon(row, actionCell);
+            } else {
+                alert('Update failed: ' + data.error);
+            }
+        })
+        .catch(err => {
+            console.error('Error:', err);
+            alert('Failed to update');
+        });
+    });
+
+    cancelIcon.addEventListener('click', () => {
+        objectCell.textContent = origObject;
+        defValueCell.textContent = origDefValue;
+        worksheetNameCell.textContent = origWorksheetName;
+        addEditIcon(row, actionCell);
+    });
+
+    deleteIcon.addEventListener('click', () => {
+        const rowId = idCell.textContent.trim();
+
+        if (confirm('Are you sure you want to delete this row?')) {
+            fetch('/delete_function_adddata_row', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id: rowId })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    row.remove();
+                } else {
+                    alert('Delete failed: ' + data.error);
+                }
+            })
+            .catch(err => {
+                console.error('Error:', err);
+                alert('Failed to delete');
+            });
+        }
+    });
+}
+
+function addActionColumn() {
+    const table = document.querySelector('.inventory-table-wrapper table');
+    if (!table) return;
+
+    const headerRow = table.querySelector('thead tr');
+    const actionHeader = document.createElement('th');
+    actionHeader.textContent = 'Action';
+    headerRow.appendChild(actionHeader);
+
+    table.querySelectorAll('tbody tr').forEach(row => {
+        const actionCell = document.createElement('td');
+        row.appendChild(actionCell);
+        addEditIcon(row, actionCell);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const select = document.getElementById("function-select");
+    const addButton = document.getElementById("add-button");
+    const tableWrapper = document.querySelector(".inventory-table-wrapper");
+
+    function toggleInsertButton() {
+        const selectedValue = select.value;
+        addButton.disabled = !userLoggedIn;
+        addButton.title = userLoggedIn ? "" : "Login to add";
+    }
+
+    // Initial button state
+    toggleInsertButton();
+
+    // Dropdown change
+    function fetchFunctionData(functionId) { 
+        fetch(`/configuration/add/${functionId}`) 
+        .then(res => res.json()) 
+        .then(data => { 
+            tableWrapper.innerHTML = data.html; addActionColumn(); 
+        }); 
+    } 
+    
+    // Load first function's data on page load 
+    if (select.options.length > 0) { 
+        const firstValue = select.options[0].value; select.value = firstValue; 
+        fetchFunctionData(firstValue); 
+    } 
+    select.addEventListener("change", () => { 
+        fetchFunctionData(select.value); 
+    });
+
+    // Add action column on page load
+    addActionColumn();
+
+    // Insert row logic
+    addButton.addEventListener("click", () => {
+        const table = document.querySelector(".inventory-table-wrapper table");
+        if (!table || addButton.disabled) return;
+        if (table.querySelector(".new-row")) return;
+
+        const tbody = table.querySelector("tbody");
+        const newRow = document.createElement("tr");
+        newRow.classList.add("new-row");
+
+        const headers = table.querySelectorAll("thead th");
+        const cellCount = headers.length;
+
+        for (let i = 0; i < cellCount; i++) {
+            const headerText = headers[i].textContent.trim();
+            const td = document.createElement("td");
+
+            if (["Objects", "DefaultValues", "WorksheetColumnName"].includes(headerText)) {
+                td.innerHTML = `<input type="text" class="edit-input" autocomplete="off" placeholder="Enter ${headerText}" />`;
+            } else if (headerText === "Action") {
+                td.innerHTML = `
+                    <i class='bx bx-check save-new' style='cursor:pointer; font-size:1.5rem; margin-right: 0.5rem; color:green'></i>
+                    <i class='bx bx-x cancel-new' style='cursor:pointer; font-size:1.5rem; color:red'></i>
+                `;
+            } else {
+                td.textContent = "";
+            }
+            newRow.appendChild(td);
+        }
+
+        tbody.appendChild(newRow);
+
+        const inputs = newRow.querySelectorAll("input");
+        if (inputs.length > 0) {
+            inputs[0].focus();
+        }
+
+        const saveBtn = newRow.querySelector(".save-new");
+        const cancelBtn = newRow.querySelector(".cancel-new");
+
+        saveBtn.addEventListener("click", () => {
+            const values = Array.from(inputs).map(input => input.value.trim());
+            if (values.some(v => v === "")) {
+                alert("Please fill all fields.");
+                return;
+            }
+
+            fetch("/add_function_adddata_row", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    function_id: select.value,
+                    objects_name: values[0],
+                    default_value: values[1],
+                    worksheet_name: values[2],
+                }),
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    fetch(`/configuration/add/${select.value}`)
+                    .then(res => res.json())
+                    .then(data => {
+                        tableWrapper.innerHTML = data.html;
+                        addActionColumn();
+                    });
+                } else {
+                    alert("Failed to add new function_data: " + data.error);
+                }
+            });
+        });
+
+        cancelBtn.addEventListener("click", () => {
+            newRow.remove();
+        });
+    });
+});
+</script>
+{% endblock %}

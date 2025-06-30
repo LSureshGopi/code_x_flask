@@ -1,0 +1,27 @@
+;Tag Type, Tag Name, Tag Description, Read Only, Data Source, Security Code, Alarmed, Native Type, Value Type, Min Analog, Max Analog, Initial Analog, Scale, Offset, DeadBand, Units, Off Label Digital, On Label Digital, Initial Digital, Length String, Initial String, Retentive, Address, System Source Name, System Source Index, RIO Address, Element Size Block, Number Elements Block, Initial Block
+;###002 - THIS LINE CONTAINS VERSION INFORMATION. DO NOT REMOVE!!!
+
+;Folders Section (Must define folders before tags)
+"F","MCC18_U110_MA5GL_FRQ",,"F"
+"F","MCC18_U111_MA5GR_FRQ",,"F"
+"F","MCC18_U102_MA4JL_FRQ",,"F"
+
+;Tag Section
+"S","MCC18_U110_MA5GL_FRQ\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,"Hz",0,
+"S","MCC18_U110_MA5GL_FRQ\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U110_MA5GL_FRQ\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"MCC18 - Eth. IP: 10.226.223.62",0,
+"S","MCC18_U110_MA5GL_FRQ\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Acelli Dust Fan - Motor",0,
+"S","MCC18_U110_MA5GL_FRQ\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Acelli Area",0,
+"S","MCC18_U110_MA5GL_FRQ\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U110-MA5GL",0,0
+"S","MCC18_U111_MA5GR_FRQ\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,"Hz",0,
+"S","MCC18_U111_MA5GR_FRQ\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U111_MA5GR_FRQ\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"MCC18 - Eth. IP: 10.226.223.61",0,
+"S","MCC18_U111_MA5GR_FRQ\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Acelli Trim Fan - Motor",0,
+"S","MCC18_U111_MA5GR_FRQ\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Acelli Area",0,
+"S","MCC18_U111_MA5GR_FRQ\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U111-MA5GR",0,0
+"S","MCC18_U102_MA4JL_FRQ\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,"Hz",0,
+"S","MCC18_U102_MA4JL_FRQ\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U102_MA4JL_FRQ\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"MCC18 - Eth. IP: 10.226.223.60",0,
+"S","MCC18_U102_MA4JL_FRQ\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Dust Fan - Motor",0,
+"S","MCC18_U102_MA4JL_FRQ\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U102_MA4JL_FRQ\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U102-MA4JL",0,0

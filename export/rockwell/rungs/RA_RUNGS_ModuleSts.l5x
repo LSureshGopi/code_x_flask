@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="33.00" TargetType="Rung" TargetCount="14" CurrentLanguage="en-US" ContainsContext="true" ExportDate="Fri Aug 20 11:38:35 2021" ExportOptions="References NoRawData L5KData DecoratedData Context RoutineLabels AliasExtras IOTags NoStringData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="PLC1">
+<Programs Use="Context">
+<Program Use="Context" Name="IO">
+<Tags Use="Context"/>
+<Routines Use="Context">
+<Routine Use="Context" Name="R012_ModuleStatus">
+<RLLContent Use="Context">
+<Rung Use="Target" Number="1" Type="N">
+<Comment><![CDATA[MCC - Power Supply Servo
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.20]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,11)GSV(Module,X110,EntryStatus,MCC_X110_EntrySts_Node)F_ModuleStatus(MCC_X110_ModuleSts_AOI,MCC_X110_EntrySts_Node,MCC_X110_MA3010_ALM_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="2" Type="N">
+<Comment><![CDATA[MCC - Former Wire Run - Compactor
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.21]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,12)GSV(Module,X201,EntryStatus,MCC_X201_EntrySts_Node)F_ModuleStatus(MCC_X201_ModuleSts_AOI,MCC_X201_EntrySts_Node,MCC_X201_MA6110_ALM_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="3" Type="N">
+<Comment><![CDATA[MCC - Pulp Infeed
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.22]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,13)GSV(Module,X203,EntryStatus,MCC_X203_EntrySts_Node)F_ModuleStatus(MCC_X203_ModuleSts_AOI,MCC_X203_EntrySts_Node,MCC_X203_MA6101_ALM_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="4" Type="N">
+<Comment><![CDATA[MCC - Point IO
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.11]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,14)GSV(Module,IO,EntryStatus,MCC_IO_EntrySts_Node)F_ModuleStatus(MCC_IO_ModuleSts_AOI,MCC_IO_EntrySts_Node,MCC_IO_KF1000_ALM_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="5" Type="N">
+<Comment><![CDATA[MCC - Drum 1A
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.23]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,15)GSV(Module,F111,EntryStatus,MCC_F111_EntrySts_Node)F_ModuleStatus(MCC_F111_ModuleSts_AOI,MCC_F111_EntrySts_Node,MCC_F111_MA3210_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="6" Type="N">
+<Comment><![CDATA[MCC - Drum 1B
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.24]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,16)GSV(Module,F112,EntryStatus,MCC_F112_EntrySts_Node)F_ModuleStatus(MCC_F112_ModuleSts_AOI,MCC_F112_EntrySts_Node,MCC_F112_MA3211_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="7" Type="N">
+<Comment><![CDATA[MCC - Needle Roll 1A
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.25]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,17)GSV(Module,F121,EntryStatus,MCC_F121_EntrySts_Node)F_ModuleStatus(MCC_F121_ModuleSts_AOI,MCC_F121_EntrySts_Node,MCC_F121_MA3212_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="8" Type="N">
+<Comment><![CDATA[MCC - Needle Roll 1B
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.26]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,18)GSV(Module,F122,EntryStatus,MCC_F122_EntrySts_Node)F_ModuleStatus(MCC_F122_ModuleSts_AOI,MCC_F122_EntrySts_Node,MCC_F122_MA3213_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="9" Type="N">
+<Comment><![CDATA[MCC - Main Suction Fan 
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.27]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,19)GSV(Module,D181,EntryStatus,MCC_D181_EntrySts_Node)F_ModuleStatus(MCC_D181_ModuleSts_AOI,MCC_D181_EntrySts_Node,MCC_D181_MA3111_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="10" Type="N">
+<Comment><![CDATA[MCC - Hammer Mill
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.28]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,20)GSV(Module,H121,EntryStatus,MCC_H121_EntrySts_Node)F_ModuleStatus(MCC_H121_ModuleSts_AOI,MCC_H121_EntrySts_Node,MCC_H121_MA3227_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="11" Type="N">
+<Comment><![CDATA[MCC - Fiber Transport
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.29]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,21)GSV(Module,H131,EntryStatus,MCC_H131_EntrySts_Node)F_ModuleStatus(MCC_H131_ModuleSts_AOI,MCC_H131_EntrySts_Node,MCC_H131_MA3228_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="12" Type="N">
+<Comment><![CDATA[OP - HMI
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.12]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,22)GSV(Module,PH1001,EntryStatus,OP_PH1001_EntrySts_Node)F_ModuleStatus(OP_PH1001_ModuleSts_AOI,OP_PH1001_EntrySts_Node,OP_PH1001_CB.OP-01_nan_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="13" Type="N">
+<Comment><![CDATA[MCC - Gateway
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.13]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,23)GSV(Module,ETH01,EntryStatus,MCC_ETH01_EntrySts_Node)F_ModuleStatus(MCC_ETH01_ModuleSts_AOI,MCC_ETH01_EntrySts_Node,MCC_ETH01_KF4001_nan_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="14" Type="N">
+<Comment><![CDATA[MCC - PLC
+-------------------------------------o------------------------------------
+Get Network Status of - 192.168.1.10]]></Comment>
+<Text><![CDATA[EQU(Eth2223_SeqStep,24)GSV(Module,PLC,EntryStatus,MCC_PLC_EntrySts_Node)F_ModuleStatus(MCC_PLC_ModuleSts_AOI,MCC_PLC_EntrySts_Node,MCC_PLC_KF1001_nan_UDT.S.Comm_Status);]]></Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>

@@ -1,0 +1,1383 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AlarmCollection>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_0" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Alarm (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_1" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Warning (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_2" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Manual Mode Warning (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_3" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Ignore Active Warning (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_4" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.4" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Safety Fault (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_5" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.5" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Amp Warning (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_6" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.6" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Torque Warning (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_7" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.7" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Amp Alarm (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_8" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.8" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Torque Alarm (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_9" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.9" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Thermal Protection (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_10" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.10" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Disconnect Turned Off Alarm (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_11" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.11" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - PTC Thermal Protection Alarm (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_12" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.12" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Run Feedback Alarm (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_13" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.13" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Rotation Feedback Alarm (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_14" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.14" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Drive Fault Alarm (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_15" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.15" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Communication Fault (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_16" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.16" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Any SW Instruction Within AOI Has Faulted (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_17" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.17" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Any Overload/Voltage Fault (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_18" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.18" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - PTC Drive Thermal Protection Alarm (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_19" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.19" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Position Error Window Exceeded (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_20" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.20" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Feedback Fault, Including Encoder Feedback (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_21" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.21" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Drive Internal Heat or Overload fault (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F311_MA3111_ALM_DINT_22" ConditionType="TRIP" Input="MCC_F311_MA3111_ALM_DINT.22" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Motor - Drive - Brake Resistor Too Hot (+MCC=F311-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_0" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Alarm (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_1" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Warning (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_2" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Manual Mode Warning (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_3" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Ignore Active Warning (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_4" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.4" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Safety Fault (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_5" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.5" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Amp Warning (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_6" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.6" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Torque Warning (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_7" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.7" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Amp Alarm (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_8" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.8" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Torque Alarm (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_9" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.9" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Thermal Protection (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_10" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.10" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Disconnect Turned Off Alarm (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_11" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.11" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - PTC Thermal Protection Alarm (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_12" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.12" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Run Feedback Alarm (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_13" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.13" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Rotation Feedback Alarm (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_14" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.14" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Drive Fault Alarm (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_15" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.15" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Communication Fault (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_16" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.16" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Any SW Instruction Within AOI Has Faulted (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_17" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.17" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Any Overload/Voltage Fault (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_18" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.18" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - PTC Drive Thermal Protection Alarm (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_19" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.19" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Position Error Window Exceeded (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_20" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.20" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Feedback Fault, Including Encoder Feedback (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_21" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.21" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Drive Internal Heat or Overload fault (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_C311_MA3121_ALM_DINT_22" ConditionType="TRIP" Input="MCC_C311_MA3121_ALM_DINT.22" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor - Motor - Drive - Brake Resistor Too Hot (+MCC=C311-MA3121)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_0" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Alarm (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_1" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Warning (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_2" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Manual Mode Warning (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_3" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Ignore Active Warning (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_4" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.4" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Safety Fault (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_5" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.5" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Amp Warning (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_6" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.6" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Torque Warning (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_7" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.7" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Amp Alarm (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_8" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.8" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Torque Alarm (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_9" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.9" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Thermal Protection (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_10" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.10" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Disconnect Turned Off Alarm (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_11" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.11" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - PTC Thermal Protection Alarm (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_12" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.12" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Run Feedback Alarm (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_13" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.13" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Rotation Feedback Alarm (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_14" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.14" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Drive Fault Alarm (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_15" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.15" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Communication Fault (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_16" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.16" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Any SW Instruction Within AOI Has Faulted (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_17" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.17" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Any Overload/Voltage Fault (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_18" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.18" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - PTC Drive Thermal Protection Alarm (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_19" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.19" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Position Error Window Exceeded (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_20" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.20" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Feedback Fault, Including Encoder Feedback (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_21" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.21" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Drive Internal Heat or Overload fault (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H111_MA3101_ALM_DINT_22" ConditionType="TRIP" Input="MCC_H111_MA3101_ALM_DINT.22" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Motor - Drive - Brake Resistor Too Hot (+MCC=H111-MA3101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_0" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Alarm (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_1" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Warning (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_2" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Manual Mode Warning (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_3" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Ignore Active Warning (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_4" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.4" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Safety Fault (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_5" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.5" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Amp Warning (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_6" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.6" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Torque Warning (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_7" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.7" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Amp Alarm (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_8" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.8" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Torque Alarm (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_9" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.9" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Thermal Protection (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_10" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.10" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Disconnect Turned Off Alarm (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_11" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.11" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - PTC Thermal Protection Alarm (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_12" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.12" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Run Feedback Alarm (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_13" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.13" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Rotation Feedback Alarm (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_14" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.14" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Drive Fault Alarm (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_15" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.15" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Communication Fault (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_16" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.16" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Any SW Instruction Within AOI Has Faulted (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_17" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.17" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Any Overload/Voltage Fault (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_18" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.18" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - PTC Drive Thermal Protection Alarm (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_19" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.19" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Position Error Window Exceeded (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_20" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.20" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Feedback Fault, Including Encoder Feedback (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_21" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.21" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Drive Internal Heat or Overload fault (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F111_MA3210_ALM_DINT_22" ConditionType="TRIP" Input="MCC_F111_MA3210_ALM_DINT.22" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1A - Motor - Drive - Brake Resistor Too Hot (+MCC=F111-MA3210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_0" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Alarm (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_1" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Warning (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_2" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Manual Mode Warning (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_3" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Ignore Active Warning (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_4" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.4" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Safety Fault (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_5" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.5" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Amp Warning (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_6" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.6" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Torque Warning (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_7" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.7" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Amp Alarm (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_8" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.8" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Torque Alarm (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_9" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.9" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Thermal Protection (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_10" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.10" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Disconnect Turned Off Alarm (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_11" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.11" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - PTC Thermal Protection Alarm (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_12" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.12" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Run Feedback Alarm (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_13" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.13" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Rotation Feedback Alarm (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_14" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.14" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Drive Fault Alarm (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_15" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.15" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Communication Fault (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_16" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.16" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Any SW Instruction Within AOI Has Faulted (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_17" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.17" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Any Overload/Voltage Fault (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_18" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.18" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - PTC Drive Thermal Protection Alarm (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_19" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.19" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Position Error Window Exceeded (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_20" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.20" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Feedback Fault, Including Encoder Feedback (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_21" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.21" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Drive Internal Heat or Overload fault (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F112_MA3211_ALM_DINT_22" ConditionType="TRIP" Input="MCC_F112_MA3211_ALM_DINT.22" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Drum 1B - Motor - Drive - Brake Resistor Too Hot (+MCC=F112-MA3211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_0" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Alarm (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_1" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Warning (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_2" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Manual Mode Warning (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_3" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Ignore Active Warning (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_4" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.4" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Safety Fault (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_5" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.5" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Amp Warning (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_6" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.6" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Torque Warning (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_7" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.7" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Amp Alarm (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_8" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.8" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Torque Alarm (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_9" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.9" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Thermal Protection (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_10" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.10" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Disconnect Turned Off Alarm (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_11" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.11" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - PTC Thermal Protection Alarm (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_12" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.12" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Run Feedback Alarm (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_13" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.13" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Rotation Feedback Alarm (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_14" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.14" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Drive Fault Alarm (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_15" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.15" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Communication Fault (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_16" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.16" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Any SW Instruction Within AOI Has Faulted (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_17" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.17" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Any Overload/Voltage Fault (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_18" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.18" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - PTC Drive Thermal Protection Alarm (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_19" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.19" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Position Error Window Exceeded (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_20" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.20" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Feedback Fault, Including Encoder Feedback (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_21" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.21" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Drive Internal Heat or Overload fault (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F121_MA3212_ALM_DINT_22" ConditionType="TRIP" Input="MCC_F121_MA3212_ALM_DINT.22" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1A - Motor - Drive - Brake Resistor Too Hot (+MCC=F121-MA3212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_0" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Alarm (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_1" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Warning (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_2" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Manual Mode Warning (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_3" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Ignore Active Warning (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_4" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.4" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Safety Fault (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_5" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.5" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Amp Warning (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_6" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.6" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Torque Warning (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_7" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.7" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Amp Alarm (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_8" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.8" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Torque Alarm (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_9" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.9" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Thermal Protection (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_10" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.10" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Disconnect Turned Off Alarm (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_11" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.11" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - PTC Thermal Protection Alarm (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_12" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.12" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Run Feedback Alarm (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_13" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.13" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Rotation Feedback Alarm (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_14" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.14" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Drive Fault Alarm (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_15" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.15" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Communication Fault (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_16" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.16" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Any SW Instruction Within AOI Has Faulted (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_17" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.17" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Any Overload/Voltage Fault (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_18" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.18" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - PTC Drive Thermal Protection Alarm (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_19" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.19" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Position Error Window Exceeded (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_20" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.20" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Feedback Fault, Including Encoder Feedback (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_21" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.21" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Drive Internal Heat or Overload fault (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_F122_MA3213_ALM_DINT_22" ConditionType="TRIP" Input="MCC_F122_MA3213_ALM_DINT.22" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Needle Roll 1B - Motor - Drive - Brake Resistor Too Hot (+MCC=F122-MA3213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_0" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Alarm (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_1" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Warning (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_2" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Manual Mode Warning (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_3" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Ignore Active Warning (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_4" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.4" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Safety Fault (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_5" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.5" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Amp Warning (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_6" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.6" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Torque Warning (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_7" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.7" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Amp Alarm (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_8" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.8" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Torque Alarm (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_9" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.9" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Thermal Protection (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_10" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.10" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Disconnect Turned Off Alarm (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_11" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.11" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - PTC Thermal Protection Alarm (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_12" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.12" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Run Feedback Alarm (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_13" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.13" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Rotation Feedback Alarm (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_14" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.14" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Drive Fault Alarm (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_15" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.15" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Communication Fault (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_16" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.16" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Any SW Instruction Within AOI Has Faulted (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_17" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.17" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Any Overload/Voltage Fault (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_18" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.18" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - PTC Drive Thermal Protection Alarm (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_19" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.19" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Position Error Window Exceeded (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_20" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.20" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Feedback Fault, Including Encoder Feedback (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_21" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.21" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Drive Internal Heat or Overload fault (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_D181_MA3111_ALM_DINT_22" ConditionType="TRIP" Input="MCC_D181_MA3111_ALM_DINT.22" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main Suction Fan  - Motor - Drive - Brake Resistor Too Hot (+MCC=D181-MA3111)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_0" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Alarm (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_1" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Warning (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_2" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Manual Mode Warning (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_3" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Ignore Active Warning (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_4" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.4" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Safety Fault (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_5" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.5" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Amp Warning (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_6" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.6" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Torque Warning (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_7" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.7" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Amp Alarm (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_8" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.8" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Torque Alarm (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_9" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.9" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Thermal Protection (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_10" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.10" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Disconnect Turned Off Alarm (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_11" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.11" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - PTC Thermal Protection Alarm (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_12" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.12" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Run Feedback Alarm (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_13" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.13" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Rotation Feedback Alarm (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_14" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.14" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Drive Fault Alarm (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_15" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.15" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Communication Fault (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_16" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.16" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Any SW Instruction Within AOI Has Faulted (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_17" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.17" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Any Overload/Voltage Fault (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_18" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.18" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - PTC Drive Thermal Protection Alarm (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_19" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.19" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Position Error Window Exceeded (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_20" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.20" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Feedback Fault, Including Encoder Feedback (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_21" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.21" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Drive Internal Heat or Overload fault (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H121_MA3227_ALM_DINT_22" ConditionType="TRIP" Input="MCC_H121_MA3227_ALM_DINT.22" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Motor - Drive - Brake Resistor Too Hot (+MCC=H121-MA3227)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_0" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Alarm (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_1" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Warning (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_2" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Manual Mode Warning (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_3" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Ignore Active Warning (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_4" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.4" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Safety Fault (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_5" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.5" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Amp Warning (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_6" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.6" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Torque Warning (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_7" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.7" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Amp Alarm (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_8" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.8" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Torque Alarm (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_9" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.9" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Thermal Protection (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_10" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.10" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Disconnect Turned Off Alarm (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_11" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.11" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - PTC Thermal Protection Alarm (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_12" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.12" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Run Feedback Alarm (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_13" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.13" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Rotation Feedback Alarm (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_14" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.14" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Drive Fault Alarm (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_15" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.15" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Communication Fault (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_16" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.16" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Any SW Instruction Within AOI Has Faulted (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_17" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.17" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Any Overload/Voltage Fault (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_18" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.18" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - PTC Drive Thermal Protection Alarm (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_19" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.19" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Position Error Window Exceeded (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_20" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.20" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Feedback Fault, Including Encoder Feedback (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_21" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.21" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Drive Internal Heat or Overload fault (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="FRQ_MCC_H131_MA3228_ALM_DINT_22" ConditionType="TRIP" Input="MCC_H131_MA3228_ALM_DINT.22" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Fiber Transport - Motor - Drive - Brake Resistor Too Hot (+MCC=H131-MA3228)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+</AlarmCollection>

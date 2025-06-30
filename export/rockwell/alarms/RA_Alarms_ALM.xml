@@ -1,0 +1,891 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AlarmCollection>
+  <Alarm Name="ALM_MCC_X110_TA3010_ALM_DINT_0" ConditionType="TRIP" Input="MCC_X110_TA3010_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply Servo - Kinetix 5700, Bus Supply - Alarm (+MCC=X110-TA3010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X110_TA3010_ALM_DINT_1" ConditionType="TRIP" Input="MCC_X110_TA3010_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply Servo - Kinetix 5700, Bus Supply - Warning (+MCC=X110-TA3010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X110_TA3010_ALM_DINT_2" ConditionType="TRIP" Input="MCC_X110_TA3010_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply Servo - Kinetix 5700, Bus Supply - Ignore Active Warning (+MCC=X110-TA3010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X110_TA3010_ALM_DINT_3" ConditionType="TRIP" Input="MCC_X110_TA3010_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply Servo - Kinetix 5700, Bus Supply - Info (+MCC=X110-TA3010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X110_FC3010_ALM_DINT_0" ConditionType="TRIP" Input="MCC_X110_FC3010_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply Servo - Thermal Fault - Alarm (+MCC=X110-FC3010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X110_FC3010_ALM_DINT_1" ConditionType="TRIP" Input="MCC_X110_FC3010_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply Servo - Thermal Fault - Warning (+MCC=X110-FC3010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X110_FC3010_ALM_DINT_2" ConditionType="TRIP" Input="MCC_X110_FC3010_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply Servo - Thermal Fault - Ignore Active Warning (+MCC=X110-FC3010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X110_FC3010_ALM_DINT_3" ConditionType="TRIP" Input="MCC_X110_FC3010_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply Servo - Thermal Fault - Info (+MCC=X110-FC3010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X201_TA6110_ALM_DINT_0" ConditionType="TRIP" Input="MCC_X201_TA6110_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Compactor - Kinetix 5700 Servo Drive - Alarm (+MCC=X201-TA6110)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X201_TA6110_ALM_DINT_1" ConditionType="TRIP" Input="MCC_X201_TA6110_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Compactor - Kinetix 5700 Servo Drive - Warning (+MCC=X201-TA6110)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X201_TA6110_ALM_DINT_2" ConditionType="TRIP" Input="MCC_X201_TA6110_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Compactor - Kinetix 5700 Servo Drive - Ignore Active Warning (+MCC=X201-TA6110)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X201_TA6110_ALM_DINT_3" ConditionType="TRIP" Input="MCC_X201_TA6110_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Former Wire Run - Compactor - Kinetix 5700 Servo Drive - Info (+MCC=X201-TA6110)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X203_TA6101_ALM_DINT_0" ConditionType="TRIP" Input="MCC_X203_TA6101_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Kinetix 5700 Servo Drive - Alarm (+MCC=X203-TA6101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X203_TA6101_ALM_DINT_1" ConditionType="TRIP" Input="MCC_X203_TA6101_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Kinetix 5700 Servo Drive - Warning (+MCC=X203-TA6101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X203_TA6101_ALM_DINT_2" ConditionType="TRIP" Input="MCC_X203_TA6101_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Kinetix 5700 Servo Drive - Ignore Active Warning (+MCC=X203-TA6101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_X203_TA6101_ALM_DINT_3" ConditionType="TRIP" Input="MCC_X203_TA6101_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed - Kinetix 5700 Servo Drive - Info (+MCC=X203-TA6101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_H121_KF6011_ALM_DINT_0" ConditionType="TRIP" Input="MCC_H121_KF6011_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill Rotating Monitor - Standstill - Alarm (+MCC=H121-KF6011)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_H121_KF6011_ALM_DINT_1" ConditionType="TRIP" Input="MCC_H121_KF6011_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill Rotating Monitor - Standstill - Warning (+MCC=H121-KF6011)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_H121_KF6011_ALM_DINT_2" ConditionType="TRIP" Input="MCC_H121_KF6011_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill Rotating Monitor - Standstill - Ignore Active Warning (+MCC=H121-KF6011)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_H121_KF6011_ALM_DINT_3" ConditionType="TRIP" Input="MCC_H121_KF6011_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill Rotating Monitor - Standstill - Info (+MCC=H121-KF6011)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_H121_RL4021_ALM_DINT_0" ConditionType="TRIP" Input="MCC_H121_RL4021_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Lid Opened or Closed too Slow - Alarm (+MCC=H121-RL4021)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_H121_RL4021_ALM_DINT_1" ConditionType="TRIP" Input="MCC_H121_RL4021_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Lid Opened or Closed too Slow - Warning (+MCC=H121-RL4021)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_H121_RL4021_ALM_DINT_2" ConditionType="TRIP" Input="MCC_H121_RL4021_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Lid Opened or Closed too Slow - Ignore Active Warning (+MCC=H121-RL4021)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_H121_RL4021_ALM_DINT_3" ConditionType="TRIP" Input="MCC_H121_RL4021_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Lid Opened or Closed too Slow - Info (+MCC=H121-RL4021)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_H121_RL4021_ALM_DINT_0" ConditionType="TRIP" Input="MCC_H121_RL4021_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Lid Switch Open - Alarm (+MCC=H121-RL4021)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_H121_RL4021_ALM_DINT_1" ConditionType="TRIP" Input="MCC_H121_RL4021_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Lid Switch Open - Warning (+MCC=H121-RL4021)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_H121_RL4021_ALM_DINT_2" ConditionType="TRIP" Input="MCC_H121_RL4021_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Lid Switch Open - Ignore Active Warning (+MCC=H121-RL4021)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_H121_RL4021_ALM_DINT_3" ConditionType="TRIP" Input="MCC_H121_RL4021_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill - Lid Switch Open - Info (+MCC=H121-RL4021)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_ES01_SF6103_ALM_DINT_0" ConditionType="TRIP" Input="MCC_ES01_SF6103_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Emergency Stop  - Hammer Mill - Alarm (+MCC=ES01-SF6103)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_ES01_SF6103_ALM_DINT_1" ConditionType="TRIP" Input="MCC_ES01_SF6103_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Emergency Stop  - Hammer Mill - Warning (+MCC=ES01-SF6103)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_ES01_SF6103_ALM_DINT_2" ConditionType="TRIP" Input="MCC_ES01_SF6103_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Emergency Stop  - Hammer Mill - Ignore Active Warning (+MCC=ES01-SF6103)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_ES01_SF6103_ALM_DINT_3" ConditionType="TRIP" Input="MCC_ES01_SF6103_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Emergency Stop  - Hammer Mill - Info (+MCC=ES01-SF6103)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_AQ01_BF9001_ALM_DINT_0" ConditionType="TRIP" Input="MCC_AQ01_BF9001_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main air - Pressure Feedback - Alarm (+MCC=AQ01-BF9001)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_AQ01_BF9001_ALM_DINT_1" ConditionType="TRIP" Input="MCC_AQ01_BF9001_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main air - Pressure Feedback - Warning (+MCC=AQ01-BF9001)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_AQ01_BF9001_ALM_DINT_2" ConditionType="TRIP" Input="MCC_AQ01_BF9001_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main air - Pressure Feedback - Ignore Active Warning (+MCC=AQ01-BF9001)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_AQ01_BF9001_ALM_DINT_3" ConditionType="TRIP" Input="MCC_AQ01_BF9001_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Main air - Pressure Feedback - Info (+MCC=AQ01-BF9001)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_ES01_SF6101_ALM_DINT_0" ConditionType="TRIP" Input="MCC_ES01_SF6101_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Emergency Stop  - Wire Operator Side - Alarm (+MCC=ES01-SF6101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_ES01_SF6101_ALM_DINT_1" ConditionType="TRIP" Input="MCC_ES01_SF6101_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Emergency Stop  - Wire Operator Side - Warning (+MCC=ES01-SF6101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_ES01_SF6101_ALM_DINT_2" ConditionType="TRIP" Input="MCC_ES01_SF6101_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Emergency Stop  - Wire Operator Side - Ignore Active Warning (+MCC=ES01-SF6101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_ES01_SF6101_ALM_DINT_3" ConditionType="TRIP" Input="MCC_ES01_SF6101_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Emergency Stop  - Wire Operator Side - Info (+MCC=ES01-SF6101)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_ES01_SF6102_ALM_DINT_0" ConditionType="TRIP" Input="MCC_ES01_SF6102_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Emergency Stop  - Wire Drive Side - Alarm (+MCC=ES01-SF6102)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_ES01_SF6102_ALM_DINT_1" ConditionType="TRIP" Input="MCC_ES01_SF6102_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Emergency Stop  - Wire Drive Side - Warning (+MCC=ES01-SF6102)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_ES01_SF6102_ALM_DINT_2" ConditionType="TRIP" Input="MCC_ES01_SF6102_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Emergency Stop  - Wire Drive Side - Ignore Active Warning (+MCC=ES01-SF6102)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_ES01_SF6102_ALM_DINT_3" ConditionType="TRIP" Input="MCC_ES01_SF6102_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Emergency Stop  - Wire Drive Side - Info (+MCC=ES01-SF6102)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_AC01_FC2010_ALM_DINT_0" ConditionType="TRIP" Input="MCC_AC01_FC2010_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>230VAC Power Supply - Circuit Breaker - Alarm (+MCC=AC01-FC2010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_AC01_FC2010_ALM_DINT_1" ConditionType="TRIP" Input="MCC_AC01_FC2010_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>230VAC Power Supply - Circuit Breaker - Warning (+MCC=AC01-FC2010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_AC01_FC2010_ALM_DINT_2" ConditionType="TRIP" Input="MCC_AC01_FC2010_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>230VAC Power Supply - Circuit Breaker - Ignore Active Warning (+MCC=AC01-FC2010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_AC01_FC2010_ALM_DINT_3" ConditionType="TRIP" Input="MCC_AC01_FC2010_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>230VAC Power Supply - Circuit Breaker - Info (+MCC=AC01-FC2010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC01_FC1010_ALM_DINT_0" ConditionType="TRIP" Input="MCC_DC01_FC1010_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>24VDC Power Supply - Power Feed Module - Alarm (+MCC=DC01-FC1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC01_FC1010_ALM_DINT_1" ConditionType="TRIP" Input="MCC_DC01_FC1010_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>24VDC Power Supply - Power Feed Module - Warning (+MCC=DC01-FC1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC01_FC1010_ALM_DINT_2" ConditionType="TRIP" Input="MCC_DC01_FC1010_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>24VDC Power Supply - Power Feed Module - Ignore Active Warning (+MCC=DC01-FC1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC01_FC1010_ALM_DINT_3" ConditionType="TRIP" Input="MCC_DC01_FC1010_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>24VDC Power Supply - Power Feed Module - Info (+MCC=DC01-FC1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC02_FC1002_ALM_DINT_0" ConditionType="TRIP" Input="MCC_DC02_FC1002_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>24VDC Power Supply Servodrive - Circuit Breaker - Alarm (+MCC=DC02-FC1002)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC02_FC1002_ALM_DINT_1" ConditionType="TRIP" Input="MCC_DC02_FC1002_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>24VDC Power Supply Servodrive - Circuit Breaker - Warning (+MCC=DC02-FC1002)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC02_FC1002_ALM_DINT_2" ConditionType="TRIP" Input="MCC_DC02_FC1002_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>24VDC Power Supply Servodrive - Circuit Breaker - Ignore Active Warning (+MCC=DC02-FC1002)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC02_FC1002_ALM_DINT_3" ConditionType="TRIP" Input="MCC_DC02_FC1002_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>24VDC Power Supply Servodrive - Circuit Breaker - Info (+MCC=DC02-FC1002)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC02_1LDC_ALM_DINT_0" ConditionType="TRIP" Input="MCC_DC02_1LDC_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply 24VDC Servodrive - Circuit Breaker - Alarm (+MCC=DC02-1LDC)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC02_1LDC_ALM_DINT_1" ConditionType="TRIP" Input="MCC_DC02_1LDC_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply 24VDC Servodrive - Circuit Breaker - Warning (+MCC=DC02-1LDC)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC02_1LDC_ALM_DINT_2" ConditionType="TRIP" Input="MCC_DC02_1LDC_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply 24VDC Servodrive - Circuit Breaker - Ignore Active Warning (+MCC=DC02-1LDC)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC02_1LDC_ALM_DINT_3" ConditionType="TRIP" Input="MCC_DC02_1LDC_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply 24VDC Servodrive - Circuit Breaker - Info (+MCC=DC02-1LDC)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC02_2LDC_ALM_DINT_0" ConditionType="TRIP" Input="MCC_DC02_2LDC_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply 24VDC Servodrive - Circuit Breaker, Spare - Alarm (+MCC=DC02-2LDC)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC02_2LDC_ALM_DINT_1" ConditionType="TRIP" Input="MCC_DC02_2LDC_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply 24VDC Servodrive - Circuit Breaker, Spare - Warning (+MCC=DC02-2LDC)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC02_2LDC_ALM_DINT_2" ConditionType="TRIP" Input="MCC_DC02_2LDC_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply 24VDC Servodrive - Circuit Breaker, Spare - Ignore Active Warning (+MCC=DC02-2LDC)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_DC02_2LDC_ALM_DINT_3" ConditionType="TRIP" Input="MCC_DC02_2LDC_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Power Supply 24VDC Servodrive - Circuit Breaker, Spare - Info (+MCC=DC02-2LDC)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF1000_ALM_DINT_0" ConditionType="TRIP" Input="MCC_IO_KF1000_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Point IO - EtherNet/IP Adapter - Alarm (+MCC=IO-KF1000)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF1000_ALM_DINT_1" ConditionType="TRIP" Input="MCC_IO_KF1000_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Point IO - EtherNet/IP Adapter - Warning (+MCC=IO-KF1000)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF1000_ALM_DINT_2" ConditionType="TRIP" Input="MCC_IO_KF1000_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Point IO - EtherNet/IP Adapter - Ignore Active Warning (+MCC=IO-KF1000)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF1000_ALM_DINT_3" ConditionType="TRIP" Input="MCC_IO_KF1000_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Point IO - EtherNet/IP Adapter - Info (+MCC=IO-KF1000)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF3007_ALM_DINT_0" ConditionType="TRIP" Input="MCC_IO_KF3007_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Input  - SDI - Alarm (+MCC=IO-KF3007)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF3007_ALM_DINT_1" ConditionType="TRIP" Input="MCC_IO_KF3007_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Input  - SDI - Warning (+MCC=IO-KF3007)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF3007_ALM_DINT_2" ConditionType="TRIP" Input="MCC_IO_KF3007_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Input  - SDI - Ignore Active Warning (+MCC=IO-KF3007)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF3007_ALM_DINT_3" ConditionType="TRIP" Input="MCC_IO_KF3007_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Input  - SDI - Info (+MCC=IO-KF3007)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF3008_ALM_DINT_0" ConditionType="TRIP" Input="MCC_IO_KF3008_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Input  - SDI - Alarm (+MCC=IO-KF3008)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF3008_ALM_DINT_1" ConditionType="TRIP" Input="MCC_IO_KF3008_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Input  - SDI - Warning (+MCC=IO-KF3008)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF3008_ALM_DINT_2" ConditionType="TRIP" Input="MCC_IO_KF3008_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Input  - SDI - Ignore Active Warning (+MCC=IO-KF3008)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF3008_ALM_DINT_3" ConditionType="TRIP" Input="MCC_IO_KF3008_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Input  - SDI - Info (+MCC=IO-KF3008)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF3009_ALM_DINT_0" ConditionType="TRIP" Input="MCC_IO_KF3009_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Output - SDO - Alarm (+MCC=IO-KF3009)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF3009_ALM_DINT_1" ConditionType="TRIP" Input="MCC_IO_KF3009_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Output - SDO - Warning (+MCC=IO-KF3009)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF3009_ALM_DINT_2" ConditionType="TRIP" Input="MCC_IO_KF3009_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Output - SDO - Ignore Active Warning (+MCC=IO-KF3009)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_MCC_IO_KF3009_ALM_DINT_3" ConditionType="TRIP" Input="MCC_IO_KF3009_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Output - SDO - Info (+MCC=IO-KF3009)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID001_ALM_DINT_0" ConditionType="TRIP" Input="Mes_P00_ID001_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Motion Group Not Synchronized - Alarm - Alarm (+Mes=P00-ID001)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID001_ALM_DINT_1" ConditionType="TRIP" Input="Mes_P00_ID001_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Motion Group Not Synchronized - Alarm - Warning (+Mes=P00-ID001)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID001_ALM_DINT_2" ConditionType="TRIP" Input="Mes_P00_ID001_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Motion Group Not Synchronized - Alarm - Ignore Active Warning (+Mes=P00-ID001)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID001_ALM_DINT_3" ConditionType="TRIP" Input="Mes_P00_ID001_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Motion Group Not Synchronized - Alarm - Info (+Mes=P00-ID001)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID002_ALM_DINT_0" ConditionType="TRIP" Input="Mes_P00_ID002_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>PLC - Power Cycle Detected - Info - Alarm (+Mes=P00-ID002)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID002_ALM_DINT_1" ConditionType="TRIP" Input="Mes_P00_ID002_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>PLC - Power Cycle Detected - Info - Warning (+Mes=P00-ID002)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID002_ALM_DINT_2" ConditionType="TRIP" Input="Mes_P00_ID002_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>PLC - Power Cycle Detected - Info - Ignore Active Warning (+Mes=P00-ID002)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID002_ALM_DINT_3" ConditionType="TRIP" Input="Mes_P00_ID002_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>PLC - Power Cycle Detected - Info - Info (+Mes=P00-ID002)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID003_ALM_DINT_0" ConditionType="TRIP" Input="Mes_P00_ID003_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Acknowledge Pressed - Info - Alarm (+Mes=P00-ID003)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID003_ALM_DINT_1" ConditionType="TRIP" Input="Mes_P00_ID003_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Acknowledge Pressed - Info - Warning (+Mes=P00-ID003)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID003_ALM_DINT_2" ConditionType="TRIP" Input="Mes_P00_ID003_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Acknowledge Pressed - Info - Ignore Active Warning (+Mes=P00-ID003)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID003_ALM_DINT_3" ConditionType="TRIP" Input="Mes_P00_ID003_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Acknowledge Pressed - Info - Info (+Mes=P00-ID003)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID005_ALM_DINT_0" ConditionType="TRIP" Input="Mes_P00_ID005_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Fault - Collection of All Safety Zones - Alarm (+Mes=P00-ID005)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID005_ALM_DINT_1" ConditionType="TRIP" Input="Mes_P00_ID005_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Fault - Collection of All Safety Zones - Warning (+Mes=P00-ID005)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID005_ALM_DINT_2" ConditionType="TRIP" Input="Mes_P00_ID005_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Fault - Collection of All Safety Zones - Ignore Active Warning (+Mes=P00-ID005)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P00_ID005_ALM_DINT_3" ConditionType="TRIP" Input="Mes_P00_ID005_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Safety Fault - Collection of All Safety Zones - Info (+Mes=P00-ID005)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P02_ID0201_ALM_DINT_0" ConditionType="TRIP" Input="Mes_P02_ID0201_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Alarm (+Mes=P02-ID0201)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P02_ID0201_ALM_DINT_1" ConditionType="TRIP" Input="Mes_P02_ID0201_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Warning (+Mes=P02-ID0201)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P02_ID0201_ALM_DINT_2" ConditionType="TRIP" Input="Mes_P02_ID0201_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Ignore Active Warning (+Mes=P02-ID0201)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P02_ID0201_ALM_DINT_3" ConditionType="TRIP" Input="Mes_P02_ID0201_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Info (+Mes=P02-ID0201)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0210_ALM_DINT_0" ConditionType="TRIP" Input="Mes_S02_ID0210_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Alarm (+Mes=S02-ID0210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0210_ALM_DINT_1" ConditionType="TRIP" Input="Mes_S02_ID0210_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Warning (+Mes=S02-ID0210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0210_ALM_DINT_2" ConditionType="TRIP" Input="Mes_S02_ID0210_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Ignore Active Warning (+Mes=S02-ID0210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0210_ALM_DINT_3" ConditionType="TRIP" Input="Mes_S02_ID0210_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Info (+Mes=S02-ID0210)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0211_ALM_DINT_0" ConditionType="TRIP" Input="Mes_S02_ID0211_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Changed - Info - Alarm (+Mes=S02-ID0211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0211_ALM_DINT_1" ConditionType="TRIP" Input="Mes_S02_ID0211_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Changed - Info - Warning (+Mes=S02-ID0211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0211_ALM_DINT_2" ConditionType="TRIP" Input="Mes_S02_ID0211_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Changed - Info - Ignore Active Warning (+Mes=S02-ID0211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0211_ALM_DINT_3" ConditionType="TRIP" Input="Mes_S02_ID0211_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Changed - Info - Info (+Mes=S02-ID0211)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0212_ALM_DINT_0" ConditionType="TRIP" Input="Mes_S02_ID0212_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Stopped - Pulp Jam - Alarm (+Mes=S02-ID0212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0212_ALM_DINT_1" ConditionType="TRIP" Input="Mes_S02_ID0212_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Stopped - Pulp Jam - Warning (+Mes=S02-ID0212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0212_ALM_DINT_2" ConditionType="TRIP" Input="Mes_S02_ID0212_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Stopped - Pulp Jam - Ignore Active Warning (+Mes=S02-ID0212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0212_ALM_DINT_3" ConditionType="TRIP" Input="Mes_S02_ID0212_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Stopped - Pulp Jam - Info (+Mes=S02-ID0212)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0213_ALM_DINT_0" ConditionType="TRIP" Input="Mes_S02_ID0213_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Stopped - Pulp Not Ready - Alarm (+Mes=S02-ID0213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0213_ALM_DINT_1" ConditionType="TRIP" Input="Mes_S02_ID0213_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Stopped - Pulp Not Ready - Warning (+Mes=S02-ID0213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0213_ALM_DINT_2" ConditionType="TRIP" Input="Mes_S02_ID0213_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Stopped - Pulp Not Ready - Ignore Active Warning (+Mes=S02-ID0213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0213_ALM_DINT_3" ConditionType="TRIP" Input="Mes_S02_ID0213_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Stopped - Pulp Not Ready - Info (+Mes=S02-ID0213)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0214_ALM_DINT_0" ConditionType="TRIP" Input="Mes_S02_ID0214_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Low Line Speed - Alarm (+Mes=S02-ID0214)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0214_ALM_DINT_1" ConditionType="TRIP" Input="Mes_S02_ID0214_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Low Line Speed - Warning (+Mes=S02-ID0214)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0214_ALM_DINT_2" ConditionType="TRIP" Input="Mes_S02_ID0214_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Low Line Speed - Ignore Active Warning (+Mes=S02-ID0214)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0214_ALM_DINT_3" ConditionType="TRIP" Input="Mes_S02_ID0214_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Low Line Speed - Info (+Mes=S02-ID0214)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0215_ALM_DINT_0" ConditionType="TRIP" Input="Mes_S02_ID0215_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Operator Command - Alarm (+Mes=S02-ID0215)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0215_ALM_DINT_1" ConditionType="TRIP" Input="Mes_S02_ID0215_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Operator Command - Warning (+Mes=S02-ID0215)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0215_ALM_DINT_2" ConditionType="TRIP" Input="Mes_S02_ID0215_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Operator Command - Ignore Active Warning (+Mes=S02-ID0215)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0215_ALM_DINT_3" ConditionType="TRIP" Input="Mes_S02_ID0215_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Operator Command - Info (+Mes=S02-ID0215)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0216_ALM_DINT_0" ConditionType="TRIP" Input="Mes_S02_ID0216_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Machine Interlock - Alarm (+Mes=S02-ID0216)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0216_ALM_DINT_1" ConditionType="TRIP" Input="Mes_S02_ID0216_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Machine Interlock - Warning (+Mes=S02-ID0216)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0216_ALM_DINT_2" ConditionType="TRIP" Input="Mes_S02_ID0216_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Machine Interlock - Ignore Active Warning (+Mes=S02-ID0216)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0216_ALM_DINT_3" ConditionType="TRIP" Input="Mes_S02_ID0216_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Machine Interlock - Info (+Mes=S02-ID0216)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0217_ALM_DINT_0" ConditionType="TRIP" Input="Mes_S02_ID0217_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Infeed Timeout - Max infeed time exeeded - Alarm (+Mes=S02-ID0217)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0217_ALM_DINT_1" ConditionType="TRIP" Input="Mes_S02_ID0217_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Infeed Timeout - Max infeed time exeeded - Warning (+Mes=S02-ID0217)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0217_ALM_DINT_2" ConditionType="TRIP" Input="Mes_S02_ID0217_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Infeed Timeout - Max infeed time exeeded - Ignore Active Warning (+Mes=S02-ID0217)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_S02_ID0217_ALM_DINT_3" ConditionType="TRIP" Input="Mes_S02_ID0217_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped due to  - Infeed Timeout - Max infeed time exeeded - Info (+Mes=S02-ID0217)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P03_ID0220_ALM_DINT_0" ConditionType="TRIP" Input="Mes_P03_ID0220_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Alarm (+Mes=P03-ID0220)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P03_ID0220_ALM_DINT_1" ConditionType="TRIP" Input="Mes_P03_ID0220_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Warning (+Mes=P03-ID0220)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P03_ID0220_ALM_DINT_2" ConditionType="TRIP" Input="Mes_P03_ID0220_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Ignore Active Warning (+Mes=P03-ID0220)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P03_ID0220_ALM_DINT_3" ConditionType="TRIP" Input="Mes_P03_ID0220_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Info (+Mes=P03-ID0220)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P03_ID0221_ALM_DINT_0" ConditionType="TRIP" Input="Mes_P03_ID0221_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill Rotation Detected - Startup Blocked Until Standstill - Alarm (+Mes=P03-ID0221)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P03_ID0221_ALM_DINT_1" ConditionType="TRIP" Input="Mes_P03_ID0221_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill Rotation Detected - Startup Blocked Until Standstill - Warning (+Mes=P03-ID0221)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P03_ID0221_ALM_DINT_2" ConditionType="TRIP" Input="Mes_P03_ID0221_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill Rotation Detected - Startup Blocked Until Standstill - Ignore Active Warning (+Mes=P03-ID0221)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P03_ID0221_ALM_DINT_3" ConditionType="TRIP" Input="Mes_P03_ID0221_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Hammer Mill Rotation Detected - Startup Blocked Until Standstill - Info (+Mes=P03-ID0221)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P04_ID0230_ALM_DINT_0" ConditionType="TRIP" Input="Mes_P04_ID0230_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Alarm (+Mes=P04-ID0230)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P04_ID0230_ALM_DINT_1" ConditionType="TRIP" Input="Mes_P04_ID0230_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Warning (+Mes=P04-ID0230)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P04_ID0230_ALM_DINT_2" ConditionType="TRIP" Input="Mes_P04_ID0230_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Ignore Active Warning (+Mes=P04-ID0230)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P04_ID0230_ALM_DINT_3" ConditionType="TRIP" Input="Mes_P04_ID0230_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Info (+Mes=P04-ID0230)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P05_ID0240_ALM_DINT_0" ConditionType="TRIP" Input="Mes_P05_ID0240_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Alarm (+Mes=P05-ID0240)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P05_ID0240_ALM_DINT_1" ConditionType="TRIP" Input="Mes_P05_ID0240_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Warning (+Mes=P05-ID0240)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P05_ID0240_ALM_DINT_2" ConditionType="TRIP" Input="Mes_P05_ID0240_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Ignore Active Warning (+Mes=P05-ID0240)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="ALM_Mes_P05_ID0240_ALM_DINT_3" ConditionType="TRIP" Input="Mes_P05_ID0240_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Stopped by Fault - Re-Start is Required - Info (+Mes=P05-ID0240)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+</AlarmCollection>

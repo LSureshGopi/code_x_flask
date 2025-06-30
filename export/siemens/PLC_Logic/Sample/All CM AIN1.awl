@@ -1,0 +1,74 @@
+﻿FUNCTION_BLOCK "All CM AIN"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR RETAIN
+      AIN : Array[0..3] of "UDT_CM_AIN";
+   END_VAR
+   VAR 
+      LCP20_F200_BM1111 : "CM AIN";
+      LCP20_F200_BT1111 : "CM AIN";
+      LCP20_F201_BM1112 : "CM AIN";
+   END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = 50 - LCP20_F200_BM1111 - Spare - Humidity
+
+      CALL #LCP20_F200_BM1111
+      (  CM_No                       := 50 , 
+         "Type"                      := 0 , 
+         Tab                         := 22 , 
+         SubTab                      := 3 , 
+         Cfg_FilterTime              := 50 , 
+         Cfg_MinPV                   := 0.0 , 
+         Cfg_MaxPV                   := 150.0 , 
+         Cfg_RawMin                  := 0 , 
+         Cfg_RawMax                  := 1500 , 
+         Input                       := "PLC1_AUX01_BT1990_PT_Tmp" , 
+         Unit                        := 1 , 
+         SC_Local                    := "P01".SC , 
+         CM_AIN                      := "AIN".AIN[1]
+      );
+
+NETWORK
+TITLE = 51 - LCP20_F200_BT1111 - Spare - Temperature
+
+      CALL #LCP20_F200_BT1111
+      (  CM_No                       := 51 , 
+         "Type"                      := 1 , 
+         Tab                         := 22 , 
+         SubTab                      := 3 , 
+         Cfg_FilterTime              := 50 , 
+         Cfg_MinPV                   := 0.0 , 
+         Cfg_MaxPV                   := 150.0 , 
+         Cfg_RawMin                  := 0 , 
+         Cfg_RawMax                  := 1500 , 
+         Input                       := "PLC1_AUX01_BT1990_PT_Tmp" , 
+         Unit                        := 2 , 
+         SC_Local                    := "P01".SC , 
+         CM_AIN                      := "AIN".AIN[2]
+      );
+
+NETWORK
+TITLE = 52 - LCP20_F201_BM1112 - FH 2 Humid/Temp DS - Humidity
+
+      CALL #LCP20_F201_BM1112
+      (  CM_No                       := 52 , 
+         "Type"                      := 1 , 
+         Tab                         := 22 , 
+         SubTab                      := 3 , 
+         Cfg_FilterTime              := 50 , 
+         Cfg_MinPV                   := 0.0 , 
+         Cfg_MaxPV                   := 150.0 , 
+         Cfg_RawMin                  := 0 , 
+         Cfg_RawMax                  := 1500 , 
+         Input                       := "PLC1_AUX01_BT1990_PT_Tmp" , 
+         Unit                        := 3 , 
+         SC_Local                    := "P01".SC , 
+         CM_AIN                      := "AIN".AIN[3]
+      );
+
+END_FUNCTION_BLOCK
+

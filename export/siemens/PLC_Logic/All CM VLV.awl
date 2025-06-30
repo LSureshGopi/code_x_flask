@@ -1,0 +1,586 @@
+FUNCTION_BLOCK "All CM VLV"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ VAR
+   "XV-101" : "CM VLV";
+   "XV-102" : "CM VLV";
+   "XV-103" : "CM VLV";
+   "XV-104" : "CM VLV";
+   "XV-204" : "CM VLV";
+   "XV-311" : "CM VLV";
+   "XV-401" : "CM VLV";
+   "XV-402" : "CM VLV";
+   "XV-406" : "CM VLV";
+   "XV-465" : "CM VLV";
+   "XV-466" : "CM VLV";
+   "XV-501" : "CM VLV";
+   "XV-502" : "CM VLV";
+   "XV-506" : "CM VLV";
+   "XV-565" : "CM VLV";
+   "XV-575" : "CM VLV";
+   "XV-585" : "CM VLV";
+   "XV-595" : "CM VLV";
+   "XV-601" : "CM VLV";
+   "XV-602" : "CM VLV";
+   "XV-606" : "CM VLV";
+   "XV-631" : "CM VLV";
+   "XV-632" : "CM VLV";
+   "XV-633" : "CM VLV";
+   "XV-641" : "CM VLV";
+   "XV-701" : "CM VLV";
+   "XV-702" : "CM VLV";
+   "XV-703" : "CM VLV";
+   "XV-731" : "CM VLV";
+   "XV-732" : "CM VLV";
+   "XV-733" : "CM VLV";
+   "XV-735" : "CM VLV";
+   "XV-912" : "CM VLV";
+   "XV-913" : "CM VLV";
+   "XV-914" : "CM VLV";
+   "XV-921" : "CM VLV";
+ END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = 7001 - XV-101 - Flush Bottom Valve
+
+       CALL #"XV-101"
+       (
+         CM_No       := 7001 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-101" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7001] ,
+       );
+
+NETWORK
+TITLE = 7002 - XV-102 - Clean Steam to FBV
+
+       CALL #"XV-102"
+       (
+         CM_No       := 7002 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-102" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7002] ,
+       );
+
+NETWORK
+TITLE = 7003 - XV-103 - Harvest Valve
+
+       CALL #"XV-103"
+       (
+         CM_No       := 7003 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-103" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7003] ,
+       );
+
+NETWORK
+TITLE = 7004 - XV-104 - Vessel Cond.Drain Valve
+
+       CALL #"XV-104"
+       (
+         CM_No       := 7004 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-104" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7004] ,
+       );
+
+NETWORK
+TITLE = 7005 - XV-204 - Agitator Seal Cond.Drain Valve
+
+       CALL #"XV-204"
+       (
+         CM_No       := 7005 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-204" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7005] ,
+       );
+
+NETWORK
+TITLE = 7006 - XV-311 - Chilled water return Valve
+
+       CALL #"XV-311"
+       (
+         CM_No       := 7006 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-311" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7006] ,
+       );
+
+NETWORK
+TITLE = 7007 - XV-401 - Air inlet to F-400 Overlay
+
+       CALL #"XV-401"
+       (
+         CM_No       := 7007 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-401" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7007] ,
+       );
+
+NETWORK
+TITLE = 7008 - XV-402 - Clean Steam to Overlay
+
+       CALL #"XV-402"
+       (
+         CM_No       := 7008 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-402" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7008] ,
+       );
+
+NETWORK
+TITLE = 7009 - XV-406 - F-400 Filter Cond. Drain
+
+       CALL #"XV-406"
+       (
+         CM_No       := 7009 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-406" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7009] ,
+       );
+
+NETWORK
+TITLE = 7010 - XV-465 - Co2 Overlay inlet Valve
+
+       CALL #"XV-465"
+       (
+         CM_No       := 7010 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-465" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7010] ,
+       );
+
+NETWORK
+TITLE = 7011 - XV-466 - Air Overlay inlet Valve
+
+       CALL #"XV-466"
+       (
+         CM_No       := 7011 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-466" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7011] ,
+       );
+
+NETWORK
+TITLE = 7012 - XV-501 - Sparger line inlet Valve
+
+       CALL #"XV-501"
+       (
+         CM_No       := 7012 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-501" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7012] ,
+       );
+
+NETWORK
+TITLE = 7013 - XV-502 - Clean Steam to Sparger
+
+       CALL #"XV-502"
+       (
+         CM_No       := 7013 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-502" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7013] ,
+       );
+
+NETWORK
+TITLE = 7014 - XV-506 - F-500 Filter Cond. Drain
+
+       CALL #"XV-506"
+       (
+         CM_No       := 7014 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-506" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7014] ,
+       );
+
+NETWORK
+TITLE = 7015 - XV-565 - Air Sparger inlet
+
+       CALL #"XV-565"
+       (
+         CM_No       := 7015 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-565" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7015] ,
+       );
+
+NETWORK
+TITLE = 7016 - XV-575 - N2 Sparger inlet
+
+       CALL #"XV-575"
+       (
+         CM_No       := 7016 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-575" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7016] ,
+       );
+
+NETWORK
+TITLE = 7017 - XV-585 - Co2 Sparger inlet
+
+       CALL #"XV-585"
+       (
+         CM_No       := 7017 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-585" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7017] ,
+       );
+
+NETWORK
+TITLE = 7018 - XV-595 - O2 Sparger inlet
+
+       CALL #"XV-595"
+       (
+         CM_No       := 7018 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-595" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7018] ,
+       );
+
+NETWORK
+TITLE = 7019 - XV-601 - Exhaust line outlet
+
+       CALL #"XV-601"
+       (
+         CM_No       := 7019 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-601" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7019] ,
+       );
+
+NETWORK
+TITLE = 7020 - XV-602 - Clean Steam to F-600 Exhaust
+
+       CALL #"XV-602"
+       (
+         CM_No       := 7020 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-602" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7020] ,
+       );
+
+NETWORK
+TITLE = 7021 - XV-606 - F-600 Filter Cond. Drain
+
+       CALL #"XV-606"
+       (
+         CM_No       := 7021 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-606" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7021] ,
+       );
+
+NETWORK
+TITLE = 7022 - XV-631 - Chilled water to HEX-500
+
+       CALL #"XV-631"
+       (
+         CM_No       := 7022 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-631" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7022] ,
+       );
+
+NETWORK
+TITLE = 7023 - XV-632 - HEX-500 Chilled water drain
+
+       CALL #"XV-632"
+       (
+         CM_No       := 7023 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-632" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7023] ,
+       );
+
+NETWORK
+TITLE = 7024 - XV-633 - Air inlet to HEX-500 drain
+
+       CALL #"XV-633"
+       (
+         CM_No       := 7024 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-633" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7024] ,
+       );
+
+NETWORK
+TITLE = 7025 - XV-641 - Plant Steam to HEX-600
+
+       CALL #"XV-641"
+       (
+         CM_No       := 7025 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-641" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7025] ,
+       );
+
+NETWORK
+TITLE = 7026 - XV-701 - Inoculum inlet to Vessel
+
+       CALL #"XV-701"
+       (
+         CM_No       := 7026 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-701" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7026] ,
+       );
+
+NETWORK
+TITLE = 7027 - XV-702 - Inoculum line Cond. Drain
+
+       CALL #"XV-702"
+       (
+         CM_No       := 7027 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-702" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7027] ,
+       );
+
+NETWORK
+TITLE = 7028 - XV-703 - Clean Steam to Inoc. Line
+
+       CALL #"XV-703"
+       (
+         CM_No       := 7028 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-703" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7028] ,
+       );
+
+NETWORK
+TITLE = 7029 - XV-731 - Feed inlet to Vessel
+
+       CALL #"XV-731"
+       (
+         CM_No       := 7029 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-731" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7029] ,
+       );
+
+NETWORK
+TITLE = 7030 - XV-732 - Feed line Cond. Drain
+
+       CALL #"XV-732"
+       (
+         CM_No       := 7030 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-732" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7030] ,
+       );
+
+NETWORK
+TITLE = 7031 - XV-733 - Clean Steam to Feed. Line
+
+       CALL #"XV-733"
+       (
+         CM_No       := 7031 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-733" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7031] ,
+       );
+
+NETWORK
+TITLE = 7032 - XV-735 - Overlay Drain line
+
+       CALL #"XV-735"
+       (
+         CM_No       := 7032 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-735" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7032] ,
+       );
+
+NETWORK
+TITLE = 7033 - XV-912 - Clean Steam inlet
+
+       CALL #"XV-912"
+       (
+         CM_No       := 7033 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-912" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7033] ,
+       );
+
+NETWORK
+TITLE = 7034 - XV-913 - Process Air inlet
+
+       CALL #"XV-913"
+       (
+         CM_No       := 7034 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-913" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7034] ,
+       );
+
+NETWORK
+TITLE = 7035 - XV-914 - CIP inlet
+
+       CALL #"XV-914"
+       (
+         CM_No       := 7035 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-914" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7035] ,
+       );
+
+NETWORK
+TITLE = 7036 - XV-921 - Sprayball inlet
+
+       CALL #"XV-921"
+       (
+         CM_No       := 7036 ,
+         Area_No       := 11 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         Out_P       := "outXV-921" ,
+         SC_Local       := "P01".SC ,
+         CM_VLV        := "dbPlcHmiVLV".VLV[7036] ,
+       );
+
+END_FUNCTION_BLOCK

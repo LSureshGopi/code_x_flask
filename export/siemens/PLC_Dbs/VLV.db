@@ -1,0 +1,9 @@
+DATA_BLOCK "dbPlcHmiVLV"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+ STRUCT
+   VLV : Array[7000..7041] of "UDT_CM_VLV_N";
+ END_STRUCT;
+
+BEGIN
+END_DATA_BLOCK

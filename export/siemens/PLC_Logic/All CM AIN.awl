@@ -1,0 +1,283 @@
+FUNCTION_BLOCK "All CM AIN"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ VAR
+   "TIC142" : "CM AIN";
+   "TIC342" : "CM AIN";
+   "TI109" : "CM AIN";
+   "TI609" : "CM AIN";
+   "QIC144" : "CM AIN";
+   "QIC146" : "CM AIN";
+   "PIC150" : "CM AIN";
+   "WI156" : "CM AIN";
+   "FIC584" : "CM AIN";
+   "FIC468" : "CM AIN";
+   "FIC568" : "CM AIN";
+   "FIC598" : "CM AIN";
+   "SIC120" : "CM AIN";
+ END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = 3001 - TIC142 - Vessel Temperature
+
+       CALL #"TIC142"
+       (
+         CM_No       := 3001 ,
+         Type       := 0 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := piwTIC142 ,
+         Unit       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3001] ,
+       );
+
+NETWORK
+TITLE = 3002 - TIC342 - Vessel Jacket Temperature
+
+       CALL #"TIC342"
+       (
+         CM_No       := 3002 ,
+         Type       := 0 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := piwTIC342 ,
+         Unit       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3002] ,
+       );
+
+NETWORK
+TITLE = 3003 - TI109 - Flush bottom valve condensate
+
+       CALL #"TI109"
+       (
+         CM_No       := 3003 ,
+         Type       := 0 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := piwTI109 ,
+         Unit       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3003] ,
+       );
+
+NETWORK
+TITLE = 3004 - TI609 - Exhaust line condensate
+
+       CALL #"TI609"
+       (
+         CM_No       := 3004 ,
+         Type       := 0 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := piwTI609 ,
+         Unit       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3004] ,
+       );
+
+NETWORK
+TITLE = 3005 - QIC144 - pH Vessel
+
+       CALL #"QIC144"
+       (
+         CM_No       := 3005 ,
+         Type       := 0 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := piwQIC144 ,
+         Unit       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3005] ,
+       );
+
+NETWORK
+TITLE = 3006 - QIC146 - pO2 Vessel
+
+       CALL #"QIC146"
+       (
+         CM_No       := 3006 ,
+         Type       := 0 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := piwQIC146 ,
+         Unit       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3006] ,
+       );
+
+NETWORK
+TITLE = 3007 - PIC150 - Vessel Pressure
+
+       CALL #"PIC150"
+       (
+         CM_No       := 3007 ,
+         Type       := 0 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := piwPIC150 ,
+         Unit       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3007] ,
+       );
+
+NETWORK
+TITLE = 3008 - WI156 - Vessel Weight
+
+       CALL #"WI156"
+       (
+         CM_No       := 3008 ,
+         Type       := 0 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := piwWI156 ,
+         Unit       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3008] ,
+       );
+
+NETWORK
+TITLE = 3009 - FIC584 - Massflow controller CO2
+
+       CALL #"FIC584"
+       (
+         CM_No       := 3009 ,
+         Type       := 0 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := piwFIC584 ,
+         Unit       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3009] ,
+       );
+
+NETWORK
+TITLE = 3010 - FIC468 - Massflow controller AIR Overlay
+
+       CALL #"FIC468"
+       (
+         CM_No       := 3010 ,
+         Type       := 0 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := piwFIC468 ,
+         Unit       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3010] ,
+       );
+
+NETWORK
+TITLE = 3011 - FIC568 - Massflow controller AIR Sparger
+
+       CALL #"FIC568"
+       (
+         CM_No       := 3011 ,
+         Type       := 0 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := piwFIC568 ,
+         Unit       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3011] ,
+       );
+
+NETWORK
+TITLE = 3012 - FIC598 - Massflow controller O2
+
+       CALL #"FIC598"
+       (
+         CM_No       := 3012 ,
+         Type       := 0 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := piwFIC598 ,
+         Unit       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3012] ,
+       );
+
+NETWORK
+TITLE = 3013 - SIC120 - Vessel Agitator
+
+       CALL #"SIC120"
+       (
+         CM_No       := 3013 ,
+         Type       := 0 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := piwSIC120 ,
+         Unit       := 1 ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3013] ,
+       );
+
+END_FUNCTION_BLOCK

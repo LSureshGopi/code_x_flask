@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AlarmCollection>
+  <Alarm Name="VLV_PNEU1_C311_QM9011_ALM_DINT_0" ConditionType="TRIP" Input="PNEU1_C311_QM9011_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor Up/Down - Up/Down Compactor - Alarm (+PNEU1=C311-QM9011)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="VLV_PNEU1_C311_QM9011_ALM_DINT_1" ConditionType="TRIP" Input="PNEU1_C311_QM9011_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor Up/Down - Up/Down Compactor - Warning (+PNEU1=C311-QM9011)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="VLV_PNEU1_C311_QM9011_ALM_DINT_2" ConditionType="TRIP" Input="PNEU1_C311_QM9011_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor Up/Down - Up/Down Compactor - Manual Mode Warning (+PNEU1=C311-QM9011)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="VLV_PNEU1_C311_QM9011_ALM_DINT_3" ConditionType="TRIP" Input="PNEU1_C311_QM9011_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor Up/Down - Up/Down Compactor - Ignore Active Warning (+PNEU1=C311-QM9011)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="VLV_PNEU1_C311_QM9011_ALM_DINT_4" ConditionType="TRIP" Input="PNEU1_C311_QM9011_ALM_DINT.4" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor Up/Down - Up/Down Compactor - Valve Positive Feedback Alarm (+PNEU1=C311-QM9011)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="VLV_PNEU1_C311_QM9011_ALM_DINT_5" ConditionType="TRIP" Input="PNEU1_C311_QM9011_ALM_DINT.5" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Compactor Up/Down - Up/Down Compactor - Valve Negative Feedback Alarm (+PNEU1=C311-QM9011)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="VLV_PNEU2_H110_QM9041_ALM_DINT_0" ConditionType="TRIP" Input="PNEU2_H110_QM9041_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Up/Down - Open/Close Nip - Alarm (+PNEU2=H110-QM9041)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="VLV_PNEU2_H110_QM9041_ALM_DINT_1" ConditionType="TRIP" Input="PNEU2_H110_QM9041_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Up/Down - Open/Close Nip - Warning (+PNEU2=H110-QM9041)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="VLV_PNEU2_H110_QM9041_ALM_DINT_2" ConditionType="TRIP" Input="PNEU2_H110_QM9041_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Up/Down - Open/Close Nip - Manual Mode Warning (+PNEU2=H110-QM9041)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="VLV_PNEU2_H110_QM9041_ALM_DINT_3" ConditionType="TRIP" Input="PNEU2_H110_QM9041_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Up/Down - Open/Close Nip - Ignore Active Warning (+PNEU2=H110-QM9041)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="VLV_PNEU2_H110_QM9041_ALM_DINT_4" ConditionType="TRIP" Input="PNEU2_H110_QM9041_ALM_DINT.4" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Up/Down - Open/Close Nip - Valve Positive Feedback Alarm (+PNEU2=H110-QM9041)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="VLV_PNEU2_H110_QM9041_ALM_DINT_5" ConditionType="TRIP" Input="PNEU2_H110_QM9041_ALM_DINT.5" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>Pulp Infeed Up/Down - Open/Close Nip - Valve Negative Feedback Alarm (+PNEU2=H110-QM9041)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+</AlarmCollection>

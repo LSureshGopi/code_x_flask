@@ -1,0 +1,122 @@
+FUNCTION_BLOCK "All CM AOUT"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ VAR
+   "SIC120" : "CM AOUT";
+   "GC621" : "CM AOUT";
+   "GC301" : "CM AOUT";
+   "FC584" : "CM AOUT";
+   "FC468" : "CM AOUT";
+   "FC568" : "CM AOUT";
+   "FC598" : "CM AOUT";
+ END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = 4001 - SIC120 - Vessel Agitator
+
+       CALL #"SIC120"
+       (
+         CM_No       := 4001 ,
+         Unit       := 1 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Type       := 0 ,
+         OutInt       := pqwSIC120 ,
+         SC_Local       := "P01".SC ,
+         CM_AOUT        := "dbPlcHmiAOUT".AOUT[4001] ,
+       );
+
+NETWORK
+TITLE = 4002 - GC621 - Exhaust Control valve
+
+       CALL #"GC621"
+       (
+         CM_No       := 4002 ,
+         Unit       := 1 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Type       := 0 ,
+         OutInt       := pqwGC621 ,
+         SC_Local       := "P01".SC ,
+         CM_AOUT        := "dbPlcHmiAOUT".AOUT[4002] ,
+       );
+
+NETWORK
+TITLE = 4003 - GC301 - Jacket Control valve
+
+       CALL #"GC301"
+       (
+         CM_No       := 4003 ,
+         Unit       := 1 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Type       := 0 ,
+         OutInt       := pqwGC301 ,
+         SC_Local       := "P01".SC ,
+         CM_AOUT        := "dbPlcHmiAOUT".AOUT[4003] ,
+       );
+
+NETWORK
+TITLE = 4004 - FC584 - Massflow controller CO2
+
+       CALL #"FC584"
+       (
+         CM_No       := 4004 ,
+         Unit       := 1 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Type       := 0 ,
+         OutInt       := pqwFC584 ,
+         SC_Local       := "P01".SC ,
+         CM_AOUT        := "dbPlcHmiAOUT".AOUT[4004] ,
+       );
+
+NETWORK
+TITLE = 4005 - FC468 - Massflow controller AIR Overlay
+
+       CALL #"FC468"
+       (
+         CM_No       := 4005 ,
+         Unit       := 1 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Type       := 0 ,
+         OutInt       := pqwFC468 ,
+         SC_Local       := "P01".SC ,
+         CM_AOUT        := "dbPlcHmiAOUT".AOUT[4005] ,
+       );
+
+NETWORK
+TITLE = 4006 - FC568 - Massflow controller AIR Sparger
+
+       CALL #"FC568"
+       (
+         CM_No       := 4006 ,
+         Unit       := 1 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Type       := 0 ,
+         OutInt       := pqwFC568 ,
+         SC_Local       := "P01".SC ,
+         CM_AOUT        := "dbPlcHmiAOUT".AOUT[4006] ,
+       );
+
+NETWORK
+TITLE = 4007 - FC598 - Massflow controller O2
+
+       CALL #"FC598"
+       (
+         CM_No       := 4007 ,
+         Unit       := 1 ,
+         Tab       := 1 ,
+         SubTab       := 1 ,
+         Type       := 0 ,
+         OutInt       := pqwFC598 ,
+         SC_Local       := "P01".SC ,
+         CM_AOUT        := "dbPlcHmiAOUT".AOUT[4007] ,
+       );
+
+END_FUNCTION_BLOCK

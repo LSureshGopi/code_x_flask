@@ -25,16 +25,15 @@ def dfUser():
     query = "SELECT id, username, role, last_login FROM users WHERE role != 'SuperAdmin';"
     df = pd.read_sql_query(query, conn)
     df.columns = ['Id', 'Username', 'Role', 'LastLogin']
-    df = df.sort_values(by='Id', ascending=True)
+    df = df.sort_values(by='Id', ascending=True).reset_index(drop=True)
+    df['Id'] = df.index + 1  # Overwrite Id to start from 1 sequentially
     return df
 
-
-
 def sqlite():
-    conn = sqlite3.connect('CodeX-Config.db')
+    conn = sqlite3.connect(DB_PATH)
     cursorRead = conn.cursor()
     cursorWrite = conn.cursor()
-    engine = create_engine('sqlite:///CodeX-Config.db')
+    engine = create_engine(f'sqlite:///{DB_PATH}')
     engineConRead = engine.connect()
     engineConWrite = engine.connect()
     return cursorRead, cursorWrite, engineConRead, engineConWrite, conn

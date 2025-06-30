@@ -1,0 +1,1360 @@
+FUNCTION_BLOCK "All CM AIN"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ VAR
+   "MCC15_A122_BT1731" : "CM AIN";
+   "MCC15_A122_BT1732" : "CM AIN";
+   "MCC15_A122_BT1733" : "CM AIN";
+   "MCC15_A222_BT1734" : "CM AIN";
+   "MCC15_A222_BT1735" : "CM AIN";
+   "MCC15_A222_BT1736" : "CM AIN";
+   "MCC15_A322_BT1737" : "CM AIN";
+   "MCC15_A322_BT1738" : "CM AIN";
+   "MCC15_A322_BT1739" : "CM AIN";
+   "MCC15_A422_BT1740" : "CM AIN";
+   "MCC15_A422_BT1741" : "CM AIN";
+   "MCC15_A422_BT1742" : "CM AIN";
+   "LCP01_H721_BT6710" : "CM AIN";
+   "LCP01_H721_BT6711" : "CM AIN";
+   "LCP01_H721_BT6712" : "CM AIN";
+   "LCP01_H731_BT6701" : "CM AIN";
+   "LCP01_H731_BT6702" : "CM AIN";
+   "LCP01_H731_BT6703" : "CM AIN";
+   "LCP01_H040_BF1810" : "CM AIN";
+   "LCP01_Pinp_SP04" : "CM AIN";
+   "LCP01_Pinp_SP05" : "CM AIN";
+   "LCP02_H821_BT6810" : "CM AIN";
+   "LCP02_H821_BT6811" : "CM AIN";
+   "LCP02_H821_BT6812" : "CM AIN";
+   "LCP02_H831_BT6801" : "CM AIN";
+   "LCP02_H831_BT6802" : "CM AIN";
+   "LCP02_H831_BT6803" : "CM AIN";
+   "LCP02_A070_BM1920" : "CM AIN";
+   "LCP02_A070_BT1920" : "CM AIN";
+   "LCP02_Pinp_SP01" : "CM AIN";
+   "LCP02_Pinp_SP02" : "CM AIN";
+   "LCP03_A021_BT1751" : "CM AIN";
+   "LCP03_A021_BT1752" : "CM AIN";
+   "LCP03_A021_BT1753" : "CM AIN";
+   "LCP03_A022_BT1754" : "CM AIN";
+   "LCP03_A022_BT1755" : "CM AIN";
+   "LCP03_A022_BT1756" : "CM AIN";
+   "LCP03_A060_BM1921" : "CM AIN";
+   "LCP03_A060_BT1921" : "CM AIN";
+   "LCP03_A060_BM1922" : "CM AIN";
+   "LCP03_A060_BT1922" : "CM AIN";
+   "LCP03_A060_BM1923" : "CM AIN";
+   "LCP03_A060_BT1923" : "CM AIN";
+   "LCP03_A060_BM1924" : "CM AIN";
+   "LCP03_A060_BT1924" : "CM AIN";
+   "LCP03_A060_BM1925" : "CM AIN";
+   "LCP03_A060_BT1925" : "CM AIN";
+   "LCP03_A020_MB1903_1" : "CM AIN";
+   "LCP03_A020_MB1913_1" : "CM AIN";
+   "LCP03_A020_MB1923_1" : "CM AIN";
+   "LCP04_F100_BM1970_1" : "CM AIN";
+   "LCP04_F100_BT1970_2" : "CM AIN";
+   "LCP04_D311_BT1031" : "CM AIN";
+   "LCP04_D311_BT1032" : "CM AIN";
+   "LCP04_Pinp_SP08" : "CM AIN";
+   "LCP04_Pinp_SP09" : "CM AIN";
+   "LCP04_Pinp_SP10" : "CM AIN";
+   "LCP04_Pinp_SP11" : "CM AIN";
+   "LCP04_Pinp_SP12" : "CM AIN";
+   "LCP04_Pinp_SP13" : "CM AIN";
+   "PLC2_F081_BT1238" : "CM AIN";
+   "PLC2_F081_BT1239" : "CM AIN";
+   "PLC2_F081_BT1230" : "CM AIN";
+   "PLC2_D021_BT1321" : "CM AIN";
+   "PLC2_D021_BT1322" : "CM AIN";
+   "PLC2_D021_BT1323" : "CM AIN";
+   "PLC2_D031_BT1331" : "CM AIN";
+   "PLC2_D031_BT1332" : "CM AIN";
+   "PLC2_D031_BT1333" : "CM AIN";
+   "PLC2_D032_BT1334" : "CM AIN";
+   "PLC2_D032_BT1335" : "CM AIN";
+   "PLC2_D032_BT1336" : "CM AIN";
+   "PLC2_D414_BT1324" : "CM AIN";
+   "PLC2_D414_BT1325" : "CM AIN";
+   "PLC2_D414_BT1326" : "CM AIN";
+ END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = 3001 - MCC15_A122_BT1731 - Outlet Fan 1 - Temp. Sensor Wheel House
+
+       CALL #"MCC15_A122_BT1731"
+       (
+         CM_No       := 3001 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := MCC15_A122_BT1731_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3001] ,
+       );
+
+NETWORK
+TITLE = 3002 - MCC15_A122_BT1732 - Outlet Fan 1 - Temp. Bearing MS
+
+       CALL #"MCC15_A122_BT1732"
+       (
+         CM_No       := 3002 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := MCC15_A122_BT1732_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3002] ,
+       );
+
+NETWORK
+TITLE = 3003 - MCC15_A122_BT1733 - Outlet Fan 1 - Temp. Bearing FS
+
+       CALL #"MCC15_A122_BT1733"
+       (
+         CM_No       := 3003 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := MCC15_A122_BT1733_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3003] ,
+       );
+
+NETWORK
+TITLE = 3004 - MCC15_A222_BT1734 - Outlet Fan 2 - Temp. Sensor Wheel House
+
+       CALL #"MCC15_A222_BT1734"
+       (
+         CM_No       := 3004 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := MCC15_A222_BT1734_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3004] ,
+       );
+
+NETWORK
+TITLE = 3005 - MCC15_A222_BT1735 - Outlet Fan 2 - Temp. Bearing MS
+
+       CALL #"MCC15_A222_BT1735"
+       (
+         CM_No       := 3005 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := MCC15_A222_BT1735_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3005] ,
+       );
+
+NETWORK
+TITLE = 3006 - MCC15_A222_BT1736 - Outlet Fan 2 - Temp. Bearing FS
+
+       CALL #"MCC15_A222_BT1736"
+       (
+         CM_No       := 3006 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := MCC15_A222_BT1736_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3006] ,
+       );
+
+NETWORK
+TITLE = 3007 - MCC15_A322_BT1737 - Outlet Fan 3 - Temp. Sensor Wheel House
+
+       CALL #"MCC15_A322_BT1737"
+       (
+         CM_No       := 3007 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := MCC15_A322_BT1737_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3007] ,
+       );
+
+NETWORK
+TITLE = 3008 - MCC15_A322_BT1738 - Outlet Fan 3 - Temp. Bearing MS
+
+       CALL #"MCC15_A322_BT1738"
+       (
+         CM_No       := 3008 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := MCC15_A322_BT1738_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3008] ,
+       );
+
+NETWORK
+TITLE = 3009 - MCC15_A322_BT1739 - Outlet Fan 3 - Temp. Bearing FS
+
+       CALL #"MCC15_A322_BT1739"
+       (
+         CM_No       := 3009 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := MCC15_A322_BT1739_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3009] ,
+       );
+
+NETWORK
+TITLE = 3010 - MCC15_A422_BT1740 - Fan from Hopper to Runi - Temp. Sensor Wheel House
+
+       CALL #"MCC15_A422_BT1740"
+       (
+         CM_No       := 3010 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := MCC15_A422_BT1740_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3010] ,
+       );
+
+NETWORK
+TITLE = 3011 - MCC15_A422_BT1741 - Fan from Hopper to Runi - Temp. Bearing MS
+
+       CALL #"MCC15_A422_BT1741"
+       (
+         CM_No       := 3011 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := MCC15_A422_BT1741_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3011] ,
+       );
+
+NETWORK
+TITLE = 3012 - MCC15_A422_BT1742 - Fan from Hopper to Runi - Temp. Bearing FS
+
+       CALL #"MCC15_A422_BT1742"
+       (
+         CM_No       := 3012 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := MCC15_A422_BT1742_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3012] ,
+       );
+
+NETWORK
+TITLE = 3013 - LCP01_H721_BT6710 - Hammer Mill 0A - Bearings Temp. TS
+
+       CALL #"LCP01_H721_BT6710"
+       (
+         CM_No       := 3013 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP01_H721_BT6710_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3013] ,
+       );
+
+NETWORK
+TITLE = 3014 - LCP01_H721_BT6711 - Hammer Mill 0A - Bearings Temp. DS
+
+       CALL #"LCP01_H721_BT6711"
+       (
+         CM_No       := 3014 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP01_H721_BT6711_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3014] ,
+       );
+
+NETWORK
+TITLE = 3015 - LCP01_H721_BT6712 - Hammer Mill 0A - Outlet Temp.
+
+       CALL #"LCP01_H721_BT6712"
+       (
+         CM_No       := 3015 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP01_H721_BT6712_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3015] ,
+       );
+
+NETWORK
+TITLE = 3016 - LCP01_H731_BT6701 - Fibertransport 0A - Temp. Sensor Wheel House
+
+       CALL #"LCP01_H731_BT6701"
+       (
+         CM_No       := 3016 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP01_H731_BT6701_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3016] ,
+       );
+
+NETWORK
+TITLE = 3017 - LCP01_H731_BT6702 - Fibertransport 0A - Temp. Bearing MS
+
+       CALL #"LCP01_H731_BT6702"
+       (
+         CM_No       := 3017 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP01_H731_BT6702_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3017] ,
+       );
+
+NETWORK
+TITLE = 3018 - LCP01_H731_BT6703 - Fibertransport 0A - Temp. Bearing FS
+
+       CALL #"LCP01_H731_BT6703"
+       (
+         CM_No       := 3018 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP01_H731_BT6703_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3018] ,
+       );
+
+NETWORK
+TITLE = 3019 - LCP01_H040_BF1810 - Flow Control Hammer Mills 0A+B - nan
+
+       CALL #"LCP01_H040_BF1810"
+       (
+         CM_No       := 3019 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP01_H040_BF1810_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3019] ,
+       );
+
+NETWORK
+TITLE = 3020 - LCP01_Pinp_SP04 - Spare RTD Input -  
+
+       CALL #"LCP01_Pinp_SP04"
+       (
+         CM_No       := 3020 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP01_Pinp_SP04_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3020] ,
+       );
+
+NETWORK
+TITLE = 3021 - LCP01_Pinp_SP05 - Spare RTD Input -  
+
+       CALL #"LCP01_Pinp_SP05"
+       (
+         CM_No       := 3021 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP01_Pinp_SP05_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3021] ,
+       );
+
+NETWORK
+TITLE = 3022 - LCP02_H821_BT6810 - Hammer Mill 0B - Bearings Temp. TS
+
+       CALL #"LCP02_H821_BT6810"
+       (
+         CM_No       := 3022 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP02_H821_BT6810_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3022] ,
+       );
+
+NETWORK
+TITLE = 3023 - LCP02_H821_BT6811 - Hammer Mill 0B - Bearings Temp. DS
+
+       CALL #"LCP02_H821_BT6811"
+       (
+         CM_No       := 3023 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP02_H821_BT6811_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3023] ,
+       );
+
+NETWORK
+TITLE = 3024 - LCP02_H821_BT6812 - Hammer Mill 0B - Outlet Temp.
+
+       CALL #"LCP02_H821_BT6812"
+       (
+         CM_No       := 3024 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP02_H821_BT6812_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3024] ,
+       );
+
+NETWORK
+TITLE = 3025 - LCP02_H831_BT6801 - Fibertransport 0B - Temp. Sensor Wheel House
+
+       CALL #"LCP02_H831_BT6801"
+       (
+         CM_No       := 3025 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP02_H831_BT6801_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3025] ,
+       );
+
+NETWORK
+TITLE = 3026 - LCP02_H831_BT6802 - Fibertransport 0B - Temp. Bearing MS
+
+       CALL #"LCP02_H831_BT6802"
+       (
+         CM_No       := 3026 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP02_H831_BT6802_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3026] ,
+       );
+
+NETWORK
+TITLE = 3027 - LCP02_H831_BT6803 - Fibertransport 0B - Temp. Bearing FS
+
+       CALL #"LCP02_H831_BT6803"
+       (
+         CM_No       := 3027 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP02_H831_BT6803_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3027] ,
+       );
+
+NETWORK
+TITLE = 3028 - LCP02_A070_BM1920 - Air Sensor In Canal - Humidity
+
+       CALL #"LCP02_A070_BM1920"
+       (
+         CM_No       := 3028 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP02_A070_BM1920_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3028] ,
+       );
+
+NETWORK
+TITLE = 3029 - LCP02_A070_BT1920 - Air Sensor In Canal - Temperature
+
+       CALL #"LCP02_A070_BT1920"
+       (
+         CM_No       := 3029 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 80.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP02_A070_BT1920_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3029] ,
+       );
+
+NETWORK
+TITLE = 3030 - LCP02_Pinp_SP01 - Spare RTD Input  -  
+
+       CALL #"LCP02_Pinp_SP01"
+       (
+         CM_No       := 3030 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP02_Pinp_SP01_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3030] ,
+       );
+
+NETWORK
+TITLE = 3031 - LCP02_Pinp_SP02 - Spare RTD Input  -  
+
+       CALL #"LCP02_Pinp_SP02"
+       (
+         CM_No       := 3031 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP02_Pinp_SP02_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3031] ,
+       );
+
+NETWORK
+TITLE = 3032 - LCP03_A021_BT1751 - Outlet Fan from Filter - Temp. Sensor Wheel House
+
+       CALL #"LCP03_A021_BT1751"
+       (
+         CM_No       := 3032 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A021_BT1751_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3032] ,
+       );
+
+NETWORK
+TITLE = 3033 - LCP03_A021_BT1752 - Outlet Fan from Filter - Temp. Bearing MS
+
+       CALL #"LCP03_A021_BT1752"
+       (
+         CM_No       := 3033 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A021_BT1752_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3033] ,
+       );
+
+NETWORK
+TITLE = 3034 - LCP03_A021_BT1753 - Outlet Fan from Filter - Temp. Bearing FS
+
+       CALL #"LCP03_A021_BT1753"
+       (
+         CM_No       := 3034 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A021_BT1753_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3034] ,
+       );
+
+NETWORK
+TITLE = 3035 - LCP03_A022_BT1754 - Outlet Fan 0 from Cyclon - Temp. Sensor Wheel House
+
+       CALL #"LCP03_A022_BT1754"
+       (
+         CM_No       := 3035 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A022_BT1754_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3035] ,
+       );
+
+NETWORK
+TITLE = 3036 - LCP03_A022_BT1755 - Outlet Fan 0 from Cyclon - Temp. Bearing MS
+
+       CALL #"LCP03_A022_BT1755"
+       (
+         CM_No       := 3036 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A022_BT1755_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3036] ,
+       );
+
+NETWORK
+TITLE = 3037 - LCP03_A022_BT1756 - Outlet Fan 0 from Cyclon - Temp. Bearing FS
+
+       CALL #"LCP03_A022_BT1756"
+       (
+         CM_No       := 3037 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A022_BT1756_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3037] ,
+       );
+
+NETWORK
+TITLE = 3038 - LCP03_A060_BM1921 - Outside Air Sensor In Canal - Humidity
+
+       CALL #"LCP03_A060_BM1921"
+       (
+         CM_No       := 3038 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A060_BM1921_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3038] ,
+       );
+
+NETWORK
+TITLE = 3039 - LCP03_A060_BT1921 - Outside Air Sensor In Canal - Temperature
+
+       CALL #"LCP03_A060_BT1921"
+       (
+         CM_No       := 3039 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 80.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A060_BT1921_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3039] ,
+       );
+
+NETWORK
+TITLE = 3040 - LCP03_A060_BM1922 - Humidity Sensor In Filter - Humidity
+
+       CALL #"LCP03_A060_BM1922"
+       (
+         CM_No       := 3040 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A060_BM1922_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3040] ,
+       );
+
+NETWORK
+TITLE = 3041 - LCP03_A060_BT1922 - Temperature Sensor In Filter - Temperature
+
+       CALL #"LCP03_A060_BT1922"
+       (
+         CM_No       := 3041 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 80.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A060_BT1922_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3041] ,
+       );
+
+NETWORK
+TITLE = 3042 - LCP03_A060_BM1923 - Humidity Humidifier 1 Filter 0 - Humidity
+
+       CALL #"LCP03_A060_BM1923"
+       (
+         CM_No       := 3042 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A060_BM1923_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3042] ,
+       );
+
+NETWORK
+TITLE = 3043 - LCP03_A060_BT1923 - Temperature Humidifier 1 Filter 0 - Temperature
+
+       CALL #"LCP03_A060_BT1923"
+       (
+         CM_No       := 3043 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 80.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A060_BT1923_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3043] ,
+       );
+
+NETWORK
+TITLE = 3044 - LCP03_A060_BM1924 - Humidity Humidifier 2 Filter 0 - Humidity
+
+       CALL #"LCP03_A060_BM1924"
+       (
+         CM_No       := 3044 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A060_BM1924_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3044] ,
+       );
+
+NETWORK
+TITLE = 3045 - LCP03_A060_BT1924 - Temperature Humidifier 2 Filter 0 - Temperature
+
+       CALL #"LCP03_A060_BT1924"
+       (
+         CM_No       := 3045 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 80.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A060_BT1924_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3045] ,
+       );
+
+NETWORK
+TITLE = 3046 - LCP03_A060_BM1925 - Humidity Humidifier 3 Filter 0 - Humidity
+
+       CALL #"LCP03_A060_BM1925"
+       (
+         CM_No       := 3046 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A060_BM1925_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3046] ,
+       );
+
+NETWORK
+TITLE = 3047 - LCP03_A060_BT1925 - Temperature Humidifier 3 Filter 0 - Temperature
+
+       CALL #"LCP03_A060_BT1925"
+       (
+         CM_No       := 3047 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 80.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A060_BT1925_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3047] ,
+       );
+
+NETWORK
+TITLE = 3048 - LCP03_A020_MB1903_1 - Filter 0 Actuator Inlet 3 - Outside Feedback
+
+       CALL #"LCP03_A020_MB1903_1"
+       (
+         CM_No       := 3048 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A020_MB1903_1_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3048] ,
+       );
+
+NETWORK
+TITLE = 3049 - LCP03_A020_MB1913_1 - Filter 0 Actuator Outlet 3 - Extract Feedback
+
+       CALL #"LCP03_A020_MB1913_1"
+       (
+         CM_No       := 3049 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A020_MB1913_1_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3049] ,
+       );
+
+NETWORK
+TITLE = 3050 - LCP03_A020_MB1923_1 - Filter 0 Actuator Recirculation 3 - Filter Feedback
+
+       CALL #"LCP03_A020_MB1923_1"
+       (
+         CM_No       := 3050 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP03_A020_MB1923_1_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3050] ,
+       );
+
+NETWORK
+TITLE = 3051 - LCP04_F100_BM1970_1 - Forming Heads Inlet OS - Humidity
+
+       CALL #"LCP04_F100_BM1970_1"
+       (
+         CM_No       := 3051 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP04_F100_BM1970_1_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3051] ,
+       );
+
+NETWORK
+TITLE = 3052 - LCP04_F100_BT1970_2 - Forming Heads Inlet OS - Temperature
+
+       CALL #"LCP04_F100_BT1970_2"
+       (
+         CM_No       := 3052 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP04_F100_BT1970_2_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3052] ,
+       );
+
+NETWORK
+TITLE = 3053 - LCP04_D311_BT1031 - Former Wire - Temp.Bearing 12A
+
+       CALL #"LCP04_D311_BT1031"
+       (
+         CM_No       := 3053 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP04_D311_BT1031_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3053] ,
+       );
+
+NETWORK
+TITLE = 3054 - LCP04_D311_BT1032 - Former Wire - Temp.Bearing 12B
+
+       CALL #"LCP04_D311_BT1032"
+       (
+         CM_No       := 3054 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP04_D311_BT1032_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3054] ,
+       );
+
+NETWORK
+TITLE = 3055 - LCP04_Pinp_SP08 - Spare RTD Input  -  
+
+       CALL #"LCP04_Pinp_SP08"
+       (
+         CM_No       := 3055 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP04_Pinp_SP08_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3055] ,
+       );
+
+NETWORK
+TITLE = 3056 - LCP04_Pinp_SP09 - Spare RTD Input  -  
+
+       CALL #"LCP04_Pinp_SP09"
+       (
+         CM_No       := 3056 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP04_Pinp_SP09_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3056] ,
+       );
+
+NETWORK
+TITLE = 3057 - LCP04_Pinp_SP10 - Spare RTD Input  -  
+
+       CALL #"LCP04_Pinp_SP10"
+       (
+         CM_No       := 3057 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP04_Pinp_SP10_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3057] ,
+       );
+
+NETWORK
+TITLE = 3058 - LCP04_Pinp_SP11 - Spare RTD Input  -  
+
+       CALL #"LCP04_Pinp_SP11"
+       (
+         CM_No       := 3058 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP04_Pinp_SP11_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3058] ,
+       );
+
+NETWORK
+TITLE = 3059 - LCP04_Pinp_SP12 - Spare RTD Input  -  
+
+       CALL #"LCP04_Pinp_SP12"
+       (
+         CM_No       := 3059 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP04_Pinp_SP12_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3059] ,
+       );
+
+NETWORK
+TITLE = 3060 - LCP04_Pinp_SP13 - Spare RTD Input  -  
+
+       CALL #"LCP04_Pinp_SP13"
+       (
+         CM_No       := 3060 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := LCP04_Pinp_SP13_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3060] ,
+       );
+
+NETWORK
+TITLE = 3061 - PLC2_F081_BT1238 - Forminghead  Suction Bank #0 - Temp. Sensor Wheel House
+
+       CALL #"PLC2_F081_BT1238"
+       (
+         CM_No       := 3061 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_F081_BT1238_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3061] ,
+       );
+
+NETWORK
+TITLE = 3062 - PLC2_F081_BT1239 - Forminghead  Suction Bank #0 - Temp. Bearing MS
+
+       CALL #"PLC2_F081_BT1239"
+       (
+         CM_No       := 3062 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_F081_BT1239_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3062] ,
+       );
+
+NETWORK
+TITLE = 3063 - PLC2_F081_BT1230 - Forminghead  Suction Bank #0 - Temp. Bearing FS
+
+       CALL #"PLC2_F081_BT1230"
+       (
+         CM_No       := 3063 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_F081_BT1230_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3063] ,
+       );
+
+NETWORK
+TITLE = 3064 - PLC2_D021_BT1321 - Secondary Suction Bank #0 - Temp. Sensor Wheel House
+
+       CALL #"PLC2_D021_BT1321"
+       (
+         CM_No       := 3064 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_D021_BT1321_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3064] ,
+       );
+
+NETWORK
+TITLE = 3065 - PLC2_D021_BT1322 - Secondary Suction Bank #0 - Temp. Bearing MS
+
+       CALL #"PLC2_D021_BT1322"
+       (
+         CM_No       := 3065 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_D021_BT1322_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3065] ,
+       );
+
+NETWORK
+TITLE = 3066 - PLC2_D021_BT1323 - Secondary Suction Bank #0 - Temp. Bearing FS
+
+       CALL #"PLC2_D021_BT1323"
+       (
+         CM_No       := 3066 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_D021_BT1323_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3066] ,
+       );
+
+NETWORK
+TITLE = 3067 - PLC2_D031_BT1331 - Forming Head 0A Edge Trim - Temp. Sensor Wheel House
+
+       CALL #"PLC2_D031_BT1331"
+       (
+         CM_No       := 3067 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_D031_BT1331_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3067] ,
+       );
+
+NETWORK
+TITLE = 3068 - PLC2_D031_BT1332 - Forming Head 0A Edge Trim - Temp. Bearing MS
+
+       CALL #"PLC2_D031_BT1332"
+       (
+         CM_No       := 3068 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_D031_BT1332_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3068] ,
+       );
+
+NETWORK
+TITLE = 3069 - PLC2_D031_BT1333 - Forming Head 0A Edge Trim - Temp. Bearing FS
+
+       CALL #"PLC2_D031_BT1333"
+       (
+         CM_No       := 3069 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_D031_BT1333_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3069] ,
+       );
+
+NETWORK
+TITLE = 3070 - PLC2_D032_BT1334 - Forming Head 0B Edge Trim - Temp. Sensor Wheel House
+
+       CALL #"PLC2_D032_BT1334"
+       (
+         CM_No       := 3070 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_D032_BT1334_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3070] ,
+       );
+
+NETWORK
+TITLE = 3071 - PLC2_D032_BT1335 - Forming Head 0B Edge Trim - Temp. Bearing MS
+
+       CALL #"PLC2_D032_BT1335"
+       (
+         CM_No       := 3071 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_D032_BT1335_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3071] ,
+       );
+
+NETWORK
+TITLE = 3072 - PLC2_D032_BT1336 - Forming Head 0B Edge Trim - Temp. Bearing FS
+
+       CALL #"PLC2_D032_BT1336"
+       (
+         CM_No       := 3072 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_D032_BT1336_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3072] ,
+       );
+
+NETWORK
+TITLE = 3073 - PLC2_D414_BT1324 - Forming Wire Cleaning Fan 2 - Temp. Sensor Wheel House
+
+       CALL #"PLC2_D414_BT1324"
+       (
+         CM_No       := 3073 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_D414_BT1324_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3073] ,
+       );
+
+NETWORK
+TITLE = 3074 - PLC2_D414_BT1325 - Forming Wire Cleaning Fan 2 - Temp. Bearing MS
+
+       CALL #"PLC2_D414_BT1325"
+       (
+         CM_No       := 3074 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_D414_BT1325_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3074] ,
+       );
+
+NETWORK
+TITLE = 3075 - PLC2_D414_BT1326 - Forming Wire Cleaning Fan 2 - Temp. Bearing FS
+
+       CALL #"PLC2_D414_BT1326"
+       (
+         CM_No       := 3075 ,
+         Type       := 0 ,
+         Cfg_FilterTime       := 50 ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 120.0 ,
+         Cfg_RawMin       := 0 ,
+         Cfg_RawMax       := 27648 ,
+         Input       := PLC2_D414_BT1326_AI_None ,
+         SC_Local       := "P01".SC ,
+         CM_AIN        := "dbPlcHmiAIN".AIN[3075] ,
+       );
+
+END_FUNCTION_BLOCK

@@ -1,0 +1,188 @@
+;Tag Type, Tag Name, Tag Description, Read Only, Data Source, Security Code, Alarmed, Native Type, Value Type, Min Analog, Max Analog, Initial Analog, Scale, Offset, DeadBand, Units, Off Label Digital, On Label Digital, Initial Digital, Length String, Initial String, Retentive, Address, System Source Name, System Source Index, RIO Address, Element Size Block, Number Elements Block, Initial Block
+;###002 - THIS LINE CONTAINS VERSION INFORMATION. DO NOT REMOVE!!!
+
+;Folders Section (Must define folders before tags)
+"F","MCC18_U108_MA2G_MTR",,"F"
+"F","MCC18_U109_MA2C_MTR",,"F"
+"F","MCC18_U101_MA4E_MTR",,"F"
+"F","MCC18_U103_MA4C_MTR",,"F"
+"F","MCC18_U105_MA5C_MTR",,"F"
+"F","MCC18_U106_MA5A_MTR",,"F"
+"F","MCC18_U112_MA4L_MTR",,"F"
+"F","MCC18_U107_MA5J_MTR",,"F"
+"F","MCC18_U104_MA2E_MTR",,"F"
+"F","MCC18_U151_MA1C_MTR",,"F"
+"F","MCC18_U153_MA1E_MTR",,"F"
+"F","MCC18_U154_MA1G_MTR",,"F"
+"F","MCC18_U152_MA1J_MTR",,"F"
+"F","MCC18_U155_MA1L_MTR",,"F"
+"F","MCC18_U156_MA2A_MTR",,"F"
+"F","MCC18_U131_MA2L_MTR",,"F"
+"F","MCC18_U133_MA2J_MTR",,"F"
+"F","MCC18_U134_MA3H_MTR",,"F"
+"F","MCC18_U132_MA3F_MTR",,"F"
+"F","MCC18_U135_MA4A_MTR",,"F"
+"F","MCC18_U136_MA3K_MTR",,"F"
+"F","MCC19_U172_MA101_MTR",,"F"
+"F","MCC19_U171_MA102_MTR",,"F"
+"F","MCC19_U181_MA111_MTR",,"F"
+"F","MCC19_U182_MA112_MTR",,"F"
+"F","MCC20_U161_MA121_MTR",,"F"
+
+;Tag Section
+"S","MCC18_U108_MA2G_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U108_MA2G_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U108_MA2G_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.38",0,
+"S","MCC18_U108_MA2G_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Acelli Trim Cutter North - Motor",0,
+"S","MCC18_U108_MA2G_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Acelli Area",0,
+"S","MCC18_U108_MA2G_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U108-MA2G",0,0
+"S","MCC18_U109_MA2C_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U109_MA2C_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U109_MA2C_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.36",0,
+"S","MCC18_U109_MA2C_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Acelli Trim Cutter South - Motor",0,
+"S","MCC18_U109_MA2C_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Acelli Area",0,
+"S","MCC18_U109_MA2C_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U109-MA2C",0,0
+"S","MCC18_U101_MA4E_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U101_MA4E_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U101_MA4E_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.46",0,
+"S","MCC18_U101_MA4E_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Luwa Trim Seperator - Motor",0,
+"S","MCC18_U101_MA4E_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U101_MA4E_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U101-MA4E",0,0
+"S","MCC18_U103_MA4C_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U103_MA4C_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U103_MA4C_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.45",0,
+"S","MCC18_U103_MA4C_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone Screw Conveyor - Motor",0,
+"S","MCC18_U103_MA4C_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U103_MA4C_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U103-MA4C",0,0
+"S","MCC18_U105_MA5C_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U105_MA5C_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U105_MA5C_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.49",0,
+"S","MCC18_U105_MA5C_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone Rotary Valve East - Motor",0,
+"S","MCC18_U105_MA5C_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U105_MA5C_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U105-MA5C",0,0
+"S","MCC18_U106_MA5A_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U106_MA5A_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U106_MA5A_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.48",0,
+"S","MCC18_U106_MA5A_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"B2 Cyclone Rotary Valve West - Motor",0,
+"S","MCC18_U106_MA5A_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U106_MA5A_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U106-MA5A",0,0
+"S","MCC18_U112_MA4L_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U112_MA4L_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U112_MA4L_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.47",0,
+"S","MCC18_U112_MA4L_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"DW2 Cyclone Booster Fan - Motor",0,
+"S","MCC18_U112_MA4L_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U112_MA4L_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U112-MA4L",0,0
+"S","MCC18_U107_MA5J_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U107_MA5J_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U107_MA5J_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.50",0,
+"S","MCC18_U107_MA5J_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"DW2 Cyclone Rotary Valve - Motor",0,
+"S","MCC18_U107_MA5J_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U107_MA5J_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U107-MA5J",0,0
+"S","MCC18_U104_MA2E_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U104_MA2E_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U104_MA2E_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.37",0,
+"S","MCC18_U104_MA2E_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"DW2 Cyclone Screw Conveyor - Motor",0,
+"S","MCC18_U104_MA2E_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Luwa Dust Collection Area",0,
+"S","MCC18_U104_MA2E_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U104-MA2E",0,0
+"S","MCC18_U151_MA1C_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U151_MA1C_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U151_MA1C_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.30",0,
+"S","MCC18_U151_MA1C_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Spare - Motor",0,
+"S","MCC18_U151_MA1C_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Winder Area",0,
+"S","MCC18_U151_MA1C_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U151-MA1C",0,0
+"S","MCC18_U153_MA1E_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U153_MA1E_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U153_MA1E_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.31",0,
+"S","MCC18_U153_MA1E_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Winder Trim Fan North - Motor",0,
+"S","MCC18_U153_MA1E_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Winder Area",0,
+"S","MCC18_U153_MA1E_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U153-MA1E",0,0
+"S","MCC18_U154_MA1G_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U154_MA1G_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U154_MA1G_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.32",0,
+"S","MCC18_U154_MA1G_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Winder Trim Booster Fan North - Motor",0,
+"S","MCC18_U154_MA1G_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Winder Area",0,
+"S","MCC18_U154_MA1G_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U154-MA1G",0,0
+"S","MCC18_U152_MA1J_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U152_MA1J_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U152_MA1J_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.33",0,
+"S","MCC18_U152_MA1J_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Spare - Motor",0,
+"S","MCC18_U152_MA1J_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Winder Area",0,
+"S","MCC18_U152_MA1J_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U152-MA1J",0,0
+"S","MCC18_U155_MA1L_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U155_MA1L_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U155_MA1L_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.34",0,
+"S","MCC18_U155_MA1L_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Winder Trim Fan South - Motor",0,
+"S","MCC18_U155_MA1L_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Winder Area",0,
+"S","MCC18_U155_MA1L_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U155-MA1L",0,0
+"S","MCC18_U156_MA2A_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U156_MA2A_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U156_MA2A_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.35",0,
+"S","MCC18_U156_MA2A_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Winder Trim Booster Fan South - Motor",0,
+"S","MCC18_U156_MA2A_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Winder Area",0,
+"S","MCC18_U156_MA2A_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U156-MA2A",0,0
+"S","MCC18_U131_MA2L_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U131_MA2L_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U131_MA2L_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.40",0,
+"S","MCC18_U131_MA2L_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner #5 Trim Cutter - Motor",0,
+"S","MCC18_U131_MA2L_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Festooner Area",0,
+"S","MCC18_U131_MA2L_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U131-MA2L",0,0
+"S","MCC18_U133_MA2J_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U133_MA2J_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U133_MA2J_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.39",0,
+"S","MCC18_U133_MA2J_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner #5 Trim Fan - Motor",0,
+"S","MCC18_U133_MA2J_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Festooner Area",0,
+"S","MCC18_U133_MA2J_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U133-MA2J",0,0
+"S","MCC18_U134_MA3H_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U134_MA3H_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U134_MA3H_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.42",0,
+"S","MCC18_U134_MA3H_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner #6 Trim Cutter - Motor",0,
+"S","MCC18_U134_MA3H_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Festooner Area",0,
+"S","MCC18_U134_MA3H_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U134-MA3H",0,0
+"S","MCC18_U132_MA3F_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U132_MA3F_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U132_MA3F_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.41",0,
+"S","MCC18_U132_MA3F_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner #6 Trim Fan - Motor",0,
+"S","MCC18_U132_MA3F_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Festooner Area",0,
+"S","MCC18_U132_MA3F_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U132-MA3F",0,0
+"S","MCC18_U135_MA4A_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U135_MA4A_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U135_MA4A_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.44",0,
+"S","MCC18_U135_MA4A_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner #7 Trim Cutter - Motor",0,
+"S","MCC18_U135_MA4A_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Festooner Area",0,
+"S","MCC18_U135_MA4A_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U135-MA4A",0,0
+"S","MCC18_U136_MA3K_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC18_U136_MA3K_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC18_U136_MA3K_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"IP:10.226.223.43",0,
+"S","MCC18_U136_MA3K_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Festooner #7 Trim Fan - Motor",0,
+"S","MCC18_U136_MA3K_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Festooner Area",0,
+"S","MCC18_U136_MA3K_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC18=U136-MA3K",0,0
+"S","MCC19_U172_MA101_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC19_U172_MA101_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC19_U172_MA101_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:3:O.2",0,
+"S","MCC19_U172_MA101_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Latex Transfer Pump - Motor",0,
+"S","MCC19_U172_MA101_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Latex Main Storage Area",0,
+"S","MCC19_U172_MA101_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC19=U172-MA101",0,0
+"S","MCC19_U171_MA102_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC19_U171_MA102_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC19_U171_MA102_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:3:O.3",0,
+"S","MCC19_U171_MA102_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Latex Agitator - Motor",0,
+"S","MCC19_U171_MA102_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Latex Main Storage Area",0,
+"S","MCC19_U171_MA102_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC19=U171-MA102",0,0
+"S","MCC19_U181_MA111_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC19_U181_MA111_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC19_U181_MA111_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:3:O.0",0,
+"S","MCC19_U181_MA111_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Sump Pump 1 - Motor",0,
+"S","MCC19_U181_MA111_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Dryer Area - Process Effluent",0,
+"S","MCC19_U181_MA111_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC19=U181-MA111",0,0
+"S","MCC19_U182_MA112_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC19_U182_MA112_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC19_U182_MA112_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:3:O.1",0,
+"S","MCC19_U182_MA112_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Sump Pump 2 - Motor",0,
+"S","MCC19_U182_MA112_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Dryer Area - Process Effluent",0,
+"S","MCC19_U182_MA112_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC19=U182-MA112",0,0
+"S","MCC20_U161_MA121_MTR\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","MCC20_U161_MA121_MTR\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","MCC20_U161_MA121_MTR\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:3:O.4",0,
+"S","MCC20_U161_MA121_MTR\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Booster Pump - Motor",0,
+"S","MCC20_U161_MA121_MTR\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - City Water - Fan Area",0,
+"S","MCC20_U161_MA121_MTR\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+MCC20=U161-MA121",0,0

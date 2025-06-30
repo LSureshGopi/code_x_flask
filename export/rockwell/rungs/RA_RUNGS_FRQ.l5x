@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="33.00" TargetType="Rung" TargetCount="10" CurrentLanguage="en-US" ContainsContext="true" ExportDate="Fri Aug 20 11:38:35 2021" ExportOptions="References NoRawData L5KData DecoratedData Context RoutineLabels AliasExtras IOTags NoStringData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="PLC1">
+<Programs Use="Context">
+<Program Use="Context" Name="IO">
+<Tags Use="Context"/>
+<Routines Use="Context">
+<Routine Use="Context" Name="R042_FRQ">
+<RLLContent Use="Context">
+<Rung Use="Target" Number="1" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Former Wire Run - Motor
+IP-address: nan
+Disconnect: nan
+Thermal: nan
+Rotation: Off
+FRQ_UDT: MCC_F311_MA3111_FRQ_UDT
+COM_UDT: MCC_F311_MA3111_COM_UDT
+COM_F: MCC_F311_MA3111_COM_F
+FRQ_CM: MCC_F311_MA3111_FRQ_CM
+EU: m/min
+EU min-max: 0 - 5
+RAW min-max: 0 - 2500
+FRQ Type: nan
+Tab ID: 2
+Sub ID: 2
+Section Local: SL_02_S
+]]></Comment>
+<Text><![CDATA[NOP();]]></Text>
+</Rung>
+<Rung Use="Target" Number="2" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Former Wire Run - Motor
+]]></Comment>
+<Text><![CDATA[CM_FRQ(MCC_F311_MA3111_FRQ_CM,PLANT,SL_02_S,DisplayNames,MCC_F311_MA3111_SafetyOK,nan,nan,Off,On,Off,MCC_F311_MA3111_FRQ_CM.Inp_Speed,MCC_F311_MA3111_FRQ_UDT,MCC_F311_MA3111_COM_UDT,2,2) F_nan(MCC_F311_MA3111_COM_F,MCC_F311_MA3111_COM_UDT,F311,Axes,MCC_F311_MA3111_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="3" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Compactor - Motor
+IP-address: nan
+Disconnect: nan
+Thermal: nan
+Rotation: Off
+FRQ_UDT: MCC_C311_MA3121_FRQ_UDT
+COM_UDT: MCC_C311_MA3121_COM_UDT
+COM_F: MCC_C311_MA3121_COM_F
+FRQ_CM: MCC_C311_MA3121_FRQ_CM
+EU: m/min
+EU min-max: 0 - 5
+RAW min-max: 0 - 2500
+FRQ Type: nan
+Tab ID: 2
+Sub ID: 2
+Section Local: SL_02_S
+]]></Comment>
+<Text><![CDATA[NOP();]]></Text>
+</Rung>
+<Rung Use="Target" Number="4" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Compactor - Motor
+]]></Comment>
+<Text><![CDATA[CM_FRQ(MCC_C311_MA3121_FRQ_CM,PLANT,SL_02_S,DisplayNames,MCC_C311_MA3121_SafetyOK,nan,nan,Off,On,Off,MCC_C311_MA3121_FRQ_CM.Inp_Speed,MCC_C311_MA3121_FRQ_UDT,MCC_C311_MA3121_COM_UDT,2,2) F_nan(MCC_C311_MA3121_COM_F,MCC_C311_MA3121_COM_UDT,C311,Axes,MCC_C311_MA3121_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="5" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Pulp Infeed - Motor
+IP-address: nan
+Disconnect: nan
+Thermal: nan
+Rotation: Off
+FRQ_UDT: MCC_H111_MA3101_FRQ_UDT
+COM_UDT: MCC_H111_MA3101_COM_UDT
+COM_F: MCC_H111_MA3101_COM_F
+FRQ_CM: MCC_H111_MA3101_FRQ_CM
+EU: m/min
+EU min-max: 0 - 12
+RAW min-max: 0 - 6000
+FRQ Type: nan
+Tab ID: 2
+Sub ID: 3
+Section Local: SL_02_S
+]]></Comment>
+<Text><![CDATA[NOP();]]></Text>
+</Rung>
+<Rung Use="Target" Number="6" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Pulp Infeed - Motor
+]]></Comment>
+<Text><![CDATA[CM_FRQ(MCC_H111_MA3101_FRQ_CM,PLANT,SL_02_S,DisplayNames,MCC_H111_MA3101_SafetyOK,nan,nan,Off,On,Off,MCC_H111_MA3101_FRQ_CM.Inp_Speed,MCC_H111_MA3101_FRQ_UDT,MCC_H111_MA3101_COM_UDT,2,3) F_nan(MCC_H111_MA3101_COM_F,MCC_H111_MA3101_COM_UDT,H111,Axes,MCC_H111_MA3101_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="7" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Drum 1A - Motor
+IP-address: 192.168.1.23
+Disconnect: nan
+Thermal: MCC_F111_FC3210_DI_Flt
+Rotation: Off
+FRQ_UDT: MCC_F111_MA3210_FRQ_UDT
+COM_UDT: MCC_F111_MA3210_COM_UDT
+COM_F: MCC_F111_MA3210_COM_F
+FRQ_CM: MCC_F111_MA3210_FRQ_CM
+EU: m/min
+EU min-max: 0.0 - 100
+RAW min-max: nan - nan
+FRQ Type: nan
+Tab ID: 4
+Sub ID: 2
+Section Local: SL_04_P
+]]></Comment>
+<Text><![CDATA[NOP();]]></Text>
+</Rung>
+<Rung Use="Target" Number="8" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Drum 1A - Motor
+]]></Comment>
+<Text><![CDATA[CM_FRQ(MCC_F111_MA3210_FRQ_CM,PLANT,SL_04_P,DisplayNames,MCC_F111_MA3210_SafetyOK,nan,MCC_F111_FC3210_DI_Flt,Off,On,Off,MCC_F111_MA3210_FRQ_CM.Inp_Speed,MCC_F111_MA3210_FRQ_UDT,MCC_F111_MA3210_COM_UDT,4,2) F_nan(MCC_F111_MA3210_COM_F,MCC_F111_MA3210_COM_UDT,F111,Axes,MCC_F111_MA3210_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="9" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Drum 1B - Motor
+IP-address: 192.168.1.24
+Disconnect: nan
+Thermal: MCC_F112_FC3211_DI_Flt
+Rotation: Off
+FRQ_UDT: MCC_F112_MA3211_FRQ_UDT
+COM_UDT: MCC_F112_MA3211_COM_UDT
+COM_F: MCC_F112_MA3211_COM_F
+FRQ_CM: MCC_F112_MA3211_FRQ_CM
+EU: m/min
+EU min-max: 0.0 - 100
+RAW min-max: nan - nan
+FRQ Type: nan
+Tab ID: 4
+Sub ID: 2
+Section Local: SL_04_P
+]]></Comment>
+<Text><![CDATA[NOP();]]></Text>
+</Rung>
+<Rung Use="Target" Number="10" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Drum 1B - Motor
+]]></Comment>
+<Text><![CDATA[CM_FRQ(MCC_F112_MA3211_FRQ_CM,PLANT,SL_04_P,DisplayNames,MCC_F112_MA3211_SafetyOK,nan,MCC_F112_FC3211_DI_Flt,Off,On,Off,MCC_F112_MA3211_FRQ_CM.Inp_Speed,MCC_F112_MA3211_FRQ_UDT,MCC_F112_MA3211_COM_UDT,4,2) F_nan(MCC_F112_MA3211_COM_F,MCC_F112_MA3211_COM_UDT,F112,Axes,MCC_F112_MA3211_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="11" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Needle Roll 1A - Motor
+IP-address: 192.168.1.25
+Disconnect: nan
+Thermal: MCC_F121_FC3212_DI_Flt
+Rotation: Off
+FRQ_UDT: MCC_F121_MA3212_FRQ_UDT
+COM_UDT: MCC_F121_MA3212_COM_UDT
+COM_F: MCC_F121_MA3212_COM_F
+FRQ_CM: MCC_F121_MA3212_FRQ_CM
+EU: RPM
+EU min-max: 0.0 - 100
+RAW min-max: nan - nan
+FRQ Type: nan
+Tab ID: 4
+Sub ID: 2
+Section Local: SL_04_P
+]]></Comment>
+<Text><![CDATA[NOP();]]></Text>
+</Rung>
+<Rung Use="Target" Number="12" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Needle Roll 1A - Motor
+]]></Comment>
+<Text><![CDATA[CM_FRQ(MCC_F121_MA3212_FRQ_CM,PLANT,SL_04_P,DisplayNames,MCC_F121_MA3212_SafetyOK,nan,MCC_F121_FC3212_DI_Flt,Off,On,Off,MCC_F121_MA3212_FRQ_CM.Inp_Speed,MCC_F121_MA3212_FRQ_UDT,MCC_F121_MA3212_COM_UDT,4,2) F_nan(MCC_F121_MA3212_COM_F,MCC_F121_MA3212_COM_UDT,F121,Axes,MCC_F121_MA3212_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="13" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Needle Roll 1B - Motor
+IP-address: 192.168.1.26
+Disconnect: nan
+Thermal: MCC_F122_FC3213_DI_Flt
+Rotation: Off
+FRQ_UDT: MCC_F122_MA3213_FRQ_UDT
+COM_UDT: MCC_F122_MA3213_COM_UDT
+COM_F: MCC_F122_MA3213_COM_F
+FRQ_CM: MCC_F122_MA3213_FRQ_CM
+EU: RPM
+EU min-max: 0.0 - 100
+RAW min-max: nan - nan
+FRQ Type: nan
+Tab ID: 4
+Sub ID: 2
+Section Local: SL_04_P
+]]></Comment>
+<Text><![CDATA[NOP();]]></Text>
+</Rung>
+<Rung Use="Target" Number="14" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Needle Roll 1B - Motor
+]]></Comment>
+<Text><![CDATA[CM_FRQ(MCC_F122_MA3213_FRQ_CM,PLANT,SL_04_P,DisplayNames,MCC_F122_MA3213_SafetyOK,nan,MCC_F122_FC3213_DI_Flt,Off,On,Off,MCC_F122_MA3213_FRQ_CM.Inp_Speed,MCC_F122_MA3213_FRQ_UDT,MCC_F122_MA3213_COM_UDT,4,2) F_nan(MCC_F122_MA3213_COM_F,MCC_F122_MA3213_COM_UDT,F122,Axes,MCC_F122_MA3213_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="15" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Main Suction Fan  - Motor
+IP-address: 192.168.1.27
+Disconnect: nan
+Thermal: MCC_D181_FC3111_DI_Flt
+Rotation: Off
+FRQ_UDT: MCC_D181_MA3111_FRQ_UDT
+COM_UDT: MCC_D181_MA3111_COM_UDT
+COM_F: MCC_D181_MA3111_COM_F
+FRQ_CM: MCC_D181_MA3111_FRQ_CM
+EU: RPM
+EU min-max: 0.0 - 3552
+RAW min-max: 0.0 - 2897
+FRQ Type: nan
+Tab ID: 4
+Sub ID: 2
+Section Local: SL_04_P
+]]></Comment>
+<Text><![CDATA[NOP();]]></Text>
+</Rung>
+<Rung Use="Target" Number="16" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Main Suction Fan  - Motor
+]]></Comment>
+<Text><![CDATA[CM_FRQ(MCC_D181_MA3111_FRQ_CM,PLANT,SL_04_P,DisplayNames,MCC_D181_MA3111_SafetyOK,nan,MCC_D181_FC3111_DI_Flt,Off,On,Off,MCC_D181_MA3111_FRQ_CM.Inp_Speed,MCC_D181_MA3111_FRQ_UDT,MCC_D181_MA3111_COM_UDT,4,2) F_nan(MCC_D181_MA3111_COM_F,MCC_D181_MA3111_COM_UDT,D181,Axes,MCC_D181_MA3111_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="17" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Hammer Mill - Motor
+IP-address: 192.168.1.28
+Disconnect: nan
+Thermal: MCC_H121_FC3227_DI_Flt
+Rotation: Off
+FRQ_UDT: MCC_H121_MA3227_FRQ_UDT
+COM_UDT: MCC_H121_MA3227_COM_UDT
+COM_F: MCC_H121_MA3227_COM_F
+FRQ_CM: MCC_H121_MA3227_FRQ_CM
+EU: RPM
+EU min-max: 0.0 - 3552
+RAW min-max: 0.0 - 2897
+FRQ Type: nan
+Tab ID: 3
+Sub ID: 2
+Section Local: SL_03_P
+]]></Comment>
+<Text><![CDATA[NOP();]]></Text>
+</Rung>
+<Rung Use="Target" Number="18" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Hammer Mill - Motor
+]]></Comment>
+<Text><![CDATA[CM_FRQ(MCC_H121_MA3227_FRQ_CM,PLANT,SL_03_P,DisplayNames,MCC_H121_MA3227_SafetyOK,nan,MCC_H121_FC3227_DI_Flt,Off,On,Off,MCC_H121_MA3227_FRQ_CM.Inp_Speed,MCC_H121_MA3227_FRQ_UDT,MCC_H121_MA3227_COM_UDT,3,2) F_nan(MCC_H121_MA3227_COM_F,MCC_H121_MA3227_COM_UDT,H121,Axes,MCC_H121_MA3227_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+<Rung Use="Target" Number="19" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Fiber Transport - Motor
+IP-address: 192.168.1.29
+Disconnect: nan
+Thermal: MCC_H131_FC3228_DI_Flt
+Rotation: Off
+FRQ_UDT: MCC_H131_MA3228_FRQ_UDT
+COM_UDT: MCC_H131_MA3228_COM_UDT
+COM_F: MCC_H131_MA3228_COM_F
+FRQ_CM: MCC_H131_MA3228_FRQ_CM
+EU: RPM
+EU min-max: 0.0 - 3552
+RAW min-max: 0.0 - 2897
+FRQ Type: nan
+Tab ID: 3
+Sub ID: 2
+Section Local: SL_03_P
+]]></Comment>
+<Text><![CDATA[NOP();]]></Text>
+</Rung>
+<Rung Use="Target" Number="20" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Fiber Transport - Motor
+]]></Comment>
+<Text><![CDATA[CM_FRQ(MCC_H131_MA3228_FRQ_CM,PLANT,SL_03_P,DisplayNames,MCC_H131_MA3228_SafetyOK,nan,MCC_H131_FC3228_DI_Flt,Off,On,Off,MCC_H131_MA3228_FRQ_CM.Inp_Speed,MCC_H131_MA3228_FRQ_UDT,MCC_H131_MA3228_COM_UDT,3,2) F_nan(MCC_H131_MA3228_COM_F,MCC_H131_MA3228_COM_UDT,H131,Axes,MCC_H131_MA3228_FRQ_UDT.S.Comm_Status);]]></Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>

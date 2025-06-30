@@ -1,0 +1,186 @@
+FUNCTION_BLOCK "All CM ILK"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ VAR
+   "MCC_S10_EB151" : "APG Interlocks/Messages";
+   "MCC_S10_QM152" : "APG Interlocks/Messages";
+   "MCC_S10_QM153" : "APG Interlocks/Messages";
+   "MCC_S10_QM154" : "APG Interlocks/Messages";
+   "MCC_S11_QM110" : "APG Interlocks/Messages";
+   "MCC_S11_QM111" : "APG Interlocks/Messages";
+   "MCC_S11_QM112" : "APG Interlocks/Messages";
+   "MCC_S15_QM150" : "APG Interlocks/Messages";
+   "MCC_S15_QM151" : "APG Interlocks/Messages";
+   "MCC_S10_EB150" : "APG Interlocks/Messages";
+   "MCC_S10_QM155" : "APG Interlocks/Messages";
+ END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = None - MCC_S10_EB151 - Motor-1
+
+       CALL #"MCC_S10_EB151"
+       (
+         bLockAbs01       := bAlwaysTrue ,
+         iLockMsgAbs01       := 1 ,
+         bLockAbs02       := bAlwaysTrue ,
+         iLockMsgAbs02       := 2 ,
+         bLockAbs03       := bAlwaysTrue ,
+         bLockAbs04       := bAlwaysTrue ,
+         iLockMsgAbs03       := 3 ,
+         iLockMsgAbs04       := 4 ,
+       );
+
+NETWORK
+TITLE = None - MCC_S10_QM152 - Motor-2
+
+       CALL #"MCC_S10_QM152"
+       (
+         bLockAbs01       := bAlwaysTrue ,
+         iLockMsgAbs01       := 1 ,
+         bLockAbs02       := bAlwaysTrue ,
+         iLockMsgAbs02       := 2 ,
+         bLockAbs03       := bAlwaysTrue ,
+         bLockAbs04       := bAlwaysTrue ,
+         iLockMsgAbs03       := 3 ,
+         iLockMsgAbs04       := 4 ,
+       );
+
+NETWORK
+TITLE = None - MCC_S10_QM153 - Motor-3
+
+       CALL #"MCC_S10_QM153"
+       (
+         bLockAbs01       := bAlwaysTrue ,
+         iLockMsgAbs01       := 1 ,
+         bLockAbs02       := bAlwaysTrue ,
+         iLockMsgAbs02       := 2 ,
+         bLockAbs03       := bAlwaysTrue ,
+         bLockAbs04       := bAlwaysTrue ,
+         iLockMsgAbs03       := 3 ,
+         iLockMsgAbs04       := 4 ,
+       );
+
+NETWORK
+TITLE = None - MCC_S10_QM154 - Motor-4
+
+       CALL #"MCC_S10_QM154"
+       (
+         bLockAbs01       := bAlwaysTrue ,
+         iLockMsgAbs01       := 1 ,
+         bLockAbs02       := bAlwaysTrue ,
+         iLockMsgAbs02       := 2 ,
+         bLockAbs03       := bAlwaysTrue ,
+         bLockAbs04       := bAlwaysTrue ,
+         iLockMsgAbs03       := 3 ,
+         iLockMsgAbs04       := 4 ,
+       );
+
+NETWORK
+TITLE = None - MCC_S11_QM110 - Motor-5
+
+       CALL #"MCC_S11_QM110"
+       (
+         bLockAbs01       := bAlwaysTrue ,
+         iLockMsgAbs01       := 1 ,
+         bLockAbs02       := bAlwaysTrue ,
+         iLockMsgAbs02       := 2 ,
+         bLockAbs03       := bAlwaysTrue ,
+         bLockAbs04       := bAlwaysTrue ,
+         iLockMsgAbs03       := 3 ,
+         iLockMsgAbs04       := 4 ,
+       );
+
+NETWORK
+TITLE = None - MCC_S11_QM111 - Motor-6
+
+       CALL #"MCC_S11_QM111"
+       (
+         bLockAbs01       := bAlwaysTrue ,
+         iLockMsgAbs01       := 1 ,
+         bLockAbs02       := bAlwaysTrue ,
+         iLockMsgAbs02       := 2 ,
+         bLockAbs03       := bAlwaysTrue ,
+         bLockAbs04       := bAlwaysTrue ,
+         iLockMsgAbs03       := 3 ,
+         iLockMsgAbs04       := 4 ,
+       );
+
+NETWORK
+TITLE = None - MCC_S11_QM112 - Motor-7
+
+       CALL #"MCC_S11_QM112"
+       (
+         bLockAbs01       := bAlwaysTrue ,
+         iLockMsgAbs01       := 1 ,
+         bLockAbs02       := bAlwaysTrue ,
+         iLockMsgAbs02       := 2 ,
+         bLockAbs03       := bAlwaysTrue ,
+         bLockAbs04       := bAlwaysTrue ,
+         iLockMsgAbs03       := 3 ,
+         iLockMsgAbs04       := 4 ,
+       );
+
+NETWORK
+TITLE = None - MCC_S15_QM150 - Motor-8
+
+       CALL #"MCC_S15_QM150"
+       (
+         bLockAbs01       := bAlwaysTrue ,
+         iLockMsgAbs01       := 1 ,
+         bLockAbs02       := bAlwaysTrue ,
+         iLockMsgAbs02       := 2 ,
+         bLockAbs03       := bAlwaysTrue ,
+         bLockAbs04       := bAlwaysTrue ,
+         iLockMsgAbs03       := 3 ,
+         iLockMsgAbs04       := 4 ,
+       );
+
+NETWORK
+TITLE = None - MCC_S15_QM151 - Motor-9
+
+       CALL #"MCC_S15_QM151"
+       (
+         bLockAbs01       := bAlwaysTrue ,
+         iLockMsgAbs01       := 1 ,
+         bLockAbs02       := bAlwaysTrue ,
+         iLockMsgAbs02       := 2 ,
+         bLockAbs03       := bAlwaysTrue ,
+         bLockAbs04       := bAlwaysTrue ,
+         iLockMsgAbs03       := 3 ,
+         iLockMsgAbs04       := 4 ,
+       );
+
+NETWORK
+TITLE = None - MCC_S10_EB150 - Motor-10
+
+       CALL #"MCC_S10_EB150"
+       (
+         bLockAbs01       := bAlwaysTrue ,
+         iLockMsgAbs01       := 1 ,
+         bLockAbs02       := bAlwaysTrue ,
+         iLockMsgAbs02       := 2 ,
+         bLockAbs03       := bAlwaysTrue ,
+         bLockAbs04       := bAlwaysTrue ,
+         iLockMsgAbs03       := 3 ,
+         iLockMsgAbs04       := 4 ,
+       );
+
+NETWORK
+TITLE = None - MCC_S10_QM155 - Motor-11
+
+       CALL #"MCC_S10_QM155"
+       (
+         bLockAbs01       := bAlwaysTrue ,
+         iLockMsgAbs01       := 1 ,
+         bLockAbs02       := bAlwaysTrue ,
+         iLockMsgAbs02       := 2 ,
+         bLockAbs03       := bAlwaysTrue ,
+         bLockAbs04       := bAlwaysTrue ,
+         iLockMsgAbs03       := 3 ,
+         iLockMsgAbs04       := 4 ,
+       );
+
+END_FUNCTION_BLOCK

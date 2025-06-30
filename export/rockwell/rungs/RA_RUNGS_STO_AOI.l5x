@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="33.00" TargetType="Rung" TargetCount="10" CurrentLanguage="en-US" ContainsContext="true" ExportDate="Fri Aug 20 11:38:35 2021" ExportOptions="References NoRawData L5KData DecoratedData Context RoutineLabels AliasExtras IOTags NoStringData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="PLC1">
+<Programs Use="Context">
+<Program Use="Context" Name="Safety_Z1">
+<Tags Use="Context"/>
+<Routines Use="Context">
+<Routine Use="Context" Name="R011_OutputDrives">
+<RLLContent Use="Context">
+<Rung Use="Target" Number="1" Type="N">
+<Comment><![CDATA[F311 - STO
+----------0----------
+nan with Integrated Safe Torque-off]]></Comment>
+<Text><![CDATA[[AOI_STO_V1_01(MCC_F311_MA3111_STO_AOI,F311:SI,F311:SO,L_SF_Enable_AXES_STO,L_ResetOutputCircuit) ,XIC(MCC_F311_MA3111_STO_AOI.In_Enable) [XIO(MCC_F311_MA3111_STO_AOI.O1) XIO(MCC_F311_MA3111_STO_AOI.FP) OTL(L_FRQ_SO_Fault) ,XIC(MCC_F311_MA3111_STO_AOI.O1) OTE(MCC_F311_MA3111_SF_OK) ] ];]]></Text>
+</Rung>
+<Rung Use="Target" Number="2" Type="N">
+<Comment><![CDATA[C311 - STO
+----------0----------
+nan with Integrated Safe Torque-off]]></Comment>
+<Text><![CDATA[[AOI_STO_V1_01(MCC_C311_MA3121_STO_AOI,C311:SI,C311:SO,L_SF_Enable_AXES_STO,L_ResetOutputCircuit) ,XIC(MCC_C311_MA3121_STO_AOI.In_Enable) [XIO(MCC_C311_MA3121_STO_AOI.O1) XIO(MCC_C311_MA3121_STO_AOI.FP) OTL(L_FRQ_SO_Fault) ,XIC(MCC_C311_MA3121_STO_AOI.O1) OTE(MCC_C311_MA3121_SF_OK) ] ];]]></Text>
+</Rung>
+<Rung Use="Target" Number="3" Type="N">
+<Comment><![CDATA[H111 - STO
+----------0----------
+nan with Integrated Safe Torque-off]]></Comment>
+<Text><![CDATA[[AOI_STO_V1_01(MCC_H111_MA3101_STO_AOI,H111:SI,H111:SO,L_SF_Enable_AXES_STO,L_ResetOutputCircuit) ,XIC(MCC_H111_MA3101_STO_AOI.In_Enable) [XIO(MCC_H111_MA3101_STO_AOI.O1) XIO(MCC_H111_MA3101_STO_AOI.FP) OTL(L_FRQ_SO_Fault) ,XIC(MCC_H111_MA3101_STO_AOI.O1) OTE(MCC_H111_MA3101_SF_OK) ] ];]]></Text>
+</Rung>
+<Rung Use="Target" Number="4" Type="N">
+<Comment><![CDATA[F111 - STO
+----------0----------
+nan with Integrated Safe Torque-off]]></Comment>
+<Text><![CDATA[[AOI_STO_V1_01(MCC_F111_MA3210_STO_AOI,F111:SI,F111:SO,L_SF_Enable_AXES_STO,L_ResetOutputCircuit) ,XIC(MCC_F111_MA3210_STO_AOI.In_Enable) [XIO(MCC_F111_MA3210_STO_AOI.O1) XIO(MCC_F111_MA3210_STO_AOI.FP) OTL(L_FRQ_SO_Fault) ,XIC(MCC_F111_MA3210_STO_AOI.O1) OTE(MCC_F111_MA3210_SF_OK) ] ];]]></Text>
+</Rung>
+<Rung Use="Target" Number="5" Type="N">
+<Comment><![CDATA[F112 - STO
+----------0----------
+nan with Integrated Safe Torque-off]]></Comment>
+<Text><![CDATA[[AOI_STO_V1_01(MCC_F112_MA3211_STO_AOI,F112:SI,F112:SO,L_SF_Enable_AXES_STO,L_ResetOutputCircuit) ,XIC(MCC_F112_MA3211_STO_AOI.In_Enable) [XIO(MCC_F112_MA3211_STO_AOI.O1) XIO(MCC_F112_MA3211_STO_AOI.FP) OTL(L_FRQ_SO_Fault) ,XIC(MCC_F112_MA3211_STO_AOI.O1) OTE(MCC_F112_MA3211_SF_OK) ] ];]]></Text>
+</Rung>
+<Rung Use="Target" Number="6" Type="N">
+<Comment><![CDATA[F121 - STO
+----------0----------
+nan with Integrated Safe Torque-off]]></Comment>
+<Text><![CDATA[[AOI_STO_V1_01(MCC_F121_MA3212_STO_AOI,F121:SI,F121:SO,L_SF_Enable_AXES_STO,L_ResetOutputCircuit) ,XIC(MCC_F121_MA3212_STO_AOI.In_Enable) [XIO(MCC_F121_MA3212_STO_AOI.O1) XIO(MCC_F121_MA3212_STO_AOI.FP) OTL(L_FRQ_SO_Fault) ,XIC(MCC_F121_MA3212_STO_AOI.O1) OTE(MCC_F121_MA3212_SF_OK) ] ];]]></Text>
+</Rung>
+<Rung Use="Target" Number="7" Type="N">
+<Comment><![CDATA[F122 - STO
+----------0----------
+nan with Integrated Safe Torque-off]]></Comment>
+<Text><![CDATA[[AOI_STO_V1_01(MCC_F122_MA3213_STO_AOI,F122:SI,F122:SO,L_SF_Enable_AXES_STO,L_ResetOutputCircuit) ,XIC(MCC_F122_MA3213_STO_AOI.In_Enable) [XIO(MCC_F122_MA3213_STO_AOI.O1) XIO(MCC_F122_MA3213_STO_AOI.FP) OTL(L_FRQ_SO_Fault) ,XIC(MCC_F122_MA3213_STO_AOI.O1) OTE(MCC_F122_MA3213_SF_OK) ] ];]]></Text>
+</Rung>
+<Rung Use="Target" Number="8" Type="N">
+<Comment><![CDATA[D181 - STO
+----------0----------
+nan with Integrated Safe Torque-off]]></Comment>
+<Text><![CDATA[[AOI_STO_V1_01(MCC_D181_MA3111_STO_AOI,D181:SI,D181:SO,L_SF_Enable_AXES_STO,L_ResetOutputCircuit) ,XIC(MCC_D181_MA3111_STO_AOI.In_Enable) [XIO(MCC_D181_MA3111_STO_AOI.O1) XIO(MCC_D181_MA3111_STO_AOI.FP) OTL(L_FRQ_SO_Fault) ,XIC(MCC_D181_MA3111_STO_AOI.O1) OTE(MCC_D181_MA3111_SF_OK) ] ];]]></Text>
+</Rung>
+<Rung Use="Target" Number="9" Type="N">
+<Comment><![CDATA[H121 - STO
+----------0----------
+nan with Integrated Safe Torque-off]]></Comment>
+<Text><![CDATA[[AOI_STO_V1_01(MCC_H121_MA3227_STO_AOI,H121:SI,H121:SO,L_SF_Enable_AXES_STO,L_ResetOutputCircuit) ,XIC(MCC_H121_MA3227_STO_AOI.In_Enable) [XIO(MCC_H121_MA3227_STO_AOI.O1) XIO(MCC_H121_MA3227_STO_AOI.FP) OTL(L_FRQ_SO_Fault) ,XIC(MCC_H121_MA3227_STO_AOI.O1) OTE(MCC_H121_MA3227_SF_OK) ] ];]]></Text>
+</Rung>
+<Rung Use="Target" Number="10" Type="N">
+<Comment><![CDATA[H131 - STO
+----------0----------
+nan with Integrated Safe Torque-off]]></Comment>
+<Text><![CDATA[[AOI_STO_V1_01(MCC_H131_MA3228_STO_AOI,H131:SI,H131:SO,L_SF_Enable_AXES_STO,L_ResetOutputCircuit) ,XIC(MCC_H131_MA3228_STO_AOI.In_Enable) [XIO(MCC_H131_MA3228_STO_AOI.O1) XIO(MCC_H131_MA3228_STO_AOI.FP) OTL(L_FRQ_SO_Fault) ,XIC(MCC_H131_MA3228_STO_AOI.O1) OTE(MCC_H131_MA3228_SF_OK) ] ];]]></Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>

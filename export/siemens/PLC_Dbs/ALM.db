@@ -1,0 +1,9 @@
+DATA_BLOCK "dbPlcHmiALM"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ STRUCT
+   ALM : Array[10000..10150] of "UDT_CM_ALM";
+ END_STRUCT;
+
+BEGIN
+END_DATA_BLOCK

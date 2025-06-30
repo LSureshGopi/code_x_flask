@@ -1,0 +1,720 @@
+﻿FUNCTION_BLOCK "All CM AOUT"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR RETAIN
+      AOUT : Array[0..47] of "UDT_CM_AOUT";
+   END_VAR
+   VAR 
+      LCP20_F271_MA4201 : "CM AOUT";
+      LCP20_F272_MA4202 : "CM AOUT";
+      LCP30_F371_MA4301 : "CM AOUT";
+      LCP30_F372_MA4302 : "CM AOUT";
+      LCP40_F471_MA4401 : "CM AOUT";
+      LCP40_F472_MA4402 : "CM AOUT";
+      LCP52_H211_MB1802 : "CM AOUT";
+      LCP52_H211_MB1021 : "CM AOUT";
+      LCP52_H211_MB1022 : "CM AOUT";
+      LCP52_H212_MB1023 : "CM AOUT";
+      LCP52_H212_MB1024 : "CM AOUT";
+      LCP61_H311_MB1803 : "CM AOUT";
+      LCP61_H311_MB1031 : "CM AOUT";
+      LCP61_H311_MB1032 : "CM AOUT";
+      LCP61_H312_MB1033 : "CM AOUT";
+      LCP61_H312_MB1034 : "CM AOUT";
+      LCP62_H411_MB1804 : "CM AOUT";
+      LCP62_F200_MA4212 : "CM AOUT";
+      LCP62_F300_MA4313 : "CM AOUT";
+      LCP62_F400_MA4414 : "CM AOUT";
+      LCP62_H411_MB1041 : "CM AOUT";
+      LCP62_H411_MB1042 : "CM AOUT";
+      LCP62_H412_MB1043 : "CM AOUT";
+      LCP62_H412_MB1044 : "CM AOUT";
+      LCP81_C311_MB1201 : "CM AOUT";
+      LCP81_C311_MB1202 : "CM AOUT";
+      LCP81_C311_MB1203 : "CM AOUT";
+      LCP81_C311_MB1204 : "CM AOUT";
+      LCP81_E311_MB1301 : "CM AOUT";
+      LCP81_E311_MB1302 : "CM AOUT";
+      LCP81_E311_MB1303 : "CM AOUT";
+      LCP81_E311_MB1304 : "CM AOUT";
+      LCP91_A120_MB1901 : "CM AOUT";
+      LCP91_A120_MB1911 : "CM AOUT";
+      LCP91_A120_MB1921 : "CM AOUT";
+      LCP91_A120_MB1801 : "CM AOUT";
+      LCP91_A120_MB1811 : "CM AOUT";
+      LCP91_A120_MB1821 : "CM AOUT";
+      LCP92_A220_MB1931 : "CM AOUT";
+      LCP92_A220_MB1941 : "CM AOUT";
+      LCP92_A220_MB1951 : "CM AOUT";
+      LCP101_I610_EM1141 : "CM AOUT";
+      LCP103_I630_EM1341 : "CM AOUT";
+      LCP104_I640_EM1441 : "CM AOUT";
+      LCP111_I650_EM1541 : "CM AOUT";
+      LCP112_I660_EM1641 : "CM AOUT";
+      LCP113_I670_EM1741 : "CM AOUT";
+   END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = 100 - LCP20_F271_MA4201 - FH 2 Edge Trim Actuator OS - Position
+
+      CALL #LCP20_F271_MA4201
+      (  CM_No                       := 100 , 
+         Tab                         := 26 , 
+         SubTab                      := 6 , 
+         Unit                        := 5 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         OutReal                     := 0 , 
+         SC_Local                    := SL_26_S12 , 
+         CM_AOUT                     := #AOUT[1]
+      )
+        (          Out_Int% :=  0,;
+
+NETWORK
+TITLE = 101 - LCP20_F272_MA4202 - FH 2 Edge Trim Actuator DS - Position
+
+      CALL #LCP20_F272_MA4202
+      (  CM_No                       := 101 , 
+         Tab                         := 26 , 
+         SubTab                      := 6 , 
+         Unit                        := 5 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_26_S12 , 
+         CM_AOUT                     := #AOUT[2]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 102 - LCP30_F371_MA4301 - FH 3 Edge Trim Actuator OS - Position
+
+      CALL #LCP30_F371_MA4301
+      (  CM_No                       := 102 , 
+         Tab                         := 26 , 
+         SubTab                      := 6 , 
+         Unit                        := 5 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_26_S13 , 
+         CM_AOUT                     := #AOUT[3]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 103 - LCP30_F372_MA4302 - FH 3 Edge Trim Actuator DS - Position
+
+      CALL #LCP30_F372_MA4302
+      (  CM_No                       := 103 , 
+         Tab                         := 26 , 
+         SubTab                      := 6 , 
+         Unit                        := 5 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_26_S13 , 
+         CM_AOUT                     := #AOUT[4]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 104 - LCP40_F471_MA4401 - FH 4 Edge Trim Actuator OS - Position
+
+      CALL #LCP40_F471_MA4401
+      (  CM_No                       := 104 , 
+         Tab                         := 26 , 
+         SubTab                      := 6 , 
+         Unit                        := 5 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_26_S14 , 
+         CM_AOUT                     := #AOUT[5]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 105 - LCP40_F472_MA4402 - FH 4 Edge Trim Actuator DS - Position
+
+      CALL #LCP40_F472_MA4402
+      (  CM_No                       := 105 , 
+         Tab                         := 26 , 
+         SubTab                      := 6 , 
+         Unit                        := 5 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_26_S14 , 
+         CM_AOUT                     := #AOUT[6]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 106 - LCP52_H211_MB1802 - Actuator Makeup Air HM 2 - Damper
+
+      CALL #LCP52_H211_MB1802
+      (  CM_No                       := 106 , 
+         Tab                         := 22 , 
+         SubTab                      := 2 , 
+         Unit                        := 5 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_22_S , 
+         CM_AOUT                     := #AOUT[7]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 107 - LCP52_H211_MB1021 - Upper Pulp 2 U1 Brake - Adjust tension on brake
+
+      CALL #LCP52_H211_MB1021
+      (  CM_No                       := 107 , 
+         Tab                         := 23 , 
+         SubTab                      := 3 , 
+         Unit                        := 5 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[8]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 108 - LCP52_H211_MB1022 - Upper Pulp 2 U2 Brake - Adjust tension on brake
+
+      CALL #LCP52_H211_MB1022
+      (  CM_No                       := 108 , 
+         Tab                         := 23 , 
+         SubTab                      := 3 , 
+         Unit                        := 5 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[9]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 109 - LCP52_H212_MB1023 - Lower Pulp 2 L1 Brake - Adjust tension on brake
+
+      CALL #LCP52_H212_MB1023
+      (  CM_No                       := 109 , 
+         Tab                         := 23 , 
+         SubTab                      := 3 , 
+         Unit                        := 5 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[10]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 110 - LCP52_H212_MB1024 - Lower Pulp 2 L2 Brake - Adjust tension on brake
+
+      CALL #LCP52_H212_MB1024
+      (  CM_No                       := 110 , 
+         Tab                         := 23 , 
+         SubTab                      := 3 , 
+         Unit                        := 5 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[11]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 111 - LCP61_H311_MB1803 - Actuator Makeup Air HM 3 - Damper
+
+      CALL #LCP61_H311_MB1803
+      (  CM_No                       := 111 , 
+         Tab                         := 22 , 
+         SubTab                      := 2 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_22_S , 
+         CM_AOUT                     := #AOUT[12]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 112 - LCP61_H311_MB1031 - Upper Pulp 3 U1 Brake - Adjust tension on brake
+
+      CALL #LCP61_H311_MB1031
+      (  CM_No                       := 112 , 
+         Tab                         := 23 , 
+         SubTab                      := 4 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[13]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 113 - LCP61_H311_MB1032 - Upper Pulp 3 U2 Brake - Adjust tension on brake
+
+      CALL #LCP61_H311_MB1032
+      (  CM_No                       := 113 , 
+         Tab                         := 23 , 
+         SubTab                      := 4 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[14]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 114 - LCP61_H312_MB1033 - Lower Pulp 3 L1 Brake - Adjust tension on brake
+
+      CALL #LCP61_H312_MB1033
+      (  CM_No                       := 114 , 
+         Tab                         := 23 , 
+         SubTab                      := 4 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[15]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 115 - LCP61_H312_MB1034 - Lower Pulp 3 L2 Brake - Adjust tension on brake
+
+      CALL #LCP61_H312_MB1034
+      (  CM_No                       := 115 , 
+         Tab                         := 23 , 
+         SubTab                      := 4 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[16]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 116 - LCP62_H411_MB1804 - Actuator Makeup Air HM 4 - Damper
+
+      CALL #LCP62_H411_MB1804
+      (  CM_No                       := 116 , 
+         Tab                         := 22 , 
+         SubTab                      := 2 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_22_S , 
+         CM_AOUT                     := #AOUT[17]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 117 - LCP62_F200_MA4212 - Splitter Forming Head 2 - Actuator
+
+      CALL #LCP62_F200_MA4212
+      (  CM_No                       := 117 , 
+         Tab                         := 23 , 
+         SubTab                      := 3 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[18]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 118 - LCP62_F300_MA4313 - Splitter Forming Head 3 - Actuator
+
+      CALL #LCP62_F300_MA4313
+      (  CM_No                       := 118 , 
+         Tab                         := 23 , 
+         SubTab                      := 4 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[19]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 119 - LCP62_F400_MA4414 - Splitter Forming Head 4 - Actuator
+
+      CALL #LCP62_F400_MA4414
+      (  CM_No                       := 119 , 
+         Tab                         := 23 , 
+         SubTab                      := 5 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[20]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 120 - LCP62_H411_MB1041 - Upper Pulp 4 U1 Brake - Adjust tension on brake
+
+      CALL #LCP62_H411_MB1041
+      (  CM_No                       := 120 , 
+         Tab                         := 23 , 
+         SubTab                      := 5 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[21]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 121 - LCP62_H411_MB1042 - Upper Pulp 4 U2 Brake - Adjust tension on brake
+
+      CALL #LCP62_H411_MB1042
+      (  CM_No                       := 121 , 
+         Tab                         := 23 , 
+         SubTab                      := 5 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[22]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 122 - LCP62_H412_MB1043 - Lower Pulp 4 L1 Brake - Adjust tension on brake
+
+      CALL #LCP62_H412_MB1043
+      (  CM_No                       := 122 , 
+         Tab                         := 23 , 
+         SubTab                      := 5 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[23]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 123 - LCP62_H412_MB1044 - Lower Pulp 4 L2 Brake - Adjust tension on brake
+
+      CALL #LCP62_H412_MB1044
+      (  CM_No                       := 123 , 
+         Tab                         := 23 , 
+         SubTab                      := 5 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_23_S , 
+         CM_AOUT                     := #AOUT[24]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 124 - LCP81_C311_MB1201 - Compactor Pressure - OS Up Force
+
+      CALL #LCP81_C311_MB1201
+      (  CM_No                       := 124 , 
+         Tab                         := 26 , 
+         SubTab                      := 7 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_26_P , 
+         CM_AOUT                     := #AOUT[25]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 125 - LCP81_C311_MB1202 - Compactor Pressure - DS Up Force
+
+      CALL #LCP81_C311_MB1202
+      (  CM_No                       := 125 , 
+         Tab                         := 26 , 
+         SubTab                      := 7 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_26_P , 
+         CM_AOUT                     := #AOUT[26]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 126 - LCP81_C311_MB1203 - Compactor Pressure - OS Down Force
+
+      CALL #LCP81_C311_MB1203
+      (  CM_No                       := 126 , 
+         Tab                         := 26 , 
+         SubTab                      := 7 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_26_P , 
+         CM_AOUT                     := #AOUT[27]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 127 - LCP81_C311_MB1204 - Compactor Pressure - DS Down Force
+
+      CALL #LCP81_C311_MB1204
+      (  CM_No                       := 127 , 
+         Tab                         := 26 , 
+         SubTab                      := 7 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_26_P , 
+         CM_AOUT                     := #AOUT[28]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 128 - LCP81_E311_MB1301 - Embosser Pressure - OS Up Force
+
+      CALL #LCP81_E311_MB1301
+      (  CM_No                       := 128 , 
+         Tab                         := 26 , 
+         SubTab                      := 9 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_26_P , 
+         CM_AOUT                     := #AOUT[29]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 129 - LCP81_E311_MB1302 - Embosser Pressure - DS Up Force
+
+      CALL #LCP81_E311_MB1302
+      (  CM_No                       := 129 , 
+         Tab                         := 26 , 
+         SubTab                      := 9 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_26_P , 
+         CM_AOUT                     := #AOUT[30]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 130 - LCP81_E311_MB1303 - Embosser Pressure - OS Down Force
+
+      CALL #LCP81_E311_MB1303
+      (  CM_No                       := 130 , 
+         Tab                         := 26 , 
+         SubTab                      := 9 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_26_P , 
+         CM_AOUT                     := #AOUT[31]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 131 - LCP81_E311_MB1304 - Embosser Pressure - DS Down Force
+
+      CALL #LCP81_E311_MB1304
+      (  CM_No                       := 131 , 
+         Tab                         := 26 , 
+         SubTab                      := 9 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_26_P , 
+         CM_AOUT                     := #AOUT[32]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 132 - LCP91_A120_MB1901 - Actuator Inlet 1 - Outside
+
+      CALL #LCP91_A120_MB1901
+      (  CM_No                       := 132 , 
+         Tab                         := 22 , 
+         SubTab                      := 3 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_22_S , 
+         CM_AOUT                     := #AOUT[33]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 133 - LCP91_A120_MB1911 - Actuator Outlet 1 - Extract
+
+      CALL #LCP91_A120_MB1911
+      (  CM_No                       := 133 , 
+         Tab                         := 22 , 
+         SubTab                      := 3 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_22_S , 
+         CM_AOUT                     := #AOUT[34]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 134 - LCP91_A120_MB1921 - Actuator Recirculation 1 - Filter
+
+      CALL #LCP91_A120_MB1921
+      (  CM_No                       := 134 , 
+         Tab                         := 22 , 
+         SubTab                      := 3 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_22_S , 
+         CM_AOUT                     := #AOUT[35]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 135 - LCP91_A120_MB1801 - Actuator Inlet HM - Outside
+
+      CALL #LCP91_A120_MB1801
+      (  CM_No                       := 135 , 
+         Tab                         := 22 , 
+         SubTab                      := 3 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_22_S , 
+         CM_AOUT                     := #AOUT[36]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 136 - LCP91_A120_MB1811 - Actuator Outlet HM - Extract
+
+      CALL #LCP91_A120_MB1811
+      (  CM_No                       := 136 , 
+         Tab                         := 22 , 
+         SubTab                      := 3 , 
+         Unit                        := 2 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_22_S , 
+         CM_AOUT                     := #AOUT[37]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 137 - LCP91_A120_MB1821 - Actuator Recirculation HM - Filter
+
+      CALL #LCP91_A120_MB1821
+      (  CM_No                       := 137 , 
+         Tab                         := 22 , 
+         SubTab                      := 3 , 
+         Unit                        := 3 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_22_S , 
+         CM_AOUT                     := #AOUT[38]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 138 - LCP92_A220_MB1931 - Actuator Inlet 1 - Outside
+
+      CALL #LCP92_A220_MB1931
+      (  CM_No                       := 138 , 
+         Tab                         := 22 , 
+         SubTab                      := 3 , 
+         Unit                        := 3 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_22_S , 
+         CM_AOUT                     := #AOUT[39]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 139 - LCP92_A220_MB1941 - Actuator Outlet 1 - Extract
+
+      CALL #LCP92_A220_MB1941
+      (  CM_No                       := 139 , 
+         Tab                         := 22 , 
+         SubTab                      := 3 , 
+         Unit                        := 3 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_22_S , 
+         CM_AOUT                     := #AOUT[40]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 140 - LCP92_A220_MB1951 - Actuator Recirculation 1 - Filter
+
+      CALL #LCP92_A220_MB1951
+      (  CM_No                       := 140 , 
+         Tab                         := 22 , 
+         SubTab                      := 3 , 
+         Unit                        := 3 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_22_S , 
+         CM_AOUT                     := #AOUT[41]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 141 - LCP101_I610_EM1141 - Control Motor - Setpoint
+
+      CALL #LCP101_I610_EM1141
+      (  CM_No                       := 141 , 
+         Tab                         := 28 , 
+         SubTab                      := 3 , 
+         Unit                        := 3 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_28_S1 , 
+         CM_AOUT                     := #AOUT[42]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 142 - LCP103_I630_EM1341 - Control Motor - Setpoint
+
+      CALL #LCP103_I630_EM1341
+      (  CM_No                       := 142 , 
+         Tab                         := 28 , 
+         SubTab                      := 5 , 
+         Unit                        := 3 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_28_S2 , 
+         CM_AOUT                     := #AOUT[43]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 143 - LCP104_I640_EM1441 - Control Motor - Setpoint
+
+      CALL #LCP104_I640_EM1441
+      (  CM_No                       := 143 , 
+         Tab                         := 28 , 
+         SubTab                      := 6 , 
+         Unit                        := 3 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_28_S2 , 
+         CM_AOUT                     := #AOUT[44]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 144 - LCP111_I650_EM1541 - Control Motor - Setpoint
+
+      CALL #LCP111_I650_EM1541
+      (  CM_No                       := 144 , 
+         Tab                         := 28 , 
+         SubTab                      := 7 , 
+         Unit                        := 3 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_28_S3 , 
+         CM_AOUT                     := #AOUT[45]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 145 - LCP112_I660_EM1641 - Control Motor - Setpoint
+
+      CALL #LCP112_I660_EM1641
+      (  CM_No                       := 145 , 
+         Tab                         := 28 , 
+         SubTab                      := 8 , 
+         Unit                        := 3 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_28_S3 , 
+         CM_AOUT                     := #AOUT[46]
+      )
+        (          Out_Int% :=  ,;
+
+NETWORK
+TITLE = 146 - LCP113_I670_EM1741 - Control Motor - Setpoint
+
+      CALL #LCP113_I670_EM1741
+      (  CM_No                       := 146 , 
+         Tab                         := 28 , 
+         SubTab                      := 9 , 
+         Unit                        := 3 , 
+         OutInt                      := "LCP21_H111_MB1030_AO_CV" , 
+         SC_Local                    := SL_28_S3 , 
+         CM_AOUT                     := #AOUT[47]
+      )
+        (          Out_Int% :=  ,;
+
+END_FUNCTION_BLOCK
+

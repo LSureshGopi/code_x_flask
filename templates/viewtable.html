@@ -1,0 +1,228 @@
+{% extends "configuration.html" %}
+
+{% block config_viewtable %}
+<div style="display: flex; justify-content: right; margin-top: 1rem;">
+    <button id="add-button" class="table-button" style="margin-left: 0.5rem; margin-right: 0.5rem" {% if not user_logged_in %} disabled title="Login to add"{% endif %}>Add Table</button>
+</div>
+<div class="inventory-table-wrapper" style="margin-top: 1rem;">
+    {{ table1 | safe }}
+</div>
+
+<script>
+    const userLoggedIn = {{ user_logged_in | tojson | safe }};
+</script>
+
+<!-- Add Table -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const addButton = document.getElementById("add-button");
+        const table = document.querySelector(".inventory-table-wrapper table");
+    
+        if (!addButton || !table) return;
+    
+        addButton.addEventListener("click", () => {
+            if (addButton.disabled) return;
+    
+            // Prevent multiple add rows
+            if (table.querySelector(".new-row")) return;
+    
+            const tbody = table.querySelector("tbody");
+            const newRow = document.createElement("tr");
+            newRow.classList.add("new-row");
+    
+            const headers = table.querySelectorAll("thead th");
+            const cellCount = headers.length;
+    
+            for (let i = 0; i < cellCount; i++) {
+                const headerText = headers[i].textContent.trim();
+                const td = document.createElement("td");
+    
+                if (["FunctionName", "FunctionDescription"].includes(headerText)) {
+                    td.innerHTML = `<input type="text" class="edit-input" autocomplete="off" placeholder="Enter ${headerText}" />`;
+                } else if (headerText === "Action") {
+                    td.innerHTML = `
+                        <i class='bx bx-check save-new' style='cursor:pointer; font-size:1.5rem; margin-right: 0.5rem; color:green'></i>
+                        <i class='bx bx-x cancel-new' style='cursor:pointer; font-size:1.5rem; color:red'></i>
+                    `;
+                } else {
+                    td.textContent = ""; // ID or other readonly fields
+                }
+                newRow.appendChild(td);
+            }
+    
+            tbody.appendChild(newRow);
+
+            const inputs = newRow.querySelectorAll("input");
+            if (inputs.length > 0) {
+                inputs[0].focus();
+            }
+    
+            // Add events to save and cancel
+            const saveBtn = newRow.querySelector(".save-new");
+            const cancelBtn = newRow.querySelector(".cancel-new");
+    
+            saveBtn.addEventListener("click", () => {
+                const inputs = newRow.querySelectorAll("input");
+                const values = Array.from(inputs).map(input => input.value.trim());
+    
+                if (values.some(v => v === "")) {
+                    alert("Please fill all fields.");
+                    return;
+                }
+    
+                fetch("/add_function_view_row", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        function_name: values[0],
+                        function_description: values[1],
+                    }),
+                })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.success) {
+                        window.location.reload();
+                    } else {
+                        alert("Failed to add new table: " + data.error);
+                    }
+                });
+            });
+    
+            cancelBtn.addEventListener("click", () => {
+                newRow.remove();
+            });
+        });
+    });
+</script>
+
+<!-- Action Column -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const table = document.querySelector('.inventory-table-wrapper table');
+    if (!table) return;
+
+    // Add Action column to header
+    const headerRow = table.querySelector('thead tr');
+    const actionHeader = document.createElement('th');
+    actionHeader.textContent = 'Action';
+    headerRow.appendChild(actionHeader);
+
+    // Add Action cell to each row
+    table.querySelectorAll('tbody tr').forEach(row => {
+        const actionCell = document.createElement('td');
+        row.appendChild(actionCell);
+        addEditIcon(row, actionCell);
+    });
+
+    function addEditIcon(row, cell) {
+        cell.innerHTML = `<i class='bx bx-edit' style='cursor:pointer; font-size:1.2rem;'></i>`;
+        const editIcon = cell.querySelector('i');
+
+        if (!userLoggedIn) {
+            editIcon.style.opacity = '0.5';
+            editIcon.style.cursor = 'not-allowed';
+            editIcon.title = 'Login required to edit';
+            return;
+        }
+
+        editIcon.addEventListener('click', () => {
+            enterEditMode(row);
+        });
+    }
+
+    function enterEditMode(row) {
+        const idCell = row.children[0];
+        const nameCell = row.children[1];
+        const descCell = row.children[2];
+        const actionCell = row.children[3];
+
+        const origName = nameCell.textContent.trim();
+        const origDesc = descCell.textContent.trim();
+
+        nameCell.innerHTML = `<input type="text" value="${origName}" class="edit-input">`;
+        descCell.innerHTML = `<input type="text" value="${origDesc}" class="edit-input">`;
+
+        actionCell.innerHTML = `
+            <i class='bx bx-check save-icon' style='cursor:pointer; font-size:1.2rem; margin-right: 0.2rem; color:green'></i>
+            <i class='bx bx-x cancel-icon' style='cursor:pointer; font-size:1.2rem; margin-right: 0.2rem; color:orange'></i>
+            <i class='bx bx-trash delete-icon' style='cursor:pointer; font-size:1.2rem; color:red'></i>
+        `;
+
+        const saveIcon = actionCell.querySelector('.save-icon');
+        const cancelIcon = actionCell.querySelector('.cancel-icon');
+        const deleteIcon = actionCell.querySelector('.delete-icon');
+
+        if (!userLoggedIn) {
+            [saveIcon, cancelIcon, deleteIcon].forEach(icon => {
+                icon.style.opacity = '0.5';
+                icon.style.cursor = 'not-allowed';
+                icon.title = 'Login required';
+            });
+            return;
+        }
+
+        saveIcon.addEventListener('click', () => {
+            const newName = nameCell.querySelector('input').value.trim();
+            const newDesc = descCell.querySelector('input').value.trim();
+            const rowId = idCell.textContent.trim();
+
+            fetch('/update_function_view_row', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    id: rowId,
+                    function_name: newName,
+                    function_description: newDesc
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    nameCell.textContent = newName;
+                    descCell.textContent = newDesc;
+                    addEditIcon(row, actionCell);
+                } else {
+                    alert('Update failed: ' + data.error);
+                }
+            })
+            .catch(err => {
+                console.error('Error:', err);
+                alert('Failed to update');
+            });
+        });
+
+        cancelIcon.addEventListener('click', () => {
+            nameCell.textContent = origName;
+            descCell.textContent = origDesc;
+            addEditIcon(row, actionCell);
+        });
+
+        deleteIcon.addEventListener('click', () => {
+            const rowId = idCell.textContent.trim();
+
+            if (confirm('Are you sure you want to delete this row?')) {
+                fetch('/delete_function_view_row', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id: rowId })
+                })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.success) {
+                        row.remove();
+                    } else {
+                        alert('Delete failed: ' + data.error);
+                    }
+                })
+                .catch(err => {
+                    console.error('Error:', err);
+                    alert('Failed to delete');
+                });
+            }
+        });
+    }
+});
+</script>
+{% endblock %}

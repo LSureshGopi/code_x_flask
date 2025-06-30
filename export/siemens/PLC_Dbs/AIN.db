@@ -1,0 +1,9 @@
+DATA_BLOCK "dbPlcHmiAIN"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+ STRUCT
+   AIN : Array[3000..3018] of "UDT_CM_AIN_N";
+ END_STRUCT;
+
+BEGIN
+END_DATA_BLOCK

@@ -1,0 +1,17 @@
+;Tag Type, Tag Name, Tag Description, Read Only, Data Source, Security Code, Alarmed, Native Type, Value Type, Min Analog, Max Analog, Initial Analog, Scale, Offset, DeadBand, Units, Off Label Digital, On Label Digital, Initial Digital, Length String, Initial String, Retentive, Address, System Source Name, System Source Index, RIO Address, Element Size Block, Number Elements Block, Initial Block
+;###002 - THIS LINE CONTAINS VERSION INFORMATION. DO NOT REMOVE!!!
+
+;Folders Section (Must define folders before tags)
+"F","LCP181_U170_QM103_VLV",,"F"
+
+;Tag Section
+"S","LCP181_U170_QM103_VLV\ActivateCaption","Energize button caption","F","M","*","F",,,,,,,,,,,,,82,"Open",0,
+"S","LCP181_U170_QM103_VLV\DeactivateCaption","Deenergize button caption","F","M","*","F",,,,,,,,,,,,,82,"Close",0,
+"S","LCP181_U170_QM103_VLV\EU","Engineering Unit","F","M","*","F",,,,,,,,,,,,,82,na,0,
+"S","LCP181_U170_QM103_VLV\Negative_FB","Negative feedback","F","M","*","F",,,,,,,,,,,,,82,"na",0,
+"S","LCP181_U170_QM103_VLV\PLC","PLC name","F","M","*","F",,,,,,,,,,,,,82,"PLC3",0,
+"S","LCP181_U170_QM103_VLV\Positive_FB","Positive feedback","F","M","*","F",,,,,,,,,,,,,82,"na",0,
+"S","LCP181_U170_QM103_VLV\TagAddress","PLC IO address","F","M","*","F",,,,,,,,,,,,,82,"LCP181_IO:3:O.5",0,
+"S","LCP181_U170_QM103_VLV\TagComment","TAG description","F","M","*","F",,,,,,,,,,,,,82,"Water Shower - Valve",0,
+"S","LCP181_U170_QM103_VLV\Area","Area","F","M","*","F",,,,,,,,,,,,,82,"Utilities - Latex Main Storage Area",0,
+"S","LCP181_U170_QM103_VLV\TagName","TAG name","F","M","*","F",,,,,,,,,,,,2,82,"+LCP181=U170-QM103",0,0

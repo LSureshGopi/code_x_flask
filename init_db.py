@@ -2,7 +2,7 @@ import sqlite3
 from werkzeug.security import generate_password_hash
 
 # Connect to DB
-conn = sqlite3.connect('code_x.db')
+conn = sqlite3.connect('CodeX-Config.db')
 cursor = conn.cursor()
 
 # Create table
@@ -11,7 +11,8 @@ with open('schema.sql') as f:
 
 # Add users
 users = [
-    ("superadmin", "etilorP$1234", "SuperAdmin", "Active"),
+    ("admin", "admin$1234", "Admin", "Active"),
+    ("client", "12345678", "Client", "Active"),
 ]
 
 for username, password, role, status in users:

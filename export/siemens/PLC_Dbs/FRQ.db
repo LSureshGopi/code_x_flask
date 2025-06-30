@@ -1,0 +1,9 @@
+DATA_BLOCK "dbPlcHmiFRQ"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ STRUCT
+   FRQ : Array[1000..1039] of "UDT_CM_FRQ_N";
+ END_STRUCT;
+
+BEGIN
+END_DATA_BLOCK

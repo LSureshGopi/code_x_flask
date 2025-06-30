@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="33.00" TargetType="Rung" TargetCount="1" CurrentLanguage="en-US" ContainsContext="true" ExportDate="Fri Aug 20 11:38:35 2021" ExportOptions="References NoRawData L5KData DecoratedData Context RoutineLabels AliasExtras IOTags NoStringData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="PLC1">
+<Programs Use="Context">
+<Program Use="Context" Name="IO">
+<Tags Use="Context"/>
+<Routines Use="Context">
+<Routine Use="Context" Name="R040_MTR">
+<RLLContent Use="Context">
+<Rung Use="Target" Number="1" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+MCC Fan  - Panel Fan
+]]></Comment>
+<Text><![CDATA[[XIO(MCC7_MCC7_QA0007_ALM_UDT.E.Alm) XIC(Zone1_OK) XIC(\Safety_Z1.MCC_AUX01_MA1010_SF_OK) OTE(MCC_AUX01_MA1010_SafetyOK) ,CM_MTR(MCC_AUX01_MA1010_MTR_CM,PLANT,SL_05_P,DisplayNames,MCC_AUX01_MA1010_SafetyOK,\Safety_Z1.MCC_AUX01_QE1010_CROUT_AOI.FP,nan,MCC_AUX01_FC1010_DI_Flt,MCC_AUX01_QA1010_DI_Fb,Off,MCC_AUX01_MA1010_MTR_UDT,5,2,MCC_AUX01_QA1010_DO_Cs_S,Dummy_Out_N)];]]></Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>

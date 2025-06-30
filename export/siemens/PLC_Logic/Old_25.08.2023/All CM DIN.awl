@@ -1,0 +1,2218 @@
+FUNCTION_BLOCK "All CM DIN"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ VAR
+   "LCP20_F261_BG4251" : "CM DIN";
+   "LCP20_F261_BG4252" : "CM DIN";
+   "LCP20_D311_BG4301" : "CM DIN";
+   "LCP20_D311_BG4302" : "CM DIN";
+   "LCP20_AQ20_BF9001" : "CM DIN";
+   "LCP30_F361_BG4253" : "CM DIN";
+   "LCP30_F361_BG4254" : "CM DIN";
+   "LCP40_F461_BG4255" : "CM DIN";
+   "LCP40_F461_BG4256" : "CM DIN";
+   "LCP40_D311_BG4333" : "CM DIN";
+   "LCP40_D311_BG4334" : "CM DIN";
+   "LCP52_H221_RL4021" : "CM DIN";
+   "LCP52_H211_BG3025" : "CM DIN";
+   "LCP52_H212_BG3026" : "CM DIN";
+   "LCP52_H211_BG3021" : "CM DIN";
+   "LCP52_H211_BG3022" : "CM DIN";
+   "LCP52_H212_BG3023" : "CM DIN";
+   "LCP52_H212_BG3024" : "CM DIN";
+   "LCP52_H211_BG1023" : "CM DIN";
+   "LCP52_H212_BG1024" : "CM DIN";
+   "LCP52_H211_BG1025" : "CM DIN";
+   "LCP52_H211_BG1026" : "CM DIN";
+   "LCP52_H212_BG1027" : "CM DIN";
+   "LCP52_H212_BG1028" : "CM DIN";
+   "LCP52_AQ52_BF9052" : "CM DIN";
+   "LCP61_H321_RL4031" : "CM DIN";
+   "LCP61_H311_BG3035" : "CM DIN";
+   "LCP61_H312_BG3036" : "CM DIN";
+   "LCP61_H311_BG3031" : "CM DIN";
+   "LCP61_H311_BG3032" : "CM DIN";
+   "LCP61_H312_BG3033" : "CM DIN";
+   "LCP61_H312_BG3034" : "CM DIN";
+   "LCP61_H311_BG1033" : "CM DIN";
+   "LCP61_H312_BG1034" : "CM DIN";
+   "LCP61_H311_BG1035" : "CM DIN";
+   "LCP61_H311_BG1036" : "CM DIN";
+   "LCP61_H312_BG1037" : "CM DIN";
+   "LCP61_H312_BG1038" : "CM DIN";
+   "LCP61_AQ61_BF9061" : "CM DIN";
+   "LCP62_H421_RL4041" : "CM DIN";
+   "LCP62_H411_BG3045" : "CM DIN";
+   "LCP62_H412_BG3046" : "CM DIN";
+   "LCP62_H411_BG3041" : "CM DIN";
+   "LCP62_H411_BG3042" : "CM DIN";
+   "LCP62_H412_BG3043" : "CM DIN";
+   "LCP62_H412_BG3044" : "CM DIN";
+   "LCP62_H411_BG1043" : "CM DIN";
+   "LCP62_H412_BG1044" : "CM DIN";
+   "LCP62_H411_BG1045" : "CM DIN";
+   "LCP62_H411_BG1046" : "CM DIN";
+   "LCP62_H412_BG1047" : "CM DIN";
+   "LCP62_H412_BG1048" : "CM DIN";
+   "LCP62_AQ62_BF9062" : "CM DIN";
+   "LCP71_B010_BR3011" : "CM DIN";
+   "LCP72_B210_BR2311" : "CM DIN";
+   "LCP72_B210_BR2312" : "CM DIN";
+   "LCP72_B310_BR3311" : "CM DIN";
+   "LCP72_B310_BR3312" : "CM DIN";
+   "LCP72_B410_BR4311" : "CM DIN";
+   "LCP72_B410_BR4312" : "CM DIN";
+   "LCP81_T311_BG4303" : "CM DIN";
+   "LCP81_T311_BG4304" : "CM DIN";
+   "LCP81_T161_BG4257" : "CM DIN";
+   "LCP81_T161_BG4258" : "CM DIN";
+   "LCP123_I111_BP1611" : "CM DIN";
+   "LCP81_I311_BG4305" : "CM DIN";
+   "LCP81_I311_BG4306" : "CM DIN";
+   "LCP81_C311_BG6318" : "CM DIN";
+   "LCP81_E311_BG6319" : "CM DIN";
+   "LCP81_AQ81_BF9081" : "CM DIN";
+   "LCP91_A110_BG5711" : "CM DIN";
+   "LCP91_A110_BG4711" : "CM DIN";
+   "LCP91_A110_BG4712" : "CM DIN";
+   "LCP81_AQ81_BF9082" : "CM DIN";
+   "LCP92_A210_BG5731" : "CM DIN";
+   "LCP92_A210_BG4731" : "CM DIN";
+   "LCP92_A210_BG4732" : "CM DIN";
+   "LCP93_A710_BF8783" : "CM DIN";
+   "LCP93_A720_BF8783" : "CM DIN";
+   "LCP93_A730_BF8783" : "CM DIN";
+   "LCP121_I311_BG4307" : "CM DIN";
+   "LCP121_I311_BG4308" : "CM DIN";
+   "LCP121_I311_BG4309" : "CM DIN";
+   "LCP121_J311_BG4310" : "CM DIN";
+   "LCP121_K311_BG4311" : "CM DIN";
+   "LCP121_K311_BG4312" : "CM DIN";
+   "LCP121_J611_BP1612" : "CM DIN";
+   "LCP122_K311_BG4313" : "CM DIN";
+   "LCP122_K311_BG4314" : "CM DIN";
+   "LCP122_L311_BG4315" : "CM DIN";
+   "LCP122_L311_BG4316" : "CM DIN";
+   "LCP122_M311_BG4317" : "CM DIN";
+   "LCP122_M311_BG4318" : "CM DIN";
+   "LCP122_N311_BG4319" : "CM DIN";
+   "LCP122_N311_BG4320" : "CM DIN";
+   "LCP122_S311_BG4331" : "CM DIN";
+   "LCP122_S311_BG4332" : "CM DIN";
+   "LCP122_K111_BP1613" : "CM DIN";
+   "LCP122_M611_BP1614" : "CM DIN";
+   "LCP123_N311_BG4321" : "CM DIN";
+   "LCP123_N311_BG4322" : "CM DIN";
+   "LCP123_R311_BG4323" : "CM DIN";
+   "LCP123_R311_BG4324" : "CM DIN";
+   "LCP123_R311_BG4325" : "CM DIN";
+   "LCP123_R311_BG4326" : "CM DIN";
+   "LCP123_R321_BG4327" : "CM DIN";
+   "LCP123_R321_BG4328" : "CM DIN";
+   "LCP123_R321_BG4329" : "CM DIN";
+   "LCP123_R321_BG4330" : "CM DIN";
+   "LCP20_F296_BL1101" : "CM DIN";
+   "LCP30_F395_BL1102" : "CM DIN";
+   "LCP30_F396_BL1103" : "CM DIN";
+   "LCP40_F495_BL1104" : "CM DIN";
+   "LCP123_N422_BG4401" : "CM DIN";
+   "LCP123_N422_BG4402" : "CM DIN";
+   "LCP132_Q710_BG2801" : "CM DIN";
+   "LCP132_Q710_BG2802" : "CM DIN";
+   "LCP132_Q710_BG2803" : "CM DIN";
+   "LCP132_Q720_BG2811" : "CM DIN";
+   "LCP132_Q720_BG2812" : "CM DIN";
+   "LCP101_I610_BP2111" : "CM DIN";
+   "LCP101_I610_BP2112" : "CM DIN";
+   "LCP101_I610_BG1142" : "CM DIN";
+   "LCP103_I630_BP2311" : "CM DIN";
+   "LCP103_I630_BP2312" : "CM DIN";
+   "LCP103_I630_BG1342" : "CM DIN";
+   "LCP104_I640_BP2411" : "CM DIN";
+   "LCP104_I640_BP2412" : "CM DIN";
+   "LCP104_I640_BG1442" : "CM DIN";
+   "LCP111_I650_BP2511" : "CM DIN";
+   "LCP111_I650_BP2512" : "CM DIN";
+   "LCP111_I650_BG1542" : "CM DIN";
+   "LCP112_I660_BP2611" : "CM DIN";
+   "LCP112_I660_BP2612" : "CM DIN";
+   "LCP112_I660_BG1642" : "CM DIN";
+   "LCP113_I670_BP2711" : "CM DIN";
+   "LCP113_I670_BP2712" : "CM DIN";
+   "LCP113_I670_BG1742" : "CM DIN";
+ END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = 5001 - LCP20_F261_BG4251 - Former 2 Lift - Limit Switch Up
+
+       CALL #"LCP20_F261_BG4251"
+       (
+         CM_No       := 5001 ,
+         Tab       := 26 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP20_F261_BG4251_DI_Lim ,
+         SC_Local       := SL_26_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5001] ,
+       );
+
+NETWORK
+TITLE = 5002 - LCP20_F261_BG4252 - Former 2 Lift - Limit Switch Down
+
+       CALL #"LCP20_F261_BG4252"
+       (
+         CM_No       := 5002 ,
+         Tab       := 26 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP20_F261_BG4252_DI_Lim ,
+         SC_Local       := SL_26_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5002] ,
+       );
+
+NETWORK
+TITLE = 5003 - LCP20_D311_BG4301 - FW Inlet  - Limit Switch OS
+
+       CALL #"LCP20_D311_BG4301"
+       (
+         CM_No       := 5003 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 0 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP20_D311_BG4301_DI_Lim ,
+         SC_Local       := SL_03_S1 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5003] ,
+       );
+
+NETWORK
+TITLE = 5004 - LCP20_D311_BG4302 - FW Inlet - Limit Switch DS
+
+       CALL #"LCP20_D311_BG4302"
+       (
+         CM_No       := 5004 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 0 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP20_D311_BG4302_DI_Lim ,
+         SC_Local       := SL_03_S1 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5004] ,
+       );
+
+NETWORK
+TITLE = 5005 - LCP20_AQ20_BF9001 - PNEU20 Pressurized - Monitor
+
+       CALL #"LCP20_AQ20_BF9001"
+       (
+         CM_No       := 5005 ,
+         Tab       := 1 ,
+         SubTab       := 2 ,
+         CfgType       := 0 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP20_AQ20_BF9001_DI_Fb ,
+         SC_Local       := SL_01 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5005] ,
+       );
+
+NETWORK
+TITLE = 5006 - LCP30_F361_BG4253 - Former 3 Lift - Limit Switch Up
+
+       CALL #"LCP30_F361_BG4253"
+       (
+         CM_No       := 5006 ,
+         Tab       := 26 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP30_F361_BG4253_DI_Lim ,
+         SC_Local       := SL_26_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5006] ,
+       );
+
+NETWORK
+TITLE = 5007 - LCP30_F361_BG4254 - Former 3 Lift - Limit Switch Down
+
+       CALL #"LCP30_F361_BG4254"
+       (
+         CM_No       := 5007 ,
+         Tab       := 26 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP30_F361_BG4254_DI_Lim ,
+         SC_Local       := SL_26_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5007] ,
+       );
+
+NETWORK
+TITLE = 5008 - LCP40_F461_BG4255 - Former 4 Lift - Limit Switch Up
+
+       CALL #"LCP40_F461_BG4255"
+       (
+         CM_No       := 5008 ,
+         Tab       := 26 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP40_F461_BG4255_DI_Lim ,
+         SC_Local       := SL_26_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5008] ,
+       );
+
+NETWORK
+TITLE = 5009 - LCP40_F461_BG4256 - Former 4 Lift - Limit Switch Down
+
+       CALL #"LCP40_F461_BG4256"
+       (
+         CM_No       := 5009 ,
+         Tab       := 26 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP40_F461_BG4256_DI_Lim ,
+         SC_Local       := SL_26_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5009] ,
+       );
+
+NETWORK
+TITLE = 5010 - LCP40_D311_BG4333 - FW Outlet - Limit Switch OS
+
+       CALL #"LCP40_D311_BG4333"
+       (
+         CM_No       := 5010 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP40_D311_BG4333_DI_Lim ,
+         SC_Local       := SL_03_S1 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5010] ,
+       );
+
+NETWORK
+TITLE = 5011 - LCP40_D311_BG4334 - FW Outlet - Limit Switch DS
+
+       CALL #"LCP40_D311_BG4334"
+       (
+         CM_No       := 5011 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP40_D311_BG4334_DI_Lim ,
+         SC_Local       := SL_03_S1 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5011] ,
+       );
+
+NETWORK
+TITLE = 5012 - LCP52_H221_RL4021 - Hammer Mill 2 - Lid Switch
+
+       CALL #"LCP52_H221_RL4021"
+       (
+         CM_No       := 5012 ,
+         Tab       := 23 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_H221_RL4021_DI_FbO ,
+         SC_Local       := SL_23_P12 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5012] ,
+       );
+
+NETWORK
+TITLE = 5013 - LCP52_H211_BG3025 - Upper Pulp 2-U3 - Emitter Sensor 
+
+       CALL #"LCP52_H211_BG3025"
+       (
+         CM_No       := 5013 ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_H211_BG3025_DI_U3 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5013] ,
+       );
+
+NETWORK
+TITLE = 5014 - LCP52_H212_BG3026 - Lower Pulp 2-L3 - Emitter Sensor 
+
+       CALL #"LCP52_H212_BG3026"
+       (
+         CM_No       := 5014 ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_H212_BG3026_DI_L3 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5014] ,
+       );
+
+NETWORK
+TITLE = 5015 - LCP52_H211_BG3021 - Upper Pulp 2-U1 - Emitter Sensor 
+
+       CALL #"LCP52_H211_BG3021"
+       (
+         CM_No       := 5015 ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_H211_BG3021_DI_U1 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5015] ,
+       );
+
+NETWORK
+TITLE = 5016 - LCP52_H211_BG3022 - Upper Pulp 2-U2 - Emitter Sensor 
+
+       CALL #"LCP52_H211_BG3022"
+       (
+         CM_No       := 5016 ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_H211_BG3022_DI_U2 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5016] ,
+       );
+
+NETWORK
+TITLE = 5017 - LCP52_H212_BG3023 - Lower Pulp 2-L1 - Emitter Sensor 
+
+       CALL #"LCP52_H212_BG3023"
+       (
+         CM_No       := 5017 ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_H212_BG3023_DI_L1 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5017] ,
+       );
+
+NETWORK
+TITLE = 5018 - LCP52_H212_BG3024 - Lower Pulp 2-L2 - Emitter Sensor 
+
+       CALL #"LCP52_H212_BG3024"
+       (
+         CM_No       := 5018 ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_H212_BG3024_DI_L2 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5018] ,
+       );
+
+NETWORK
+TITLE = 5019 - LCP52_H211_BG1023 - Upper Pulp 2 Watch  - Rotation Sensor
+
+       CALL #"LCP52_H211_BG1023"
+       (
+         CM_No       := 5019 ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_H211_BG1023_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5019] ,
+       );
+
+NETWORK
+TITLE = 5020 - LCP52_H212_BG1024 - Lower Pulp 2 Watch  - Rotation Sensor
+
+       CALL #"LCP52_H212_BG1024"
+       (
+         CM_No       := 5020 ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_H212_BG1024_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5020] ,
+       );
+
+NETWORK
+TITLE = 5021 - LCP52_H211_BG1025 - Upper Pulp 2 U1 Brake - Inductive Sensor
+
+       CALL #"LCP52_H211_BG1025"
+       (
+         CM_No       := 5021 ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_H211_BG1025_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5021] ,
+       );
+
+NETWORK
+TITLE = 5022 - LCP52_H211_BG1026 - Upper Pulp 2 U2 Brake - Inductive Sensor
+
+       CALL #"LCP52_H211_BG1026"
+       (
+         CM_No       := 5022 ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_H211_BG1026_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5022] ,
+       );
+
+NETWORK
+TITLE = 5023 - LCP52_H212_BG1027 - Lower Pulp 2 L1 Brake - Inductive Sensor
+
+       CALL #"LCP52_H212_BG1027"
+       (
+         CM_No       := 5023 ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_H212_BG1027_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5023] ,
+       );
+
+NETWORK
+TITLE = 5024 - LCP52_H212_BG1028 - Lower Pulp 2 L2 Brake - Inductive Sensor
+
+       CALL #"LCP52_H212_BG1028"
+       (
+         CM_No       := 5024 ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_H212_BG1028_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5024] ,
+       );
+
+NETWORK
+TITLE = 5025 - LCP52_AQ52_BF9052 - Pressure Monitor - Air Supply
+
+       CALL #"LCP52_AQ52_BF9052"
+       (
+         CM_No       := 5025 ,
+         Tab       := 1 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP52_AQ52_BF9052_DI_Ps ,
+         SC_Local       := SL_23_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5025] ,
+       );
+
+NETWORK
+TITLE = 5026 - LCP61_H321_RL4031 - Hammer Mill 3 - Lid Switch
+
+       CALL #"LCP61_H321_RL4031"
+       (
+         CM_No       := 5026 ,
+         Tab       := 23 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_H321_RL4031_DI_FbO ,
+         SC_Local       := SL_23_P13 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5026] ,
+       );
+
+NETWORK
+TITLE = 5027 - LCP61_H311_BG3035 - Upper Pulp 3-U3 - Emitter Sensor 
+
+       CALL #"LCP61_H311_BG3035"
+       (
+         CM_No       := 5027 ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_H311_BG3035_DI_U3 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5027] ,
+       );
+
+NETWORK
+TITLE = 5028 - LCP61_H312_BG3036 - Lower Pulp 3-L3 - Emitter Sensor 
+
+       CALL #"LCP61_H312_BG3036"
+       (
+         CM_No       := 5028 ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_H312_BG3036_DI_L3 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5028] ,
+       );
+
+NETWORK
+TITLE = 5029 - LCP61_H311_BG3031 - Upper Pulp 3-U1 - Emitter Sensor 
+
+       CALL #"LCP61_H311_BG3031"
+       (
+         CM_No       := 5029 ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_H311_BG3031_DI_U1 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5029] ,
+       );
+
+NETWORK
+TITLE = 5030 - LCP61_H311_BG3032 - Upper Pulp 3-U2 - Emitter Sensor 
+
+       CALL #"LCP61_H311_BG3032"
+       (
+         CM_No       := 5030 ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_H311_BG3032_DI_U2 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5030] ,
+       );
+
+NETWORK
+TITLE = 5031 - LCP61_H312_BG3033 - Lower Pulp 3-L1 - Emitter Sensor 
+
+       CALL #"LCP61_H312_BG3033"
+       (
+         CM_No       := 5031 ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_H312_BG3033_DI_L1 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5031] ,
+       );
+
+NETWORK
+TITLE = 5032 - LCP61_H312_BG3034 - Lower Pulp 3-L2 - Emitter Sensor 
+
+       CALL #"LCP61_H312_BG3034"
+       (
+         CM_No       := 5032 ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_H312_BG3034_DI_L2 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5032] ,
+       );
+
+NETWORK
+TITLE = 5033 - LCP61_H311_BG1033 - Upper Pulp 3 Watch  - Rotation Sensor
+
+       CALL #"LCP61_H311_BG1033"
+       (
+         CM_No       := 5033 ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_H311_BG1033_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5033] ,
+       );
+
+NETWORK
+TITLE = 5034 - LCP61_H312_BG1034 - Lower Pulp 3 Watch  - Rotation Sensor
+
+       CALL #"LCP61_H312_BG1034"
+       (
+         CM_No       := 5034 ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_H312_BG1034_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5034] ,
+       );
+
+NETWORK
+TITLE = 5035 - LCP61_H311_BG1035 - Upper Pulp 3 U1 Brake - Inductive Sensor
+
+       CALL #"LCP61_H311_BG1035"
+       (
+         CM_No       := 5035 ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_H311_BG1035_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5035] ,
+       );
+
+NETWORK
+TITLE = 5036 - LCP61_H311_BG1036 - Upper Pulp 3 U2 Brake - Inductive Sensor
+
+       CALL #"LCP61_H311_BG1036"
+       (
+         CM_No       := 5036 ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_H311_BG1036_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5036] ,
+       );
+
+NETWORK
+TITLE = 5037 - LCP61_H312_BG1037 - Lower Pulp 3 L1 Brake - Inductive Sensor
+
+       CALL #"LCP61_H312_BG1037"
+       (
+         CM_No       := 5037 ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_H312_BG1037_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5037] ,
+       );
+
+NETWORK
+TITLE = 5038 - LCP61_H312_BG1038 - Lower Pulp 3 L2 Brake - Inductive Sensor
+
+       CALL #"LCP61_H312_BG1038"
+       (
+         CM_No       := 5038 ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_H312_BG1038_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5038] ,
+       );
+
+NETWORK
+TITLE = 5039 - LCP61_AQ61_BF9061 - Pressure Monitor - Air Supply
+
+       CALL #"LCP61_AQ61_BF9061"
+       (
+         CM_No       := 5039 ,
+         Tab       := 1 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP61_AQ61_BF9061_DI_Ps ,
+         SC_Local       := SL_23_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5039] ,
+       );
+
+NETWORK
+TITLE = 5040 - LCP62_H421_RL4041 - Hammer Mill 4 - Lid Switch
+
+       CALL #"LCP62_H421_RL4041"
+       (
+         CM_No       := 5040 ,
+         Tab       := 23 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_H421_RL4041_DI_FbO ,
+         SC_Local       := SL_23_P14 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5040] ,
+       );
+
+NETWORK
+TITLE = 5041 - LCP62_H411_BG3045 - Upper Pulp 4-U3 - Emitter Sensor 
+
+       CALL #"LCP62_H411_BG3045"
+       (
+         CM_No       := 5041 ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_H411_BG3045_DI_U3 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5041] ,
+       );
+
+NETWORK
+TITLE = 5042 - LCP62_H412_BG3046 - Lower Pulp 4-L3 - Emitter Sensor 
+
+       CALL #"LCP62_H412_BG3046"
+       (
+         CM_No       := 5042 ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_H412_BG3046_DI_L3 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5042] ,
+       );
+
+NETWORK
+TITLE = 5043 - LCP62_H411_BG3041 - Upper Pulp 4-U1 - Emitter Sensor 
+
+       CALL #"LCP62_H411_BG3041"
+       (
+         CM_No       := 5043 ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_H411_BG3041_DI_U1 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5043] ,
+       );
+
+NETWORK
+TITLE = 5044 - LCP62_H411_BG3042 - Upper Pulp 4-U2 - Emitter Sensor 
+
+       CALL #"LCP62_H411_BG3042"
+       (
+         CM_No       := 5044 ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_H411_BG3042_DI_U2 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5044] ,
+       );
+
+NETWORK
+TITLE = 5045 - LCP62_H412_BG3043 - Lower Pulp 4-L1 - Emitter Sensor 
+
+       CALL #"LCP62_H412_BG3043"
+       (
+         CM_No       := 5045 ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_H412_BG3043_DI_L1 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5045] ,
+       );
+
+NETWORK
+TITLE = 5046 - LCP62_H412_BG3044 - Lower Pulp 4-L2 - Emitter Sensor 
+
+       CALL #"LCP62_H412_BG3044"
+       (
+         CM_No       := 5046 ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_H412_BG3044_DI_L2 ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5046] ,
+       );
+
+NETWORK
+TITLE = 5047 - LCP62_H411_BG1043 - Upper Pulp 4 Watch  - Rotation Sensor
+
+       CALL #"LCP62_H411_BG1043"
+       (
+         CM_No       := 5047 ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_H411_BG1043_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5047] ,
+       );
+
+NETWORK
+TITLE = 5048 - LCP62_H412_BG1044 - Lower Pulp 4 Watch  - Rotation Sensor
+
+       CALL #"LCP62_H412_BG1044"
+       (
+         CM_No       := 5048 ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_H412_BG1044_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5048] ,
+       );
+
+NETWORK
+TITLE = 5049 - LCP62_H411_BG1045 - Upper Pulp 4 U1 Brake - Inductive Sensor
+
+       CALL #"LCP62_H411_BG1045"
+       (
+         CM_No       := 5049 ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_H411_BG1045_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5049] ,
+       );
+
+NETWORK
+TITLE = 5050 - LCP62_H411_BG1046 - Upper Pulp 4 U2 Brake - Inductive Sensor
+
+       CALL #"LCP62_H411_BG1046"
+       (
+         CM_No       := 5050 ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_H411_BG1046_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5050] ,
+       );
+
+NETWORK
+TITLE = 5051 - LCP62_H412_BG1047 - Lower Pulp 4 L1 Brake - Inductive Sensor
+
+       CALL #"LCP62_H412_BG1047"
+       (
+         CM_No       := 5051 ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_H412_BG1047_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5051] ,
+       );
+
+NETWORK
+TITLE = 5052 - LCP62_H412_BG1048 - Lower Pulp 4 L2 Brake - Inductive Sensor
+
+       CALL #"LCP62_H412_BG1048"
+       (
+         CM_No       := 5052 ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_H412_BG1048_DI_Rot ,
+         SC_Local       := SL_23_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5052] ,
+       );
+
+NETWORK
+TITLE = 5053 - LCP62_AQ62_BF9062 - Pressure Monitor - Air Supply
+
+       CALL #"LCP62_AQ62_BF9062"
+       (
+         CM_No       := 5053 ,
+         Tab       := 1 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP62_AQ62_BF9062_DI_Ps ,
+         SC_Local       := SL_23_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5053] ,
+       );
+
+NETWORK
+TITLE = 5054 - LCP71_B010_BR3011 - Hopper Feeder Photocell - Photocell
+
+       CALL #"LCP71_B010_BR3011"
+       (
+         CM_No       := 5054 ,
+         Tab       := 24 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP71_B010_BR3011_DI_On ,
+         SC_Local       := SL_24_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5054] ,
+       );
+
+NETWORK
+TITLE = 5055 - LCP72_B210_BR2311 - Photocell - Level Low
+
+       CALL #"LCP72_B210_BR2311"
+       (
+         CM_No       := 5055 ,
+         Tab       := 24 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP72_B210_BR2311_DI_On ,
+         SC_Local       := SL_24_P12 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5055] ,
+       );
+
+NETWORK
+TITLE = 5056 - LCP72_B210_BR2312 - Photocell - Level High
+
+       CALL #"LCP72_B210_BR2312"
+       (
+         CM_No       := 5056 ,
+         Tab       := 24 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP72_B210_BR2312_DI_On ,
+         SC_Local       := SL_24_P12 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5056] ,
+       );
+
+NETWORK
+TITLE = 5057 - LCP72_B310_BR3311 - Photocell - Level Low
+
+       CALL #"LCP72_B310_BR3311"
+       (
+         CM_No       := 5057 ,
+         Tab       := 24 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP72_B310_BR3311_DI_On ,
+         SC_Local       := SL_24_P13 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5057] ,
+       );
+
+NETWORK
+TITLE = 5058 - LCP72_B310_BR3312 - Photocell - Level High
+
+       CALL #"LCP72_B310_BR3312"
+       (
+         CM_No       := 5058 ,
+         Tab       := 24 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP72_B310_BR3312_DI_On ,
+         SC_Local       := SL_24_P13 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5058] ,
+       );
+
+NETWORK
+TITLE = 5059 - LCP72_B410_BR4311 - Photocell - Level Low
+
+       CALL #"LCP72_B410_BR4311"
+       (
+         CM_No       := 5059 ,
+         Tab       := 24 ,
+         SubTab       := 6 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP72_B410_BR4311_DI_On ,
+         SC_Local       := SL_24_P14 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5059] ,
+       );
+
+NETWORK
+TITLE = 5060 - LCP72_B410_BR4312 - Photocell - Level High
+
+       CALL #"LCP72_B410_BR4312"
+       (
+         CM_No       := 5060 ,
+         Tab       := 24 ,
+         SubTab       := 6 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP72_B410_BR4312_DI_On ,
+         SC_Local       := SL_24_P14 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5060] ,
+       );
+
+NETWORK
+TITLE = 5061 - LCP81_T311_BG4303 - Transfer Wire  - Limit Switch OS
+
+       CALL #"LCP81_T311_BG4303"
+       (
+         CM_No       := 5061 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP81_T311_BG4303_DI_Lim ,
+         SC_Local       := SL_03_S3 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5061] ,
+       );
+
+NETWORK
+TITLE = 5062 - LCP81_T311_BG4304 - Transfer Wire  - Limit Switch DS
+
+       CALL #"LCP81_T311_BG4304"
+       (
+         CM_No       := 5062 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP81_T311_BG4304_DI_Lim ,
+         SC_Local       := SL_03_S3 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5062] ,
+       );
+
+NETWORK
+TITLE = 5063 - LCP81_T161_BG4257 - Transfer Lift - Limit Switch Up
+
+       CALL #"LCP81_T161_BG4257"
+       (
+         CM_No       := 5063 ,
+         Tab       := 26 ,
+         SubTab       := 8 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP81_T161_BG4257_DI_Lim ,
+         SC_Local       := SL_30_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5063] ,
+       );
+
+NETWORK
+TITLE = 5064 - LCP81_T161_BG4258 - Transfer Lift - Limit Switch Down
+
+       CALL #"LCP81_T161_BG4258"
+       (
+         CM_No       := 5064 ,
+         Tab       := 26 ,
+         SubTab       := 8 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP81_T161_BG4258_DI_Lim ,
+         SC_Local       := SL_30_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5064] ,
+       );
+
+NETWORK
+TITLE = 5065 - LCP123_I111_BP1611 - Münters Box 1 Water Pressure - Pressure Switch
+
+       CALL #"LCP123_I111_BP1611"
+       (
+         CM_No       := 5065 ,
+         Tab       := 31 ,
+         SubTab       := 1 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP123_I111_BP1611_DI_Ps ,
+         SC_Local       := SL_30_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5065] ,
+       );
+
+NETWORK
+TITLE = 5066 - LCP81_I311_BG4305 - Dryer 1 Wire Inlet  - Limit Switch OS
+
+       CALL #"LCP81_I311_BG4305"
+       (
+         CM_No       := 5066 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP81_I311_BG4305_DI_Lim ,
+         SC_Local       := SL_03_S5 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5066] ,
+       );
+
+NETWORK
+TITLE = 5067 - LCP81_I311_BG4306 - Dryer 1 Wire Inlet  - Limit Switch DS
+
+       CALL #"LCP81_I311_BG4306"
+       (
+         CM_No       := 5067 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP81_I311_BG4306_DI_Lim ,
+         SC_Local       := SL_03_S5 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5067] ,
+       );
+
+NETWORK
+TITLE = 5068 - LCP81_C311_BG6318 - Compactor  - Load Sharing
+
+       CALL #"LCP81_C311_BG6318"
+       (
+         CM_No       := 5068 ,
+         Tab       := 26 ,
+         SubTab       := 7 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP81_C311_BG6318_DI_FB ,
+         SC_Local       := SL_03_S2 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5068] ,
+       );
+
+NETWORK
+TITLE = 5069 - LCP81_E311_BG6319 - Embosser - Load Sharing
+
+       CALL #"LCP81_E311_BG6319"
+       (
+         CM_No       := 5069 ,
+         Tab       := 26 ,
+         SubTab       := 9 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP81_E311_BG6319_DI_FB ,
+         SC_Local       := SL_03_S3 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5069] ,
+       );
+
+NETWORK
+TITLE = 5070 - LCP81_AQ81_BF9081 - Pressure Monitor - Air Supply 7 Bar
+
+       CALL #"LCP81_AQ81_BF9081"
+       (
+         CM_No       := 5070 ,
+         Tab       := 1 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP81_AQ81_BF9081_DI_Ps ,
+         SC_Local       := SL_01 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5070] ,
+       );
+
+NETWORK
+TITLE = 5071 - LCP91_A110_BG5711 - Jet Conveyor Baghouse Filter - Pressure control Jet Conveyor
+
+       CALL #"LCP91_A110_BG5711"
+       (
+         CM_No       := 5071 ,
+         Tab       := 21 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP91_A110_BG5711_DI_Ps ,
+         SC_Local       := SL_21_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5071] ,
+       );
+
+NETWORK
+TITLE = 5072 - LCP91_A110_BG4711 - Limit Switch Reg. Carriage - Filter 1 - Inlet End
+
+       CALL #"LCP91_A110_BG4711"
+       (
+         CM_No       := 5072 ,
+         Tab       := 21 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP91_A110_BG4711_DI_Lim ,
+         SC_Local       := SL_21_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5072] ,
+       );
+
+NETWORK
+TITLE = 5073 - LCP91_A110_BG4712 - Limit Switch Reg. Carriage - Filter 1 - Outlet End
+
+       CALL #"LCP91_A110_BG4712"
+       (
+         CM_No       := 5073 ,
+         Tab       := 21 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP91_A110_BG4712_DI_Lim ,
+         SC_Local       := SL_21_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5073] ,
+       );
+
+NETWORK
+TITLE = 5074 - LCP81_AQ81_BF9082 - Pressure Monitor - Air Supply 10 Bar
+
+       CALL #"LCP81_AQ81_BF9082"
+       (
+         CM_No       := 5074 ,
+         Tab       := 1 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP81_AQ81_BF9082_DI_Ps ,
+         SC_Local       := SL_01 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5074] ,
+       );
+
+NETWORK
+TITLE = 5075 - LCP92_A210_BG5731 - Jet Conveyor Baghouse Filter - Pressure control Jet Conveyor
+
+       CALL #"LCP92_A210_BG5731"
+       (
+         CM_No       := 5075 ,
+         Tab       := 21 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP92_A210_BG5731_DI_Ps ,
+         SC_Local       := SL_21_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5075] ,
+       );
+
+NETWORK
+TITLE = 5076 - LCP92_A210_BG4731 - Limit Switch Reg. Carriage  - Inlet End
+
+       CALL #"LCP92_A210_BG4731"
+       (
+         CM_No       := 5076 ,
+         Tab       := 21 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP92_A210_BG4731_DI_Lim ,
+         SC_Local       := SL_21_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5076] ,
+       );
+
+NETWORK
+TITLE = 5077 - LCP92_A210_BG4732 - Limit Switch Reg. Carriage  - Outlet End
+
+       CALL #"LCP92_A210_BG4732"
+       (
+         CM_No       := 5077 ,
+         Tab       := 21 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP92_A210_BG4732_DI_Lim ,
+         SC_Local       := SL_21_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5077] ,
+       );
+
+NETWORK
+TITLE = 5078 - LCP93_A710_BF8783 - Humidifier Pump 1 Hammer Mill / Bico Area - Pressure Switch
+
+       CALL #"LCP93_A710_BF8783"
+       (
+         CM_No       := 5078 ,
+         Tab       := 22 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP93_A710_BF8783_DI_Wrn ,
+         SC_Local       := SL_22_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5078] ,
+       );
+
+NETWORK
+TITLE = 5079 - LCP93_A720_BF8783 - Humidifier Pump 2 Former Area - Pressure Switch
+
+       CALL #"LCP93_A720_BF8783"
+       (
+         CM_No       := 5079 ,
+         Tab       := 22 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP93_A720_BF8783_DI_Wrn ,
+         SC_Local       := SL_22_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5079] ,
+       );
+
+NETWORK
+TITLE = 5080 - LCP93_A730_BF8783 - Humidifier Pump 3 Former Area - Pressure Switch
+
+       CALL #"LCP93_A730_BF8783"
+       (
+         CM_No       := 5080 ,
+         Tab       := 22 ,
+         SubTab       := 6 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP93_A730_BF8783_DI_Wrn ,
+         SC_Local       := SL_22_S ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5080] ,
+       );
+
+NETWORK
+TITLE = 5081 - LCP121_I311_BG4307 - Dryer 1 Wire Outlet  - Limit Switch OS
+
+       CALL #"LCP121_I311_BG4307"
+       (
+         CM_No       := 5081 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP121_I311_BG4307_DI_Lim ,
+         SC_Local       := SL_03_S5 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5081] ,
+       );
+
+NETWORK
+TITLE = 5082 - LCP121_I311_BG4308 - Dryer 1 Wire Outlet  - Limit Switch DS
+
+       CALL #"LCP121_I311_BG4308"
+       (
+         CM_No       := 5082 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP121_I311_BG4308_DI_Lim ,
+         SC_Local       := SL_03_S5 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5082] ,
+       );
+
+NETWORK
+TITLE = 5083 - LCP121_I311_BG4309 - Spray 1 Wire  - Limit Switch OS
+
+       CALL #"LCP121_I311_BG4309"
+       (
+         CM_No       := 5083 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP121_I311_BG4309_DI_Lim ,
+         SC_Local       := SL_03_S6 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5083] ,
+       );
+
+NETWORK
+TITLE = 5084 - LCP121_J311_BG4310 - Spray 1 Wire  - Limit Switch DS
+
+       CALL #"LCP121_J311_BG4310"
+       (
+         CM_No       := 5084 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP121_J311_BG4310_DI_Lim ,
+         SC_Local       := SL_03_S6 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5084] ,
+       );
+
+NETWORK
+TITLE = 5085 - LCP121_K311_BG4311 - Dryer 2 Wire Inlet  - Limit Switch OS
+
+       CALL #"LCP121_K311_BG4311"
+       (
+         CM_No       := 5085 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP121_K311_BG4311_DI_Lim ,
+         SC_Local       := SL_03_S7 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5085] ,
+       );
+
+NETWORK
+TITLE = 5086 - LCP121_K311_BG4312 - Dryer 2 Wire Inlet  - Limit Switch DS
+
+       CALL #"LCP121_K311_BG4312"
+       (
+         CM_No       := 5086 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP121_K311_BG4312_DI_Lim ,
+         SC_Local       := SL_03_S7 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5086] ,
+       );
+
+NETWORK
+TITLE = 5087 - LCP121_J611_BP1612 - Münters Box 2 Water Pressure - Pressure Switch
+
+       CALL #"LCP121_J611_BP1612"
+       (
+         CM_No       := 5087 ,
+         Tab       := 31 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP121_J611_BP1612_DI_Ps ,
+         SC_Local       := SL_30_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5087] ,
+       );
+
+NETWORK
+TITLE = 5088 - LCP122_K311_BG4313 - Dryer 2 Wire Outlet  - Limit Switch OS
+
+       CALL #"LCP122_K311_BG4313"
+       (
+         CM_No       := 5088 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP122_K311_BG4313_DI_Lim ,
+         SC_Local       := SL_03_S7 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5088] ,
+       );
+
+NETWORK
+TITLE = 5089 - LCP122_K311_BG4314 - Dryer 2 Wire Outlet  - Limit Switch DS
+
+       CALL #"LCP122_K311_BG4314"
+       (
+         CM_No       := 5089 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP122_K311_BG4314_DI_Lim ,
+         SC_Local       := SL_03_S7 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5089] ,
+       );
+
+NETWORK
+TITLE = 5090 - LCP122_L311_BG4315 - Transition Wire  - Limit Switch OS
+
+       CALL #"LCP122_L311_BG4315"
+       (
+         CM_No       := 5090 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP122_L311_BG4315_DI_Lim ,
+         SC_Local       := SL_03_S8 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5090] ,
+       );
+
+NETWORK
+TITLE = 5091 - LCP122_L311_BG4316 - Transition Wire  - Limit Switch DS
+
+       CALL #"LCP122_L311_BG4316"
+       (
+         CM_No       := 5091 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP122_L311_BG4316_DI_Lim ,
+         SC_Local       := SL_03_S8 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5091] ,
+       );
+
+NETWORK
+TITLE = 5092 - LCP122_M311_BG4317 - Spray 2 Wire  - Limit Switch OS
+
+       CALL #"LCP122_M311_BG4317"
+       (
+         CM_No       := 5092 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP122_M311_BG4317_DI_Lim ,
+         SC_Local       := SL_03_S9 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5092] ,
+       );
+
+NETWORK
+TITLE = 5093 - LCP122_M311_BG4318 - Spray 2 Wire  - Limit Switch DS
+
+       CALL #"LCP122_M311_BG4318"
+       (
+         CM_No       := 5093 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP122_M311_BG4318_DI_Lim ,
+         SC_Local       := SL_03_S9 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5093] ,
+       );
+
+NETWORK
+TITLE = 5094 - LCP122_N311_BG4319 - Dryer 3 Wire Inlet  - Limit Switch OS
+
+       CALL #"LCP122_N311_BG4319"
+       (
+         CM_No       := 5094 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP122_N311_BG4319_DI_Lim ,
+         SC_Local       := SL_03_S10 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5094] ,
+       );
+
+NETWORK
+TITLE = 5095 - LCP122_N311_BG4320 - Dryer 3 Wire Inlet  - Limit Switch DS
+
+       CALL #"LCP122_N311_BG4320"
+       (
+         CM_No       := 5095 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP122_N311_BG4320_DI_Lim ,
+         SC_Local       := SL_03_S10 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5095] ,
+       );
+
+NETWORK
+TITLE = 5096 - LCP122_S311_BG4331 - Cooling Wire  - Limit Switch OS
+
+       CALL #"LCP122_S311_BG4331"
+       (
+         CM_No       := 5096 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP122_S311_BG4331_DI_Lim ,
+         SC_Local       := SL_03_S13 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5096] ,
+       );
+
+NETWORK
+TITLE = 5097 - LCP122_S311_BG4332 - Cooling Wire  - Limit Switch DS
+
+       CALL #"LCP122_S311_BG4332"
+       (
+         CM_No       := 5097 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP122_S311_BG4332_DI_Lim ,
+         SC_Local       := SL_03_S13 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5097] ,
+       );
+
+NETWORK
+TITLE = 5098 - LCP122_K111_BP1613 - Münters Box 3 Water Pressure - Pressure Switch
+
+       CALL #"LCP122_K111_BP1613"
+       (
+         CM_No       := 5098 ,
+         Tab       := 31 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP122_K111_BP1613_DI_Ps ,
+         SC_Local       := SL_30_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5098] ,
+       );
+
+NETWORK
+TITLE = 5099 - LCP122_M611_BP1614 - Münters Box 4 Water Pressure - Pressure Switch
+
+       CALL #"LCP122_M611_BP1614"
+       (
+         CM_No       := 5099 ,
+         Tab       := 31 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP122_M611_BP1614_DI_Ps ,
+         SC_Local       := SL_30_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5099] ,
+       );
+
+NETWORK
+TITLE = 5100 - LCP123_N311_BG4321 - Dryer 3 Wire Outlet  - Limit Switch OS
+
+       CALL #"LCP123_N311_BG4321"
+       (
+         CM_No       := 5100 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP123_N311_BG4321_DI_Lim ,
+         SC_Local       := SL_03_S10 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5100] ,
+       );
+
+NETWORK
+TITLE = 5101 - LCP123_N311_BG4322 - Dryer 3 Wire Outlet  - Limit Switch DS
+
+       CALL #"LCP123_N311_BG4322"
+       (
+         CM_No       := 5101 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP123_N311_BG4322_DI_Lim ,
+         SC_Local       := SL_03_S10 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5101] ,
+       );
+
+NETWORK
+TITLE = 5102 - LCP123_R311_BG4323 - Return Run 1 Wire Inlet - Limit Switch OS
+
+       CALL #"LCP123_R311_BG4323"
+       (
+         CM_No       := 5102 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP123_R311_BG4323_DI_Lim ,
+         SC_Local       := SL_03_S11 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5102] ,
+       );
+
+NETWORK
+TITLE = 5103 - LCP123_R311_BG4324 - Return Run 1 Wire Inlet - Limit Switch DS
+
+       CALL #"LCP123_R311_BG4324"
+       (
+         CM_No       := 5103 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP123_R311_BG4324_DI_Lim ,
+         SC_Local       := SL_03_S11 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5103] ,
+       );
+
+NETWORK
+TITLE = 5104 - LCP123_R311_BG4325 - Return Run 1 Wire Outlet - Limit Switch OS
+
+       CALL #"LCP123_R311_BG4325"
+       (
+         CM_No       := 5104 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP123_R311_BG4325_DI_Lim ,
+         SC_Local       := SL_03_S11 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5104] ,
+       );
+
+NETWORK
+TITLE = 5105 - LCP123_R311_BG4326 - Return Run 1 Wire Outlet - Limit Switch DS
+
+       CALL #"LCP123_R311_BG4326"
+       (
+         CM_No       := 5105 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP123_R311_BG4326_DI_Lim ,
+         SC_Local       := SL_03_S11 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5105] ,
+       );
+
+NETWORK
+TITLE = 5106 - LCP123_R321_BG4327 - Return Run 2 Wire Inlet - Limit Switch OS
+
+       CALL #"LCP123_R321_BG4327"
+       (
+         CM_No       := 5106 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP123_R321_BG4327_DI_Lim ,
+         SC_Local       := SL_03_S11 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5106] ,
+       );
+
+NETWORK
+TITLE = 5107 - LCP123_R321_BG4328 - Return Run 2 Wire Inlet - Limit Switch DS
+
+       CALL #"LCP123_R321_BG4328"
+       (
+         CM_No       := 5107 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP123_R321_BG4328_DI_Lim ,
+         SC_Local       := SL_03_S11 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5107] ,
+       );
+
+NETWORK
+TITLE = 5108 - LCP123_R321_BG4329 - Return Run 2 Wire Outlet - Limit Switch OS
+
+       CALL #"LCP123_R321_BG4329"
+       (
+         CM_No       := 5108 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP123_R321_BG4329_DI_Lim ,
+         SC_Local       := SL_03_S11 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5108] ,
+       );
+
+NETWORK
+TITLE = 5109 - LCP123_R321_BG4330 - Return Run 2 Wire Outlet - Limit Switch DS
+
+       CALL #"LCP123_R321_BG4330"
+       (
+         CM_No       := 5109 ,
+         Tab       := 3 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP123_R321_BG4330_DI_Lim ,
+         SC_Local       := SL_03_S11 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5109] ,
+       );
+
+NETWORK
+TITLE = 5110 - LCP20_F296_BL1101 - High Level Switch - SAP 3 Receiver
+
+       CALL #"LCP20_F296_BL1101"
+       (
+         CM_No       := 5110 ,
+         Tab       := 25 ,
+         SubTab       := 4 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP20_F296_BL1101_DI_Low ,
+         SC_Local       := SL_25_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5110] ,
+       );
+
+NETWORK
+TITLE = 5111 - LCP30_F395_BL1102 - High Level Switch - SAP 4 Receiver
+
+       CALL #"LCP30_F395_BL1102"
+       (
+         CM_No       := 5111 ,
+         Tab       := 25 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP30_F395_BL1102_DI_Low ,
+         SC_Local       := SL_25_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5111] ,
+       );
+
+NETWORK
+TITLE = 5112 - LCP30_F396_BL1103 - High Level Switch - SAP 5 Receiver
+
+       CALL #"LCP30_F396_BL1103"
+       (
+         CM_No       := 5112 ,
+         Tab       := 25 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP30_F396_BL1103_DI_Low ,
+         SC_Local       := SL_25_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5112] ,
+       );
+
+NETWORK
+TITLE = 5113 - LCP40_F495_BL1104 - High Level Switch - SAP 6 Receiver
+
+       CALL #"LCP40_F495_BL1104"
+       (
+         CM_No       := 5113 ,
+         Tab       := 25 ,
+         SubTab       := 6 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP40_F495_BL1104_DI_Low ,
+         SC_Local       := SL_25_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5113] ,
+       );
+
+NETWORK
+TITLE = 5114 - LCP123_N422_BG4401 - Dryer 3 Wire Single Spot Traverse - Limit Switch OS
+
+       CALL #"LCP123_N422_BG4401"
+       (
+         CM_No       := 5114 ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP123_N422_BG4401_DI_Lim ,
+         SC_Local       := SL_30_S10 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5114] ,
+       );
+
+NETWORK
+TITLE = 5115 - LCP123_N422_BG4402 - Dryer 3 Wire Single Spot Traverse - Limit Switch DS
+
+       CALL #"LCP123_N422_BG4402"
+       (
+         CM_No       := 5115 ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP123_N422_BG4402_DI_Lim ,
+         SC_Local       := SL_30_S10 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5115] ,
+       );
+
+NETWORK
+TITLE = 5116 - LCP132_Q710_BG2801 - Mixing Tank - High - Level Switch LS01
+
+       CALL #"LCP132_Q710_BG2801"
+       (
+         CM_No       := 5116 ,
+         Tab       := 29 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP132_Q710_BG2801_DI_Hi ,
+         SC_Local       := SL_29_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5116] ,
+       );
+
+NETWORK
+TITLE = 5117 - LCP132_Q710_BG2802 - Mixing Tank - Low - Level Switch LS02
+
+       CALL #"LCP132_Q710_BG2802"
+       (
+         CM_No       := 5117 ,
+         Tab       := 29 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP132_Q710_BG2802_DI_Low ,
+         SC_Local       := SL_29_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5117] ,
+       );
+
+NETWORK
+TITLE = 5118 - LCP132_Q710_BG2803 - Mixing Tank - Empty - Level Switch LS03
+
+       CALL #"LCP132_Q710_BG2803"
+       (
+         CM_No       := 5118 ,
+         Tab       := 29 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP132_Q710_BG2803_DI_Emp ,
+         SC_Local       := SL_29_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5118] ,
+       );
+
+NETWORK
+TITLE = 5119 - LCP132_Q720_BG2811 - Buffer Tank - High - Level Switch LS11
+
+       CALL #"LCP132_Q720_BG2811"
+       (
+         CM_No       := 5119 ,
+         Tab       := 29 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP132_Q720_BG2811_DI_Hi ,
+         SC_Local       := SL_29_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5119] ,
+       );
+
+NETWORK
+TITLE = 5120 - LCP132_Q720_BG2812 - Buffer Tank - Low - Level Switch LS12
+
+       CALL #"LCP132_Q720_BG2812"
+       (
+         CM_No       := 5120 ,
+         Tab       := 29 ,
+         SubTab       := 2 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP132_Q720_BG2812_DI_Low ,
+         SC_Local       := SL_29_P ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5120] ,
+       );
+
+NETWORK
+TITLE = 5121 - LCP101_I610_BP2111 - Min Air - Pressure Switch
+
+       CALL #"LCP101_I610_BP2111"
+       (
+         CM_No       := 5121 ,
+         Tab       := 28 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP101_I610_BP2111_DI_PrL ,
+         SC_Local       := SL_28_S1 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5121] ,
+       );
+
+NETWORK
+TITLE = 5122 - LCP101_I610_BP2112 - Max Air - Pressure Switch
+
+       CALL #"LCP101_I610_BP2112"
+       (
+         CM_No       := 5122 ,
+         Tab       := 28 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP101_I610_BP2112_DI_PrH ,
+         SC_Local       := SL_28_S1 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5122] ,
+       );
+
+NETWORK
+TITLE = 5123 - LCP101_I610_BG1142 - Max. Flame - High Fire signal (95%)
+
+       CALL #"LCP101_I610_BG1142"
+       (
+         CM_No       := 5123 ,
+         Tab       := 28 ,
+         SubTab       := 3 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP101_I610_BG1142_DI_FbO ,
+         SC_Local       := SL_28_S1 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5123] ,
+       );
+
+NETWORK
+TITLE = 5124 - LCP103_I630_BP2311 - Min Air - Pressure Switch
+
+       CALL #"LCP103_I630_BP2311"
+       (
+         CM_No       := 5124 ,
+         Tab       := 28 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP103_I630_BP2311_DI_PrL ,
+         SC_Local       := SL_28_S2 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5124] ,
+       );
+
+NETWORK
+TITLE = 5125 - LCP103_I630_BP2312 - Max Air - Pressure Switch
+
+       CALL #"LCP103_I630_BP2312"
+       (
+         CM_No       := 5125 ,
+         Tab       := 28 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP103_I630_BP2312_DI_PrH ,
+         SC_Local       := SL_28_S2 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5125] ,
+       );
+
+NETWORK
+TITLE = 5126 - LCP103_I630_BG1342 - Max. Flame - High Fire signal (95%)
+
+       CALL #"LCP103_I630_BG1342"
+       (
+         CM_No       := 5126 ,
+         Tab       := 28 ,
+         SubTab       := 5 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP103_I630_BG1342_DI_FbO ,
+         SC_Local       := SL_28_S2 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5126] ,
+       );
+
+NETWORK
+TITLE = 5127 - LCP104_I640_BP2411 - Min Air - Pressure Switch
+
+       CALL #"LCP104_I640_BP2411"
+       (
+         CM_No       := 5127 ,
+         Tab       := 28 ,
+         SubTab       := 6 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP104_I640_BP2411_DI_PrL ,
+         SC_Local       := SL_28_S2 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5127] ,
+       );
+
+NETWORK
+TITLE = 5128 - LCP104_I640_BP2412 - Max Air - Pressure Switch
+
+       CALL #"LCP104_I640_BP2412"
+       (
+         CM_No       := 5128 ,
+         Tab       := 28 ,
+         SubTab       := 6 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP104_I640_BP2412_DI_PrH ,
+         SC_Local       := SL_28_S2 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5128] ,
+       );
+
+NETWORK
+TITLE = 5129 - LCP104_I640_BG1442 - Max. Flame - High Fire signal (95%)
+
+       CALL #"LCP104_I640_BG1442"
+       (
+         CM_No       := 5129 ,
+         Tab       := 28 ,
+         SubTab       := 6 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP104_I640_BG1442_DI_FbO ,
+         SC_Local       := SL_28_S2 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5129] ,
+       );
+
+NETWORK
+TITLE = 5130 - LCP111_I650_BP2511 - Min Air - Pressure Switch
+
+       CALL #"LCP111_I650_BP2511"
+       (
+         CM_No       := 5130 ,
+         Tab       := 28 ,
+         SubTab       := 7 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP111_I650_BP2511_DI_PrL ,
+         SC_Local       := SL_28_S3 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5130] ,
+       );
+
+NETWORK
+TITLE = 5131 - LCP111_I650_BP2512 - Max Air - Pressure Switch
+
+       CALL #"LCP111_I650_BP2512"
+       (
+         CM_No       := 5131 ,
+         Tab       := 28 ,
+         SubTab       := 7 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP111_I650_BP2512_DI_PrH ,
+         SC_Local       := SL_28_S3 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5131] ,
+       );
+
+NETWORK
+TITLE = 5132 - LCP111_I650_BG1542 - Max. Flame - High Fire signal (95%)
+
+       CALL #"LCP111_I650_BG1542"
+       (
+         CM_No       := 5132 ,
+         Tab       := 28 ,
+         SubTab       := 7 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP111_I650_BG1542_DI_FbO ,
+         SC_Local       := SL_28_S3 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5132] ,
+       );
+
+NETWORK
+TITLE = 5133 - LCP112_I660_BP2611 - Min Air - Pressure Switch
+
+       CALL #"LCP112_I660_BP2611"
+       (
+         CM_No       := 5133 ,
+         Tab       := 28 ,
+         SubTab       := 8 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP112_I660_BP2611_DI_PrL ,
+         SC_Local       := SL_28_S3 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5133] ,
+       );
+
+NETWORK
+TITLE = 5134 - LCP112_I660_BP2612 - Max Air - Pressure Switch
+
+       CALL #"LCP112_I660_BP2612"
+       (
+         CM_No       := 5134 ,
+         Tab       := 28 ,
+         SubTab       := 8 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP112_I660_BP2612_DI_PrH ,
+         SC_Local       := SL_28_S3 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5134] ,
+       );
+
+NETWORK
+TITLE = 5135 - LCP112_I660_BG1642 - Max. Flame - High Fire signal (95%)
+
+       CALL #"LCP112_I660_BG1642"
+       (
+         CM_No       := 5135 ,
+         Tab       := 28 ,
+         SubTab       := 8 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP112_I660_BG1642_DI_FbO ,
+         SC_Local       := SL_28_S3 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5135] ,
+       );
+
+NETWORK
+TITLE = 5136 - LCP113_I670_BP2711 - Min Air - Pressure Switch
+
+       CALL #"LCP113_I670_BP2711"
+       (
+         CM_No       := 5136 ,
+         Tab       := 28 ,
+         SubTab       := 9 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP113_I670_BP2711_DI_PrL ,
+         SC_Local       := SL_28_S3 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5136] ,
+       );
+
+NETWORK
+TITLE = 5137 - LCP113_I670_BP2712 - Max Air - Pressure Switch
+
+       CALL #"LCP113_I670_BP2712"
+       (
+         CM_No       := 5137 ,
+         Tab       := 28 ,
+         SubTab       := 9 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP113_I670_BP2712_DI_PrH ,
+         SC_Local       := SL_28_S3 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5137] ,
+       );
+
+NETWORK
+TITLE = 5138 - LCP113_I670_BG1742 - Max. Flame - High Fire signal (95%)
+
+       CALL #"LCP113_I670_BG1742"
+       (
+         CM_No       := 5138 ,
+         Tab       := 28 ,
+         SubTab       := 9 ,
+         CfgType       := 1 ,
+         CfgInvert       := False ,
+         InputRaw       := LCP113_I670_BG1742_DI_FbO ,
+         SC_Local       := SL_28_S3 ,
+         CM_DIN        := "dbPlcHmiDIN".DIN[5138] ,
+       );
+
+END_FUNCTION_BLOCK

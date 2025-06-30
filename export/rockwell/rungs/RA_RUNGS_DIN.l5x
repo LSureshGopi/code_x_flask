@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="33.00" TargetType="Rung" TargetCount="5" CurrentLanguage="en-US" ContainsContext="true" ExportDate="Fri Aug 20 11:38:35 2021" ExportOptions="References NoRawData L5KData DecoratedData Context RoutineLabels AliasExtras IOTags NoStringData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="PLC1">
+<Programs Use="Context">
+<Program Use="Context" Name="IO">
+<Tags Use="Context"/>
+<Routines Use="Context">
+<Routine Use="Context" Name="R030_DIN">
+<RLLContent Use="Context">
+<Rung Use="Target" Number="1" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Infeed Jog  Forward - Push button
+]]></Comment>
+<Text><![CDATA[CM_DIN(MCC_H111_SF1001_DIN_CM,PLANT,SL_02_S,DisplayNames,MCC_H111_SF1001_DI_Pb,MCC_H111_SF1001_DIN_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="2" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Infeed Jog Reverse - Push button
+]]></Comment>
+<Text><![CDATA[CM_DIN(MCC_H111_SF1002_DIN_CM,PLANT,SL_02_S,DisplayNames,MCC_H111_SF1002_DI_Pb,MCC_H111_SF1002_DIN_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="3" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Infeed Aut/Man - Push button
+]]></Comment>
+<Text><![CDATA[CM_DIN(MCC_H111_SF1003_DIN_CM,PLANT,SL_02_S,DisplayNames,MCC_H111_SF1003_DI_Pb,MCC_H111_SF1003_DIN_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="4" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Infeed Open/Close - Push button
+]]></Comment>
+<Text><![CDATA[CM_DIN(MCC_H111_SF1004_DIN_CM,PLANT,SL_02_S,DisplayNames,MCC_H111_SF1004_DI_Pb,MCC_H111_SF1004_DIN_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="5" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+MCC Ventilation termostat - Termostat
+]]></Comment>
+<Text><![CDATA[CM_DIN(MCC_AUX01_BT3010_DIN_CM,PLANT,SL_05_P,DisplayNames,MCC_AUX01_BT3010_DI_Cs,MCC_AUX01_BT3010_DIN_UDT,5,2);]]></Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>

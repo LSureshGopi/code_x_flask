@@ -7,7 +7,13 @@
 </div>
 <div class="logs-content">
     <div class="logs-page">
-        <p>2025-05-15 15:57:53,436 - INFO - Welcome to CodeX</p>
+        {% if logs %}
+            {% for log in logs %}
+                <p>{{ log }}</p>
+            {% endfor %}
+        {% else %}
+            <p>No activity logs available</p>
+        {% endif %}
     </div>
 </div>
 {% endblock %}

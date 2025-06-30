@@ -1,0 +1,4853 @@
+FUNCTION_BLOCK "All CM FRQ"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ VAR
+   "MCC2.2_F211_MA3221" : "CM FRQ";
+   "MCC2.2_F212_MA3222" : "CM FRQ";
+   "MCC2.2_F221_MA3223" : "CM FRQ";
+   "MCC2.2_F222_MA3224" : "CM FRQ";
+   "MCC2.2_F231_MA3225" : "CM FRQ";
+   "MCC2.2_F232_MA3226" : "CM FRQ";
+   "MCC2.2_F251_MA3227" : "CM FRQ";
+   "MCC2.2_F252_MA3228" : "CM FRQ";
+   "MCC2.2_F295_MA3273" : "CM FRQ";
+   "MCC2.2_F261_MA3229" : "CM FRQ";
+   "MCC2.1_F281_MA3321" : "CM FRQ";
+   "MCC2.2_F271_MA3325" : "CM FRQ";
+   "MCC2.2_F272_MA3326" : "CM FRQ";
+   "MCC2.2_D281_MA3322" : "CM FRQ";
+   "MCC3.2_F311_MA3231" : "CM FRQ";
+   "MCC3.2_F312_MA3232" : "CM FRQ";
+   "MCC3.2_F321_MA3233" : "CM FRQ";
+   "MCC3.2_F322_MA3234" : "CM FRQ";
+   "MCC3.2_F331_MA3235" : "CM FRQ";
+   "MCC3.2_F332_MA3236" : "CM FRQ";
+   "MCC3.2_F351_MA3237" : "CM FRQ";
+   "MCC3.2_F352_MA3238" : "CM FRQ";
+   "MCC3.2_F395_MA3274" : "CM FRQ";
+   "MCC3.2_F396_MA3275" : "CM FRQ";
+   "MCC3.2_F361_MA3239" : "CM FRQ";
+   "MCC3.1_F381_MA3331" : "CM FRQ";
+   "MCC3.2_F371_MA3335" : "CM FRQ";
+   "MCC3.2_F372_MA3336" : "CM FRQ";
+   "MCC3.2_D381_MA3332" : "CM FRQ";
+   "MCC4.2_F411_MA3241" : "CM FRQ";
+   "MCC4.2_F412_MA3242" : "CM FRQ";
+   "MCC4.2_F421_MA3243" : "CM FRQ";
+   "MCC4.2_F422_MA3244" : "CM FRQ";
+   "MCC4.2_F431_MA3245" : "CM FRQ";
+   "MCC4.2_F432_MA3246" : "CM FRQ";
+   "MCC4.2_F451_MA3247" : "CM FRQ";
+   "MCC4.2_F452_MA3248" : "CM FRQ";
+   "MCC4.2_F495_MA3276" : "CM FRQ";
+   "MCC4.2_F461_MA3249" : "CM FRQ";
+   "MCC4.1_F481_MA3341" : "CM FRQ";
+   "MCC4.2_F471_MA3345" : "CM FRQ";
+   "MCC4.2_F472_MA3346" : "CM FRQ";
+   "MCC4.2_D481_MA3342" : "CM FRQ";
+   "MCC5.3_H221_MA3023" : "CM FRQ";
+   "MCC5.1_H211_MA3021" : "CM FRQ";
+   "MCC5.1_H212_MA3022" : "CM FRQ";
+   "MCC5.3_H231_MA3025" : "CM FRQ";
+   "MCC6.2_H321_MA3033" : "CM FRQ";
+   "MCC6.1_H311_MA3031" : "CM FRQ";
+   "MCC6.1_H312_MA3032" : "CM FRQ";
+   "MCC6.2_H331_MA3035" : "CM FRQ";
+   "MCC6.3_H421_MA3043" : "CM FRQ";
+   "MCC6.1_H411_MA3041" : "CM FRQ";
+   "MCC6.1_H412_MA3042" : "CM FRQ";
+   "MCC6.3_H431_MA3045" : "CM FRQ";
+   "MCC7.1_B013_MA3055" : "CM FRQ";
+   "MCC7.1_B014_MA3056" : "CM FRQ";
+   "MCC7.1_B015_MA3057" : "CM FRQ";
+   "MCC7.1_B016_MA3058" : "CM FRQ";
+   "MCC7.1_B017_MA3059" : "CM FRQ";
+   "MCC7.1_B018_MA3060" : "CM FRQ";
+   "MCC7.2_B212_MA3062" : "CM FRQ";
+   "MCC7.2_B213_MA3063" : "CM FRQ";
+   "MCC7.2_B214_MA3064" : "CM FRQ";
+   "MCC7.2_B215_MA3065" : "CM FRQ";
+   "MCC7.2_B216_MA3066" : "CM FRQ";
+   "MCC7.2_B312_MA3072" : "CM FRQ";
+   "MCC7.2_B313_MA3073" : "CM FRQ";
+   "MCC7.2_B314_MA3074" : "CM FRQ";
+   "MCC7.2_B315_MA3075" : "CM FRQ";
+   "MCC7.2_B316_MA3076" : "CM FRQ";
+   "MCC7.2_B412_MA3082" : "CM FRQ";
+   "MCC7.2_B413_MA3083" : "CM FRQ";
+   "MCC7.2_B414_MA3084" : "CM FRQ";
+   "MCC7.2_B415_MA3085" : "CM FRQ";
+   "MCC7.2_B416_MA3086" : "CM FRQ";
+   "MCC8.1_D411_MA3371" : "CM FRQ";
+   "MCC8.2_D412_MA3372" : "CM FRQ";
+   "MCC8.3_D421_MA3366" : "CM FRQ";
+   "MCC8.3_D422_MA3367" : "CM FRQ";
+   "MCC8.3_D423_MA3361" : "CM FRQ";
+   "MCC8.2_D431_MA3364" : "CM FRQ";
+   "MCC8.2_C181_MA3264" : "CM FRQ";
+   "MCC8.1_T181_MA3375" : "CM FRQ";
+   "MCC8.2_T411_MA3378" : "CM FRQ";
+   "MCC8.3_T421_MA3377" : "CM FRQ";
+   "MCC8.2_T431_MA3376" : "CM FRQ";
+   "MCC8.2_T161_MA3381" : "CM FRQ";
+   "MCC8.2_D311_MA3410" : "CM FRQ";
+   "MCC8.2_C311_MA3412" : "CM FRQ";
+   "MCC8.3_C321_MA3414" : "CM FRQ";
+   "MCC8.3_T311_MA3416" : "CM FRQ";
+   "MCC8.3_E311_MA3418" : "CM FRQ";
+   "MCC8.3_E321_MA3420" : "CM FRQ";
+   "MCC9.3_A121_MA3722" : "CM FRQ";
+   "MCC9.3_A241_MA3742" : "CM FRQ";
+   "MCC9.1_A170_TA3770" : "CM FRQ";
+   "MCC9.1_A190_TA3780" : "CM FRQ";
+   "MCC9.2_A270_TA3785" : "CM FRQ";
+   "MCC9.2_A280_TA3790" : "CM FRQ";
+   "MCC9.2_A290_TA3795" : "CM FRQ";
+   "MCC9.3_A711_MA3761" : "CM FRQ";
+   "MCC9.3_A721_MA3762" : "CM FRQ";
+   "MCC9.3_A731_MA3763" : "CM FRQ";
+   "MCC10.3_I911_MA3501" : "CM FRQ";
+   "MCC10.3_I511_MA3502" : "CM FRQ";
+   "MCC10.1_I611_MA3510" : "CM FRQ";
+   "MCC10.3_I711_MA3506" : "CM FRQ";
+   "MCC10.3_I811_MA3508" : "CM FRQ";
+   "MCC10.3_I521_MA3512" : "CM FRQ";
+   "MCC10.2_I621_MA3520" : "CM FRQ";
+   "MCC10.3_K911_MA3521" : "CM FRQ";
+   "MCC10.3_K511_MA3522" : "CM FRQ";
+   "MCC10.2_K611_MA3530" : "CM FRQ";
+   "MCC10.3_K711_MA3526" : "CM FRQ";
+   "MCC10.3_K811_MA3528" : "CM FRQ";
+   "MCC10.3_K521_MA3532" : "CM FRQ";
+   "MCC10.2_K621_MA3540" : "CM FRQ";
+   "MCC10.3_K721_MA3536" : "CM FRQ";
+   "MCC10.3_K821_MA3538" : "CM FRQ";
+   "MCC11.3_N911_MA3541" : "CM FRQ";
+   "MCC11.3_N511_MA3542" : "CM FRQ";
+   "MCC11.2_N611_MA3550" : "CM FRQ";
+   "MCC11.3_N711_MA3546" : "CM FRQ";
+   "MCC11.3_N811_MA3548" : "CM FRQ";
+   "MCC11.3_N521_MA3552" : "CM FRQ";
+   "MCC11.2_N621_MA3560" : "CM FRQ";
+   "MCC11.3_N721_MA3556" : "CM FRQ";
+   "MCC11.3_N821_MA3558" : "CM FRQ";
+   "MCC11.3_N531_MA3562" : "CM FRQ";
+   "MCC11.2_N631_MA3570" : "CM FRQ";
+   "MCC11.3_N731_MA3566" : "CM FRQ";
+   "MCC11.3_N831_MA3568" : "CM FRQ";
+   "MCC12.1_I311_MA3422" : "CM FRQ";
+   "MCC12.1_J311_MA3424" : "CM FRQ";
+   "MCC12.1_K311_MA3426" : "CM FRQ";
+   "MCC12.1_L311_MA3428" : "CM FRQ";
+   "MCC12.1_M311_MA3430" : "CM FRQ";
+   "MCC12.2_N311_MA3432" : "CM FRQ";
+   "MCC12.2_R311_MA3434" : "CM FRQ";
+   "MCC12.2_R321_MA3436" : "CM FRQ";
+   "MCC12.2_S311_MA3438" : "CM FRQ";
+   "MCC13.3_I211_MA3612" : "CM FRQ";
+   "MCC13.2_I221_MA3614" : "CM FRQ";
+   "MCC13.2_I421_MA3616" : "CM FRQ";
+   "MCC13.1_I411_MA3618" : "CM FRQ";
+   "MCC13.1_K211_MA3620" : "CM FRQ";
+   "MCC13.2_K221_MA3622" : "CM FRQ";
+   "MCC13.2_K421_MA3624" : "CM FRQ";
+   "MCC13.1_K411_MA3626" : "CM FRQ";
+   "MCC13.3_L211_MA3628" : "CM FRQ";
+   "MCC13.1_N221_MA3630" : "CM FRQ";
+   "MCC13.2_R211_MA3634" : "CM FRQ";
+   "MCC13.2_R212_MA3636" : "CM FRQ";
+   "MCC13.2_R221_MA3638" : "CM FRQ";
+   "MCC13.1_R222_MA3640" : "CM FRQ";
+   "MCC13.1_R421_MA3642" : "CM FRQ";
+   "MCC13.1_S211_MA3644" : "CM FRQ";
+   "MCC13.3_I111_MA3650" : "CM FRQ";
+   "MCC13.2_J611_MA3652" : "CM FRQ";
+   "MCC13.3_K111_MA3654" : "CM FRQ";
+   "MCC13.2_M611_MA3656" : "CM FRQ";
+   "MCC13.3_Q711_MA3662" : "CM FRQ";
+   "MCC13.3_Q721_MA3664" : "CM FRQ";
+   "MCC13.3_Q731_MA3666" : "CM FRQ";
+   "MCC13.3_Q732_MA3668" : "CM FRQ";
+   "MCC13.3_L611_MA3670" : "CM FRQ";
+ END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = 1001 - MCC2.2_F211_MA3221 - Drum 2A - Motor
+
+       CALL #"MCC2.2_F211_MA3221"
+       (
+         CM_No       := 1001 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP20_F211_FN3221_DI_Flt ,
+         Protect       := MCC2_F211_FC3221_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 10,7 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_26_S12 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1001] ,
+       );
+
+NETWORK
+TITLE = 1002 - MCC2.2_F212_MA3222 - Drum 2B - Motor
+
+       CALL #"MCC2.2_F212_MA3222"
+       (
+         CM_No       := 1002 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP20_F212_FN3222_DI_Flt ,
+         Protect       := MCC2_F212_FC3222_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 10,7 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_26_S12 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1002] ,
+       );
+
+NETWORK
+TITLE = 1003 - MCC2.2_F221_MA3223 - Needle Roll 2A - Motor
+
+       CALL #"MCC2.2_F221_MA3223"
+       (
+         CM_No       := 1003 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP20_F221_FN3223_DI_Flt ,
+         Protect       := MCC2_F221_FC3223_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 14,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_26_S12 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1003] ,
+       );
+
+NETWORK
+TITLE = 1004 - MCC2.2_F222_MA3224 - Needle Roll 2B - Motor
+
+       CALL #"MCC2.2_F222_MA3224"
+       (
+         CM_No       := 1004 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP20_F222_FN3224_DI_Flt ,
+         Protect       := MCC2_F222_FC3224_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 14,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_26_S12 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1004] ,
+       );
+
+NETWORK
+TITLE = 1005 - MCC2.2_F231_MA3225 - Brush Roll 2A - Motor
+
+       CALL #"MCC2.2_F231_MA3225"
+       (
+         CM_No       := 1005 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP20_F231_FN3225_DI_Flt ,
+         Protect       := MCC2_F231_FC3225_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 4,5 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_26_S12 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1005] ,
+       );
+
+NETWORK
+TITLE = 1006 - MCC2.2_F232_MA3226 - Brush Roll 2B - Motor
+
+       CALL #"MCC2.2_F232_MA3226"
+       (
+         CM_No       := 1006 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP20_F232_FN3226_DI_Flt ,
+         Protect       := MCC2_F232_FC3226_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 4,5 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_26_S12 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1006] ,
+       );
+
+NETWORK
+TITLE = 1007 - MCC2.2_F251_MA3227 - Inlet Roll 2 - Motor
+
+       CALL #"MCC2.2_F251_MA3227"
+       (
+         CM_No       := 1007 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP20_F251_FN3227_DI_Flt ,
+         Protect       := MCC2_F251_FC3227_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 4,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_03_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1007] ,
+       );
+
+NETWORK
+TITLE = 1008 - MCC2.2_F252_MA3228 - Outlet Roll 2 - Motor
+
+       CALL #"MCC2.2_F252_MA3228"
+       (
+         CM_No       := 1008 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP20_F252_FN3228_DI_Flt ,
+         Protect       := MCC2_F252_FC3228_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 4,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_03_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1008] ,
+       );
+
+NETWORK
+TITLE = 1009 - MCC2.2_F295_MA3273 - SAP 3 Feed Roll - Motor
+
+       CALL #"MCC2.2_F295_MA3273"
+       (
+         CM_No       := 1009 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 25 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP20_F295_FN3273_DI_Flt ,
+         Protect       := MCC2_F295_FC3273_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       :=  ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_25_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1009] ,
+       );
+
+NETWORK
+TITLE = 1010 - MCC2.2_F261_MA3229 - Former 2 Lift - Motor
+
+       CALL #"MCC2.2_F261_MA3229"
+       (
+         CM_No       := 1010 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP20_F261_FN3229_DI_Flt ,
+         Protect       := MCC2_F261_FC3229_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 1,4 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_26_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1010] ,
+       );
+
+NETWORK
+TITLE = 1011 - MCC2.1_F281_MA3321 - FH 2 Main Suction Fan  - Motor
+
+       CALL #"MCC2.1_F281_MA3321"
+       (
+         CM_No       := 1011 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_F281_FN3321_DI_Flt ,
+         Protect       := MCC2_F281_FC3321_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 144 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1011] ,
+       );
+
+NETWORK
+TITLE = 1012 - MCC2.2_F271_MA3325 - FH 2 Edge Trim Fan OS - Motor
+
+       CALL #"MCC2.2_F271_MA3325"
+       (
+         CM_No       := 1012 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_F271_FN3325_DI_Flt ,
+         Protect       := MCC2_F271_FC3325_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 5,7 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_26_S12 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1012] ,
+       );
+
+NETWORK
+TITLE = 1013 - MCC2.2_F272_MA3326 - FH 2 Edge Trim Fan DS - Motor
+
+       CALL #"MCC2.2_F272_MA3326"
+       (
+         CM_No       := 1013 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_F272_FN3326_DI_Flt ,
+         Protect       := MCC2_F272_FC3326_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 5,7 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_26_S12 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1013] ,
+       );
+
+NETWORK
+TITLE = 1014 - MCC2.2_D281_MA3322 - Sec. Suction Fan 2 - Motor
+
+       CALL #"MCC2.2_D281_MA3322"
+       (
+         CM_No       := 1014 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_D281_FN3322_DI_Flt ,
+         Protect       := MCC2_D281_FC3322_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 23 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1014] ,
+       );
+
+NETWORK
+TITLE = 1015 - MCC3.2_F311_MA3231 - Drum 3A - Motor
+
+       CALL #"MCC3.2_F311_MA3231"
+       (
+         CM_No       := 1015 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP30_F311_FN3231_DI_Flt ,
+         Protect       := MCC3_F311_FC3231_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 10,7 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_26_S13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1015] ,
+       );
+
+NETWORK
+TITLE = 1016 - MCC3.2_F312_MA3232 - Drum 3B - Motor
+
+       CALL #"MCC3.2_F312_MA3232"
+       (
+         CM_No       := 1016 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP30_F312_FN3232_DI_Flt ,
+         Protect       := MCC3_F312_FC3232_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 10,7 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_26_S13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1016] ,
+       );
+
+NETWORK
+TITLE = 1017 - MCC3.2_F321_MA3233 - Needle Roll 3A - Motor
+
+       CALL #"MCC3.2_F321_MA3233"
+       (
+         CM_No       := 1017 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP30_F321_FN3233_DI_Flt ,
+         Protect       := MCC3_F321_FC3233_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 14,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_26_S13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1017] ,
+       );
+
+NETWORK
+TITLE = 1018 - MCC3.2_F322_MA3234 - Needle Roll 3B - Motor
+
+       CALL #"MCC3.2_F322_MA3234"
+       (
+         CM_No       := 1018 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP30_F322_FN3234_DI_Flt ,
+         Protect       := MCC3_F322_FC3234_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#2s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 14,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_26_S13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1018] ,
+       );
+
+NETWORK
+TITLE = 1019 - MCC3.2_F331_MA3235 - Brush Roll 3A - Motor
+
+       CALL #"MCC3.2_F331_MA3235"
+       (
+         CM_No       := 1019 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP30_F331_FN3235_DI_Flt ,
+         Protect       := MCC3_F331_FC3235_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 4,5 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_26_S13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1019] ,
+       );
+
+NETWORK
+TITLE = 1020 - MCC3.2_F332_MA3236 - Brush Roll 3B - Motor
+
+       CALL #"MCC3.2_F332_MA3236"
+       (
+         CM_No       := 1020 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP30_F332_FN3236_DI_Flt ,
+         Protect       := MCC3_F332_FC3236_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 4,5 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_26_S13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1020] ,
+       );
+
+NETWORK
+TITLE = 1021 - MCC3.2_F351_MA3237 - Inlet Roll 3 - Motor
+
+       CALL #"MCC3.2_F351_MA3237"
+       (
+         CM_No       := 1021 ,
+         Unit       := 1 ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP30_F351_FN3237_DI_Flt ,
+         Protect       := MCC3_F351_FC3237_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 4,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_03_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1021] ,
+       );
+
+NETWORK
+TITLE = 1022 - MCC3.2_F352_MA3238 - Outlet Roll 3 - Motor
+
+       CALL #"MCC3.2_F352_MA3238"
+       (
+         CM_No       := 1022 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP30_F352_FN3238_DI_Flt ,
+         Protect       := MCC3_F352_FC3238_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 4,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_03_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1022] ,
+       );
+
+NETWORK
+TITLE = 1023 - MCC3.2_F395_MA3274 - SAP 4 Feed Roll - Motor
+
+       CALL #"MCC3.2_F395_MA3274"
+       (
+         CM_No       := 1023 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 25 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP30_F395_FN3274_DI_Flt ,
+         Protect       := MCC3_F395_FC3274_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       :=  ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_25_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1023] ,
+       );
+
+NETWORK
+TITLE = 1024 - MCC3.2_F396_MA3275 - SAP 5 Feed Roll - Motor
+
+       CALL #"MCC3.2_F396_MA3275"
+       (
+         CM_No       := 1024 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 25 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP30_F396_FN3275_DI_Flt ,
+         Protect       := MCC3_F396_FC3275_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       :=  ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_25_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1024] ,
+       );
+
+NETWORK
+TITLE = 1025 - MCC3.2_F361_MA3239 - Former 3 Lift - Motor
+
+       CALL #"MCC3.2_F361_MA3239"
+       (
+         CM_No       := 1025 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP30_F361_FN3239_DI_Flt ,
+         Protect       := MCC3_F361_FC3239_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 1,4 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_26_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1025] ,
+       );
+
+NETWORK
+TITLE = 1026 - MCC3.1_F381_MA3331 - FH 3 Main Suction Fan  - Motor
+
+       CALL #"MCC3.1_F381_MA3331"
+       (
+         CM_No       := 1026 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_F381_FN3331_DI_Flt ,
+         Protect       := MCC3_F381_FC3331_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 144 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1026] ,
+       );
+
+NETWORK
+TITLE = 1027 - MCC3.2_F371_MA3335 - FH 3 Edge Trim Fan OS - Motor
+
+       CALL #"MCC3.2_F371_MA3335"
+       (
+         CM_No       := 1027 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_F371_FN3335_DI_Flt ,
+         Protect       := MCC3_F371_FC3335_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 5,7 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_26_S13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1027] ,
+       );
+
+NETWORK
+TITLE = 1028 - MCC3.2_F372_MA3336 - FH 3 Edge Trim Fan DS - Motor
+
+       CALL #"MCC3.2_F372_MA3336"
+       (
+         CM_No       := 1028 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_F372_FN3336_DI_Flt ,
+         Protect       := MCC3_F372_FC3336_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 5,7 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_26_S13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1028] ,
+       );
+
+NETWORK
+TITLE = 1029 - MCC3.2_D381_MA3332 - Sec. Suction Fan 3 - Motor
+
+       CALL #"MCC3.2_D381_MA3332"
+       (
+         CM_No       := 1029 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_D381_FN3332_DI_Flt ,
+         Protect       := MCC3_D381_FC3332_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 23 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1029] ,
+       );
+
+NETWORK
+TITLE = 1030 - MCC4.2_F411_MA3241 - Drum 4A - Motor
+
+       CALL #"MCC4.2_F411_MA3241"
+       (
+         CM_No       := 1030 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP40_F411_FN3241_DI_Flt ,
+         Protect       := MCC4_F411_FC3241_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 10,7 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_26_S14 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1030] ,
+       );
+
+NETWORK
+TITLE = 1031 - MCC4.2_F412_MA3242 - Drum 4B - Motor
+
+       CALL #"MCC4.2_F412_MA3242"
+       (
+         CM_No       := 1031 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP40_F412_FN3242_DI_Flt ,
+         Protect       := MCC4_F412_FC3242_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 10,7 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_26_S14 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1031] ,
+       );
+
+NETWORK
+TITLE = 1032 - MCC4.2_F421_MA3243 - Needle Roll 4A - Motor
+
+       CALL #"MCC4.2_F421_MA3243"
+       (
+         CM_No       := 1032 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP40_F421_FN3243_DI_Flt ,
+         Protect       := MCC4_F421_FC3243_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 14,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_26_S14 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1032] ,
+       );
+
+NETWORK
+TITLE = 1033 - MCC4.2_F422_MA3244 - Needle Roll 4B - Motor
+
+       CALL #"MCC4.2_F422_MA3244"
+       (
+         CM_No       := 1033 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP40_F422_FN3244_DI_Flt ,
+         Protect       := MCC4_F422_FC3244_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 14,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_26_S14 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1033] ,
+       );
+
+NETWORK
+TITLE = 1034 - MCC4.2_F431_MA3245 - Brush Roll 4A - Motor
+
+       CALL #"MCC4.2_F431_MA3245"
+       (
+         CM_No       := 1034 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP40_F431_FN3245_DI_Flt ,
+         Protect       := MCC4_F431_FC3245_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 4,5 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_26_S14 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1034] ,
+       );
+
+NETWORK
+TITLE = 1035 - MCC4.2_F432_MA3246 - Brush Roll 4B - Motor
+
+       CALL #"MCC4.2_F432_MA3246"
+       (
+         CM_No       := 1035 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP40_F432_FN3246_DI_Flt ,
+         Protect       := MCC4_F432_FC3246_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 4,5 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_26_S14 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1035] ,
+       );
+
+NETWORK
+TITLE = 1036 - MCC4.2_F451_MA3247 - Inlet Roll 4 - Motor
+
+       CALL #"MCC4.2_F451_MA3247"
+       (
+         CM_No       := 1036 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP40_F451_FN3247_DI_Flt ,
+         Protect       := MCC4_F451_FC3247_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 4,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_03_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1036] ,
+       );
+
+NETWORK
+TITLE = 1037 - MCC4.2_F452_MA3248 - Outlet Roll 4 - Motor
+
+       CALL #"MCC4.2_F452_MA3248"
+       (
+         CM_No       := 1037 ,
+         Unit       := 5 ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP40_F452_FN3248_DI_Flt ,
+         Protect       := MCC4_F452_FC3248_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 4,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_03_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1037] ,
+       );
+
+NETWORK
+TITLE = 1038 - MCC4.2_F495_MA3276 - SAP 6 Feed Roll - Motor
+
+       CALL #"MCC4.2_F495_MA3276"
+       (
+         CM_No       := 1038 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 25 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP40_F495_FN3276_DI_Flt ,
+         Protect       := MCC4_F495_FC3276_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       :=  ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_25_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1038] ,
+       );
+
+NETWORK
+TITLE = 1039 - MCC4.2_F461_MA3249 - Former 4 Lift - Motor
+
+       CALL #"MCC4.2_F461_MA3249"
+       (
+         CM_No       := 1039 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP40_F461_FN3249_DI_Flt ,
+         Protect       := MCC4_F461_FC3249_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 1,4 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_26_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1039] ,
+       );
+
+NETWORK
+TITLE = 1040 - MCC4.1_F481_MA3341 - FH Main Suction Fan 4 - Motor
+
+       CALL #"MCC4.1_F481_MA3341"
+       (
+         CM_No       := 1040 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_F481_FN3341_DI_Flt ,
+         Protect       := MCC4_F481_FC3341_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 144 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1040] ,
+       );
+
+NETWORK
+TITLE = 1041 - MCC4.2_F471_MA3345 - FH 4 Edge Trim Fan OS - Motor
+
+       CALL #"MCC4.2_F471_MA3345"
+       (
+         CM_No       := 1041 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_F471_FN3345_DI_Flt ,
+         Protect       := MCC4_F471_FC3345_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 5,7 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_26_S14 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1041] ,
+       );
+
+NETWORK
+TITLE = 1042 - MCC4.2_F472_MA3346 - FH 4 Edge Trim Fan DS - Motor
+
+       CALL #"MCC4.2_F472_MA3346"
+       (
+         CM_No       := 1042 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_F472_FN3346_DI_Flt ,
+         Protect       := MCC4_F472_FC3346_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 5,7 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_26_S14 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1042] ,
+       );
+
+NETWORK
+TITLE = 1043 - MCC4.2_D481_MA3342 - Sec. Suction Fan 4 - Motor
+
+       CALL #"MCC4.2_D481_MA3342"
+       (
+         CM_No       := 1043 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_D481_FN3342_DI_Flt ,
+         Protect       := MCC4_D481_FC3342_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 23 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1043] ,
+       );
+
+NETWORK
+TITLE = 1044 - MCC5.3_H221_MA3023 - Hammer Mill 2 - Motor
+
+       CALL #"MCC5.3_H221_MA3023"
+       (
+         CM_No       := 1044 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP52_H221_FN3023_DI_Flt ,
+         Protect       := MCC5_H221_FC3023_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 318 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_23_P12 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1044] ,
+       );
+
+NETWORK
+TITLE = 1045 - MCC5.1_H211_MA3021 - Upper Pulp 2 - Motor
+
+       CALL #"MCC5.1_H211_MA3021"
+       (
+         CM_No       := 1045 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP52_H211_FN3021_DI_Flt ,
+         Protect       := MCC5_H211_FC3021_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 2.8 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_23_S ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1045] ,
+       );
+
+NETWORK
+TITLE = 1046 - MCC5.1_H212_MA3022 - Lower Pulp 2 - Motor
+
+       CALL #"MCC5.1_H212_MA3022"
+       (
+         CM_No       := 1046 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP52_H212_FN3022_DI_Flt ,
+         Protect       := MCC5_H212_FC3022_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 2.8 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_23_S ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1046] ,
+       );
+
+NETWORK
+TITLE = 1047 - MCC5.3_H231_MA3025 - Fiber Transport Fan 2 - Motor
+
+       CALL #"MCC5.3_H231_MA3025"
+       (
+         CM_No       := 1047 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 23 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP52_H231_FN3025_DI_Flt ,
+         Protect       := MCC5_H231_FC3025_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 86 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1047] ,
+       );
+
+NETWORK
+TITLE = 1048 - MCC6.2_H321_MA3033 - Hammer Mill 3 - Motor
+
+       CALL #"MCC6.2_H321_MA3033"
+       (
+         CM_No       := 1048 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP61_H321_FN3033_DI_Flt ,
+         Protect       := MCC6_H321_FC3033_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 318 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_23_P13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1048] ,
+       );
+
+NETWORK
+TITLE = 1049 - MCC6.1_H311_MA3031 - Upper Pulp 3 - Motor
+
+       CALL #"MCC6.1_H311_MA3031"
+       (
+         CM_No       := 1049 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP61_H311_FN3031_DI_Flt ,
+         Protect       := MCC6_H311_FC3031_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 2.8 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_23_S ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1049] ,
+       );
+
+NETWORK
+TITLE = 1050 - MCC6.1_H312_MA3032 - Lower Pulp 3 - Motor
+
+       CALL #"MCC6.1_H312_MA3032"
+       (
+         CM_No       := 1050 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP61_H312_FN3032_DI_Flt ,
+         Protect       := MCC6_H312_FC3032_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 2.8 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_23_S ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1050] ,
+       );
+
+NETWORK
+TITLE = 1051 - MCC6.2_H331_MA3035 - Fiber Transport Fan 3 - Motor
+
+       CALL #"MCC6.2_H331_MA3035"
+       (
+         CM_No       := 1051 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 23 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP61_H331_FN3035_DI_Flt ,
+         Protect       := MCC6_H331_FC3035_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 86 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1051] ,
+       );
+
+NETWORK
+TITLE = 1052 - MCC6.3_H421_MA3043 - Hammer Mill 4 - Motor
+
+       CALL #"MCC6.3_H421_MA3043"
+       (
+         CM_No       := 1052 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP62_H421_FN3043_DI_Flt ,
+         Protect       := MCC6_H421_FC3043_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 318 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_23_P14 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1052] ,
+       );
+
+NETWORK
+TITLE = 1053 - MCC6.1_H411_MA3041 - Upper Pulp 4 - Motor
+
+       CALL #"MCC6.1_H411_MA3041"
+       (
+         CM_No       := 1053 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP62_H411_FN3041_DI_Flt ,
+         Protect       := MCC6_H411_FC3041_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 2.8 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_23_S ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1053] ,
+       );
+
+NETWORK
+TITLE = 1054 - MCC6.1_H412_MA3042 - Lower Pulp 4 - Motor
+
+       CALL #"MCC6.1_H412_MA3042"
+       (
+         CM_No       := 1054 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP62_H412_FN3042_DI_Flt ,
+         Protect       := MCC6_H412_FC3042_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 2.8 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_23_S ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1054] ,
+       );
+
+NETWORK
+TITLE = 1055 - MCC6.3_H431_MA3045 - Fiber Transport Fan 4 - Motor
+
+       CALL #"MCC6.3_H431_MA3045"
+       (
+         CM_No       := 1055 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 23 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP62_H431_FN3045_DI_Flt ,
+         Protect       := MCC6_H431_FC3045_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 86 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1055] ,
+       );
+
+NETWORK
+TITLE = 1056 - MCC7.1_B013_MA3055 - Spiked Conveyor - Motor
+
+       CALL #"MCC7.1_B013_MA3055"
+       (
+         CM_No       := 1056 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP71_B013_FN3055_DI_Flt ,
+         Protect       := MCC7_B013_FC3055_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 4,65 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_24_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1056] ,
+       );
+
+NETWORK
+TITLE = 1057 - MCC7.1_B014_MA3056 - Evener Roll - Motor
+
+       CALL #"MCC7.1_B014_MA3056"
+       (
+         CM_No       := 1057 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP71_B014_FN3056_DI_Flt ,
+         Protect       := MCC7_B014_FC3056_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,16 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_24_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1057] ,
+       );
+
+NETWORK
+TITLE = 1058 - MCC7.1_B015_MA3057 - Doffing Roll - Motor
+
+       CALL #"MCC7.1_B015_MA3057"
+       (
+         CM_No       := 1058 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP71_B015_FN3057_DI_Flt ,
+         Protect       := MCC7_B015_FC3057_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,16 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_24_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1058] ,
+       );
+
+NETWORK
+TITLE = 1059 - MCC7.1_B016_MA3058 - Hopper Fan 2 - Motor
+
+       CALL #"MCC7.1_B016_MA3058"
+       (
+         CM_No       := 1059 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP71_B016_FN3058_DI_Flt ,
+         Protect       := MCC7_B016_FC3058_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,15 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_24_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1059] ,
+       );
+
+NETWORK
+TITLE = 1060 - MCC7.1_B017_MA3059 - Hopper Fan 3 - Motor
+
+       CALL #"MCC7.1_B017_MA3059"
+       (
+         CM_No       := 1060 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP71_B017_FN3059_DI_Flt ,
+         Protect       := MCC7_B017_FC3059_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,15 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_24_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1060] ,
+       );
+
+NETWORK
+TITLE = 1061 - MCC7.1_B018_MA3060 - Hopper Fan 4 - Motor
+
+       CALL #"MCC7.1_B018_MA3060"
+       (
+         CM_No       := 1061 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP71_B018_FN3060_DI_Flt ,
+         Protect       := MCC7_B018_FC3060_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,15 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_24_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1061] ,
+       );
+
+NETWORK
+TITLE = 1062 - MCC7.2_B212_MA3062 - Condenser Fan 2 - Motor
+
+       CALL #"MCC7.2_B212_MA3062"
+       (
+         CM_No       := 1062 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B212_FN3062_DI_Flt ,
+         Protect       := MCC7_B212_FC3062_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_24_P12 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1062] ,
+       );
+
+NETWORK
+TITLE = 1063 - MCC7.2_B213_MA3063 - Vibrate Plate 2 - Motor
+
+       CALL #"MCC7.2_B213_MA3063"
+       (
+         CM_No       := 1063 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B213_FN3063_DI_Flt ,
+         Protect       := MCC7_B213_FC3063_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 1,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_24_P12 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1063] ,
+       );
+
+NETWORK
+TITLE = 1064 - MCC7.2_B214_MA3064 - Opening Roll 2 - Motor
+
+       CALL #"MCC7.2_B214_MA3064"
+       (
+         CM_No       := 1064 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B214_FN3064_DI_Flt ,
+         Protect       := MCC7_B214_FC3064_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,15 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_24_P12 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1064] ,
+       );
+
+NETWORK
+TITLE = 1065 - MCC7.2_B215_MA3065 - Delivery Roller 2 - Motor
+
+       CALL #"MCC7.2_B215_MA3065"
+       (
+         CM_No       := 1065 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B215_FN3065_DI_Flt ,
+         Protect       := MCC7_B215_FC3065_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 1,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_24_S ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1065] ,
+       );
+
+NETWORK
+TITLE = 1066 - MCC7.2_B216_MA3066 - Fiber Fan 2 - Motor
+
+       CALL #"MCC7.2_B216_MA3066"
+       (
+         CM_No       := 1066 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B216_FN3066_DI_Flt ,
+         Protect       := MCC7_B216_FC3066_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,15 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_24_P12 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1066] ,
+       );
+
+NETWORK
+TITLE = 1067 - MCC7.2_B312_MA3072 - Condenser Fan 3 - Motor
+
+       CALL #"MCC7.2_B312_MA3072"
+       (
+         CM_No       := 1067 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B312_FN3072_DI_Flt ,
+         Protect       := MCC7_B312_FC3072_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_24_P13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1067] ,
+       );
+
+NETWORK
+TITLE = 1068 - MCC7.2_B313_MA3073 - Vibrate Plate 3 - Motor
+
+       CALL #"MCC7.2_B313_MA3073"
+       (
+         CM_No       := 1068 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B313_FN3073_DI_Flt ,
+         Protect       := MCC7_B313_FC3073_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 1,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_24_P13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1068] ,
+       );
+
+NETWORK
+TITLE = 1069 - MCC7.2_B314_MA3074 - Opening Roll 3 - Motor
+
+       CALL #"MCC7.2_B314_MA3074"
+       (
+         CM_No       := 1069 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B314_FN3074_DI_Flt ,
+         Protect       := MCC7_B314_FC3074_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,15 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_24_P13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1069] ,
+       );
+
+NETWORK
+TITLE = 1070 - MCC7.2_B315_MA3075 - Delivery Roller 3 - Motor
+
+       CALL #"MCC7.2_B315_MA3075"
+       (
+         CM_No       := 1070 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B315_FN3075_DI_Flt ,
+         Protect       := MCC7_B315_FC3075_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 1,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_24_S ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1070] ,
+       );
+
+NETWORK
+TITLE = 1071 - MCC7.2_B316_MA3076 - Fiber Fan 3 - Motor
+
+       CALL #"MCC7.2_B316_MA3076"
+       (
+         CM_No       := 1071 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B316_FN3076_DI_Flt ,
+         Protect       := MCC7_B316_FC3076_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,15 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_24_P13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1071] ,
+       );
+
+NETWORK
+TITLE = 1072 - MCC7.2_B412_MA3082 - Condenser Fan 4 - Motor
+
+       CALL #"MCC7.2_B412_MA3082"
+       (
+         CM_No       := 1072 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B412_FN3082_DI_Flt ,
+         Protect       := MCC7_B412_FC3082_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_24_P14 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1072] ,
+       );
+
+NETWORK
+TITLE = 1073 - MCC7.2_B413_MA3083 - Vibrate Plate 4 - Motor
+
+       CALL #"MCC7.2_B413_MA3083"
+       (
+         CM_No       := 1073 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B413_FN3083_DI_Flt ,
+         Protect       := MCC7_B413_FC3083_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 1,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_24_P14 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1073] ,
+       );
+
+NETWORK
+TITLE = 1074 - MCC7.2_B414_MA3084 - Opening Roll 4 - Motor
+
+       CALL #"MCC7.2_B414_MA3084"
+       (
+         CM_No       := 1074 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B414_FN3084_DI_Flt ,
+         Protect       := MCC7_B414_FC3084_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,15 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_24_P14 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1074] ,
+       );
+
+NETWORK
+TITLE = 1075 - MCC7.2_B415_MA3085 - Delivery Roller 4 - Motor
+
+       CALL #"MCC7.2_B415_MA3085"
+       (
+         CM_No       := 1075 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B415_FN3085_DI_Flt ,
+         Protect       := MCC7_B415_FC3085_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 1,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_24_S ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1075] ,
+       );
+
+NETWORK
+TITLE = 1076 - MCC7.2_B416_MA3086 - Fiber Fan 4 - Motor
+
+       CALL #"MCC7.2_B416_MA3086"
+       (
+         CM_No       := 1076 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 24 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP72_B416_FN3086_DI_Flt ,
+         Protect       := MCC7_B416_FC3086_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,15 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_24_P14 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1076] ,
+       );
+
+NETWORK
+TITLE = 1077 - MCC8.1_D411_MA3371 - Airknife 1 FW Fan - Motor
+
+       CALL #"MCC8.1_D411_MA3371"
+       (
+         CM_No       := 1077 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_D411_FN3371_DI_Flt ,
+         Protect       := MCC8_D411_FC3371_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 46 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_30_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1077] ,
+       );
+
+NETWORK
+TITLE = 1078 - MCC8.2_D412_MA3372 - Airknife 2 FW Fan - Motor
+
+       CALL #"MCC8.2_D412_MA3372"
+       (
+         CM_No       := 1078 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_D412_FN3372_DI_Flt ,
+         Protect       := MCC8_D412_FC3372_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 29 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_30_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1078] ,
+       );
+
+NETWORK
+TITLE = 1079 - MCC8.3_D421_MA3366 - FW Cleaning Outside Suction Fan - Motor
+
+       CALL #"MCC8.3_D421_MA3366"
+       (
+         CM_No       := 1079 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_D421_FN3366_DI_Flt ,
+         Protect       := MCC8_D421_FC3366_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 17,2 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_30_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1079] ,
+       );
+
+NETWORK
+TITLE = 1080 - MCC8.3_D422_MA3367 - FW Cleaning Inside Suction Fan - Motor
+
+       CALL #"MCC8.3_D422_MA3367"
+       (
+         CM_No       := 1080 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_D422_FN3367_DI_Flt ,
+         Protect       := MCC8_D422_FC3367_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 17,2 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_30_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1080] ,
+       );
+
+NETWORK
+TITLE = 1081 - MCC8.3_D423_MA3361 - FW Cleaning Inlet Suction Fan - Motor
+
+       CALL #"MCC8.3_D423_MA3361"
+       (
+         CM_No       := 1081 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_D423_FN3361_DI_Flt ,
+         Protect       := MCC8_D423_FC3361_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 11 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_30_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1081] ,
+       );
+
+NETWORK
+TITLE = 1082 - MCC8.2_D431_MA3364 - FW Cleaning Brush Roll  - Motor
+
+       CALL #"MCC8.2_D431_MA3364"
+       (
+         CM_No       := 1082 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_D431_FN3364_DI_Flt ,
+         Protect       := MCC8_D431_FC3364_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,15 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_30_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1082] ,
+       );
+
+NETWORK
+TITLE = 1083 - MCC8.2_C181_MA3264 - Compactor Suction Fan - Motor
+
+       CALL #"MCC8.2_C181_MA3264"
+       (
+         CM_No       := 1083 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_C181_FN3264_DI_Flt ,
+         Protect       := MCC8_C181_FC3264_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 58 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1083] ,
+       );
+
+NETWORK
+TITLE = 1084 - MCC8.1_T181_MA3375 - Transfer Suction Fan - Motor
+
+       CALL #"MCC8.1_T181_MA3375"
+       (
+         CM_No       := 1084 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_T181_FN3375_DI_Flt ,
+         Protect       := MCC8_T181_FC3375_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 68 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1084] ,
+       );
+
+NETWORK
+TITLE = 1085 - MCC8.2_T411_MA3378 - Airknife Transfer Wire  - Motor
+
+       CALL #"MCC8.2_T411_MA3378"
+       (
+         CM_No       := 1085 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_T411_FN3378_DI_Flt ,
+         Protect       := MCC8_T411_FC3378_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 28 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_30_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1085] ,
+       );
+
+NETWORK
+TITLE = 1086 - MCC8.3_T421_MA3377 - Transfer Cleaning Outside Suction Fan - Motor
+
+       CALL #"MCC8.3_T421_MA3377"
+       (
+         CM_No       := 1086 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_T421_FN3377_DI_Flt ,
+         Protect       := MCC8_T421_FC3377_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 17,5 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_30_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1086] ,
+       );
+
+NETWORK
+TITLE = 1087 - MCC8.2_T431_MA3376 - Transfer Cleaning Brush Roll  - Motor
+
+       CALL #"MCC8.2_T431_MA3376"
+       (
+         CM_No       := 1087 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_T431_FN3376_DI_Flt ,
+         Protect       := MCC8_T431_FC3376_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,15 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_30_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1087] ,
+       );
+
+NETWORK
+TITLE = 1088 - MCC8.2_T161_MA3381 - Transfer Lift - Motor
+
+       CALL #"MCC8.2_T161_MA3381"
+       (
+         CM_No       := 1088 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 26 ,
+         SubTab       := 8 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_T161_FN3381_DI_Flt ,
+         Protect       := MCC8_T161_FC3381_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 2,2 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_26_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1088] ,
+       );
+
+NETWORK
+TITLE = 1089 - MCC8.2_D311_MA3410 - Forming Wire Drive Roll - Motor
+
+       CALL #"MCC8.2_D311_MA3410"
+       (
+         CM_No       := 1089 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_D311_FN3410_DI_Flt ,
+         Protect       := MCC8_D311_FC3410_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 48 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_03_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1089] ,
+       );
+
+NETWORK
+TITLE = 1090 - MCC8.2_C311_MA3412 - Compactor Steel Drive Roll - Motor
+
+       CALL #"MCC8.2_C311_MA3412"
+       (
+         CM_No       := 1090 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_C311_FN3412_DI_Flt ,
+         Protect       := MCC8_C311_FC3412_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 18,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_03_S2 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1090] ,
+       );
+
+NETWORK
+TITLE = 1091 - MCC8.3_C321_MA3414 - Compactor Rubber Drive Roll - Motor
+
+       CALL #"MCC8.3_C321_MA3414"
+       (
+         CM_No       := 1091 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_C321_FN3414_DI_Flt ,
+         Protect       := MCC8_C321_FC3414_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 9,5 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_03_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1091] ,
+       );
+
+NETWORK
+TITLE = 1092 - MCC8.3_T311_MA3416 - Transfer Wire Drive Roll - Motor
+
+       CALL #"MCC8.3_T311_MA3416"
+       (
+         CM_No       := 1092 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_T311_FN3416_DI_Flt ,
+         Protect       := MCC8_T311_FC3416_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 31 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_03_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1092] ,
+       );
+
+NETWORK
+TITLE = 1093 - MCC8.3_E311_MA3418 - Embosser Steel Drive Roll - Motor
+
+       CALL #"MCC8.3_E311_MA3418"
+       (
+         CM_No       := 1093 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_E311_FN3418_DI_Flt ,
+         Protect       := MCC8_E311_FC3418_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 18,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_03_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1093] ,
+       );
+
+NETWORK
+TITLE = 1094 - MCC8.3_E321_MA3420 - Embosser Rubber Drive Roll - Motor
+
+       CALL #"MCC8.3_E321_MA3420"
+       (
+         CM_No       := 1094 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP81_E321_FN3420_DI_Flt ,
+         Protect       := MCC8_E321_FC3420_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 9,5 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_03_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1094] ,
+       );
+
+NETWORK
+TITLE = 1095 - MCC9.3_A121_MA3722 - Outlet Fan 1 - Motor
+
+       CALL #"MCC9.3_A121_MA3722"
+       (
+         CM_No       := 1095 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 21 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP91_A121_FN3722_DI_Flt ,
+         Protect       := MCC9_A121_FC3722_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 18,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_21_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1095] ,
+       );
+
+NETWORK
+TITLE = 1096 - MCC9.3_A241_MA3742 - Outlet Fan 2 - Motor
+
+       CALL #"MCC9.3_A241_MA3742"
+       (
+         CM_No       := 1096 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 21 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP92_A241_FN3742_DI_Flt ,
+         Protect       := MCC9_A241_FC3742_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 18,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_21_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1096] ,
+       );
+
+NETWORK
+TITLE = 1097 - MCC9.1_A170_TA3770 - Humidifier 1 - Fan 1-4 - 4 x Motor
+
+       CALL #"MCC9.1_A170_TA3770"
+       (
+         CM_No       := 1097 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 22 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       :=  ,
+         Protect       := MCC9_A170_FC3770_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 18,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1097] ,
+       );
+
+NETWORK
+TITLE = 1098 - MCC9.1_A190_TA3780 - Humidifier 3 - Fan 1-4 - 4 x Motor
+
+       CALL #"MCC9.1_A190_TA3780"
+       (
+         CM_No       := 1098 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 22 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       :=  ,
+         Protect       := MCC9_A190_FC3780_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 18,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1098] ,
+       );
+
+NETWORK
+TITLE = 1099 - MCC9.2_A270_TA3785 - Humidifier 4 - Fan 1-4 - 4 x Motor
+
+       CALL #"MCC9.2_A270_TA3785"
+       (
+         CM_No       := 1099 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 22 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       :=  ,
+         Protect       := MCC9_A270_FC3785_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 18,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1099] ,
+       );
+
+NETWORK
+TITLE = 1100 - MCC9.2_A280_TA3790 - Humidifier 5 - Fan 1-4 - 4 x Motor
+
+       CALL #"MCC9.2_A280_TA3790"
+       (
+         CM_No       := 1100 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 22 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       :=  ,
+         Protect       := MCC9_A280_FC3790_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 18,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1100] ,
+       );
+
+NETWORK
+TITLE = 1101 - MCC9.2_A290_TA3795 - Humidifier 6 - Fan 1-4 - 4 x Motor
+
+       CALL #"MCC9.2_A290_TA3795"
+       (
+         CM_No       := 1101 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 22 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       :=  ,
+         Protect       := MCC9_A290_FC3795_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 18,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_22_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1101] ,
+       );
+
+NETWORK
+TITLE = 1102 - MCC9.3_A711_MA3761 - Humidifier Pump 1 - Motor
+
+       CALL #"MCC9.3_A711_MA3761"
+       (
+         CM_No       := 1102 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 22 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP93_A711_FN3761_DI_Flt ,
+         Protect       := MCC9_A711_FC3761_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 2,8 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_22_S ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1102] ,
+       );
+
+NETWORK
+TITLE = 1103 - MCC9.3_A721_MA3762 - Humidifier Pump 2 - Motor
+
+       CALL #"MCC9.3_A721_MA3762"
+       (
+         CM_No       := 1103 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 22 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP93_A721_FN3762_DI_Flt ,
+         Protect       := MCC9_A721_FC3762_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 2,8 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_22_S ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1103] ,
+       );
+
+NETWORK
+TITLE = 1104 - MCC9.3_A731_MA3763 - Humidifier Pump 3 - Motor
+
+       CALL #"MCC9.3_A731_MA3763"
+       (
+         CM_No       := 1104 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 22 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP93_A731_FN3763_DI_Flt ,
+         Protect       := MCC9_A731_FC3763_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 2,8 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_22_S ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1104] ,
+       );
+
+NETWORK
+TITLE = 1105 - MCC10.3_I911_MA3501 - Dryer 1 Sealing Fan  - Motor
+
+       CALL #"MCC10.3_I911_MA3501"
+       (
+         CM_No       := 1105 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_I911_FC3501_DI_Flt ,
+         Protect       := MCC10_I911_FC3501_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 5,8 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_28_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1105] ,
+       );
+
+NETWORK
+TITLE = 1106 - MCC10.3_I511_MA3502 - Zone 1 Disc Filter Cleaning Fan - Motor
+
+       CALL #"MCC10.3_I511_MA3502"
+       (
+         CM_No       := 1106 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_I511_FN3502_DI_Flt ,
+         Protect       := MCC10_I511_FC3502_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 11 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_28_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1106] ,
+       );
+
+NETWORK
+TITLE = 1107 - MCC10.1_I611_MA3510 - Zone 1 Circulation Fan  - Motor
+
+       CALL #"MCC10.1_I611_MA3510"
+       (
+         CM_No       := 1107 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP101_I611_FN3510_DI_Flt ,
+         Protect       := MCC10_I611_FC3510_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 115 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_28_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1107] ,
+       );
+
+NETWORK
+TITLE = 1108 - MCC10.3_I711_MA3506 - Zone 1 Exhaust Fan - Motor
+
+       CALL #"MCC10.3_I711_MA3506"
+       (
+         CM_No       := 1108 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_I711_FN3506_DI_Flt ,
+         Protect       := MCC10_I711_FC3506_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 8,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_28_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1108] ,
+       );
+
+NETWORK
+TITLE = 1109 - MCC10.3_I811_MA3508 - Zone 1 Burner Fan - Motor
+
+       CALL #"MCC10.3_I811_MA3508"
+       (
+         CM_No       := 1109 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_I811_FN3508_DI_Flt ,
+         Protect       := MCC10_I811_FC3508_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_28_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1109] ,
+       );
+
+NETWORK
+TITLE = 1110 - MCC10.3_I521_MA3512 - Zone 2 Disc Filter Cleaning Fan - Motor
+
+       CALL #"MCC10.3_I521_MA3512"
+       (
+         CM_No       := 1110 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_I521_FN3512_DI_Flt ,
+         Protect       := MCC10_I521_FC3512_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 11 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_28_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1110] ,
+       );
+
+NETWORK
+TITLE = 1111 - MCC10.2_I621_MA3520 - Zone 2 Circulation Fan  - Motor
+
+       CALL #"MCC10.2_I621_MA3520"
+       (
+         CM_No       := 1111 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP102_I621_FN3520_DI_Flt ,
+         Protect       := MCC10_I621_FC3520_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 115 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_28_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1111] ,
+       );
+
+NETWORK
+TITLE = 1112 - MCC10.3_K911_MA3521 - Dryer 2 Sealing Fan  - Motor
+
+       CALL #"MCC10.3_K911_MA3521"
+       (
+         CM_No       := 1112 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_K911_FN3521_DI_Flt ,
+         Protect       := MCC10_K911_FC3521_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 5,8 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_28_S2 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1112] ,
+       );
+
+NETWORK
+TITLE = 1113 - MCC10.3_K511_MA3522 - Zone 3 Disc Filter Cleaning Fan - Motor
+
+       CALL #"MCC10.3_K511_MA3522"
+       (
+         CM_No       := 1113 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_K511_FN3522_DI_Flt ,
+         Protect       := MCC10_K511_FC3522_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 11 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_28_S2 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1113] ,
+       );
+
+NETWORK
+TITLE = 1114 - MCC10.2_K611_MA3530 - Zone 3 Circulation Fan  - Motor
+
+       CALL #"MCC10.2_K611_MA3530"
+       (
+         CM_No       := 1114 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP103_K611_FN3530_DI_Flt ,
+         Protect       := MCC10_K611_FC3530_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 115 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_28_S2 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1114] ,
+       );
+
+NETWORK
+TITLE = 1115 - MCC10.3_K711_MA3526 - Zone 3 Exhaust Fan - Motor
+
+       CALL #"MCC10.3_K711_MA3526"
+       (
+         CM_No       := 1115 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_K711_FN3526_DI_Flt ,
+         Protect       := MCC10_K711_FC3526_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 8,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_28_S2 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1115] ,
+       );
+
+NETWORK
+TITLE = 1116 - MCC10.3_K811_MA3528 - Zone 3 Burner Fan - Motor
+
+       CALL #"MCC10.3_K811_MA3528"
+       (
+         CM_No       := 1116 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_K811_FN3528_DI_Flt ,
+         Protect       := MCC10_K811_FC3528_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_28_S2 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1116] ,
+       );
+
+NETWORK
+TITLE = 1117 - MCC10.3_K521_MA3532 - Zone 4 Disc Filter Cleaning Fan - Motor
+
+       CALL #"MCC10.3_K521_MA3532"
+       (
+         CM_No       := 1117 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_K521_FN3532_DI_Flt ,
+         Protect       := MCC10_K521_FC3532_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 11 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_28_S2 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1117] ,
+       );
+
+NETWORK
+TITLE = 1118 - MCC10.2_K621_MA3540 - Zone 4 Circulation Fan  - Motor
+
+       CALL #"MCC10.2_K621_MA3540"
+       (
+         CM_No       := 1118 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP104_K621_FN3540_DI_Flt ,
+         Protect       := MCC10_K621_FC3540_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 115 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_28_S2 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1118] ,
+       );
+
+NETWORK
+TITLE = 1119 - MCC10.3_K721_MA3536 - Zone 4 Exhaust Fan - Motor
+
+       CALL #"MCC10.3_K721_MA3536"
+       (
+         CM_No       := 1119 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_K721_FN3536_DI_Flt ,
+         Protect       := MCC10_K721_FC3536_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 8,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_28_S2 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1119] ,
+       );
+
+NETWORK
+TITLE = 1120 - MCC10.3_K821_MA3538 - Zone 4 Burner Fan - Motor
+
+       CALL #"MCC10.3_K821_MA3538"
+       (
+         CM_No       := 1120 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_K821_FN3538_DI_Flt ,
+         Protect       := MCC10_K821_FC3538_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_28_S2 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1120] ,
+       );
+
+NETWORK
+TITLE = 1121 - MCC11.3_N911_MA3541 - Dryer 3 Sealing Fan  - Motor
+
+       CALL #"MCC11.3_N911_MA3541"
+       (
+         CM_No       := 1121 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_N911_FN3541_DI_Flt ,
+         Protect       := MCC11_N911_FC3541_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 5,8 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_28_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1121] ,
+       );
+
+NETWORK
+TITLE = 1122 - MCC11.3_N511_MA3542 - Zone 5 Disc Filter Cleaning Fan - Motor
+
+       CALL #"MCC11.3_N511_MA3542"
+       (
+         CM_No       := 1122 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 7 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_N511_FN3542_DI_Flt ,
+         Protect       := MCC11_N511_FC3542_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 11 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_28_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1122] ,
+       );
+
+NETWORK
+TITLE = 1123 - MCC11.2_N611_MA3550 - Zone 5 Circulation Fan  - Motor
+
+       CALL #"MCC11.2_N611_MA3550"
+       (
+         CM_No       := 1123 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 7 ,
+         Safety       :=  ,
+         Disconnect       := LCP111_N611_FN3550_DI_Flt ,
+         Protect       := MCC11_N611_FC3550_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 115 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_28_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1123] ,
+       );
+
+NETWORK
+TITLE = 1124 - MCC11.3_N711_MA3546 - Zone 5 Exhaust Fan - Motor
+
+       CALL #"MCC11.3_N711_MA3546"
+       (
+         CM_No       := 1124 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 7 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_N711_FN3546_DI_Flt ,
+         Protect       := MCC11_N711_FC3546_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 8,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_28_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1124] ,
+       );
+
+NETWORK
+TITLE = 1125 - MCC11.3_N811_MA3548 - Zone 5 Burner Fan - Motor
+
+       CALL #"MCC11.3_N811_MA3548"
+       (
+         CM_No       := 1125 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 7 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_N811_FN3548_DI_Flt ,
+         Protect       := MCC11_N811_FC3548_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_28_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1125] ,
+       );
+
+NETWORK
+TITLE = 1126 - MCC11.3_N521_MA3552 - Zone 6 Disc Filter Cleaning Fan - Motor
+
+       CALL #"MCC11.3_N521_MA3552"
+       (
+         CM_No       := 1126 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 8 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_N521_FN3552_DI_Flt ,
+         Protect       := MCC11_N521_FC3552_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 11 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_28_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1126] ,
+       );
+
+NETWORK
+TITLE = 1127 - MCC11.2_N621_MA3560 - Zone 6 Circulation Fan  - Motor
+
+       CALL #"MCC11.2_N621_MA3560"
+       (
+         CM_No       := 1127 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 8 ,
+         Safety       :=  ,
+         Disconnect       := LCP112_N621_FN3560_DI_Flt ,
+         Protect       := MCC11_N621_FC3560_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 115 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_28_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1127] ,
+       );
+
+NETWORK
+TITLE = 1128 - MCC11.3_N721_MA3556 - Zone 6 Exhaust Fan - Motor
+
+       CALL #"MCC11.3_N721_MA3556"
+       (
+         CM_No       := 1128 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 8 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_N721_FN3556_DI_Flt ,
+         Protect       := MCC11_N721_FC3556_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 8,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_28_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1128] ,
+       );
+
+NETWORK
+TITLE = 1129 - MCC11.3_N821_MA3558 - Zone 6 Burner Fan - Motor
+
+       CALL #"MCC11.3_N821_MA3558"
+       (
+         CM_No       := 1129 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 8 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_N821_FN3558_DI_Flt ,
+         Protect       := MCC11_N821_FC3558_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_28_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1129] ,
+       );
+
+NETWORK
+TITLE = 1130 - MCC11.3_N531_MA3562 - Zone 7 Disc Filter Cleaning Fan - Motor
+
+       CALL #"MCC11.3_N531_MA3562"
+       (
+         CM_No       := 1130 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 9 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_N531_FN3562_DI_Flt ,
+         Protect       := MCC11_N531_FC3562_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 11 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_28_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1130] ,
+       );
+
+NETWORK
+TITLE = 1131 - MCC11.2_N631_MA3570 - Zone 7 Circulation Fan  - Motor
+
+       CALL #"MCC11.2_N631_MA3570"
+       (
+         CM_No       := 1131 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 9 ,
+         Safety       :=  ,
+         Disconnect       := LCP113_N631_FN3570_DI_Flt ,
+         Protect       := MCC11_N631_FC3570_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 115 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_28_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1131] ,
+       );
+
+NETWORK
+TITLE = 1132 - MCC11.3_N731_MA3566 - Zone 7 Exhaust Fan - Motor
+
+       CALL #"MCC11.3_N731_MA3566"
+       (
+         CM_No       := 1132 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 9 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_N731_FN3566_DI_Flt ,
+         Protect       := MCC11_N731_FC3566_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 8,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_28_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1132] ,
+       );
+
+NETWORK
+TITLE = 1133 - MCC11.3_N831_MA3568 - Zone 7 Burner Fan - Motor
+
+       CALL #"MCC11.3_N831_MA3568"
+       (
+         CM_No       := 1133 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 28 ,
+         SubTab       := 9 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_N831_FN3568_DI_Flt ,
+         Protect       := MCC11_N831_FC3568_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_28_S3 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1133] ,
+       );
+
+NETWORK
+TITLE = 1134 - MCC12.1_I311_MA3422 - Dryer 1 Wire Drive Roll - Motor
+
+       CALL #"MCC12.1_I311_MA3422"
+       (
+         CM_No       := 1134 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP121_I311_FN3422_DI_Flt ,
+         Protect       := MCC12_I311_FC3422_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 38 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_03_S5 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1134] ,
+       );
+
+NETWORK
+TITLE = 1135 - MCC12.1_J311_MA3424 - Spray 1 Wire Drive Roll - Motor
+
+       CALL #"MCC12.1_J311_MA3424"
+       (
+         CM_No       := 1135 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP121_J311_FN3424_DI_Flt ,
+         Protect       := MCC12_J311_FC3424_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 18,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_03_S6 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1135] ,
+       );
+
+NETWORK
+TITLE = 1136 - MCC12.1_K311_MA3426 - Dryer 2 Wire Drive Roll - Motor
+
+       CALL #"MCC12.1_K311_MA3426"
+       (
+         CM_No       := 1136 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP122_K311_FN3426_DI_Flt ,
+         Protect       := MCC12_K311_FC3426_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 38 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_03_S7 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1136] ,
+       );
+
+NETWORK
+TITLE = 1137 - MCC12.1_L311_MA3428 - Transition Wire Drive Roll - Motor
+
+       CALL #"MCC12.1_L311_MA3428"
+       (
+         CM_No       := 1137 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP122_L311_FN3428_DI_Flt ,
+         Protect       := MCC12_L311_FC3428_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 18,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_03_S8 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1137] ,
+       );
+
+NETWORK
+TITLE = 1138 - MCC12.1_M311_MA3430 - Spray 2 Wire Drive Roll - Motor
+
+       CALL #"MCC12.1_M311_MA3430"
+       (
+         CM_No       := 1138 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP122_M311_FN3430_DI_Flt ,
+         Protect       := MCC12_M311_FC3430_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 18,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_03_S9 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1138] ,
+       );
+
+NETWORK
+TITLE = 1139 - MCC12.2_N311_MA3432 - Dryer 3 Wire Drive Roll - Motor
+
+       CALL #"MCC12.2_N311_MA3432"
+       (
+         CM_No       := 1139 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP123_N311_FN3432_DI_Flt ,
+         Protect       := MCC12_N311_FC3432_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 38 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_03_S10 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1139] ,
+       );
+
+NETWORK
+TITLE = 1140 - MCC12.2_R311_MA3434 - Return Wire 1 Drive Roll - Motor
+
+       CALL #"MCC12.2_R311_MA3434"
+       (
+         CM_No       := 1140 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP123_R311_FN3434_DI_Flt ,
+         Protect       := MCC12_R311_FC3434_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 31 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_03_S11 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1140] ,
+       );
+
+NETWORK
+TITLE = 1141 - MCC12.2_R321_MA3436 - Return Wire 2 Drive Roll - Motor
+
+       CALL #"MCC12.2_R321_MA3436"
+       (
+         CM_No       := 1141 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP123_R321_FN3436_DI_Flt ,
+         Protect       := MCC12_R321_FC3436_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 31 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_03_S11 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1141] ,
+       );
+
+NETWORK
+TITLE = 1142 - MCC12.2_S311_MA3438 - Cooling Wire Drive Roll - Motor
+
+       CALL #"MCC12.2_S311_MA3438"
+       (
+         CM_No       := 1142 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 3 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP122_S311_FN3438_DI_Flt ,
+         Protect       := MCC12_S311_FC3438_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 18,1 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_03_S13 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1142] ,
+       );
+
+NETWORK
+TITLE = 1143 - MCC13.3_I211_MA3612 - Dryer 1 Inlet Suction Fan  - Motor
+
+       CALL #"MCC13.3_I211_MA3612"
+       (
+         CM_No       := 1143 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_I211_FN3612_DI_Flt ,
+         Protect       := MCC13_I211_FC3612_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 8,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1143] ,
+       );
+
+NETWORK
+TITLE = 1144 - MCC13.2_I221_MA3614 - Dryer 1 Outlet Suction Fan  - Motor
+
+       CALL #"MCC13.2_I221_MA3614"
+       (
+         CM_No       := 1144 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_I221_FN3614_DI_Flt ,
+         Protect       := MCC13_I221_FC3614_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 17,2 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1144] ,
+       );
+
+NETWORK
+TITLE = 1145 - MCC13.2_I421_MA3616 - Dryer 1 Wire Cleaning Suction Fan - Motor
+
+       CALL #"MCC13.2_I421_MA3616"
+       (
+         CM_No       := 1145 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_I421_FN3616_DI_Flt ,
+         Protect       := MCC13_I421_FC3616_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 17,2 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_30_S5 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1145] ,
+       );
+
+NETWORK
+TITLE = 1146 - MCC13.1_I411_MA3618 - Dryer 1 Airknife Fan - Motor
+
+       CALL #"MCC13.1_I411_MA3618"
+       (
+         CM_No       := 1146 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_I411_FN3618_DI_Flt ,
+         Protect       := MCC13_I411_FC3618_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 28 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_30_S5 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1146] ,
+       );
+
+NETWORK
+TITLE = 1147 - MCC13.1_K211_MA3620 - Dryer 2 Inlet Suction Fan  - Motor
+
+       CALL #"MCC13.1_K211_MA3620"
+       (
+         CM_No       := 1147 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_K211_FN3620_DI_Flt ,
+         Protect       := MCC13_K211_FC3620_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 8,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1147] ,
+       );
+
+NETWORK
+TITLE = 1148 - MCC13.2_K221_MA3622 - Dryer 2 Outlet Suction Fan  - Motor
+
+       CALL #"MCC13.2_K221_MA3622"
+       (
+         CM_No       := 1148 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 6 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_K221_FN3622_DI_Flt ,
+         Protect       := MCC13_K221_FC3622_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 24 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1148] ,
+       );
+
+NETWORK
+TITLE = 1149 - MCC13.2_K421_MA3624 - Dryer 2 Wire Cleaning Suction Fan - Motor
+
+       CALL #"MCC13.2_K421_MA3624"
+       (
+         CM_No       := 1149 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_K421_FN3624_DI_Flt ,
+         Protect       := MCC13_K421_FC3624_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 17,2 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_30_S7 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1149] ,
+       );
+
+NETWORK
+TITLE = 1150 - MCC13.1_K411_MA3626 - Dryer 2 Airknife Fan - Motor
+
+       CALL #"MCC13.1_K411_MA3626"
+       (
+         CM_No       := 1150 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 12 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_K411_FN3626_DI_Flt ,
+         Protect       := MCC13_K411_FC3626_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 28 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_30_S7 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1150] ,
+       );
+
+NETWORK
+TITLE = 1151 - MCC13.3_L211_MA3628 - Transition Wire Fan  - Motor
+
+       CALL #"MCC13.3_L211_MA3628"
+       (
+         CM_No       := 1151 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 7 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_L211_FN3628_DI_Flt ,
+         Protect       := MCC13_L211_FC3628_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 46 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1151] ,
+       );
+
+NETWORK
+TITLE = 1152 - MCC13.1_N221_MA3630 - Dryer 3 Outlet Suction Fan - Motor
+
+       CALL #"MCC13.1_N221_MA3630"
+       (
+         CM_No       := 1152 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 9 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_N221_FN3630_DI_Flt ,
+         Protect       := MCC13_N221_FC3630_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 8,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1152] ,
+       );
+
+NETWORK
+TITLE = 1153 - MCC13.2_R211_MA3634 - Return Run 1 Wire Suction Fan 1 - Motor
+
+       CALL #"MCC13.2_R211_MA3634"
+       (
+         CM_No       := 1153 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 10 ,
+         Safety       :=  ,
+         Disconnect       := LCP123_R211_FN3634_DI_Flt ,
+         Protect       := MCC13_R211_FC3634_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 28 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1153] ,
+       );
+
+NETWORK
+TITLE = 1154 - MCC13.2_R212_MA3636 - Return Run 1 Wire Suction Fan 2 - Motor
+
+       CALL #"MCC13.2_R212_MA3636"
+       (
+         CM_No       := 1154 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 10 ,
+         Safety       :=  ,
+         Disconnect       := LCP123_R212_FN3636_DI_Flt ,
+         Protect       := MCC13_R212_FC3636_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 28 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1154] ,
+       );
+
+NETWORK
+TITLE = 1155 - MCC13.2_R221_MA3638 - Return Run 2 Wire Suction Fan 1 - Motor
+
+       CALL #"MCC13.2_R221_MA3638"
+       (
+         CM_No       := 1155 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 10 ,
+         Safety       :=  ,
+         Disconnect       := LCP123_R221_FN3638_DI_Flt ,
+         Protect       := MCC13_R221_FC3638_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 28 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1155] ,
+       );
+
+NETWORK
+TITLE = 1156 - MCC13.1_R222_MA3640 - Return Run 2 Wire Suction Fan 2 - Motor
+
+       CALL #"MCC13.1_R222_MA3640"
+       (
+         CM_No       := 1156 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 10 ,
+         Safety       :=  ,
+         Disconnect       := LCP122_R222_FN3640_DI_Flt ,
+         Protect       := MCC13_R222_FC3640_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 8,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1156] ,
+       );
+
+NETWORK
+TITLE = 1157 - MCC13.1_R421_MA3642 - Return Run 1 Wire Cleaning Fan - Motor
+
+       CALL #"MCC13.1_R421_MA3642"
+       (
+         CM_No       := 1157 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 10 ,
+         Safety       :=  ,
+         Disconnect       := LCP123_R421_FN3642_DI_Flt ,
+         Protect       := MCC13_R421_FC3642_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 11 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_30_S11 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1157] ,
+       );
+
+NETWORK
+TITLE = 1158 - MCC13.1_S211_MA3644 - Cooling Section Suction Fan - Motor
+
+       CALL #"MCC13.1_S211_MA3644"
+       (
+         CM_No       := 1158 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 11 ,
+         Safety       :=  ,
+         Disconnect       := LCP122_S211_FN3644_DI_Flt ,
+         Protect       := MCC13_S211_FC3644_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 8,6 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1158] ,
+       );
+
+NETWORK
+TITLE = 1159 - MCC13.3_I111_MA3650 - Münter Box 1 Fan  - Motor
+
+       CALL #"MCC13.3_I111_MA3650"
+       (
+         CM_No       := 1159 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 31 ,
+         SubTab       := 1 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_I111_FN3650_DI_Flt ,
+         Protect       := MCC13_I111_FC3650_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 48 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1159] ,
+       );
+
+NETWORK
+TITLE = 1160 - MCC13.2_J611_MA3652 - Spray 1 Suction Fan  - Motor
+
+       CALL #"MCC13.2_J611_MA3652"
+       (
+         CM_No       := 1160 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 5 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_J611_FN3652_DI_Flt ,
+         Protect       := MCC13_J611_FC3652_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 23 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1160] ,
+       );
+
+NETWORK
+TITLE = 1161 - MCC13.3_K111_MA3654 - Münter Box 3 Fan  - Motor
+
+       CALL #"MCC13.3_K111_MA3654"
+       (
+         CM_No       := 1161 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 31 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_K111_FN3654_DI_Flt ,
+         Protect       := MCC13_K111_FC3654_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 48 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1161] ,
+       );
+
+NETWORK
+TITLE = 1162 - MCC13.2_M611_MA3656 - Spray 2 Suction Fan  - Motor
+
+       CALL #"MCC13.2_M611_MA3656"
+       (
+         CM_No       := 1162 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 8 ,
+         Safety       :=  ,
+         Disconnect       := LCP131_M611_FN3656_DI_Flt ,
+         Protect       := MCC13_M611_FC3656_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 480 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 23 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1162] ,
+       );
+
+NETWORK
+TITLE = 1163 - MCC13.3_Q711_MA3662 - Mixing Tank Argitator   - Motor
+
+       CALL #"MCC13.3_Q711_MA3662"
+       (
+         CM_No       := 1163 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 29 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP132_Q711_FN3662_DI_Flt ,
+         Protect       := MCC13_Q711_FC3662_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 3 ,
+         TorqueRated       :=  ,
+         kWRated       := 1.5 ,
+         SC_Local       := SL_29_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1163] ,
+       );
+
+NETWORK
+TITLE = 1164 - MCC13.3_Q721_MA3664 - Latex Transfer Pump - Motor
+
+       CALL #"MCC13.3_Q721_MA3664"
+       (
+         CM_No       := 1164 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 29 ,
+         SubTab       := 2 ,
+         Safety       :=  ,
+         Disconnect       := LCP132_Q721_FN3664_DI_Flt ,
+         Protect       := MCC13_Q721_FC3664_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 2,9 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_29_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1164] ,
+       );
+
+NETWORK
+TITLE = 1165 - MCC13.3_Q731_MA3666 - Latex Spray 1 - Motor
+
+       CALL #"MCC13.3_Q731_MA3666"
+       (
+         CM_No       := 1165 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 29 ,
+         SubTab       := 3 ,
+         Safety       :=  ,
+         Disconnect       := LCP132_Q731_FN3666_DI_Flt ,
+         Protect       := MCC13_Q731_FC3666_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 1,5 ,
+         TorqueRated       :=  ,
+         kWRated       := 7.5 ,
+         SC_Local       := SL_29_S1 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1165] ,
+       );
+
+NETWORK
+TITLE = 1166 - MCC13.3_Q732_MA3668 - Latex Spray 2 - Motor
+
+       CALL #"MCC13.3_Q732_MA3668"
+       (
+         CM_No       := 1166 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 29 ,
+         SubTab       := 4 ,
+         Safety       :=  ,
+         Disconnect       := LCP132_Q732_FN3668_DI_Flt ,
+         Protect       := MCC13_Q732_FC3668_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 1,5 ,
+         TorqueRated       :=  ,
+         kWRated       := 5.5 ,
+         SC_Local       := SL_29_S2 ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1166] ,
+       );
+
+NETWORK
+TITLE = 1167 - MCC13.3_L611_MA3670 - Transition Wire Lift - Motor
+
+       CALL #"MCC13.3_L611_MA3670"
+       (
+         CM_No       := 1167 ,
+         Unit       :=  ,
+         Type       :=  ,
+         Tab       := 30 ,
+         SubTab       := 7 ,
+         Safety       :=  ,
+         Disconnect       := LCP122_L611_FN3670_DI_Flt ,
+         Protect       := MCC13_L611_FC3670_DI_Flt ,
+         RotationFB       :=  ,
+         P2002_Current       :=  ,
+         P2003_Torque       :=  ,
+         P2001_RefVolt       := 460 ,
+         EU_Ratio       :=  ,
+         Gear_Ratio       :=  ,
+         DeAct_Standstill       := T#30s ,
+         ID_Free_telegram       :=  ,
+         AmpRated       := 1,14 ,
+         TorqueRated       :=  ,
+         kWRated       := 3 ,
+         SC_Local       := SL_30_P ,
+         CM_FRQ        := "dbPlcHmiFRQ".FRQ[1167] ,
+       );
+
+END_FUNCTION_BLOCK

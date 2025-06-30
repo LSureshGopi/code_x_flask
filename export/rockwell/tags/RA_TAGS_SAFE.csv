@@ -1,0 +1,12 @@
+0.3,,,,,,
+TYPE,SCOPE,NAME,DESCRIPTION,DATATYPE,SPECIFIER,ATTRIBUTES
+TAG,IO,MCC_H121_KF6011_ESTOP_AOI,AOI_SAFETY_ESTOP : MCC,AOI_SAFETY_ESTOP,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,IO,MCC_H121_RL4021_ESTOP_AOI,AOI_SAFETY_ESTOP : MCC,AOI_SAFETY_ESTOP,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,IO,MCC_ES01_SF6103_ESTOP_AOI,AOI_SAFETY_ESTOP : MCC,AOI_SAFETY_ESTOP,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,IO,MCC_ES01_SF6101_ESTOP_AOI,AOI_SAFETY_ESTOP : MCC,AOI_SAFETY_ESTOP,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,IO,MCC_ES01_SF6102_ESTOP_AOI,AOI_SAFETY_ESTOP : MCC,AOI_SAFETY_ESTOP,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,,MCC_H121_KF6011_ESTOP_UDT,SAFE INPUT : Hammer Mill Rotating Monitor - Standstill,EMERGENCY_STOP,,"(Class := Safety, Constant := false, ExternalAccess := Read/Write)"
+TAG,,MCC_H121_RL4021_ESTOP_UDT,SAFE INPUT : Hammer Mill - Lid Opened or Closed too Slow,EMERGENCY_STOP,,"(Class := Safety, Constant := false, ExternalAccess := Read/Write)"
+TAG,,MCC_ES01_SF6103_ESTOP_UDT,SAFE INPUT : Emergency Stop  - Hammer Mill,EMERGENCY_STOP,,"(Class := Safety, Constant := false, ExternalAccess := Read/Write)"
+TAG,,MCC_ES01_SF6101_ESTOP_UDT,SAFE INPUT : Emergency Stop  - Wire Operator Side,EMERGENCY_STOP,,"(Class := Safety, Constant := false, ExternalAccess := Read/Write)"
+TAG,,MCC_ES01_SF6102_ESTOP_UDT,SAFE INPUT : Emergency Stop  - Wire Drive Side,EMERGENCY_STOP,,"(Class := Safety, Constant := false, ExternalAccess := Read/Write)"

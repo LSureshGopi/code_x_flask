@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AlarmCollection>
+  <Alarm Name="MTR_MCC_AUX01_MA1010_ALM_DINT_0" ConditionType="TRIP" Input="MCC_AUX01_MA1010_ALM_DINT.0" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Fan  - Panel Fan - Alarm (+MCC=AUX01-MA1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="MTR_MCC_AUX01_MA1010_ALM_DINT_1" ConditionType="TRIP" Input="MCC_AUX01_MA1010_ALM_DINT.1" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Fan  - Panel Fan - Warning (+MCC=AUX01-MA1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="MTR_MCC_AUX01_MA1010_ALM_DINT_2" ConditionType="TRIP" Input="MCC_AUX01_MA1010_ALM_DINT.2" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Fan  - Panel Fan - Manual Mode Warning (+MCC=AUX01-MA1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="MTR_MCC_AUX01_MA1010_ALM_DINT_3" ConditionType="TRIP" Input="MCC_AUX01_MA1010_ALM_DINT.3" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="251" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Fan  - Panel Fan - Ignore Active Warning (+MCC=AUX01-MA1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="MTR_MCC_AUX01_MA1010_ALM_DINT_4" ConditionType="TRIP" Input="MCC_AUX01_MA1010_ALM_DINT.4" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Fan  - Panel Fan - Thermal Protection Alarm (+MCC=AUX01-MA1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="MTR_MCC_AUX01_MA1010_ALM_DINT_5" ConditionType="TRIP" Input="MCC_AUX01_MA1010_ALM_DINT.5" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Fan  - Panel Fan - Disconnect Turned Off Alarm (+MCC=AUX01-MA1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="MTR_MCC_AUX01_MA1010_ALM_DINT_6" ConditionType="TRIP" Input="MCC_AUX01_MA1010_ALM_DINT.6" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Fan  - Panel Fan - Safety Fault (+MCC=AUX01-MA1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="MTR_MCC_AUX01_MA1010_ALM_DINT_7" ConditionType="TRIP" Input="MCC_AUX01_MA1010_ALM_DINT.7" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Fan  - Panel Fan - Run Feedback Alarm (+MCC=AUX01-MA1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="MTR_MCC_AUX01_MA1010_ALM_DINT_8" ConditionType="TRIP" Input="MCC_AUX01_MA1010_ALM_DINT.8" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Fan  - Panel Fan - Run Reverse Feedback Alarm (+MCC=AUX01-MA1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="MTR_MCC_AUX01_MA1010_ALM_DINT_9" ConditionType="TRIP" Input="MCC_AUX01_MA1010_ALM_DINT.9" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Fan  - Panel Fan - Rotation Feedback Alarm (+MCC=AUX01-MA1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+  <Alarm Name="MTR_MCC_AUX01_MA1010_ALM_DINT_10" ConditionType="TRIP" Input="MCC_AUX01_MA1010_ALM_DINT.10" Expression="= 1" Limit="0" TargetTag="" OnDelay="0" OffDelay="0" Deadband="0" Severity="501" AssocTag1="" AssocTag2="" AssocTag3="" AssocTag4="" ShelveDuration="0" MaxShelveDuration="0" EvaluationPeriod="500" Latched="False" AckRequired="False" AlarmSetRollupIncluded="True" AlarmSetOperIncluded="True" Lang="en-US" Use="True" AlarmDefinition="">
+    <Message>MCC Fan  - Panel Fan - Safety contactor feedback Fault (+MCC=AUX01-MA1010)</Message>
+    <AlarmClass></AlarmClass>
+    <HMIGroup></HMIGroup>
+    <HMICmd></HMICmd>
+  </Alarm>
+</AlarmCollection>

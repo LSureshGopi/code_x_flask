@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="33.00" TargetType="Rung" TargetCount="37" CurrentLanguage="en-US" ContainsContext="true" ExportDate="Fri Aug 20 11:38:35 2021" ExportOptions="References NoRawData L5KData DecoratedData Context RoutineLabels AliasExtras IOTags NoStringData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="PLC1">
+<Programs Use="Context">
+<Program Use="Context" Name="IO">
+<Tags Use="Context"/>
+<Routines Use="Context">
+<Routine Use="Context" Name="R020_ALM">
+<RLLContent Use="Context">
+<Rung Use="Target" Number="1" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Power Supply Servo - Kinetix 5700, Bus Supply
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_X110_TA3010_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_X110_TA3010_ALM_UDT.S.Comm_Status,MCC_X110_TA3010_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="2" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Power Supply Servo - Thermal Fault
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_X110_FC3010_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_X110_FC3010_DI_Flt,MCC_X110_FC3010_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="3" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Former Wire Run - Compactor - Kinetix 5700 Servo Drive
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_X201_TA6110_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_X201_TA6110_ALM_UDT.S.Comm_Status,MCC_X201_TA6110_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="4" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Pulp Infeed - Kinetix 5700 Servo Drive
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_X203_TA6101_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_X203_TA6101_ALM_UDT.S.Comm_Status,MCC_X203_TA6101_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="5" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Hammer Mill Rotating Monitor - Standstill
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_H121_KF6011_ALM_CM,PLANT,SL_03_P,DisplayNames,MCC_H121_KF6011_DI_ChA,MCC_H121_KF6011_ALM_UDT,3,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="6" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Hammer Mill - Lid Opened or Closed too Slow
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_H121_RL4021_ALM_CM,PLANT,SL_03_P,DisplayNames,MCC_H121_RL4021_DI_ChA,MCC_H121_RL4021_ALM_UDT,3,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="7" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Hammer Mill - Lid Switch Open
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_H121_RL4021_ALM_CM,PLANT,SL_03_P,DisplayNames,MCC_H121_RL4021_DI_FbO,MCC_H121_RL4021_ALM_UDT,3,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="8" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Emergency Stop  - Hammer Mill
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_ES01_SF6103_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_ES01_SF6103_DI_ChA,MCC_ES01_SF6103_ALM_UDT,1,1);]]></Text>
+</Rung>
+<Rung Use="Target" Number="9" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Main air - Pressure Feedback
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_AQ01_BF9001_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_AQ01_BF9001_DI_Ps,MCC_AQ01_BF9001_ALM_UDT,1,1);]]></Text>
+</Rung>
+<Rung Use="Target" Number="10" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Emergency Stop  - Wire Operator Side
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_ES01_SF6101_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_ES01_SF6101_DI_ChA,MCC_ES01_SF6101_ALM_UDT,1,1);]]></Text>
+</Rung>
+<Rung Use="Target" Number="11" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Emergency Stop  - Wire Drive Side
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_ES01_SF6102_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_ES01_SF6102_DI_ChA,MCC_ES01_SF6102_ALM_UDT,1,1);]]></Text>
+</Rung>
+<Rung Use="Target" Number="12" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+230VAC Power Supply - Circuit Breaker
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_AC01_FC2010_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_AC01_FC2010_DI_Flt,MCC_AC01_FC2010_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="13" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+24VDC Power Supply - Power Feed Module
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_DC01_FC1010_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_DC01_FC1010_DI_Flt,MCC_DC01_FC1010_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="14" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+24VDC Power Supply Servodrive - Circuit Breaker
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_DC02_FC1002_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_DC02_FC1002_DI_Flt,MCC_DC02_FC1002_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="15" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Power Supply 24VDC Servodrive - Circuit Breaker
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_DC02_1LDC_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_DC02_1LDC_DI_Flt,MCC_DC02_1LDC_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="16" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Power Supply 24VDC Servodrive - Circuit Breaker, Spare
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_DC02_2LDC_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_DC02_2LDC_DI_Flt,MCC_DC02_2LDC_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="17" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Point IO - EtherNet/IP Adapter
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_IO_KF1000_ALM_CM,PLANT,SL_05_P,DisplayNames,MCC_IO_KF1000_ALM_UDT.S.Comm_Status,MCC_IO_KF1000_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="18" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Safety Input  - SDI
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_IO_KF3007_ALM_CM,PLANT,SL_05_P,DisplayNames,nan,MCC_IO_KF3007_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="19" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Safety Input  - SDI
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_IO_KF3008_ALM_CM,PLANT,SL_05_P,DisplayNames,nan,MCC_IO_KF3008_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="20" Type="N">
+<Comment><![CDATA[MCC
+----------0----------
+Safety Output - SDO
+]]></Comment>
+<Text><![CDATA[CM_ALM(MCC_IO_KF3009_ALM_CM,PLANT,SL_05_P,DisplayNames,nan,MCC_IO_KF3009_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="21" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Motion Group Not Synchronized - Alarm
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P00_ID001_ALM_CM,PLANT,SL_05_P,DisplayNames,Mes_P00_ID001_MSG_Ifo,Mes_P00_ID001_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="22" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+PLC - Power Cycle Detected - Info
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P00_ID002_ALM_CM,PLANT,SL_05_P,DisplayNames,Mes_P00_ID002_MSG_Ifo,Mes_P00_ID002_ALM_UDT,5,1);]]></Text>
+</Rung>
+<Rung Use="Target" Number="23" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Acknowledge Pressed - Info
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P00_ID003_ALM_CM,PLANT,SL_05_P,DisplayNames,Mes_P00_ID003_MSG_Ifo,Mes_P00_ID003_ALM_UDT,5,1);]]></Text>
+</Rung>
+<Rung Use="Target" Number="24" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Safety Fault - Collection of All Safety Zones
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P00_ID005_ALM_CM,PLANT,SL_05_P,DisplayNames,Mes_P00_ID005_MSG_Ifo,Mes_P00_ID005_ALM_UDT,1,1);]]></Text>
+</Rung>
+<Rung Use="Target" Number="25" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped by Fault - Re-Start is Required
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P02_ID0201_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_P02_ID0201_MSG_Sbf,Mes_P02_ID0201_ALM_UDT,2,1);]]></Text>
+</Rung>
+<Rung Use="Target" Number="26" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped by Fault - Re-Start is Required
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0210_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0210_MSG_Sbf,Mes_S02_ID0210_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="27" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Pulp Changed - Info
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0211_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0211_MSG_Ifo,Mes_S02_ID0211_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="28" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Pulp Infeed Stopped - Pulp Jam
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0212_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0212_MSG_Pjm,Mes_S02_ID0212_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="29" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Pulp Infeed Stopped - Pulp Not Ready
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0213_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0213_MSG_Pnr,Mes_S02_ID0213_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="30" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped due to  - Low Line Speed
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0214_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0214_MSG_LLs,Mes_S02_ID0214_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="31" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped due to  - Operator Command
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0215_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0215_MSG_OpC,Mes_S02_ID0215_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="32" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped due to  - Machine Interlock
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0216_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0216_MSG_Int,Mes_S02_ID0216_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="33" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped due to  - Infeed Timeout - Max infeed time exeeded
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0217_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0217_MSG_Inf,Mes_S02_ID0217_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="34" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped by Fault - Re-Start is Required
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P03_ID0220_ALM_CM,PLANT,SL_03_P,DisplayNames,Mes_P03_ID0220_MSG_Sbf,Mes_P03_ID0220_ALM_UDT,3,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="35" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Hammer Mill Rotation Detected - Startup Blocked Until Standstill
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P03_ID0221_ALM_CM,PLANT,SL_03_P,DisplayNames,Mes_P03_ID0221_MSG_Rot,Mes_P03_ID0221_ALM_UDT,3,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="36" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped by Fault - Re-Start is Required
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P04_ID0230_ALM_CM,PLANT,SL_04_P,DisplayNames,Mes_P04_ID0230_MSG_Sbf,Mes_P04_ID0230_ALM_UDT,4,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="37" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped by Fault - Re-Start is Required
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P05_ID0240_ALM_CM,PLANT,SL_05_P,DisplayNames,Mes_P05_ID0240_MSG_Sbf,Mes_P05_ID0240_ALM_UDT,5,2);]]></Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>

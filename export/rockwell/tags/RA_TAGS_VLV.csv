@@ -1,0 +1,6 @@
+0.3,,,,,,
+TYPE,SCOPE,NAME,DESCRIPTION,DATATYPE,SPECIFIER,ATTRIBUTES
+TAG,,PNEU1_C311_QM9011_VLV_UDT,UDT_IO_VLV : Compactor Up/Down - Up/Down Compactor,UDT_IO_VLV,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,,PNEU2_H110_QM9041_VLV_UDT,UDT_IO_VLV : Pulp Infeed Up/Down - Open/Close Nip,UDT_IO_VLV,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,IO,PNEU1_C311_QM9011_VLV_CM,CM_VLV : Compactor Up/Down - Up/Down Compactor,CM_VLV,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,IO,PNEU2_H110_QM9041_VLV_CM,CM_VLV : Pulp Infeed Up/Down - Open/Close Nip,CM_VLV,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"

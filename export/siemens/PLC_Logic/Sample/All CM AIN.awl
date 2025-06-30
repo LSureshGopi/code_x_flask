@@ -1,0 +1,30 @@
+﻿FUNCTION_BLOCK "All CM AIN"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR 
+      "CM AIN_Instance" : "CM AIN";
+   END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = +PLC1.1=AUX01-BT1990: PLC1 High Temperature - Check Cooling
+
+      CALL #"CM AIN_Instance"
+      (  CM_No                       := 1 , 
+         "Type"                      := 0 , 
+         Tab                         := 32 , 
+         SubTab                      := 2 , 
+         Cfg_FilterTime              := 50 , 
+         Cfg_MinPV                   := 0.0 , 
+         Cfg_MaxPV                   := 150.0 , 
+         Cfg_RawMin                  := 0 , 
+         Cfg_RawMax                  := 1500 , 
+         Input                       := "PLC1_AUX01_BT1990_PT_Tmp" , 
+         Unit                        := 1 , 
+         SC_Local                    := "P01".SC , 
+         CM_AIN                      := "AIN".AIN[1]
+      );
+
+END_FUNCTION_BLOCK
+

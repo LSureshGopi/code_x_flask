@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="33.00" TargetType="Rung" TargetCount="0" CurrentLanguage="en-US" ContainsContext="true" ExportDate="Fri Aug 20 11:38:35 2021" ExportOptions="References NoRawData L5KData DecoratedData Context RoutineLabels AliasExtras IOTags NoStringData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="PLC1">
+<Programs Use="Context">
+<Program Use="Context" Name="IO">
+<Tags Use="Context"/>
+<Routines Use="Context">
+<Routine Use="Context" Name="R019_MES">
+<RLLContent Use="Context">
+<Rung Use="Target" Number="53" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Motion Group Not Synchronized - Alarm
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P00_ID001_ALM_CM,PLANT,SL_05_P,DisplayNames,Mes_P00_ID001_MSG_Ifo,Mes_P00_ID001_ALM_UDT,5,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="54" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+PLC - Power Cycle Detected - Info
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P00_ID002_ALM_CM,PLANT,SL_05_P,DisplayNames,Mes_P00_ID002_MSG_Ifo,Mes_P00_ID002_ALM_UDT,5,1);]]></Text>
+</Rung>
+<Rung Use="Target" Number="55" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Acknowledge Pressed - Info
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P00_ID003_ALM_CM,PLANT,SL_05_P,DisplayNames,Mes_P00_ID003_MSG_Ifo,Mes_P00_ID003_ALM_UDT,5,1);]]></Text>
+</Rung>
+<Rung Use="Target" Number="56" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Safety Fault - Collection of All Safety Zones
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P00_ID005_ALM_CM,PLANT,SL_05_P,DisplayNames,Mes_P00_ID005_MSG_Ifo,Mes_P00_ID005_ALM_UDT,1,1);]]></Text>
+</Rung>
+<Rung Use="Target" Number="57" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped by Fault - Re-Start is Required
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P02_ID0201_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_P02_ID0201_MSG_Sbf,Mes_P02_ID0201_ALM_UDT,2,1);]]></Text>
+</Rung>
+<Rung Use="Target" Number="58" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped by Fault - Re-Start is Required
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0210_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0210_MSG_Sbf,Mes_S02_ID0210_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="59" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Pulp Changed - Info
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0211_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0211_MSG_Ifo,Mes_S02_ID0211_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="60" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Pulp Infeed Stopped - Pulp Jam
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0212_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0212_MSG_Pjm,Mes_S02_ID0212_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="61" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Pulp Infeed Stopped - Pulp Not Ready
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0213_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0213_MSG_Pnr,Mes_S02_ID0213_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="62" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped due to  - Low Line Speed
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0214_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0214_MSG_LLs,Mes_S02_ID0214_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="63" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped due to  - Operator Command
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0215_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0215_MSG_OpC,Mes_S02_ID0215_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="64" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped due to  - Machine Interlock
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0216_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0216_MSG_Int,Mes_S02_ID0216_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="65" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped due to  - Infeed Timeout - Max infeed time exeeded
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_S02_ID0217_ALM_CM,PLANT,SL_02_P,DisplayNames,Mes_S02_ID0217_MSG_Inf,Mes_S02_ID0217_ALM_UDT,2,3);]]></Text>
+</Rung>
+<Rung Use="Target" Number="66" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped by Fault - Re-Start is Required
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P03_ID0220_ALM_CM,PLANT,SL_03_P,DisplayNames,Mes_P03_ID0220_MSG_Sbf,Mes_P03_ID0220_ALM_UDT,3,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="67" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Hammer Mill Rotation Detected - Startup Blocked Until Standstill
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P03_ID0221_ALM_CM,PLANT,SL_03_P,DisplayNames,Mes_P03_ID0221_MSG_Rot,Mes_P03_ID0221_ALM_UDT,3,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="68" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped by Fault - Re-Start is Required
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P04_ID0230_ALM_CM,PLANT,SL_04_P,DisplayNames,Mes_P04_ID0230_MSG_Sbf,Mes_P04_ID0230_ALM_UDT,4,2);]]></Text>
+</Rung>
+<Rung Use="Target" Number="69" Type="N">
+<Comment><![CDATA[Mes
+----------0----------
+Stopped by Fault - Re-Start is Required
+]]></Comment>
+<Text><![CDATA[CM_ALM(Mes_P05_ID0240_ALM_CM,PLANT,SL_05_P,DisplayNames,Mes_P05_ID0240_MSG_Sbf,Mes_P05_ID0240_ALM_UDT,5,2);]]></Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>

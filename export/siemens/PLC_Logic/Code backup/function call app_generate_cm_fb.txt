@@ -1,0 +1,102 @@
+# PLC-> FC/FB/DB -> Export Selection
+    def _exportLogixRungsSie(self, progress_callback):
+        try:
+            nr = self.PlcNrField.text()
+            selectionModule = self.rungComboSie.currentText()
+            df = pd.read_excel(file_path, selectionModule, dtype=object)
+            file_path_template = "export\\siemens\\PLC_Logic\\Template_CM_PlcCode.xlsx"
+            dfTemplate = pd.read_excel(
+                file_path_template, selectionModule, dtype=object)
+            progress_callback.emit(
+                "Siemens FB_" + selectionModule + " rungs export started")
+
+            if selectionModule == "AIN":
+
+                AIN_Objects = ["CM_No", 'Area_No', "Type", 'Tab', 'SubTab', 'Cfg_FilterTime', 'Cfg_MinPV', 'Cfg_MaxPV', 'Cfg_RawMin', 'Cfg_RawMax', 'Input', 'Unit',
+                               'PV', 'PV_scale', 'HH', 'H', 'L', 'LL', 'SC_Local', 'CM_AIN']
+                Worksheet_column_dict = {'CM_No': 'CM Type', 'Type': 'Cfg Type', 'Tab': 'Tab ID', 'SubTab': 'Sub ID', 'Cfg_MinPV': 'Min EU', 'Cfg_MaxPV': 'Max EU', 'Cfg_RawMin': 'Raw Min', 'Cfg_RawMax': 'Raw Max',
+                                         'Input': 'PLC Tag Name'}
+                AIN_default_dict = {
+                    'Cfg_FilterTime': 50, 'Cfg_MinPV': 0.0, 'Cfg_RawMin': 0, 'Cfg_RawMax': 27648}
+                # app_generate_fb.functionBlock(
+                #    "All CM AIN", "CM AIN", "AIN", "UDT_CM_AIN", df, AIN_Objects, AIN_default_dict)
+                app_generate_CM_fb.functionBlock(
+                    "All CM AIN", "CM AIN", "AIN", "UDT_CM_AIN", df, dfTemplate)
+                return "Siemens FB_"+selectionModule + " Exported Successfully"
+
+            elif selectionModule == "AOUT":
+
+                AOUT_Objects = ["CM_No", 'Area_No', "Type", 'Tab', 'SubTab', 'Unit', 'InCV',
+                                'InPV', 'OutInt', 'Out_Int%', 'OutReal', 'SC_Local', 'CM_AOUT']
+                Worksheet_column_dict = {'': '', '': '', '': '', '': '', '': '', '': '',
+                                         '': '', '': '', '': '', '': '', '': '', '': '', '': '', '': ''}
+                Worksheet_column_dict = {'CM_No': 'CM Type', 'Type': 'Cfg Type', 'Tab': 'Tab ID',
+                                         'SubTab': 'Sub ID', '': '', '': '', '': '', '': '', '': '', '': '', '': '', '': '', '': '', '': ''}
+
+                app_generate_fb.functionBlock(
+                    "All CM AOUT", "CM AOUT", "AOUT", "UDT_CM_AOUT", df, AOUT_Objects)
+                return "Siemens FB_"+selectionModule + " Exported Successfully"
+
+            elif selectionModule == "DIN":
+
+                DIN_Objects = ["CM_No", 'Area_No', 'Tab', 'SubTab', 'CfgType',
+                               'CfgInvert', 'InputRaw', 'SC_Local', 'CM_DIN']
+                DIN_default_dict = {'CfgType': 0, 'CfgInvert': 'False'}
+                app_generate_fb.functionBlock(
+                    "All CM DIN", "CM DIN", "DIN", "UDT_CM_DIN", df, DIN_Objects, DIN_default_dict)
+                return "Siemens FB_"+selectionModule + " Exported Successfully"
+
+            elif selectionModule == "MTR":
+
+                MTR_Objects = ["CM_No", "Area_No", 'Tab', 'SubTab', 'Type', 'RunFB', 'Rotation Sensor',
+                               'Disconnect', 'Thermal', 'Safe', 'DeAct_Standstill', 'OutFwd', 'OutRev', 'SC_Local', 'CM_MTR']
+                Worksheet_column_dict = {'CM_No': 'CM No', 'Tab': 'Tab ID', 'SubTab': 'Sub ID', 'RunFB': 'Forward Feedback',
+                                         'Thermal': 'Thermal Fault', 'OutFwd': 'Start Forward', 'OutRev': 'Start Reverse'}
+                MTR_default_dict = {'Safe': 'True', 'DeAct_Standstill': 'T#5s'}
+                # app_generate_fb.functionBlock(
+                #    "All CM MTR", "CM MTR", "MTR", "UDT_CM_MTR", df, MTR_Objects, Worksheet_column_dict, MTR_default_dict)
+                app_generate_CM_fb.functionBlock(
+                    "All CM MTR", "CM MTR", "MTR", "UDT_CM_MTR", df, dfTemplate)
+
+                return "Siemens FB_"+selectionModule + " Exported Successfully"
+
+            elif selectionModule == "VLV":
+                VLV_Objects = ["CM_No", 'Area_No', 'Tab', 'SubTab', 'CfgType',
+                               'P_FB', 'N_FB', 'Out_P', 'Out_N', 'SC_Local', 'CM_VLV']
+                # app_generate_fb.functionBlock(
+                # "All CM VLV", "CM VLV", "VLV", "UDT_CM_VLV", df, VLV_Objects)
+                app_generate_CM_fb.functionBlock(
+                    "All CM VLV", "CM VLV", "VLV", "UDT_CM_VLV", df, dfTemplate)
+                return "Siemens FB_"+selectionModule + " Exported Successfully"
+
+            elif selectionModule == "ALM":
+
+                ALM_Objects = ["CM_No", 'Area_No', 'Tab', 'SubTab', 'CfgType',
+                               'CfgInvert', 'InputRaw', 'SC_Local', 'CM_ALM']
+                ALM_default_dict = {'CfgType': 1, 'CfgInvert': 'True'}
+                app_generate_fb.functionBlock(
+                    "All CM ALM", "CM ALM", "ALM", "UDT_CM_ALM", df, ALM_Objects, ALM_default_dict)
+                return "Siemens FB_"+selectionModule + " Exported Successfully"
+
+            elif selectionModule == "PID":
+
+                PID_Objects = ["CM_No", 'Area_No', 'Unit', 'Tab', 'SubTab', 'Type',  'Cfg_ScanTime', 'Cfg_MinPV', 'Cfg_MaxPV', 'Cfg_MinCV', 'Cfg_MaxCV', 'SP', 'PV', 'SP_Out', 'CV_Scl',
+                               'PID_I_CV', 'SC_Local', 'CM_PID', 'CONT_C_DB']
+                PID_default_dict = {'Cfg_ScanTime': 'T#100ms', 'Cfg_MinPV': 0.0,
+                                    'Cfg_MaxPV': 100.0, 'Cfg_MinCV': 0.0, 'Cfg_MaxCV': 100.0}
+
+                app_generate_fb.functionBlock(
+                    "All CM PID", "CM PID_1", "PID", "UDT_CM_PID", df, PID_Objects, PID_default_dict)
+                return "Siemens FB_"+selectionModule + " Exported Successfully"
+
+            elif selectionModule == "FRQ":
+
+                FRQ_Objects = ["CM_No", 'Area_No', 'Unit', 'Type', 'Tab', 'SubTab', 'Safety', 'Disconnect', 'Protect', 'RotationFB', 'P2000_Speed', 'SpeedMax', 'SpeedMin', 'P2002_Current', 'P2003_Torque', 'P2001_RefVolt',
+                               'EU_Ratio', 'Gear_Ratio', 'DeAct_Standstill', 'ID_Free_telegram', 'AmpRated', 'TorqueRated', 'kWRated', 'SC_Local', 'CM_FRQ']
+
+                app_generate_fb.functionBlock(
+                    "All CM FRQ", "CM FRQ", "FRQ", "UDT_CM_FRQ", df, FRQ_Objects)
+                return "Siemens FB_"+selectionModule + " Exported Successfully"
+
+        except Exception as e:
+            return ("An error occured when trying to export rungs" + str(e))

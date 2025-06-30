@@ -1,0 +1,1700 @@
+FUNCTION_BLOCK "All CM PID"
+TITLE = Control module
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+ VAR
+   "LCP20_F295_KE1131" : "CM PID_1";
+   "LCP20_F395_KE1141" : "CM PID_1";
+   "LCP30_F396_KE1151" : "CM PID_1";
+   "LCP30_F495_KE1161" : "CM PID_1";
+   "LCP52_H221_KP3027" : "CM PID_1";
+   "LCP61_A010_KM1801" : "CM PID_1";
+   "LCP61_A010_KT1801" : "CM PID_1";
+   "LCP61_A010_KP3500" : "CM PID_1";
+   "LCP61_H321_KP3037" : "CM PID_1";
+   "LCP62_H421_KP3047" : "CM PID_1";
+   "LCP81_F281_KP3201" : "CM PID_1";
+   "LCP81_D281_KP3202" : "CM PID_1";
+   "LCP81_F381_KP3301" : "CM PID_1";
+   "LCP81_D381_KP3302" : "CM PID_1";
+   "LCP81_F481_KP3401" : "CM PID_1";
+   "LCP81_D481_KP3402" : "CM PID_1";
+   "LCP81_C181_KP3581" : "CM PID_1";
+   "LCP81_T181_KP3585" : "CM PID_1";
+   "LCP91_A120_KT1911" : "CM PID_1";
+   "LCP91_A120_KT1921" : "CM PID_1";
+   "LCP91_A160_KM1922" : "CM PID_1";
+   "LCP91_A160_KT1922" : "CM PID_1";
+   "LCP92_A220_KT1931" : "CM PID_1";
+   "LCP92_A220_KT1941" : "CM PID_1";
+   "LCP92_A260_KM1942" : "CM PID_1";
+   "LCP92_A260_KT1942" : "CM PID_1";
+   "LCP93_A170_KM1942" : "CM PID_1";
+   "LCP93_A170_KT1942" : "CM PID_1";
+   "LCP93_A190_KM1942" : "CM PID_1";
+   "LCP93_A190_KT1942" : "CM PID_1";
+   "LCP93_A270_KM1942" : "CM PID_1";
+   "LCP93_A270_KT1942" : "CM PID_1";
+   "LCP93_A280_KM1942" : "CM PID_1";
+   "LCP93_A280_KT1942" : "CM PID_1";
+   "LCP93_A290_KM1942" : "CM PID_1";
+   "LCP93_A290_KT1942" : "CM PID_1";
+   "LCP93_A170_KP3211" : "CM PID_1";
+   "LCP93_A190_KP3213" : "CM PID_1";
+   "LCP93_A270_KP3221" : "CM PID_1";
+   "LCP93_A280_KP3222" : "CM PID_1";
+   "LCP93_A290_KP3223" : "CM PID_1";
+   "LCP93_A710_KP8781" : "CM PID_1";
+   "LCP93_A720_KP8781" : "CM PID_1";
+   "LCP93_A730_KP8781" : "CM PID_1";
+   "LCP122_S211_KP3521" : "CM PID_1";
+   "LCP132_Q731_KP1801" : "CM PID_1";
+   "LCP132_Q732_KP1811" : "CM PID_1";
+   "LCP101_I610_KP1101" : "CM PID_1";
+   "LCP101_I611_KT1110" : "CM PID_1";
+   "LCP101_I611_KT1115" : "CM PID_1";
+   "LCP103_I630_KP1306" : "CM PID_1";
+   "LCP103_K611_KT1310" : "CM PID_1";
+   "LCP103_K611_KT1315" : "CM PID_1";
+   "LCP104_I640_KP1409" : "CM PID_1";
+   "LCP104_K621_KT1410" : "CM PID_1";
+   "LCP104_K621_KT1415" : "CM PID_1";
+   "LCP111_I650_KP1512" : "CM PID_1";
+   "LCP111_N611_KT1510" : "CM PID_1";
+   "LCP111_N611_KT1515" : "CM PID_1";
+   "LCP112_I660_KP1614" : "CM PID_1";
+   "LCP112_N621_KT1610" : "CM PID_1";
+   "LCP112_N621_KT1615" : "CM PID_1";
+   "LCP113_I670_KP1717" : "CM PID_1";
+   "LCP113_N631_KT1710" : "CM PID_1";
+   "LCP113_N631_KT1715" : "CM PID_1";
+ END_VAR
+
+
+BEGIN
+NETWORK
+TITLE = 6001 - LCP20_F295_KE1131 - Load Cell Module - Weight Regulator
+
+       CALL #"LCP20_F295_KE1131"
+       (
+         CM_No       := 6001 ,
+         Unit       :=  ,
+         Tab       := 25 ,
+         SubTab       := 4 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 150.0 ,
+         Cfg_MinCV       := 0 ,
+         Cfg_MaxCV       := 1500 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_25_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6001] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6002 - LCP20_F395_KE1141 - Load Cell Module - Weight Regulator
+
+       CALL #"LCP20_F395_KE1141"
+       (
+         CM_No       := 6002 ,
+         Unit       :=  ,
+         Tab       := 25 ,
+         SubTab       := 5 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 150.0 ,
+         Cfg_MinCV       := 0 ,
+         Cfg_MaxCV       := 1500 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_25_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6002] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6003 - LCP30_F396_KE1151 - Load Cell Module - Weight Regulator
+
+       CALL #"LCP30_F396_KE1151"
+       (
+         CM_No       := 6003 ,
+         Unit       :=  ,
+         Tab       := 25 ,
+         SubTab       := 5 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 150.0 ,
+         Cfg_MinCV       := 0 ,
+         Cfg_MaxCV       := 1500 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_25_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6003] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6004 - LCP30_F495_KE1161 - Load Cell Module - Weight Regulator
+
+       CALL #"LCP30_F495_KE1161"
+       (
+         CM_No       := 6004 ,
+         Unit       :=  ,
+         Tab       := 25 ,
+         SubTab       := 6 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_25_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6004] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6005 - LCP52_H221_KP3027 - Makeup Air HM 2 - PID Regulator
+
+       CALL #"LCP52_H221_KP3027"
+       (
+         CM_No       := 6005 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 2 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6005] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6006 - LCP61_A010_KM1801 - Humidifier Hammer Mill Room - Humidity - PID Control
+
+       CALL #"LCP61_A010_KM1801"
+       (
+         CM_No       := 6006 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 4 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6006] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6007 - LCP61_A010_KT1801 - Humidifier Hammer Mill Room - Temperature - PID Control
+
+       CALL #"LCP61_A010_KT1801"
+       (
+         CM_No       := 6007 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6007] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6008 - LCP61_A010_KP3500 - Differential Pressure Hammermill Room - PID Control
+
+       CALL #"LCP61_A010_KP3500"
+       (
+         CM_No       := 6008 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 4 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6008] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6009 - LCP61_H321_KP3037 - Makeup Air for HM 3 - PID Regulator
+
+       CALL #"LCP61_H321_KP3037"
+       (
+         CM_No       := 6009 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 2 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6009] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6010 - LCP62_H421_KP3047 - Makeup Air for HM 4 - PID Regulator
+
+       CALL #"LCP62_H421_KP3047"
+       (
+         CM_No       := 6010 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 2 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6010] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6011 - LCP81_F281_KP3201 - FH Main Suction Fan 2 - Differential Pressure Regulator
+
+       CALL #"LCP81_F281_KP3201"
+       (
+         CM_No       := 6011 ,
+         Unit       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6011] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6012 - LCP81_D281_KP3202 - Sec. Suction Fan 2 - Differential Pressure Regulator
+
+       CALL #"LCP81_D281_KP3202"
+       (
+         CM_No       := 6012 ,
+         Unit       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6012] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6013 - LCP81_F381_KP3301 - FH Main Suction Fan 3 - Differential Pressure Regulator
+
+       CALL #"LCP81_F381_KP3301"
+       (
+         CM_No       := 6013 ,
+         Unit       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6013] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6014 - LCP81_D381_KP3302 - Sec. Suction Fan 3 - Differential Pressure Regulator
+
+       CALL #"LCP81_D381_KP3302"
+       (
+         CM_No       := 6014 ,
+         Unit       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6014] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6015 - LCP81_F481_KP3401 - FH Main Suction Fan 4 - Differential Pressure Regulator
+
+       CALL #"LCP81_F481_KP3401"
+       (
+         CM_No       := 6015 ,
+         Unit       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6015] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6016 - LCP81_D481_KP3402 - Sec. Suction Fan 4 - Differential Pressure Regulator
+
+       CALL #"LCP81_D481_KP3402"
+       (
+         CM_No       := 6016 ,
+         Unit       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6016] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6017 - LCP81_C181_KP3581 - Compactor Suction Fan - Differential Pressure Regulator
+
+       CALL #"LCP81_C181_KP3581"
+       (
+         CM_No       := 6017 ,
+         Unit       :=  ,
+         Tab       := 30 ,
+         SubTab       := 2 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6017] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6018 - LCP81_T181_KP3585 - Transfer Suction Fan - Differential Pressure Regulator
+
+       CALL #"LCP81_T181_KP3585"
+       (
+         CM_No       := 6018 ,
+         Unit       :=  ,
+         Tab       := 30 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6018] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6019 - LCP91_A120_KT1911 - Process Air from Baghouse Filter Temperature - PID Control
+
+       CALL #"LCP91_A120_KT1911"
+       (
+         CM_No       := 6019 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6019] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6020 - LCP91_A120_KT1921 - Process Air from Baghouse Filter Temperature - PID Control
+
+       CALL #"LCP91_A120_KT1921"
+       (
+         CM_No       := 6020 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6020] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6021 - LCP91_A160_KM1922 - Outside Air Humidity - PID Control
+
+       CALL #"LCP91_A160_KM1922"
+       (
+         CM_No       := 6021 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 1 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6021] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6022 - LCP91_A160_KT1922 - Outside Air Temperature - PID Control
+
+       CALL #"LCP91_A160_KT1922"
+       (
+         CM_No       := 6022 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6022] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6023 - LCP92_A220_KT1931 - Process Air from Baghouse Filter Temperature - PID Control
+
+       CALL #"LCP92_A220_KT1931"
+       (
+         CM_No       := 6023 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6023] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6024 - LCP92_A220_KT1941 - Process Air from Baghouse Filter Temperature - PID Control
+
+       CALL #"LCP92_A220_KT1941"
+       (
+         CM_No       := 6024 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6024] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6025 - LCP92_A260_KM1942 - Outside Air Humidity - PID Control
+
+       CALL #"LCP92_A260_KM1942"
+       (
+         CM_No       := 6025 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 1 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6025] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6026 - LCP92_A260_KT1942 - Outside Air Temperature - PID Control
+
+       CALL #"LCP92_A260_KT1942"
+       (
+         CM_No       := 6026 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6026] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6027 - LCP93_A170_KM1942 - Humidifier 1 Humidity - PID Control
+
+       CALL #"LCP93_A170_KM1942"
+       (
+         CM_No       := 6027 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 4 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6027] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6028 - LCP93_A170_KT1942 - Humidifier 1 Temperature - PID Control
+
+       CALL #"LCP93_A170_KT1942"
+       (
+         CM_No       := 6028 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6028] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6029 - LCP93_A190_KM1942 - Humidifier Production Room - Humidity - PID Control
+
+       CALL #"LCP93_A190_KM1942"
+       (
+         CM_No       := 6029 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 5 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6029] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6030 - LCP93_A190_KT1942 - Humidifier Production Room - Temperature - PID Control
+
+       CALL #"LCP93_A190_KT1942"
+       (
+         CM_No       := 6030 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6030] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6031 - LCP93_A270_KM1942 - Humidifier 4 Humidity - PID Control
+
+       CALL #"LCP93_A270_KM1942"
+       (
+         CM_No       := 6031 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 5 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6031] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6032 - LCP93_A270_KT1942 - Humidifier 4 Temperature - PID Control
+
+       CALL #"LCP93_A270_KT1942"
+       (
+         CM_No       := 6032 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6032] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6033 - LCP93_A280_KM1942 - Humidifier 5 Humidity - PID Control
+
+       CALL #"LCP93_A280_KM1942"
+       (
+         CM_No       := 6033 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 6 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6033] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6034 - LCP93_A280_KT1942 - Humidifier 5 Temperature - PID Control
+
+       CALL #"LCP93_A280_KT1942"
+       (
+         CM_No       := 6034 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6034] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6035 - LCP93_A290_KM1942 - Humidifier 6 Humidity - PID Control
+
+       CALL #"LCP93_A290_KM1942"
+       (
+         CM_No       := 6035 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 6 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6035] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6036 - LCP93_A290_KT1942 - Humidifier 6 Temperature - PID Control
+
+       CALL #"LCP93_A290_KT1942"
+       (
+         CM_No       := 6036 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6036] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6037 - LCP93_A170_KP3211 - Humidifier 1 Flow - Differential Pressure Regulator
+
+       CALL #"LCP93_A170_KP3211"
+       (
+         CM_No       := 6037 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 2 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6037] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6038 - LCP93_A190_KP3213 - Humidifier 3 Flow - Differential Pressure Regulator
+
+       CALL #"LCP93_A190_KP3213"
+       (
+         CM_No       := 6038 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 5 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6038] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6039 - LCP93_A270_KP3221 - Humidifier 4 Flow - Differential Pressure Regulator
+
+       CALL #"LCP93_A270_KP3221"
+       (
+         CM_No       := 6039 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 5 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6039] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6040 - LCP93_A280_KP3222 - Humidifier 5 Flow - Differential Pressure Regulator
+
+       CALL #"LCP93_A280_KP3222"
+       (
+         CM_No       := 6040 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 5 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6040] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6041 - LCP93_A290_KP3223 - Humidifier 6 Flow - Differential Pressure Regulator
+
+       CALL #"LCP93_A290_KP3223"
+       (
+         CM_No       := 6041 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 5 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6041] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6042 - LCP93_A710_KP8781 - Humidifier Pump 1 Hammer Mill / Bico Area - PID Control
+
+       CALL #"LCP93_A710_KP8781"
+       (
+         CM_No       := 6042 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 4 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6042] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6043 - LCP93_A720_KP8781 - Humidifier Pump 2 Former Area - PID Control
+
+       CALL #"LCP93_A720_KP8781"
+       (
+         CM_No       := 6043 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 5 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6043] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6044 - LCP93_A730_KP8781 - Humidifier Pump 3 Former Area - PID Control
+
+       CALL #"LCP93_A730_KP8781"
+       (
+         CM_No       := 6044 ,
+         Unit       :=  ,
+         Tab       := 22 ,
+         SubTab       := 6 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_22_S ,
+         CM_PID        := "dbPlcHmiPID".PID[6044] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6045 - LCP122_S211_KP3521 - Cooling Section Suction Fan - Differential Pressure Regulator
+
+       CALL #"LCP122_S211_KP3521"
+       (
+         CM_No       := 6045 ,
+         Unit       :=  ,
+         Tab       := 30 ,
+         SubTab       := 11 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_30_P ,
+         CM_PID        := "dbPlcHmiPID".PID[6045] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6046 - LCP132_Q731_KP1801 - Spray 1 Pump Supply - Pressure Regulator
+
+       CALL #"LCP132_Q731_KP1801"
+       (
+         CM_No       := 6046 ,
+         Unit       :=  ,
+         Tab       := 29 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_29_S1 ,
+         CM_PID        := "dbPlcHmiPID".PID[6046] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6047 - LCP132_Q732_KP1811 - Spray 2 Pump Supply - Pressure Regulator
+
+       CALL #"LCP132_Q732_KP1811"
+       (
+         CM_No       := 6047 ,
+         Unit       :=  ,
+         Tab       := 29 ,
+         SubTab       := 4 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_29_S2 ,
+         CM_PID        := "dbPlcHmiPID".PID[6047] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6048 - LCP101_I610_KP1101 - Burner Air Pressure - Differential Pressure Transmitter
+
+       CALL #"LCP101_I610_KP1101"
+       (
+         CM_No       := 6048 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S1 ,
+         CM_PID        := "dbPlcHmiPID".PID[6048] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6049 - LCP101_I611_KT1110 - Temperature Regulator - Average Temp. Zone 1
+
+       CALL #"LCP101_I611_KT1110"
+       (
+         CM_No       := 6049 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S1 ,
+         CM_PID        := "dbPlcHmiPID".PID[6049] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6050 - LCP101_I611_KT1115 - Temperature Regulator - High Temperature Zone 1
+
+       CALL #"LCP101_I611_KT1115"
+       (
+         CM_No       := 6050 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 3 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S1 ,
+         CM_PID        := "dbPlcHmiPID".PID[6050] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6051 - LCP103_I630_KP1306 - Burner Air Pressure - Differential Pressure Transmitter
+
+       CALL #"LCP103_I630_KP1306"
+       (
+         CM_No       := 6051 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 5 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S2 ,
+         CM_PID        := "dbPlcHmiPID".PID[6051] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6052 - LCP103_K611_KT1310 - Temperature Regulator - Average Temp. Zone 3
+
+       CALL #"LCP103_K611_KT1310"
+       (
+         CM_No       := 6052 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 5 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S2 ,
+         CM_PID        := "dbPlcHmiPID".PID[6052] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6053 - LCP103_K611_KT1315 - Temperature Regulator - High Temperature Zone 3
+
+       CALL #"LCP103_K611_KT1315"
+       (
+         CM_No       := 6053 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 5 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S2 ,
+         CM_PID        := "dbPlcHmiPID".PID[6053] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6054 - LCP104_I640_KP1409 - Burner Air Pressure - Differential Pressure Transmitter
+
+       CALL #"LCP104_I640_KP1409"
+       (
+         CM_No       := 6054 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 6 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S2 ,
+         CM_PID        := "dbPlcHmiPID".PID[6054] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6055 - LCP104_K621_KT1410 - Temperature Regulator - Average Temp. Zone 4
+
+       CALL #"LCP104_K621_KT1410"
+       (
+         CM_No       := 6055 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 6 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S2 ,
+         CM_PID        := "dbPlcHmiPID".PID[6055] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6056 - LCP104_K621_KT1415 - Temperature Regulator - High Temperature Zone 4
+
+       CALL #"LCP104_K621_KT1415"
+       (
+         CM_No       := 6056 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 6 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S2 ,
+         CM_PID        := "dbPlcHmiPID".PID[6056] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6057 - LCP111_I650_KP1512 - Burner Air Pressure - Differential Pressure Transmitter
+
+       CALL #"LCP111_I650_KP1512"
+       (
+         CM_No       := 6057 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 7 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S3 ,
+         CM_PID        := "dbPlcHmiPID".PID[6057] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6058 - LCP111_N611_KT1510 - Temperature Regulator - Average Temp. Zone 5
+
+       CALL #"LCP111_N611_KT1510"
+       (
+         CM_No       := 6058 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 7 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S3 ,
+         CM_PID        := "dbPlcHmiPID".PID[6058] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6059 - LCP111_N611_KT1515 - Temperature Regulator - High Temperature Zone 5
+
+       CALL #"LCP111_N611_KT1515"
+       (
+         CM_No       := 6059 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 7 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S3 ,
+         CM_PID        := "dbPlcHmiPID".PID[6059] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6060 - LCP112_I660_KP1614 - Burner Air Pressure - Differential Pressure Transmitter
+
+       CALL #"LCP112_I660_KP1614"
+       (
+         CM_No       := 6060 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 8 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S3 ,
+         CM_PID        := "dbPlcHmiPID".PID[6060] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6061 - LCP112_N621_KT1610 - Temperature Regulator - Average Temp. Zone 6
+
+       CALL #"LCP112_N621_KT1610"
+       (
+         CM_No       := 6061 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 8 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S3 ,
+         CM_PID        := "dbPlcHmiPID".PID[6061] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6062 - LCP112_N621_KT1615 - Temperature Regulator - High Temperature Zone 6
+
+       CALL #"LCP112_N621_KT1615"
+       (
+         CM_No       := 6062 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 8 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S3 ,
+         CM_PID        := "dbPlcHmiPID".PID[6062] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6063 - LCP113_I670_KP1717 - Burner Air Pressure - Differential Pressure Transmitter
+
+       CALL #"LCP113_I670_KP1717"
+       (
+         CM_No       := 6063 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 9 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S3 ,
+         CM_PID        := "dbPlcHmiPID".PID[6063] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6064 - LCP113_N631_KT1710 - Temperature Regulator - Average Temp. Zone 7
+
+       CALL #"LCP113_N631_KT1710"
+       (
+         CM_No       := 6064 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 9 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S3 ,
+         CM_PID        := "dbPlcHmiPID".PID[6064] ,
+         CONT_C_DB       :=  ,
+       );
+
+NETWORK
+TITLE = 6065 - LCP113_N631_KT1715 - Temperature Regulator - High Temperature Zone 7
+
+       CALL #"LCP113_N631_KT1715"
+       (
+         CM_No       := 6065 ,
+         Unit       :=  ,
+         Tab       := 28 ,
+         SubTab       := 9 ,
+         Type       :=  ,
+         Cfg_ScanTime       := T#100ms ,
+         Cfg_MinPV       := 0.0 ,
+         Cfg_MaxPV       := 100.0 ,
+         Cfg_MinCV       := 0.0 ,
+         Cfg_MaxCV       := 100.0 ,
+         SP       :=  ,
+         PV       :=  ,
+         SP_Out       :=  ,
+         CV_Scl       :=  ,
+         PID_I_CV       :=  ,
+         SC_Local       := SL_28_S3 ,
+         CM_PID        := "dbPlcHmiPID".PID[6065] ,
+         CONT_C_DB       :=  ,
+       );
+
+END_FUNCTION_BLOCK

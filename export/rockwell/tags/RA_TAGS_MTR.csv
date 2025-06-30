@@ -1,0 +1,10 @@
+0.3,,,,,,
+TYPE,SCOPE,NAME,DESCRIPTION,DATATYPE,SPECIFIER,ATTRIBUTES
+TAG,,MCC_AUX01_MA1010_MTR_UDT,UDT_IO_MTR : MCC Fan  - Panel Fan,UDT_IO_MTR,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,IO,MCC_AUX01_MA1010_SafetyOK,Safety OK,BOOL,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,Safety_Z1,MCC_AUX01_MA1010_SF_OK,Safe OK,BOOL,,"(Class := Safety, Usage := Public, Constant := false, ExternalAccess := Read/Write)"
+TAG,IO,MCC_AUX01_MA1010_MTR_CM,CM_MTR : MCC Fan  - Panel Fan,CM_MTR,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,Safety_Z1,MCC_AUX01_QE1010_CROUT_AOI,SAFE OUTPUT : MCC Fan  - Panel Fan,CONFIGURABLE_ROUT,,"(Class := Safety, Usage := Public, Constant := false, ExternalAccess := Read/Write)"
+TAG,,MCC_AUX01_QA1010_DO_Cs_S,MAPPED: MCC Fan  - Panel Fan,BOOL,,"(Class := Standard, Constant := false, ExternalAccess := Read/Write)"
+TAG,,MCC_AUX01_QA1010_DO_Cs_SP,MAPPED SAFE: MCC Fan  - Panel Fan,BOOL,,"(Class := Safety, Constant := false, ExternalAccess := Read/Write)"
+TAG,Safety_Z1,MCC_AUX01_QE1010_Enable,,BOOL,,"(Class := Safety, Constant := false, ExternalAccess := Read/Write)"

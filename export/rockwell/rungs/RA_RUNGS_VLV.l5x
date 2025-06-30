@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="33.00" TargetType="Rung" TargetCount="2" CurrentLanguage="en-US" ContainsContext="true" ExportDate="Fri Aug 20 11:38:35 2021" ExportOptions="References NoRawData L5KData DecoratedData Context RoutineLabels AliasExtras IOTags NoStringData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="PLC1">
+<Programs Use="Context">
+<Program Use="Context" Name="IO">
+<Tags Use="Context"/>
+<Routines Use="Context">
+<Routine Use="Context" Name="R050_VLV">
+<RLLContent Use="Context">
+<Rung Use="Target" Number="1" Type="N">
+<Comment><![CDATA[PNEU1
+----------0----------
+Compactor Up/Down - Up/Down Compactor
+]]></Comment>
+<Text><![CDATA[CM_VLV(PNEU1_C311_QM9011_VLV_CM,PLANT,SL_04_P,DisplayNames,Off,Off,Off,PNEU1_C311_QM9011_VLV_UDT,4,3,PNEU1_C311_QM9011_DO_Up,Dummy_Out_N);]]></Text>
+</Rung>
+<Rung Use="Target" Number="2" Type="N">
+<Comment><![CDATA[PNEU2
+----------0----------
+Pulp Infeed Up/Down - Open/Close Nip
+]]></Comment>
+<Text><![CDATA[CM_VLV(PNEU2_H110_QM9041_VLV_CM,PLANT,SL_02_P,DisplayNames,Off,Off,Off,PNEU2_H110_QM9041_VLV_UDT,2,3,PNEU2_H110_QM9041_DO_Opn,Dummy_Out_N);]]></Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>

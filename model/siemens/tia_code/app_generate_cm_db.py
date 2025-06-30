@@ -1,6 +1,10 @@
 
+import tempfile
+import os
+
 def dataBlock(dbNamePrefix, cmName, UDT, optDb, df, nr):
-    filename = "export/siemens/PLC_Dbs/%s.db" % cmName
+    temp_dir = tempfile.gettempdir()
+    filename = os.path.join(temp_dir, f"{cmName}.db")
 
     with open(filename, 'w') as f:
         L0 = str(len(df))
@@ -27,3 +31,4 @@ def dataBlock(dbNamePrefix, cmName, UDT, optDb, df, nr):
 
         f.writelines(L1)
         f.close()
+    return filename
