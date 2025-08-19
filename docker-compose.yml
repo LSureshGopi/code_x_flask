@@ -1,0 +1,8 @@
+# docker-compose.yml
+version: '3'
+services:
+  my_app:
+    image: code_x_container
+    ports:
+      - "5000:5000"  # Example
+    restart: always
